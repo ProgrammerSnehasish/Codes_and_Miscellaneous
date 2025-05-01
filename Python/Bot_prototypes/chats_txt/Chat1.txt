@@ -1,0 +1,32 @@
+User_1 : Phone Number: +91 99051 569820 IP Address: 192.168.08.01
+User_2 : Phone Number: +91 90517 87625 IP Address: 192.168.09.134
+User_1: Hey! Where are you? (1:34 am)
+User_2: Biswa Bangla Convention Center. Why?(1:37 am)
+User_1: Come to campus asap. (1:38 am)
+User_2: Why? (1:40 am)
+User_1: It's urgent! Got some work for you. (1:42 am)
+User_2: What kind of work? (1:43 am)
+User_1: You just come fast.(1:44 am)
+User_2: I got some work behind DPS, then I will be able to come. (1:46 am)
+User_1: How long will it take? (1:48 am)
+User_2: Depends. I will try to come fast. (1:50 am)
+User_1: Ok (1:50 am)
+
+User_1: Where are you now? (3:21 am)
+User_2: DPS (3:30)
+User_1: What are you doing! (3:31 am)
+User_2: Coming in 20 mins (3:32 am)
+User_1: Ok (3:33 am)
+
+User_2: Where are you? (4:11 am)
+User_1: I'm in the seminar room. Where are you? (4:15 am)
+User_2: I'm infront of the main gate (4:16 am)
+User_1: Come to seminar room fast. (4:17 am)
+User_2: OK, coming! (4:18 am)
+
+User_1: Is the work done? (6:29 am)
+User_2: Yes done! (6:40 am)
+User_1: Good. After compliting the task go to you place (6:42 am)
+User_2: Ok (6:45 am)
+User_1: You will get your reward (6:47 am)
+User_2: OK (6:50 am)
