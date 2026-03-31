@@ -48,9 +48,9 @@ import java.util.Scanner;
         }
         System.out.print("\n");
     }
-//  }
+ }
 
-//  class Main {
+ class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter Max capacity of Stack:");

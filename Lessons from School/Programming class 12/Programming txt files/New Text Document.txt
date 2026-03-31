@@ -1,0 +1,139 @@
+#include<iostream>
+using namespace std;
+int sum(int,int);
+int main()
+{
+	int a,b;
+	cout<<"Enter two numbers";
+	cin>>a>>b;
+	int x = sum(a,b);
+	cout<<x;
+}
+int sum(int x,int y)
+{
+	int c;
+	c=x+y;
+	return c;
+}
+-------------------------------------------
+#include<iostream>
+using namespace std;
+void sum(void);
+int main()
+{
+	sum();
+}
+void sum()
+{
+	int a,b,c;
+	cout<<"Enter two number";
+	cin>>a>>b;
+	c=a+b;
+	cout<<"sum= "<<c;
+}
+---------------------------------------
+#include<iostream>
+using namespace std;
+void sum(void);
+void oddeven(void);
+int a,b,s;
+int main()
+{
+	sum();
+	oddeven();
+}
+void sum()
+{
+	s=0;
+	cout<<"Enter the numbers";
+	cin>>a>>b;
+	s=a+b;
+}
+void oddeven()
+{
+	if(s%2==0)
+	cout<<"even";
+	else
+	cout<<"odd";
+}
+------------------------------------------------
+#include<iostream>
+using namespace std;
+int cal(int);
+int i,c,f;
+int main()
+{
+	int y;
+	cout<<"Enter a number";
+	cin>>y;
+	int x= cal(y);
+	if(x==1)
+	cout<<"prime";
+	else
+	cout<<"not prime";
+}
+int cal(int n)
+{
+	c=0;f=0;
+	for(i=1;i<=n;i++)
+	{
+		if(n%i==0)
+		c=c+1;
+	}
+	if(c==2)
+	f=1;
+	return f;
+}
+--------------------------------------------------------
+#include<iostream>
+using namespace std;
+int cal(int);
+int x,i,s,n;
+int main()
+{
+	int n;
+	cout<<"Enter a number";
+    cin>>n;
+	int x = cal(int n);
+	cout<<"sum of factors = %d",x;
+}
+int cal(int y)
+{
+	int s=0;
+	for(i=1;i<=n;i++)
+	{
+		if(n%i==0)
+		s=s+i;
+		return s;
+	}
+}
+---------------------------------------------------
+#include<iostream>
+using namespace std;
+int cal(int);
+int d,s,f,t;
+int main()
+{
+	int y;
+	cout<<"Enter a number";
+	cin>>y;
+	int x= cal(y);
+	if (x==1)
+	cout<<"palindrome";
+	else
+	cout<<"not  palindrome";
+}
+int cal(int n)
+{
+	t=n,f=0,s=0;
+	while(n>0)
+	{
+		d=n%10;
+		s=s*10+d;
+		n=n/10;
+	}
+	if(s==t)
+	f=1;
+	return f;
+}
+-------------------------------------------------

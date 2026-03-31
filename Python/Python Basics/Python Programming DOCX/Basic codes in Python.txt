@@ -1,0 +1,1480 @@
+##Printing my Name.
+print("Snehasish Das")
+----------------------
+##drawing a string by using simple codes.
+print('*' * 10)## output: **********
+-----------------------------
+##Variable (1)
+price = 10
+print(price)## output: 10
+------------------------------
+##Variable (2)
+price = 10
+price = 20
+print(price)## output: 20, as python code compiles from up to down or top to bottom.
+------------------------------
+##Variable (3)
+full_name = 'Snehasish'
+age = 20
+is_new = True
+------------------------------
+##Taking input (1)
+name = input('What is your name')
+print('Hi ' + name)## output: Hi SD 
+---------------------------------
+##Taking input (2)
+name = input('What is your name? ')
+color = input(What is your favourite color? ')
+print(name + ' likes ' + color)
+----------------------------------
+##Type Conversion(String to integer)
+birth_year = input('Birth year: ')
+age = 2019 - int(birth_year)
+print(age)
+##Similarly for String to float we use float().
+##and for boolean values, we use
+bool().
+----------------------------------
+##input type checking.(type() function)
+birth_year = input('Birth year: ')
+print(type(birth_year))
+age = 2019 - int(birth_year)
+print(type(age))
+print(age)
+----------------------------------
+##Type conversion(2)
+weight_in_pound = input('Enter your weight in pounds: ')
+weight_in_Kg = 0.45 * int(weight_in_pound)
+print(weight_in_Kg)
+----------------------------------
+##Strings.(use of single and double quotes)
+course = "Python's course for Beginners"
+course ='Python for "Beginner"'
+print(course)
+----------------------------------
+##String (use of triple quotes for message like e-mail)
+course = '''
+
+Hi Jhon,
+
+Here is our first email to you
+
+Thank you,
+The Support team
+
+'''
+print(course)
+---------------------------------- 
+##Printing index of a string using index number.
+course = 'Python for Beginner'
+print(course[0])## output: P
+print(course[-1])## output: r
+print(course[-2])## output: e
+print(course[0:3])## output: Pyt, as it will show only 0 to 2 excluding 3.
+print(course[0:])## output: the whole string.
+print(course[:5])## output: Pytho, as it will consider the starting form 0 and will terminate excluding 5
+print(course[1:])## output: ython for Beginner, as it consider the starting form 1 and will terminate at string lenght
+print(course[:])## output: clone of the given string.
+print((course[1:-1])## output: ython for Beginne
+----------------------------------
+##making clone string
+course = 'Python for Beginner'
+another = course[:]
+print(another)
+----------------------------------
+//formatted string
+first = 'John'
+last = 'Smith'
+message = first + ' [' + last + '] is a coder'##complex or normal form.
+msg = f'{first} [{last}] is a coder'##formatted form of the String.
+print(msg)
+----------------------------------
+##How to check lenght of the string.
+course = 'Python for Beginner'
+print(len(course))
+---------------------------------
+##to change upper case or lower case.
+course = 'Python for beginner'
+print(course.upper())##output: course in upper case.
+print(course)## output: course
+----------------------------------
+##use of find operator
+course = 'Python for Beginners'
+print(course.find('P'))
+----------------------------------
+##Replace operator
+course = 'Python for Beginners'
+print(course.replace('Beginner','Absolute Beginner'))
+----------------------------------
+##checking boolean
+course = 'Python for Beginners'
+print('Python' in course)## output: True
+print('python' in course)
+----------------------------------
+##Arithmetic Operation(**,//,/,*%,+,-,+=,-=,<=,<,>=,<)
+print(10 / 3)
+----------------------------------
+x = 10 + 3 * 2 ** 2
+print(x)
+----------------------------------
+## Math operation (Round)
+x = 2.9
+print(round(x))
+----------------------------------
+## Math operation (Absolute value)
+x = 2.9
+print(abs(-2.9))
+----------------------------------
+## Math operation (ceil & floor)
+import math
+print(math.floor(2.9))
+=======================
+import math
+print(math.ceil(2.9))
+----------------------------------
+## use of if and else statement
+is_hot = True
+is_cold = False
+
+if is_hot:
+    print("It is a hot day")
+    print("Drink plenty of water")
+elif is_cold:
+    print("It's a cold day")
+    print("wear warm clothes")
+else:
+    print("It is a lovely day")
+print("Enjoy your day")
+----------------------------------
+## Application of ifelse statement 2:
+price = 1000000
+has_good_credit = True
+
+if has_good_credit:
+    down_payment = 0.1 * price
+else:
+    down_payment = 0.2 * price
+print(f"Down payment: ${down_payment}")
+----------------------------------
+## logical operator:
+has_high_income = True
+has_good_credit = False
+
+if has_high_income and has_good_credit:
+    print("Eligible for loan")
+else:
+    print("Not eligible for loan")
+
+
+## AND = BOTH OPERRATION
+## OR = at least one
+## Not = boolean inverse
+----------------------------------
+## logical operator 2
+has_good_credit = True
+has_criminal_record = False
+
+if has_good_credit and not has_criminal_record:
+    print("Eligible for loan")
+else:
+    print("Not eligible for loan")
+----------------------------------
+## comparison operator:
+Temperature = input('Give temperature in Celcius :')
+temp = int(Temperature)
+
+if temp > 30:
+    print("It is a hot day")
+elif temp < 10:
+    print("It's a cold day")
+else:
+    print("It is a pleasant day")
+----------------------------------
+##Fun purpose
+no_of_times=int(input("Enter no of times you want to print any sting: "))
+String=input()
+for i in range(0,no_of_times+1):
+    print(String)
+---------------------------------------------------------------------------
+								College Codes
+##A-1.1/A-3.4:Python Programme to do Addition, Subtraction, Multiplication, Integer Division, Float Division.
+def add():
+    summation = 0
+    arr = []
+    ele_num = int(input("Enter total number of elements you want to add:"))
+    for i in range(0, ele_num):
+        ele = int(input("Enter element: "))
+        arr.append(ele)
+        summation = summation + arr[i]
+    return summation
+
+
+def sub():
+    subtract = 0
+    a = int(input("Enter First element: "))
+    b = int(input("Enter Second element: "))
+    subtract = a-b
+    return subtract
+
+
+def mul():
+    multiply = 0
+    a = int(input("Enter Element 1: "))
+    b = int(input("Enter Element 2: "))
+    multiply = a*b
+    return multiply
+
+
+def int_div():
+    integer_div = 0
+    a = int(input("Enter Element 1: "))
+    b = int(input("Enter Element 2: "))
+    integer_div = a//b
+    return integer_div
+
+
+def float_div():
+    f_d = 0
+    a = float(input("Enter Element 1: "))
+    b = float(input("Enter Element 2: "))
+    f_d = a/b
+    return f_d
+
+
+def exp():
+    expo = 0
+    a = float(input("Enter Base element: "))
+    b = int(input("Enter Power element: "))
+    expo = a**b
+    return expo
+
+
+def mod_div():
+    m_d = 0
+    a = int(input("Enter First element: "))
+    b = int(input("Enter Second element: "))
+    m_d = a%b
+    return m_d
+
+
+def avg():
+    summation =0
+    ave = 0
+    arr = []
+    ele_num = int(input("Enter total number of elements you want to add:"))
+    for i in range(0, ele_num):
+        ele = int(input("Enter element: "))
+        arr.append(ele)
+        summation = summation + arr[i]
+    ave = summation/ele_num
+    return ave
+
+
+print("List of Choice:\n1. Addition\n2. Subtraction\n3. Multiplication\n4. Integer Division\n5. Float Division\n6. Exponentiation\n7. Modulo Division\n8. Average of Numbers\n9. Exit Operation")
+cho = int(input("Enter your choice: "))
+match cho:
+    case 1:
+        Addition = add()
+        print("Result of the Summation of the elements is: ", Addition)
+    case 2:
+        Subtraction = sub()
+        print("Result of Subtraction of the elements is:", Subtraction)
+    case 3:
+        Multiplication = mul()
+        print("Result of the Multiplication of the elements is: ", Multiplication)
+    case 4:
+        Integer_Division = int_div()
+        print("Result of the Integer division of the element is: ", Integer_Division)
+    case 5:
+        Float_Division = float_div()
+        print("Result of the Float division of the elements is: ", Float_Division)
+    case 6:
+        Exponentiation = exp()
+        print("Result of the Exponentiation of the elements is: ", Exponentiation)
+    case 7:
+        Modulo_Division = mod_div()
+        print("Result of the Modulo division of the elements is: ", Modulo_Division)
+    case 8:
+        Average_of_Numbers = avg()
+        print("Result of the Average of the elements is: ", Average_of_Numbers)
+    case 9:
+        exit()
+    case default:
+        print("Wrong Choice Entered.")
+Output:
+List of Choice:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Integer Division
+5. Float Division
+6. Exponentiation
+7. Modulo Division
+8. Average of Numbers
+9. Exit Operation
+Enter your choice: 8
+Enter total number of elements you want to add:3
+Enter element: 3
+Enter element: 3
+Enter element: 3
+Result of the Average of the elements is:  3.0
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#A-1.2: Write a Python program for finding the area of a Circle and Rectangle
+def area_cir():
+    a_c = 0
+    r = float(input("Enter the radius of the Circle: "))
+    a_c = 22/7*(r**2)
+    return a_c
+
+
+def area_tri():
+    a_t = 0
+    h = float(input("Enter Height of the Triangle: "))
+    b = float(input("Enter Base of the Triangle: "))
+    a_t = 1/2*h*b
+    return a_t
+
+
+print("List of Choice:\n1. Area Of Circle\n2. Area Of Triangle")
+print("Enter your choice")
+cho = int(input("Enter your Choice: "))
+match cho:
+    case 1:
+        Area_Circle = area_cir()
+        print("The area given Circle: ", Area_Circle, "Square Unit")
+    case 2:
+        Area_Triangle = area_tri()
+        print("The area given Circle: ", Area_Triangle, "Square Unit")
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#A-1.3: Write a Python Programme to print the first place of any number taken by user.
+num = int(input("Enter any numer you want: "))
+rem = 0
+temp = 0
+while (num >= 10):
+    num = num // 10
+print("The Ones Place/First Place of a Number is: ", num)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP to convert Celcius to Faranheit and vice versa.
+print("List of choice:\n1. Celcius to Faranheit\n2. Faranheit to Celcius\n")
+choice=int(input("Enter your Choice: "))
+if choice==1:
+    Faranheit = float(input("Enter the temperature in Faranheit(deg F): "))
+    Celcius = (5 * (Faranheit - 32)) / 9
+    print("The converted temperature in Celcius is", Celcius, " deg C")
+elif choice==2:
+    Celcius=float(input("Enter the temperature in Celcius(deg C): "))
+    Faranheit=(9*Celcius+160)/5
+    print("The converted temperature in Celcius is",Faranheit," deg F")
+else:
+    print("Wrong choice entered.")
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP to verify the given number is a Armstrong number or not.
+def count_no_of_digits(num):
+    count = 0
+    while num != 0:
+        rem = num % 10
+        num = num // 10
+        count = count + 1
+    return count
+def is_armstrong_number(num):
+    original_num = num
+    n = count_no_of_digits(num)
+    sum = 0
+    while num != 0:
+        rem = num % 10
+        sum = sum + rem ** n
+        num = num // 10
+    return original_num == sum
+Number = int(input("Enter any number to check Armstrong or not: "))
+if is_armstrong_number(Number):
+    print(Number,"is an Armstrong number.")
+else:
+    print(Number,"is not an Armstrong number.")
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP to verify the given number is Prime or not.
+def is_prime_num(num):
+    n=num
+    count=0
+    for i in range(2,n):
+        if n%i==0:
+            count=count+1
+    if count==0:
+        return True
+Number=int(input("Enter any Number to check prime: "))
+if is_prime_num(Number):
+    print(Number,"is Prime Number")
+else:
+    print(Number,"is not Prime Number")
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Print pattern
+* 
+* * 
+* * *
+no_of_rows = int(input("Enter number of Rows: "))
+for i in range(1, no_of_rows + 1):
+    for j in range(i):
+        print("*", end=" ")
+    print()
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Print pattern
+1 
+2 2 
+3 3 3 
+4 4 4 4 
+5 5 5 5 5 
+no_of_rows = int(input("Enter number of Rows: "))
+for i in range(1, no_of_rows + 1):
+    for j in range(i):
+        print(i, end=" ")
+    print()
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Print pattern
+0 
+0 1 
+0 1 2 
+no_of_rows = int(input("Enter number of Rows: "))
+for i in range(1, no_of_rows + 1):
+    for j in range(i):
+        print(j, end=" ")
+    print()
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+#Print pattern
+5 5 5 5 5 
+4 4 4 4 
+3 3 3 
+2 2 
+1 
+no_of_rows = int(input("Enter number of Rows: "))
+for i in range(no_of_rows, 0, -1):  # Corrected the range and the decrement in the loop
+    for j in range(i):
+        print(i, end=" ")
+    print()
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Print pattern
+0 1 2 3 
+0 1 2 
+0 1 
+0 
+no_of_rows = int(input("Enter number of Rows: "))
+for i in range(no_of_rows, 0, -1):  # Corrected the range and the decrement in the loop
+    for j in range(i):
+        print(j, end=" ")
+    print()
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Print pattern
+A B C 
+A B 
+A 
+no_of_rows = int(input("Enter number of Rows: "))
+for i in range(no_of_rows, 0, -1):
+    for j in range(i):
+        # Convert the value of j to ASCII and print the corresponding character
+        print(chr(ord('A') + j), end=" ")
+    print()
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Print pattern
+D D D 
+C C 
+B 
+no_of_rows = int(input("Enter number of Rows: "))
+for i in range(no_of_rows, 0, -1):
+    for j in range(i):
+        # Convert the value of j to ASCII and print the corresponding character
+        print(chr(ord('A') + i), end=" ")
+    print()
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Print pattern
+A 
+A B 
+A B C 
+A B C D 
+A B C D E 
+no_of_rows = int(input("Enter number of Rows: "))
+for i in range(1, no_of_rows + 1):
+    for j in range(i):
+        # Convert the value of j to ASCII and print the corresponding character
+        print(chr(ord('A') + j), end=" ")
+    print()
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Print pattern
+B 
+C C 
+D D D 
+no_of_rows = int(input("Enter number of Rows: "))
+for i in range(1, no_of_rows + 1):
+    for j in range(i):
+        # Convert the value of j to ASCII and print the corresponding character
+        print(chr(ord('A') + i), end=" ")
+    print()
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP to swap two numbers(long method).
+a=int(input("Enter first number: "))
+b=int(input("Enter Second Number: "))
+print("Before Swaping value of a:",a,"and value of b:",b)
+a=a+b
+b=a-b
+a=a-b
+print("After Swaping value of a:",a,"and value of b:",b)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP to swap two numbers(Short method applicable for Python).
+a=int(input("Enter first number: "))
+b=int(input("Enter Second Number: "))
+print("Before Swaping value of a:",a,"and value of b:",b)
+a,b=b,a
+print("After Swaping value of a:",a,"and value of b:",b)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP a programme that takes 3 digit number and will print first and last digit.
+number=int(input("Enter any number(3 digits): "))
+print("The First digit of the number:",number//100)
+print("The Last digit of the number:",number%10)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP a programme that takes 3 number and will print first and last digit.
+number=int(input("Enter any number: "))
+number_of_digits=len(str(number))
+print("The First digit of the number:",number//10**(number_of_digits-1))
+print("The Last digit of the number:",number%10)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP that will take 2 number then find max between them.
+num1=input("Enter first Number:")
+num2=input("Enter second Number:")
+print("The Maximum value:",max(num1,num2))
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP TO CHECK LEAP YEAR OR NOT.
+year=int(input("Enter any year you want to check: "))
+if(year%4==0 and year%100!=0 or year%400==0):
+  print("The given year is Leap Year.")
+else:
+  print("The given year is not Leap Year.")
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP to take marks of five subjects and find average of marks, on basis of the average give grade.
+Sub1=float(input("Enter Marks for Subject 1: "))
+Sub2=float(input("Enter Marks for Subject 2: "))
+Sub3=float(input("Enter Marks for Subject 3: "))
+Sub4=float(input("Enter Marks for Subject 4: "))
+Sub5=float(input("Enter Marks for Subject 5: "))
+Marks_avg=(Sub1+Sub2+Sub3+Sub4+Sub5)/5
+print("Average Marks of the five Subjects:",Marks_avg)
+if Marks_avg>=60 and Marks_avg<=69:
+    print("The Grade of the Sutdent is 'D'")
+elif Marks_avg>=70 and Marks_avg<=79:
+    print("The Grade of the Sutdent is 'C'")
+elif Marks_avg>=80 and Marks_avg<=89:
+    print("The Grade of the Sutdent is 'B'")
+elif Marks_avg>=90 and Marks_avg<=95:
+    print("The Grade of the Sutdent is 'A'")
+elif Marks_avg>95:
+    print("The Grade of the Sutdent is 'E'")
+else:
+    print("The Student is Failed.")
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP that will print all natural number form 1 to N.
+input_range=int(input("enter all natural numbers:"))
+print("Printing all natural numbers to range",input_range,"...")
+for i in range(1,input_range+1):
+    print(i)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP to Find Factorial of a number using recursion.
+num=int(input("Enter the number you want to get Factorial: "))
+def fact(num):
+  if(num==1 or num==0):
+    return 1
+  elif(num<0):
+    return "Invalid Choice"
+  else:
+    return num*fact(num-1)
+Factorial=fact(num)
+print("The factorial of the given number is: ")
+print(Factorial)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP to Print Fibbonacci Series
+nterms = int(input("How many terms? "))
+n1, n2 = 0, 1
+count = 0
+if nterms <= 0:
+   print("Please enter a positive integer")
+elif nterms == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+else:
+   print("Fibonacci sequence:")
+   while count < nterms:
+       print(n1)
+       nth = n1 + n2
+       n1 = n2
+       n2 = nth
+       count += 1
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP to find the root of quadratic equation.
+import math
+print("The format of the quadratic equation is (+/-)a.x^2+(+/-)b.x+(+/-)c, where a is not equal to 0")
+a = int(input("Enter value of a: "))
+b = int(input("Enter value of b: "))
+c = int(input("Enter value of c: "))
+print("Your Quadratic equation is:", a, "x^2 +", b, "x +", c)
+if a != 0:
+    discriminant = (b**2) - 4*a*c
+    if discriminant >= 0:
+        root1 = (-b + math.sqrt(discriminant)) / (2 * a)
+        root2 = (-b - math.sqrt(discriminant)) / (2 * a)
+        print("The roots of your given equation are:\nRoot 1:", root1, "\nRoot 2:", root2)
+    else:
+        print("The roots are complex.")
+else:
+    print("The value of 'a' should be non-zero for a quadratic equation.")
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Calculate result of the of series.
+def factorial(num):
+  if(num==1 or num==0):
+    return 1
+  elif(num<0):
+    return "Invalid Choice"
+  else:
+    return num*factorial(num-1)
+input_range=int(input("Enter the range upto which you want to calculate:"))
+result=0
+for i in range(1,input_range+1):
+    result+=i/factorial(i)
+print("The result of the sumof the series is:",result)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP to find the volume of Cuboid.
+length=int(input("Enter the length of the Cuboid: "))
+width=int(input("Enter the width of the Cuboid: "))
+height=int(input("Enter the heigth of the Cuboid: "))
+Volume = length*width*height
+print("The volume of the cuboid is:",Volume)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP to calculate Exponential of x and y
+x=int(input("Enter the Base value: "))
+y=int(input("Enter the exponent value: "))
+result = x**y
+print("The result of x^y is:",result)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP to find absolute value, Square root, Cube of the user given value
+import math
+Number=int(input("Enter any Number: "))
+Abs_Val= math.fabs(Number)
+Sqr_rt= math.sqrt(Number)
+Cube=math.pow(Number,3)
+print("The Absolute value of the given number is:",Abs_Val)
+print("The Square root of the given number is:",Sqr_rt)
+print("The Cube of the given number is:",Cube)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP to check weather the number is krishnamurti number/Special Number or Strong Number
+num=int(input("Enter any Number you want to check: "))
+temp=num
+flag=0
+sum=0
+while num>0:
+    rem=num%10
+    flag=1
+    for i in range(1,rem):
+        flag=flag*i
+    sum=sum+flag
+    num=num//10
+if sum==temp:
+    print(temp," is a Krishnamurti Number.")
+else:
+    print("The given number is not a Krishnamurti Number.")
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#calculate the series upto n term s=1-2+3-4+5-6+...
+input_range=int(input("Enter range: "))
+sum=0
+for i in range(1,input_range+1):
+    if i%2!=0:
+        sum=sum+i
+    else:
+        sum=sum-i
+print("The Sum of the series:",sum)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#calculate the series upto n term s=1*3+2*4+3*5+........+9*10
+input_range=int(input("Enter range: "))
+sum=0
+for i in range(1,input_range+1):
+    sum=sum+(i*(i+2))
+print("The Sum of the series:",sum)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#calculate the series upto n term s=1*2+3*4+5*6+........+9*10
+input_range=int(input("Enter range: "))
+sum=0
+for i in range(1,input_range+1):
+    sum=sum+(i*(i+1))
+print("The Sum of the series:",sum)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#calculate the series upto n term s=2+5+10+17.....
+input_range=int(input("Enter range: "))
+sum=0
+for i in range(1,input_range+1):
+    sum=(sum+(i*i)+1)
+print("The Sum of the series:",sum)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#calculate the series upto n term s=0+3+8+15+24...
+input_range=int(input("Enter range: "))
+sum=0
+for i in range(1,input_range+1):
+    sum=(sum+(i*i-1))
+print("The Sum of the series:",sum)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#calculate the series upto n term s=1*1+2*2+3*3+......+9*9+n*n
+input_range=int(input("Enter range: "))
+sum=0
+for i in range(1,input_range+1):
+    sum=(sum+(i*i))
+print("The Sum of the series:",sum)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#calculate the series upto n term s=1*2+2*3+3*4+........+9*10
+input_range=int(input("Enter range: "))
+sum=0
+for i in range(1,input_range+1):
+    sum=sum+(i*(i+1))
+print("The Sum of the series:",sum)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#calculate the series upto n term s=1+1/2+1/3+1/4+1/.....1/N
+input_range=int(input("Enter range: "))
+sum=0
+for i in range(1,input_range+1):
+    sum=sum+(1.0/i)
+print("The Sum of the series:",sum)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#calculate the series upto n term S=1/2+2/3+3/4+4/5....9/10
+input_range=int(input("Enter range: "))
+sum=0
+for i in range(1,input_range+1):
+    sum=sum+(i/(i+1.0))
+print("The Sum of the series:",sum)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#calculate the series upto n term s=1+8+9+64+25+216
+input_range=int(input("Enter range: "))
+sum=0
+for i in range(1,input_range+1):
+    sum=sum+(i*i*i)
+print("The Sum of the series:",sum)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#calculate the series upto n term s=1/2-2/3+3/4-4/5+5/6
+input_range=int(input("Enter range: "))
+sum=0
+for i in range(1,input_range+1):
+    if i % 2 != 0:
+        sum = sum + (i/(i+1.0))
+    else:
+        sum = sum - (i/(i+1.0))
+print("The Sum of the series:",sum)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#calculate the series upto n term s=1-4+9-16+25
+input_range=int(input("Enter range: "))
+sum=0
+for i in range(1,input_range+1):
+    if i % 2 != 0:
+        sum = sum + (i*i)
+    else:
+        sum = sum - (i*i)
+print("The Sum of the series:",sum)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#A-8.1: Python Programme for interchanging First and Last element.
+r=int(input("Enter Range: "))
+lst = []
+for i in range(0,r+1):3
+  x=int(input("Enter Value: "))
+  lst.insert(i,x)
+  lst[0], lst[-1] = lst[-1], lst[0]
+print(lst)
+Enter Range: 3
+Enter Value: 12
+Enter Value: 4
+Enter Value: 45
+Enter Value: 67
+[67, 12, 4, 45]
+-----------------------------------------------------
+#A-8.2: Python Programme for getting length of array.
+r=int(input("Enter Range: "))
+lst = []
+for i in range(0,r+1):1
+  x=int(input("Enter Value: "))
+  lst.insert(i,x)
+  print(lst)
+length=len(lst)
+print(length)
+Enter Range: 5
+Enter Value: 0
+[0]
+Enter Value: 1
+[0, 1]
+Enter Value: 2
+[0, 1, 2]
+Enter Value: 3
+[0, 1, 2, 3]
+Enter Value: 4
+[0, 1, 2, 3, 4]
+Enter Value: 5
+[0, 1, 2, 3, 4, 5]
+6
+------------------------------------------------------
+#A-8.3: Python Programme to swap element in list.
+r=int(input("Enter Range: "))
+lst = []
+for i in range(0,r+1):
+  x=int(input("Enter Value: "))
+  lst.insert(i,x)
+  lst[0], lst[-1] = lst[-1], lst[0]
+print(lst)
+Enter Range: 3
+Enter Value: 12
+Enter Value: 34
+Enter Value: 45
+Enter Value: 456
+[456, 12, 34, 45]
+-----------------------------------------------------
+#A-8.4: Python Programme to sort element in list.
+r=int(input("Enter Range: "))
+lst = []
+for i in range(0,r+1):
+  x=int(input("Enter Value: "))
+  lst.insert(i,x)
+  lst.sort()
+print("Sorted List is: 9",lst)
+Enter Range: 4
+Enter Value: 78
+Enter Value: 0
+Enter Value: 90
+Enter Value: 23
+Enter Value: 12
+Sorted List is: [0, 12, 23, 78, 90]
+------------------------------------------------------
+#A-8.5: Python Programme to swap element in list.
+r=int(input("Enter Range: "))
+lst = []
+for i in range(0,r+1):
+  x=int(input("Enter Value: "))
+  lst.insert(i,x)
+  lst.reverse()
+print(lst)
+Enter Range: 3
+Enter Value: 12
+Enter Value: 23
+Enter Value: 34
+Enter Value: 45
+[45, 23, 12, 34]
+-----------------------------------------------------------
+#A-8.6:copy a list into another list or make a clone of list.
+def clone(Org_list):
+    list_copy=Org_list[:]
+    return list_copy
+size_of_list=int(input("Enter the length of the list(Total numbers of elements): "))
+Org_list=[]
+print("Enter ",size_of_list,"values/data in the list:")
+for i in range(0,size_of_list):
+    x=input()
+    Org_list.insert(i,x)
+print("The original list is:\n",Org_list)
+Cloned_list=clone(Org_list)
+print("The Cloned List is:\n",Cloned_list)
+----------------------------------------------------------------------------------------
+#A-8.7:count occurence of a specific element in the list.
+size_of_list=int(input("Enter the length of the list(Total numbers of elements): "))
+list=[]
+print("Enter ",size_of_list,"values/data in the list:")
+for i in range(0,size_of_list):
+    x=input()
+    list.insert(i,x)
+print("The original list is:\n",list)
+key_value=input("Enter the key value: ")
+count=0
+for i in range(0,size_of_list):
+    if (key_value==list[i]):
+        count=count+1
+print("The occurrence of the given key value is:",count,"times.")
+--------------------------------------------------------------------------------------------
+#A-8.8:add all the numbers in the list.
+size_of_list=int(input("Enter the length of the list(Total numbers of elements): "))
+list=[]
+print("Enter ",size_of_list,"values/data in the list:")
+for i in range(0,size_of_list):
+    x=int(input())
+    list.insert(i,x)
+print("The numbers in the list is:\n",list)
+sum=0
+for i in range(0,size_of_list):
+    sum+=list[i]
+print("The summation of the numbers in the list is: ",sum)
+-------------------------------------------------------------------------------------------
+#A-8.9:Find the maximum and minimum number in the list.
+size_of_list=int(input("Enter the length of the list(Total numbers of elements): "))
+list=[]
+print("Enter ",size_of_list,"values/data in the list:")
+for i in range(0,size_of_list):
+    x=int(input())
+    list.insert(i,x)
+print("The numbers in the list is:\n",list)
+Max_Number=list[0]
+Min_Number=list[0]
+for i in list:
+    if i < Min_Number:
+        Min_Number=i
+    if i > Max_Number:
+        Max_Number=i
+print("The Maximum Number in the List: ",Max_Number)
+print("The Minimum Number in the List: ",Min_Number)
+-------------------------------------------------------------------------------------------
+#A-8.9:Find the 2nd maximum number in the list.
+size_of_list=int(input("Enter the length of the list(Total numbers of elements): "))
+list=[]
+print("Enter ",size_of_list,"values/data in the list:")
+for i in range(0,size_of_list):
+    x=int(input())
+    list.insert(i,x)
+print("The numbers in the list is:\n",list)
+list=sorted(list)
+print("The List after Sorting:\n",list)
+print("The Second Largest Number is:",list[-2])
+--------------------------------------------------------------------------------------------
+#A-8.10:Count the total even and odd number present in the list.
+size_of_list=int(input("Enter the length of the list(Total numbers of elements): "))
+list=[]
+print("Enter ",size_of_list,"values/data in the list:")
+for i in range(0,size_of_list):
+    x=int(input())
+    list.insert(i,x)
+print("The numbers in the list is:\n",list)
+Even_count=0
+Odd_count=0
+for i in range(0,size_of_list):
+    if list[i]%2==0:
+        Even_count+=1
+    else:
+        Odd_count+=1
+print(f"There are total {Even_count} even numbers and {Odd_count} odd numbers in the list.")
+---------------------------------------------------------------------------------------------
+#A-8.11:Count the total positive and negative number present in the list.
+size_of_list=int(input("Enter the length of the list(Total numbers of elements): "))
+list=[]
+print("Enter ",size_of_list,"values/data in the list:")
+for i in range(0,size_of_list):
+    x=int(input())
+    list.insert(i,x)
+print("The numbers in the list is:\n",list)
+Positive_count=0
+Negative_count=0
+for i in range(0,size_of_list):
+    if list[i]>0:
+        Positive_count+=1
+    else:
+        Negative_count+=1
+print(f"There are total {Positive_count} positive numbers and {Negative_count} negative numbers in the list.")
+----------------------------------------------------------------------------------------------------------------------
+#A-8.12:Sort the list.
+size_of_list=int(input("Enter the length of the list(Total numbers of elements): "))
+list=[]
+print("Enter ",size_of_list,"values/data in the list:")
+for i in range(0,size_of_list):
+    x=int(input())
+    list.insert(i,x)
+print("The numbers in the list is:\n",list)
+Sorted_list=sorted(list)
+print("The List after Sorting:\n",Sorted_list)
+---------------------------------------------------------------------------------------------------------------------
+#A-10.3:Write a Python program that creates two Dictionaries, One that stores conversion value from meter to centimeter and Second stores conversion value from centimeter to meter.
+size_of_list=int(input("Enter the length of the list(Total numbers of elements)[for dict1]: "))
+input_cm_list=[]
+print("Enter",size_of_list,"values/data in the list(LENGTHS in centimeter):")
+for i in range(0,size_of_list):
+    x=float(input())
+    input_cm_list.insert(i,x)
+print("The list consisting values of length in Centimeter is:\n",input_cm_list)
+conv_m_list=[]
+for i in range(0,size_of_list):
+    conv_val=(input_cm_list[i]/100)
+    conv_m_list.insert(i,conv_val)
+print("The list consisting values of length in Meter is:\n",conv_m_list)
+dictionary_centimeter_To_meter=dict(zip(input_cm_list,conv_m_list))
+print("Dictionary Consisting Centimeter Values and their converted Meter values:\n",dictionary_centimeter_To_meter)
+size_of_list2=int(input("Enter the length of the list(Total numbers of elements)[for dict2]: "))
+input_m_list=[]
+print("Enter",size_of_list,"values/data in the list(LENGTHS in Meter):")
+for i in range(0,size_of_list):
+    x=float(input())
+    input_m_list.insert(i,x)
+print("The list consisting values of length in Meter is:\n",input_m_list)
+conv_cm_list=[]
+for i in range(0,size_of_list):
+    conv_val=(input_m_list[i]*100)
+    conv_cm_list.insert(i,conv_val)
+print("The list consisting values of length in Centimeter is:\n",conv_cm_list)
+dictionary_Meter_To_centimeter=dict(zip(input_m_list,conv_cm_list))
+print("Dictionary Consisting Centimeter Values and their converted Meter values:\n",dictionary_Meter_To_centimeter)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#A-10.4: Write a Python program that creates a Dictionary of a Radius (that taken by user) and its Circumference for a Circle.
+pi=22/7
+size_of_list=int(input("Enter the length of the list(Total numbers of elements): "))
+radius_list=[]
+print("Enter",size_of_list,"values/data in the list(Radius of Circle):")
+for i in range(0,size_of_list):
+    x=float(input())
+    radius_list.insert(i,x)
+print("The list consisting values of Radius_of_Circle is:\n",radius_list)
+conv_Circumference_list=[]
+for i in range(0,size_of_list):
+    conv_val=(2*pi*radius_list[i])
+    conv_Circumference_list.insert(i,conv_val)
+print("The list consisting values of length in Meter is:\n",conv_Circumference_list)
+dictionary_radius_To_Circumference=dict(zip(radius_list,conv_Circumference_list))
+print("Dictionary Consisting Centimeter Values and their converted Meter values:\n",dictionary_radius_To_Circumference)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP to print twin prime numbers in between range m to n
+def is_prime_num(num):
+    flag=0
+    for i in range(2,num):
+        if num%i==0:
+            flag+=1
+            break
+    if flag==0:
+        return 0
+    else:
+        return 1
+initial=int(input("Enter the starting range: "))
+final=int(input("Enter the end range: "))
+print(f"The twin prime between range {initial} and {final}:")
+for i in range(initial,final):
+    if (is_prime_num(i)==0 and is_prime_num(i+2)==0):
+        print(f"[{i},{str(i+2)}]")
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP to check weather the number is krishnamurti number/Special Number or Strong Number
+def sum_of_factorial(num):
+    sum=0
+    while num>0:
+        rem=num%10
+        factorial = 1
+        for i in range(2,rem+1):
+            factorial=factorial*i
+        sum=sum+factorial
+        num=num//10
+    return sum
+def is_krishnamurti_num(num):
+    if sum_of_factorial(num)==num:
+        return 1
+    else:
+        return 0
+num=int(input("Enter any Number you want to check: "))
+if is_krishnamurti_num(num)==1:
+    print(f"The given number {num} is krishnamurti Number.")
+else:
+    print(f"The given number {num} is not krishnamurti Number.")
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#find the frequency of occurence of each character in a given string.
+Str_name=input("Enter any String or your name to check the occurence of each character: ")
+Str_name=Str_name.upper()
+length_of_string=len(Str_name)
+print(f"Your String length is: {length_of_string}")
+list_of_character=list(Str_name)
+length_of_list=len(list_of_character)
+for i in range(0,length_of_list):
+    count=0
+    character=list_of_character[i]
+    if list_of_character[i]!='*':
+        for j in range(0,length_of_list):
+            if(list_of_character[j]==character):
+              count+=1
+              list_of_character[j]='*'
+        print(f"The occurenece or frequency of {character} is: {count}")
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP to print the initials of a string
+String=input("Enter any String to get its initials:")
+String=String.upper()
+String_list=list(String)
+Initials_Beg=f"The initials is: {String[0]}"
+for i in range (0,len(String_list)):
+    if String_list[i]==" ":
+        Initials_Beg = Initials_Beg +"."+String_list[i+1]
+print(Initials_Beg)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+#WAP to count no of vowel present in the string.
+String=input("Enter any string you want to get vowel count:").upper()
+Vowcount_a=0
+Vowcount_e=0
+Vowcount_i=0
+Vowcount_o=0
+Vowcount_u=0
+for i in range (0,len(String)):
+    character=String[i]
+    if(character=='A'):
+        Vowcount_a+=1
+    if(character=='E'):
+        Vowcount_e+=1
+    if(character=='I'):
+        Vowcount_i+=1
+    if(character=='O'):
+        Vowcount_o+=1
+    if(character=='U'):
+        Vowcount_u+=1
+print(f"Total Number of A is: {Vowcount_a}")
+print(f"Total Number of E is: {Vowcount_e}")
+print(f"Total Number of I is: {Vowcount_i}")
+print(f"Total Number of O is: {Vowcount_o}")
+print(f"Total Number of U is: {Vowcount_u}")
+Total_Vowel_Count=Vowcount_a+Vowcount_e+Vowcount_i+Vowcount_o+Vowcount_u
+print(f"The total vowel count is: {Total_Vowel_Count}")
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Write a function istrcmp to compare two strings, ignoring the case.
+def istrcmp(str1,str2):
+    str1=str1.upper()
+    str2=str2.upper()
+    if str1==str2:
+        return True
+    else:
+        return False
+str1=input("Enter the first string: ")
+str2=input("Enter the second string: ")
+print(f"Are the given two strings are same?: {istrcmp(str1,str2)}")
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Write a function to count digits of number.
+def count_digits(num):
+    count=0
+    while num!=0:
+        rem=num%10
+        count=count+1
+        num=num//10
+    return count
+num=int(input("Enter any number you want to count the digits: "))
+print(f"The total digits of the given number {num} is: {count_digits(num)}")
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Python has a built-in function sum to find sum of all elements of a list. Provide an implementation for sum.
+list=[]
+summation_of_elements=0
+total_no_of_elements=int(input("Enter total number of elements: "))
+for i in range(0,total_no_of_elements):
+    x=int(input())
+    list.insert(i,x)
+summation_of_elements=sum(list)
+print(f"Sum of the elements in the list: {summation_of_elements}")
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#What happens when the above sum function is called with a list of strings? Can you make your sum function work for a list of strings as well.
+list=[]
+def sum(list,total_no_of_elements):
+    String=str()
+    for i in range(0,total_no_of_elements):
+        String+=str(list[i])
+    return String
+total_no_of_elements=int(input("Enter total number of elements: "))
+for i in range(0,total_no_of_elements):
+    x=input()
+    list.insert(i,x)
+print(f"Sum of the elements in the list: {sum(list,total_no_of_elements)}")
+------------------------------------------------------------------------------------------------------------------------------------------------------
+#Implement a function product, to compute product of a list of numbers.
+list=[]
+def product(list,total_no_of_elements):
+    Multiply=1
+    for i in range(0,total_no_of_elements):
+        Multiply=Multiply*list[i]
+    return Multiply
+Product_of_elements=1
+total_no_of_elements=int(input("Enter total number of elements: "))
+for i in range(0,total_no_of_elements):
+    x=int(input())
+    list.insert(i,x)
+Product_of_elements=product(list,total_no_of_elements)
+print(f"Product of the elements in the list: {Product_of_elements}")
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+#Write a function reverse to reverse a list. Can you do this without using list slicing?
+list=[]
+def reverse(list):
+    list=list[::-1]
+    return list
+total_no_of_elements=int(input("Enter total number of elements: "))
+for i in range(0,total_no_of_elements):
+    x=int(input())
+    list.insert(i,x)
+print(f"The List is: {list}")
+print(f"The reverse of the list: {reverse(list)}")
+print(f"The reverse of the reversed list is: {reverse(reverse(list))}")
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+#Cumulative sum of a list
+list=[]
+def cumulative_sum(list,total_no_of_elements):
+    cumulative_sum_list=[]
+    sum=0
+    for i in range(0,total_no_of_elements):
+        sum=sum+list[i]
+        ele=sum
+        cumulative_sum_list.insert(i,ele)
+    return cumulative_sum_list
+total_no_of_elements=int(input("Enter total number of elements: "))
+for i in range(0,total_no_of_elements):
+    x=int(input())
+    list.insert(i,x)
+print(f"The list is: {list}")
+print(f"The Cumulative sum list is: {cumulative_sum(list,total_no_of_elements)}")
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+#Cumulative product of a list element
+list=[]
+def cumulative_product(list,total_no_of_elements):
+    cumulative_product_list=[]
+    product=1
+    for i in range(0,total_no_of_elements):
+        product=product*list[i]
+        ele=product
+        cumulative_product_list.insert(i,ele)
+    return cumulative_product_list
+total_no_of_elements=int(input("Enter total number of elements: "))
+for i in range(0,total_no_of_elements):
+    x=int(input())
+    list.insert(i,x)
+print(f"The list is: {list}")
+print(f"The Cumulative sum list is: {cumulative_product(list,total_no_of_elements)}")
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+#Write a function lensort to sort all the elements of a list acc to their length.
+list=[]
+def lensort(list,total_no_of_elements):
+    sorted_list=[]
+    for i in range(0,total_no_of_elements):
+        ele=list[i]
+        sorted_list.insert(i,ele)
+    return sorted(sorted_list)
+total_no_of_elements=int(input("Enter total number of elements: "))
+for i in range(0,total_no_of_elements):
+    x=input()
+    list.insert(i,x)
+print(f"The list is: {list}")
+print(f"The unique list is: {lensort(list,total_no_of_elements)}")
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#use two function unique and duplicate to find the unique and duplicate elements in the list.
+def duplicate(lst, length_of_list):
+    duplicate_list = []
+    for i in range(length_of_list):
+        element = lst[i]
+        if element != '*':
+            for j in range(i + 1, length_of_list):
+                if lst[j] == element:
+                    duplicate_list.append(element)
+                    lst[j] = '*'
+    return duplicate_list
+
+def unique(lst, length_of_list):
+    unique_list = []
+    for i in range(length_of_list):
+        if lst[i] != '*':
+            unique_list.append(lst[i])
+    return unique_list
+
+no_of_ele = int(input("Enter the number of elements you want to insert in the list: "))
+my_list = []
+
+for i in range(no_of_ele):
+    x = int(input(f"Enter element {i + 1}: "))
+    my_list.append(x)
+
+length_of_list = len(my_list)
+print(f"The list is: {my_list}")
+
+my_list = sorted(my_list)
+duplicate_elements = duplicate(my_list, length_of_list)
+unique_elements = unique(my_list, length_of_list)
+
+print(f"The list of duplicate elements is: {duplicate_elements}")
+print(f"The list of unique elements is: {unique_elements}")
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+#Write a function group(list, size) that take a list and splits into smaller lists of given size.
+def group(lst, size):
+    result = []
+    for i in range(0, len(lst), size):
+        result.append(lst[i:i+size])
+    return result
+list=[]
+total_no_of_elements=int(input("Enter total number of elements: "))
+for i in range(0,total_no_of_elements):
+    x=int(input())
+    list.insert(i,x)
+print(f"The list is: {list}")
+size=int(input("Enter the length of the sliced lists: "))
+print(f"After processing the list is: {group(list,size)}")
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+#Provide an implementation for zip function.
+list1=[]
+list2=[]
+def zip(list1,list2):
+    zipped_list=[]
+    for i in range(0,no_of_elements):
+        element=(list1[i],list2[i])
+        zipped_list.insert(i,element)
+    return zipped_list
+no_of_elements=int(input("Enter total number of elements: "))
+print("Enter elements in list 1:")
+for i in range(0,no_of_elements):
+    x=input(f"Enter element {i+1}: ")
+    list1.insert(i,x)
+print(f"The list 1 is: {list1}")
+print("Enter elements in list 2:")
+for i in range(0,no_of_elements):
+    y=input(f"Enter element {i+1}: ")
+    list2.insert(i,y)
+print(f"The list 2 is: {list2}")
+print(f"Final list after merging elements: {zip(list1,list2)}")
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+#Input a number and check if it a perfect number or not using a user define function factors(x) which returns a tuple containing the factors of the number.
+def factors(num):
+    tuple1=()
+    for i in range (1,num):
+        if num%i==0:
+            tuple1=tuple1+(i,)
+    return tuple1
+def isPerfect(num,tuple):
+    sum=0
+    for i in tuple:
+        sum=sum+i
+    if num==sum:
+        return True
+    else:
+        return False
+Number=int(input("Enter any number you want to check Perfect or not: "))
+tuple2=factors(Number)
+print(f"The factors of the number is: {factors(Number)}")
+print(f"Is the given number {Number} is Perfect?: {isPerfect(Number,tuple2)}")
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Input a number and check if it even or odd and split it into 2 list Odd and Even.
+def SplitOddEven(no_of_elements):
+    org_list=[]
+    for i in range(0,no_of_elements):
+        org_list.append(int(input(f"Enter Number {i+1}:")))
+    Odd=[]
+    Even=[]
+    for i in org_list:
+        if i%2==0:
+            Even.append(i)
+        else:
+            Odd.append(i)
+    return f"The Odd and Even element list are simultaneously: ({Odd},{Even})"
+no_of_elements = int(input("Enter total no of elements(numbers): "))
+print(SplitOddEven(no_of_elements))
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+##Home Work 06-01-2024
+#Enter the roll, name, and Marks of n students print their records. Finally find the Student Name with highest marks.
+Name=[]
+Roll=[]
+Marks=[]
+def Student_Record(Name,Roll,Marks):
+    data_list=[]
+    for i in range(0,No_of_Students):
+        element=(Name[i],Roll[i],Marks[i])
+        data_list.insert(i,element)
+    return data_list
+No_of_Students=int(input("Enter total no of students: "))
+for i in range(0,No_of_Students):
+    Name.append(input(f"Enter Name of the Student({i+1}): "))
+    Roll.append(int(input(f"Enter Roll of the Student({i+1}): ")))
+    Marks.append(int(input(f"Enter Marks of the Student({i+1}): ")))
+Student_Dictionary=dict(zip(Name,Roll))
+print("The details of the Student in form{'Name':Roll}:")
+print(Student_Dictionary)
+print("The details of the Student in form{'Name',Roll,Marks}:")
+print(Student_Record(Name,Roll,Marks))
+max_marks=Marks[0]
+index=0
+for i in range(0,len(Marks)):
+    if max_marks<Marks[i]:
+        max_marks=Marks[i]
+        index=i
+print(f"The Student whose name is '{Name[index]}' and roll no is '{Roll[index]}' got the highest marks {max_marks}")
+=============================================
+Output:
+"C:\Users\Snehasish Das\PycharmProjects\pythonProject2\venv\Scripts\python.exe" "C:/Users/Snehasish Das/PycharmProjects/pythonProject2/main.py" 
+Enter total no of students: 3
+Enter Name of the Student(1): Ram
+Enter Roll of the Student(1): 1
+Enter Marks of the Student(1): 90
+Enter Name of the Student(2): Ratan
+Enter Roll of the Student(2): 2
+Enter Marks of the Student(2): 99
+Enter Name of the Student(3): Raju
+Enter Roll of the Student(3): 3
+Enter Marks of the Student(3): 80
+The details of the Student in form{'Name':Roll}:
+{'Ram': 1, 'Ratan': 2, 'Raju': 3}
+The details of the Student in form{'Name',Roll,Marks}:
+[('Ram', 1, 90), ('Ratan', 2, 99), ('Raju', 3, 80)]
+The Student whose name is 'Ratan' and roll no is '2' got the highest marks 99
+
+Process finished with exit code 0
+------------------------------------------------------------------------------------------------------------------------------------------------------
+#Write a Python script to generate and print a dictionary that contains a number.
+input_range=int(input("Enter last range: "))
+square_dict={}
+for i in range(1,input_range):
+    square_dict[i]=i**2
+print(square_dict)
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+#Enter the roll, name, and Marks of n students print their records.Zip it, Unzip it.
+Name=[]
+Roll=[]
+Marks=[]
+No_of_Students=int(input("Enter total no of students: "))
+for i in range(0,No_of_Students):
+    Name.append(input(f"Enter Name of the Student({i+1}): "))
+    Roll.append(int(input(f"Enter Roll of the Student({i+1}): ")))
+    Marks.append(int(input(f"Enter Marks of the Student({i+1}): ")))
+Student_Dictionary=zip(Name,Roll,Marks)
+Student_Dictionary=set(Student_Dictionary)
+print("The details of the Student in form{'Name',Roll,Marks}(Zipped Result):")
+print(Student_Dictionary)#Zipped Result
+name,roll,marks=zip(*Student_Dictionary)
+print(f"The unzipped result is:\n {name}\n{roll}\n{marks}\n",end="")#Unzipped Result
+for n,r in zip(Name,Roll):
+    print(f"Student:{n} Roll:{r}")#Application
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+'''Number=int(input("Enter Number to get Square/Cube: "))
+square=lambda Number:Number**2
+cube=lambda Number:Number**3
+print(square(Number))
+print(cube(Number))'''#Basic level lambda application
+'''def cube(num):
+    return num**3
+Num_list=[]
+Num_list2=[]
+last_range=int(input("Last range: "))
+for i in range(1,last_range+1):
+    Num_list.insert(i,i)
+for i in range(2,last_range+2):
+    Num_list2.insert(i,i)
+print(f"The list 1: {Num_list}")
+print(f"The list 2: {Num_list2}")
+print("Cube list without using lambda:")
+result=map(cube,Num_list)
+print(list(result))
+print("The summation result of two list using lambda:")
+sum_result=map(lambda x,y:x+y,Num_list,Num_list2)
+print(list(sum_result))
+print("The lambda functioned list in cube:")
+num_tuple=tuple(Num_list)
+cube_result=map(lambda x:x**3,num_tuple)
+print(tuple(cube_result))'''#Secondary level lambda and map function application
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+#Create a class called Complex having two attributes-real and imagine.
+class Complex:
+    def __init__(self,real,imagine):
+        self.real=real
+        self.imagine=imagine
+    def displaymodulus(m,n):
+        Modulo_result=((m**2+n**2)**(1/2))
+        return Modulo_result
+    def show(self):
+        print(f"The Complex Number in the Proper Format is:{self.real}+{self.imagine}i")
+    def add(self1,self2):
+        a_x=(self1.real+self2.real)
+        a_y=(self1.imagine+self2.imagine)
+        print(f"Addition of two complex instances:{str(self1.real+self2.real)}+{str(self1.imagine+self2.imagine)}i.")
+        print(f"The Modulus result of the Summation:{Complex.displaymodulus(a_x,a_y)}")
+    def sub(self1,self2):
+        s_x=(self2.real - self1.real)
+        s_y=(self2.imagine - self1.imagine)
+        print(f"Subtraction of two complex instances:{str(self2.real - self1.real)}+{str(self2.imagine - self1.imagine)}i.")
+        print(f"The Modulus result of the Subtraction:{Complex.displaymodulus(s_x,s_y)}")
+Real1=int(input("Enter real Part 1:"))
+Imaginary1=int(input("Enter Imaginary Part 1:"))
+Real2=int(input("Enter real Part 2:"))
+Imaginary2=int(input("Enter Imaginary Part 2:"))
+Complex1=Complex(Real1,Imaginary1)
+Complex1.show()
+Complex2=Complex(Real2,Imaginary2)
+Complex2.show()
+print("Calling Add:")
+Complex1.add(Complex2)
+print("Calling Sub:")
+Complex2.sub(Complex1)
+------------------------------------------------------------------------------------------------------------------------------------------------

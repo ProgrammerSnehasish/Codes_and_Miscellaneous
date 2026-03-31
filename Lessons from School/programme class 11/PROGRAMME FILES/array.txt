@@ -1,0 +1,477 @@
+//WAP to get average of some data
+#include<stdio.h>
+int main()
+{
+int ar[100],i,n,avg,s=0,j;
+printf("Enetr numbers of elements");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+printf("Enter element-%d=",i+1);
+scanf("%d",&ar[i]);
+}
+for(j=0;j<n;j++)
+{
+s=s+ar[j];
+}
+avg=s/n;
+printf("avg----%d",avg);
+}
+-----------------------------------------------------------------------------------------------------------
+//WAP to accept n numbers in arrya and print odd and even elements saparately.
+#include<stdio.h>
+int main()
+{
+int ar[100],n,i;
+printf("Enetr number of elements");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+printf("Array Elements");
+scanf("%d",&ar[i]);
+}
+printf("Even elements are");
+for(i=0;i<n;i++)
+{
+if(ar[i]%2==0)
+printf("%d\t",ar[i]);
+}
+printf("Odd Elements are");
+for(i=0;i<n;i++)
+{
+if(ar[i]%2!=0)
+printf("%d\t",ar[i]);
+}
+}
+-----------------------------------------------------------------------------------------------------------
+//Accept two arrays from users and stroe them in another array.
+#include<stdio.h>
+int main()
+{
+int a[100],b[100],c[100],i,index=0,n1,n2,n;
+printf("Enter the no of elements of first array");
+scanf("%d",&n1);
+for(i=0;i<n1;i++)
+{
+scanf("%d",&a[i]);
+}
+printf("Enter the no of elements second arrays");
+scanf("%d",&n2);
+for(i=0;i<n2;i++)
+{
+scanf("%d",&b[i]);
+}
+for(i=0;i<n1;i++)
+{
+c[index++]=a[i];
+}
+for(i=0;i<n2;i++)
+{
+c[index++]=b[i];
+}
+printf("Array elements in new array");
+for(i=0;i<n1+n2;i++)
+{
+printf("%d",c[i]);
+}
+}
+-----------------------------------------------------------------------------------------------------------
+//WAP to print the prime number from array.
+#include<stdio.h>
+int main()
+{
+int a[100],i,n,x,c,j;
+printf("number of array elements");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+printf("Enter array elements");
+scanf("%d",&a[i]);
+}
+for(i=0;i<n;i++)
+{
+x=a[i];
+c=0;
+for(j=1;j<=x;j++)
+{
+if(x%j==0)
+{
+c=c+1;
+}
+}
+if(c==2)
+printf("%d",a[i]);
+}
+}
+-----------------------------------------------------------------------------------------------------------
+//maximum number
+#include<stdio.h>
+int main()
+{
+int ar[100],i,n,max;
+printf("Enetr numbers of elements");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+printf("Enter element-%d=",i+1);
+scanf("%d",&ar[i]);
+}
+for(i=0;i<n;i++)
+{
+max=ar[0];
+if(ar[i]>max)
+printf("%d is maximum",ar[i]);
+{
+if(max>ar[i])
+printf("%d is maximum",max);
+}
+}
+}
+-----------------------------------------------------------------------------------------------------------
+//minimum number
+#include<stdio.h>
+int main()
+{
+int ar[100],i,n,min;
+printf("Enetr numbers of elements");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+printf("Enter element-%d=",i+1);
+scanf("%d",&ar[i]);
+}
+for(i=0;i<n;i++)
+{
+min=ar[0];
+if(ar[i]<min)
+printf("%d is minimum",ar[i]);
+{
+if(min<ar[i])
+printf("%d is minimum",min);
+}
+}
+}
+-----------------------------------------------------------------------------------------------------------
+//decimal to binary.
+#include<stdio.h>
+int main()
+{
+int n,ar[100],index=1,d,i;
+printf("Enter a number");
+scanf("%d",&n);
+while(n>0)
+{
+d=n%2;
+ar[index++]=d;
+n=n/2;
+}
+printf("Number in Binary\n");
+for(i=index;i>=0;i--)
+{
+printf("%d",ar[i]);
+}
+}
+-----------------------------------------------------------------------------------------------------------
+//binary to decimal.
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+int n,ar[100],index=1,d,i,s=0;
+printf("Enter Binary digits");
+scanf("%d",&n);
+i=0;
+while(n>0)
+{
+d=n%10;
+s=s+pow(d,i);
+n=n/10;
+}
+printf("Number in decimal=%d",s);
+}
+-----------------------------------------------------------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+int n,i,ar[200],j,avg,s=0;
+printf("Enter no of Array Elements",n);
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+printf("Enter Array element %d =",i+1);
+scanf("%d",&ar[i]);
+}
+for(j=0;j<n;j++)
+{
+s=s+ar[j];
+}
+avg=s/n;
+printf("Average of total marks obtained by students=%d",avg);
+}
+-----------------------------------------------------------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+int a[100],b[100],c[100],ar[100],n,i,x=0,y=0,index=0;
+printf("enter no of array elements");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+printf("Enter array element %d=",i+1);
+scanf("%d",&a[i]);
+}
+for(i=0;i<n;i++)
+{
+if(a[i]%2==0)
+b[x++]=a[i];
+}
+for(i=0;i<n;i++)
+{
+if(a[i]%2!=0)
+c[y++]=a[i];
+}
+for(i=0;i<x;i++)
+{
+ar[index++]=b[i];
+}
+for(i=0;i<y;i++)
+{
+ar[index++]=c[i];
+}
+for(i=0;i<x+y;i++)
+{
+printf("%d",ar[i]);
+}
+}
+-----------------------------------------------------------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+int ar[100],index=0,i,n,j,c,y,z;
+printf("Enter a number");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+if(n%1==0)
+ar[index++]=i;
+}
+for(j=0;j<index;j++)
+{
+y=ar[j];
+c=0;
+}
+for(z=1;z<y;z++)
+{
+if(y%z==0)
+c++;
+}
+if(c==2)
+printf("%d",ar[j]);
+}
+-----------------------------------------------------------------------------------------------------------
+//Fascinating Number.
+#include<stdio.h>
+int main()
+{
+int n,p1,p2,p3,ar[100],c=0,d,x=0,i,j,fl=0;
+printf("Enter a number");
+scanf("%d",&n);
+p1=n*1;
+p2=n*2;
+p3=n*3;
+while(p1>0)
+{
+d=n%10;
+ar[x++]=d;
+p1=p1/10;
+c++;
+}
+while(p2>0)
+{
+d=n%10;
+ar[x++]=d;
+p2=p2/10;
+c++;
+}while(p3>0)
+{
+d=n%10;
+ar[x++]=d;
+p3=p3/10;
+c++;
+}
+for(i=0;i<9;i++)
+{
+for(j=i+1;j<9;j++)
+{
+if(ar[i]==ar[j])
+{
+fl=1;
+break;
+}
+}
+}
+if(fl==0 && c==9)
+printf("Fascinating Number");
+else
+printf("Not a Fascinating Number");
+}
+==============================================================================================================
+//Accept an array & print the duplicate numbers.
+#include<stdio.h>
+int main()
+{
+int ar[]={1,2,3,5,5,6,7,7,8,9,9};
+int i,j;
+for(i-0;i<11;i++)
+{
+for(j=i+1;j<11;j++)
+{
+if(ar[i]==ar[j])
+printf("%d",ar[j]);
+}
+}
+}
+-------------------------------------------------------------------------------------------------------------
+// WAP to accept two arrays and swap them.
+#include<stdio.h>
+int main()
+{
+int i,a[100],b[100],c[100];
+for(i=0;i<5;i++)
+{
+scanf("%d",&a[i]);
+}
+for(i=0;i<5;i++)
+{
+scanf("%d",&b[i]);
+}
+for(i=0;i<5;i++)
+{
+c[i]=a[i];
+a[i]=b[i];
+b[i]=c[i];
+}
+for(i=0;i<5;i++)
+{
+printf("%d",a[i]);
+}
+for(i=0;i<5;i++)
+{
+printf("%d",b[i]);
+}
+}
+------------------------------------------------------------------------------------------------------------
+/* Accept 10 numbers in an array & store positive numbers
+& negative number in another array, Positive numbers follows by neagative number.*/
+------------------------------------------------------------------
+// Print factorials of numbers.
+#include<stdio.h>
+int main()
+{
+int ar[100],n,i,f,j,t;
+printf("Enter number of arrya elements");
+scanf("%d",&n);
+for(i=0;i<=n;i++)
+{
+printf("Array element %d---->",i+1);
+scanf("%d",&ar[i]);
+}
+for(i=0;i<=n;i++)
+{
+t=ar[i];
+f=1;
+for(j=1;j<=t;j++)
+{
+f=f*j;
+}
+printf("Factorials are %d\n",f);
+}
+------------------------------------------------------------
+// WAP to accept sum elements in array and also accept a number from user and check it is present in array or not by using linear search method.
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+int ar[100],i,n,f=0,p,ele;
+printf("Enter no of array elements");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+printf("Element %d=",i+1);
+scanf("%d",&ar[i]);
+}
+printf("Enter a number to be searched\n");
+scanf("%d",&ele);
+for(i=0;i<n;i++)
+{
+if(ar[i]==ele)
+{
+f=1;
+p=i;
+break;
+}
+}
+if(f==1)
+printf("Element found at positon %d",p+1);
+else
+printf("Element not found");
+}
+-----------------------------------------------------------------
+//binary search
+#include<stdio.h>
+int main()
+{
+int m[100],k=0,p=0,ns,lb=0,i,n;
+printf("Enter no of elements");
+scanf("%d",&n);
+int ub=n-1;
+for(i=0;i<n;i++)
+{
+scanf("%d",&m[i]);
+}
+printf("enter a number to search\n");
+scanf("%d",&ns);
+while(lb<=ub)
+{
+p=(lb+ub)/2;
+if(m[p]<ns)
+lb=p+1;
+if(m[p]>ns)
+ub=p-1;
+if(m[p]==ns)
+{
+k=1;
+break;
+}
+}
+if(k==1)
+printf("Element found");
+else
+printf("Not found");
+}
+-----------------------------------------------------------------
+//selection sort technique.
+#include<stdio.h>
+int main()
+{
+int m[10],i,j,t,min;
+for(i=0;i<10;i++)
+{
+scanf("%d",&m[i]);
+}
+for(i=0;i<9;i++)
+{
+min=i;
+for(j=i+1;j<10;j++)
+{
+if(m[j]<m[min])
+min=j;
+}
+t=m[i];
+m[i]=m[min];
+m[min]=t;
+}
+printf("The sorted array\n");
+for(i=0;i<10;i++)
+printf("%d ",m[i]);
+}

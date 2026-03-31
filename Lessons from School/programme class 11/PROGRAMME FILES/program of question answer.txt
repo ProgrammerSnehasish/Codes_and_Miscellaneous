@@ -1,0 +1,535 @@
+         sheet -1>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//2> Wap to store two number in two variables and calculate their sum and display.
+#include<stdio.h>
+main()
+{
+	int a=0,b=0,c=0;
+	printf("enter the value of a and b");
+	scanf("%d%d",&a,&b);
+	c=a+b;
+	printf("sum of two numbers=%d",c);
+}
+-------------------------------------------------------------------------
+//3> Wap to store two number in two variables and calculate their sum and product and display.
+#include<stdio.h>
+main()
+{
+	int a,b,c,d;
+	printf("enter the value of a and b");
+	scanf("%d%d",&a,&b);
+	c=a+b;
+	d=a*b;
+	printf("sum of two numbers=%d\n",c);
+	printf("product of two numbers=%d",d);
+}
+----------------------------------------------------------------------------
+//4> Wap to store a time in hours,minutes and seconds,and convert it into seconds only
+#include<stdio.h>
+main()
+{
+	int H,M,S;
+	printf("enter the value of H,M,S");
+	scanf("%d%d%d",&H,&M,&S);
+	S=H*3600+M*60+S;
+	printf("time in second=%d\n",S);
+}
+--------------------------------------------------------------------
+//5> Wap to convert a distance from km,m,cm to cm only.
+#include<stdio.h>
+main()
+{
+	int km,m,cm ;
+	printf("enter the value of km,m,cm");
+	scanf("%d%d%d",&km,&m,&cm);
+	cm=km*100000+m*100+cm;
+	printf("distance in cm=%d\n",cm);
+}
+--------------------------------------------------------------
+//6> wap to convert a distance year ,month,days to days only
+#include<stdio.h>
+main()
+{
+	int y,m,d ;
+	printf("enter the value of y,m,d");
+	scanf("%d%d%d",&y,&m,&d);
+	d=y*365+m*30+d;
+	printf("time in date=%d\n",d);
+}
+------------------------------------------------------------
+//7> Wap to store the principle,rate,time.calculate the si and amount
+#include<stdio.h>
+main()
+{
+	int p,r,t,si,amt;
+	printf("enter the value of p,r,t");
+	scanf("%d%d%d",&p,&r,&t);
+	si=(p*r*t)/100;
+	amt=p+si;
+	printf("simple interest will be=%d\n",si);
+	printf("amt will be=%d",amt);
+}
+----------------------------------------------------------------
+//8> wap to store numbers in two variables .exchangeing or swap the value with the third variable 
+#include<stdio.h>
+main()
+{
+	int a=0,b=0,t;
+	printf("enter the value of a and b");
+	scanf("%d%d",&a,&b);
+	printf("before swaping a=%d b=%d",a,b);
+	t=a;
+	a=b;
+	b=t;
+	printf("\nafter swaping a=%d b=%d",a,b);
+}
+--------------------------------------------------------------------
+//9> exchange or swap the values of two variables with out using the third variable 
+#include<stdio.h>
+main()
+{
+	int a,b;
+	printf("enter the value of a and b");
+	scanf("%d%d",&a,&b);
+	printf("before swaping a=%d b=%d",a,b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+	printf("\n after swaping a=%d b=%d",a,b);
+}
+------------------------------------------------------------------------
+//11> wap to convert a temperature from celcius to farenheit.
+#include<stdio.h>
+main()
+{
+	float f=0,c=0;
+	printf("enter temp in celcius");
+	scanf("%f",&c);
+	f=(9.0*c/5)+32;
+	printf("temp in farenheit--->%f",f);
+}
+-----------------------------------------------------------
+//12> wap to convert farenheit to celcius 
+#include<stdio.h>
+main()
+{
+	float f=0,c=0;
+	printf("enter temp in farenheit");
+	scanf("%f",&f);
+	c=5.0/9*(f-32);
+	printf("temp in celcius--->%f",c);
+}
+------------------------------------------------------------------------------------------------
+/*17> wap to store two numbers and calcuat the five basic operations*/ 
+#include<stdio.h>
+main()
+{
+	int ch,a,b,c;
+	printf(" 1-addition\n 2-substraction\n 3-multiplication\n 4division\n 5percentage\n enter your option= ");
+	scanf("%d",&ch);
+	switch (ch)
+	{ 
+	case 1 :
+		printf("enter the value of a and b");
+		scanf("%d%d",&a,&b);
+		c=a+b;
+		printf("sum=%d",c);
+		break;
+		case 2 :
+			printf ("enter the value of a and b");
+			scanf("%d%d",&a,&b);
+			c=a-b;
+			printf("sub=%d",c);
+			break;
+			case3:
+				printf("enter the value of a and b");
+				scanf("%d%d",&a,&b);
+				c=a*b;
+				printf("multi=%d",c);
+				break;
+				case 4:
+					printf("enter the value of a and b");
+					scanf("%d%d",&a,&b);
+					c=a/b;
+					printf("div=%d",c);
+					break;
+					case 5:
+						printf("enter the value of a and b");
+						scanf("%d%d",&a,&b);
+						{
+							printf("enter your choice 1 percent of a by b \n 2 percent of b by a=");
+							scanf("%d",&ch);
+							case 6:
+							c=(a*100)/b;
+							printf("percentage=%d",c);
+							break;
+							case 7:
+							c=(b*100)/a;
+							printf("percentage=%d",c);
+						}
+						break;
+					default:
+						printf("invalid case");
+						
+	}
+}
+--------------------------------------------------------
+sheet 2>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+/*1> wap to calculate the library fine as per the following criteria
+first 5 days        rs2/day
+next 5 days         rs3/day
+above 10 days       rs4/day*/
+#include<stdio.h>
+int main()
+{
+	int d;
+	float f=0;
+	printf("enter number of days");
+	scanf("%d",&d);
+	if(d<=5)
+	f=d*0.4;
+	else if(d>5 && d<=10)
+	f=d*0.65;
+	else if (d>10)
+	f=d*0.80;
+	printf("fine will be=%f",f);
+}
+----------------------------------------------------------
+/*2. wap to store the unit asumed and calculate electric bill.
+first 100 unit                rs 4/ unit
+next 200 unit                 rs 5/ unit (excess 100 unit)
+above 300 unit                rs 6/ unit(excess 300 unit)*/
+#include<stdio.h>
+int main()
+{
+float u,amt=0,total=0;
+printf("enter the unit ");
+scanf("%f",&u);
+if(u<=100)
+amt=u*4;
+else if(u>100 && u<=200)
+amt=100*4+(u-100)*5;
+else if(u>300)
+amt=100*4+200*5+(u-300)*6;
+printf("unit consumed =%.2f",u);
+printf("amount to be paid=%.2f",amt);	
+}
+----------------------------------------------------------------
+/*3> wap to calculate the telephone bill according to the following critaria
+first 200 unit         free calls
+next100 unit            2/ unit
+next 200 unit           3/ unit
+above 500 unit          4/ unit*/
+#include<stdio.h>
+int main()
+{
+float u,amt=0,total=0;
+printf("enter the unit ");
+scanf("%f",&u);
+if(u<=200)
+amt=u*0;
+else if(u>200 && u<=300)
+amt=(u-200)*2;
+else if(u>300 && u<=500)
+amt=200*0+100*2+(u-300)*3;
+else if(u>500)
+amt=200*0+100*2+200*3+(u-500)*4;
+printf("unit consumed =%.2f",u);
+printf("amount to be paid=%.2f",amt);
+}
+---------------------------------------------------------------------
+/*4> wap to store a yearly income of a person .calculate the income tax as per the folling criteria
+                                       tax
+upto rs 250000                         nil
+above rs 250000,<=500000               10% excess 250000
+above rs 500000,<=1000000              20% excess 500000
+above rs 1000000                       30% excess 1000000*/
+#include<stdio.h>
+int main()
+{
+	float u,amt=0,total=0;
+printf("enter your salary");
+scanf("%f",&u);
+if (u<=250000)
+amt =u*0;
+else if (u>250000 && u<=500000)
+amt =(u*10)/100;
+else if(u>500000 && u<=1000000)
+amt =(u*20)/100;
+else if (u>1000000)
+amt =(u*30)/100;
+printf(" salary consumed =%.2f",u);
+printf("amount to be paid=%.2f",amt);
+} 
+------------------------------------------------------------------------
+/*5> wap tp intialize the day number and display the corresponding name of the days*/
+#include<stdio.h>
+int main()                                                                  
+{                                                                          
+	int d;
+	printf("enter the number of days");
+	scanf("%d",d);
+	if (d=1)
+    printf("its sunday",d);
+	else if (d=2)
+	printf("its monday",d);
+	else if (d=3)
+	printf("its tuesday",d);
+	else if (d=4)
+	printf("its wednesday",d);
+	else if (d=5)
+	printf("its thursday",d);
+	else if (d=6)
+	printf("its friday",d);
+	else if (d=7)
+	printf("its saturday",d);
+	else
+	printf("invalid case");
+ }                                                      ( * jani na hoe6e kina*)
+----------------------------------------------------------------------------------
+//7> wap to store temprature and choice ,if choice=1,convert the temperature from celcius to farenhiet.if choice =2 ,convert from farenhite tp celcius
+#include<stdio.h>
+int main()
+{
+	float f=0,c=0;
+	int ch;
+	
+	printf("enter your choice 1 celcius to farenhiet or 2 farenhite tp celcius");
+	scanf("%d",&ch);
+	switch(ch)
+	{
+	case 1:
+		printf("enter temp in celcius");
+	scanf("%f",&c);
+	f=(9.0*c/5)+32;
+	printf("temp in farenheit--->%f",f);
+	break;
+	case 2:
+		printf("enter temp in farenheit");
+	scanf("%f",&f);
+	c=5.0/9*(f-32);
+	printf("temp in celcius--->%f",c);
+	break;
+		default:
+		printf("invalid choice");
+	}
+}	
+------------------------------------------------------------------------------------------------------------
+//31> wap to store three sides of a traingle and check whether the construction oftraingle is possible or not
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("enter three sides");
+	scanf("%d%d%d",&a,&b,&c);
+	if(a+b>c && b+c>a && c+a>b)
+	printf("\n traingle formation possible");
+}
+------------------------------------------------------------------
+/*32> wap to store three sides of a traingle .check whether it is equilateral,iso-sceles,scalene traingle*/
+#include<stdio.h>
+int main()
+{int a,b,c;
+printf("enter 3 sides of the traingle =");
+scanf("%d%d%d ",&a,&b,&c);
+if(a+b>c && b+c>a && c+a>b)
+{
+if(a==b && b==c&&c==a)
+printf("\nequilatral traingle");
+else if (a==b||b==c||c==a)
+printf("\n iso-sceles traingle");
+else if(a!=b&&b!=c&&c!=a)
+printf("\n scalene traingle");
+}
+else
+{
+	printf ("traingle formation not possible");
+	
+}
+}                                                                 (*aktu disturb kor6e*)
+-------------------------------------------------------------------------------------------
+/*33> wap to store marks in three different subjects.calculate the grade .calculation depending on the following criteria
+avg>=80,avg<=100----A
+avg>=60,avg<80-------B
+avg>=40,avg<=60------C
+avg<40     ----------D*/
+#include<stdio.h>
+int main()
+{
+	int av,total;
+		float avg;
+	printf("enter your marks");
+	scanf("%d",&av);
+	printf("enter your total marks ");
+	scanf("%d",&total);
+	avg=(av*100)/total;
+	if(avg>=80 && avg<=100)
+	printf("grade A");
+	else if(avg>=60 && avg<80)
+	printf("grade B");
+	else if(avg>=40,avg<=60)
+	printf("grade C");
+	else if (avg<40)
+	printf("grade D");
+}
+----------------------------------------------------------
+/*34> wap to store the basic salary of a employe.calculate his net pay and gross pay according to the given condition
+basic =15000
+da=40%of basic
+hra=25%of basic
+gross=basic+hra+da
+pf=8.33 of basic
+net=gross-pf*/
+#include<stdio.h>
+int main()
+{
+	 int ba,da,hra,pf,gross,net;
+    ba=15000;
+	da=ba*40/100;
+	hra=ba*25/100;
+	pf=ba*8.33;
+	gross=ba+da+hra;
+	net=gross-pf;
+	printf("gross salary =%d\n",gross);
+	printf("net salary =%d",net);
+ }
+-----------------------------------------------------------------------
+1> s=a^2+a^2/2+a^2/3+......+a^2/10
+2>s=a+a^2/2+a^3/3+a^4/4+....+a^10/10
+3>s=(a*2)+(a*3)+.....+(a*10)
+4>s=a+a^2+a^3+...a^n
+5>s=x/2+x/5+x/8+x/11+....x/20
+-------------------------------------------------------
+ //1> s=a^2+a^2/2+a^2/3+......+a^2/10
+ #include<stdio.h>
+ #include<math.h>
+ int main()
+ {
+ 	int i,a,s;
+ 	printf("enter the value of a");
+ 	scanf("%d",&a);
+ 	for(i=1;i<=10;i++)
+ 	{
+ 		s=s+((a*a)/i);
+	 }
+	 printf("sum=%d",s);
+ }
+-------------------------------------------------------------------------
+//2>s=a+a^2/2+a^3/3+a^4/4+....+a^10/10
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float s=0,k=0;
+	int a,i;
+	printf("Enter the value of a");
+	scanf("%d",&a);
+	for(i=1;i<=10;i++)
+	{
+		k=pow(a,i);
+		s=s+(k/i);
+	}
+	printf("sum is %d",s);
+}
+--------------------------------------------------
+ //3>s=(a*2)+(a*3)+.....+(a*10)
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float s=0;
+	int a,i;
+	printf("Enter the value of a");
+	scanf("%d",&a);
+	for (i=2;i<=10;i++)
+	{
+		s=s+(a*i);
+	}
+	printf("sum is %d",&s);
+}
+------------------------------------------------
+//4>s=a+a^2+a^3+...a^n
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float s=0,k=0;
+	int a,i,n;
+	printf("Enter the value of a and n");
+	scanf("%d%d",&a,&n);
+	for(i=1;i<=n;i++)
+	{
+	k=pow(a,i);
+    	s=s+a;
+	}
+	printf("sum is %d",&s);
+}
+-------------------------------------------------------
+//5>s=x/2+x/5+x/8+x/11+....+x/20
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float s=0;
+	int x,i;
+	printf("Enter the value of x");
+	scanf("%d",&x);
+	for (i=2;i<=20;i=i+3)
+	{
+		s=s+(x/i);
+	}
+	printf("sum is %d",&s);
+}
+---------------------------------------------------------
+s=1!+2!+3!+4!+...n!
+#include<stdio.h>
+int main()
+{
+	int n,i,f,j,s=0;
+	printf("Enter a number");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		f=1;
+		for(j=1;j<=i;j++)
+		{
+			f=f*j;
+		}
+		s=s+f;
+	}
+	printf("%d",s);
+}
+-------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

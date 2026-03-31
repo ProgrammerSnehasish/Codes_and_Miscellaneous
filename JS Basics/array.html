@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="randomEle()">Click</button>
+    <p id="randomElement"></p>
+    <script>
+        // function randomEle(){
+        //     const arr = ["a","b","c","d","e","f"];
+        //     let index = parseInt(Math.random()*arr.length)
+        //     document.getElementById("randomElement").innerText = arr[index];
+        // }
+        // function isEven(n) {
+        //     return n%2 == 0;
+        // }
+        // const isEven = (n) => {
+        //     return n%2 == 0;
+        // }
+        // const isEven = (n) => n%2 == 0;
+        
+        let a = Array()
+        for(let i=1; i<=10; i++)
+            a.push(i+10)
+        console.log(a)
+        // console.log(a.filter((n) => n%2 == 0))
+        /*console.log(a.filter((n, index, arr) => {
+            arr[index] = arr[index]+1;
+            console.log(arr);
+            return n%2 == 0
+        }))*/
+        /*console.log(a.map((n)=>{
+            let num = n%2;
+            return num;
+        }));*/
+        console.log(a.filter((n)=>{
+            let i;
+            for(i=2;i<n;i++){
+                if(n%i == 0)
+                return false;
+            }
+            return i;
+        }))
+        console.log(a.reverse(a));//Reverse array.
+        console.log(a.find((n)=>20));//find.
+        console.log(a.includes(18))//To search element.
+        console.log(a.indexOf(16));//To get index of an element in the array.
+        console.log(a.unshift(1));//shows the first element.
+        //console.log(a.)
+    </script>
+</body>
+</html>

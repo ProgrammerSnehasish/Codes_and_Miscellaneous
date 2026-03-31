@@ -1,0 +1,560 @@
+---------------------------------------------------------------------------------------------------------
+/*** creating all in one//*/
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,a,b,c,r,h;
+         float ce;
+public:
+void acc()
+{
+cout<<"Enter your choice\n 1-Additon\t 2-Subtraction\n 3-Multiplocation\t 4-Division\n 5-Area of circle\t 6-Area of a square\n 7-area of an rectangle\t 8-Volume of a quib\n 9-Volume of a rectangular\t";
+cin>>n;
+}
+void cal()
+{
+switch(n)
+{
+case 1:
+{
+cout<<"Enter two numbers";
+cin>>a>>b;
+c=a+b;
+cout<<"Addition = "<<c;
+}
+break;
+case 2:
+{
+cout<<"Enter two numbers";
+cin>>a>>b;
+c=a-b;
+cout<<"Subtarction = "<<c;
+}
+break;
+case 3:
+{
+cout<<"Enter two numbers";
+cin>>a>>b;
+c=a*b;
+cout<<"Multiplication = "<<c;
+}
+break;
+case 4:
+{
+cout<<"Enter two numbers";
+cin>>a>>b;
+ce=a/b;
+cout<<"Division = "<<ce;	
+} 
+break;
+case 5:
+{
+cout<<"Enter radius";
+cin>>r;
+c=3.14*r*r;
+cout<<"AREA of circle = "<<c;
+}
+case 6:
+{
+cout<<"Enter a side";
+cin>>a;
+c=a*a;
+cout<<"Area of a square = "<<c;
+}
+break;
+case 7:
+{
+cout<<"Enter length and breath";
+cin>>a>>b;
+c=a*b;
+cout<<"Area of a rectangle = "<<c;
+}
+break;
+case 8:
+{
+cout<<"Enter a side";
+cin>>a;
+c=a*a*a;
+cout<<"Volume of the quib = "<<c;
+}
+break;
+case 9:
+{
+cout<<"Enter length,breath & height";
+cin>>a>>b>>h;
+c=a*b*h;
+cout<<"Volume of the rectangular shaped fig.. = "<<c;
+}
+}
+}
+void display()
+{
+}		
+};
+int main()
+{
+oper obj;
+obj.acc(); 
+obj.cal();
+obj.display();
+}
+
+//WAP to store first 5 armstrong number in array.
+#include<stdio.h>
+int main()
+{
+int ar[10],i;
+int n=1,ch=0;
+while(ch<5)
+{
+int d=0,s=0,t=n;
+while(t>0)
+{
+d=t%10;
+s=s+(d*d*d);
+t=t/10;
+}
+if(s==n)
+{
+ar[ch++]=n;
+}
+n++;
+}
+for(int i=0;i<ch;i++)
+{
+printf("%d",a[i]);
+}
+}
+-----------------------------------------------------------------
+//Wap to store 10 element in arrya and find out maximum and minimum numbers for array along with their positions.
+#include<stdio.h>
+{
+int i,ar[10];
+printf("Enter array elements");
+for(i=0;i<10;i++)
+{
+scanf("%d",&ar[i]);
+}
+max=ar[0];
+min=ar[0];
+for(i=0;i<10;i++)
+{
+if(ar[i]>max)
+{
+max=ar[i];
+mp=i;
+}
+if(ar[i]<min)
+{
+min=ar[i];
+lp=i;
+}
+}
+printf("maximum=%d,position=%d\n",max,mp+1);
+printf("minimum=%d,position=%d\n",min,lp+1);
+}
+-----------------------------------------------------------------
+// Wap a Programme of the series 1+11+111+1111+.....+n,taking user input  as limit.
+#include<stdio.h>
+int main()
+{
+int n,sum=0,j=1,;
+printf("Enter your range");
+scanf("%d",&n);
+for(int i=1;i<=n;i++)
+{
+sum=sum+j;
+j=(j*10)+1;
+}
+printf("%d",sum);
+}
+-----------------------------------------------------------------
+/*
+11111
+11122
+11333
+14444
+55555
+*/
+#include<stdio.h>
+int main()
+{
+int i,j,k,n;
+printf("enter a range");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+for(j=n-1;j>=i;j--)
+{
+printf("1 ");
+}
+for(k=1;k<=i;k++)
+{
+printf("%d ",i);
+}
+printf("\n");
+}
+}
+-----------------------------------------------------------------
+//WAP to cal calculate (1)+(1+2)+(1+2+3)+.....+n
+#include<stdio.h>
+int main()
+{
+int n,i,s=0,j,k=0;
+printf("Enetr your range");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+k=0;
+for(j=1;j<=i;j++)
+{
+k=k+j;
+}
+s=s+k;
+}
+printf("%d",s);
+}
+-----------------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+int n,i,f,j,s=0;
+printf("Enter your range");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+f=1;
+for(j=1;j<=i;j++)
+{
+f=f*j;
+}
+s=s+f;
+}
+printf("%d",s);
+}
+-----------------------------------------------------------------
+23/06/2021
+// WAP to accept 2 numbers from user in binary format and find their sum in binary form.
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+int a,b,s1=0,i1=0,i2=0,s2=0,d1,d2,sum=0,ar[100],index=0,d3,i3;
+printf("Enter two numbers(binary)");
+scanf("%d%d",&a,&b);
+while(a>0)
+{
+d1=a%10;
+s1=s1+pow(d1,i1);
+a=a/10;
+}
+while(b>0)
+{
+d2=b%10;
+s2=s2+pow(d2,i2);
+b=b/10;
+}
+sum=s1+s2;
+printf("Sum of decimal terms=%d\n",sum);
+while(sum>0)
+{
+d3=sum%2;
+ar[index++]=d3;
+sum=sum/2;
+}
+printf("Number in Binary");
+printf("\n");
+for(i3=index-1;i3>=0;i3--)
+{
+printf("Sum in binary=%d",ar[i3]);
+}
+}
+-----------------------------------------------------------------
+// WAP to accept some elements in array and also accept a number from user and check it is present in array or not by using linear search method.
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+int ar[100],i,n,f=0,p,ele;
+printf("Enter no of array elements");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+printf("Element %d=",i+1);
+scanf("%d",&ar[i]);
+}
+printf("Enter a number to be searched\n");
+scanf("%d",&ele);
+for(i=0;i<n;i++)
+{
+if(ar[i]==ele)
+{
+f=1;
+p=i;
+break;
+}
+}
+if(f==1)
+printf("Element found at positon %d",p+1);
+else
+printf("Element not found");
+}
+-----------------------------------------------------------------
+//binary search
+#include<stdio.h>
+int main()
+{
+int m[100],k=0,p=0,ns,lb=0,i,n;
+printf("Enter no of elements");
+scanf("%d",&n);
+int ub=n-1;
+for(i=0;i<n;i++)
+{
+scanf("%d",&m[i]);
+}
+printf("enter a number to search\n");
+scanf("%d",&ns);
+while(lb<=ub)
+{
+p=(lb+ub)/2;
+if(m[p]<ns)
+lb=p+1;
+if(m[p]>ns)
+ub=p-1;
+if(m[p]==ns)
+{
+k=1;
+break;
+}
+}
+if(k==1)
+printf("Element found");
+else
+printf("Not found");
+}
+-----------------------------------------------------------------
+//selection sort technique.
+#include<stdio.h>
+int main()
+{
+int m[10],i,j,t,min;
+for(i=0;i<10;i++)
+{
+scanf("%d",&m[i]);
+}
+for(i=0;i<9;i++)
+{
+min=i;
+for(j=i+1;j<10;j++)
+{
+if(m[j]<m[min])
+min=j;
+}
+t=m[i];
+m[i]=m[min];
+m[min]=t;
+}
+printf("The sorted array\n");
+for(i=0;i<10;i++)
+printf("%d ",m[i]);
+}
+-----------------------------------------------------------------
+//1,2,5,12,29,70...(pell series)  a+2*b
+#include<stdio.h>
+int main()
+{
+int a=1,b=2,c=0,i,n,s=0;
+printf("Enter the range");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+printf("%d ",a);
+s=a+2*b;
+a=b;
+b=c;
+}
+}
+-----------------------------------------------------------------
+// accept a number from user and print the each digit in desending order without using array.
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+int i,j,n,s=0,c=0,d;
+printf("enter a number");
+scanf("%d",&n);
+for(i=9;i>=0;i--)
+{
+j=n;
+while(j>0)
+{
+d=j%10;
+if(d==i)
+s=s+d*pow(10,c++);
+j=j/10;
+}
+}
+printf("New number %d",s);
+}
+---------------------------------------------------------
+// WAP to accept from user and print the maximum and minimum digits.(without using array)
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+int i,d,max=0,min=0;
+int n;
+printf("Enter a number\n");
+sacnf("%d",&n);
+for(i=n;i>0;i/=10)
+{
+d=i%10;
+if(max==0)
+max=d;
+if(min==0)
+min=d;
+if(d>max)
+max=d;
+if(d<min)
+min=d;
+}
+printf("max number=%d\n",max);
+printf("min number=%d",min);
+} 
+-----------------------------------------------------------------
+/*
+9 6 24 3 11 45 2 15
+
+6 9 24 3 11 45 2 15
+
+6 9 3 24 11 45 2 15
+
+6 9 3 11 24 45 2 15
+
+6 9 3 11 24 45 2 15
+
+6 9 3 11 24 2 45 15      45
+
+6 9 3 11 24 2 15
+
+6 3 9 11 24 2 15
+
+6 3 9 11 2 24 15
+
+6 3 9 11 2 15            24
+
+.......................
+
+*/
+// Bubble short.
+#include<stdio.h>
+int main()
+{
+int i,j,t;
+int m[5];
+printf("Enter Array Element\n");
+for(i=0;i<5;i++)
+{
+scanf("%d",&m[i]);
+}
+for(i=0;i<4;i++)
+{
+for(j=0;j<(4-i);j++)
+{
+if(m[j]>m[j+1])
+{
+t=m[j];
+m[j]=m[j+1];
+m[j+1]=t;
+}
+}
+}
+printf("New Array\n");
+for(i=0;i<5;i++)
+{
+printf("%d",m[i]);
+}
+}
+---------------------------------------------------------------
+// accept a n*n matrix and find out, sum of each row and column.
+
+#include<stdio.h>
+int main()
+{
+	int i,j,r,c;
+	int m[3][3];
+	printf("enter array elements\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			scanf("%d",&m[i][j]);
+		}
+	}
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("%d ",m[i][j]);
+		}
+		printf("\n");
+	}
+	printf("sum of each rows\n");
+	for(i=0;i<3;i++)
+	{
+		r=0;
+		for(j=0;j<3;j++)
+		{
+			r=r+m[i][j];
+		}
+		printf("sum of row %d=%d\n",i+1,r);
+	}
+     printf("sum of each col\n");
+	for(i=0;i<3;i++)
+	{
+		c=0;
+		for(j=0;j<3;j++)
+		{
+			c=c+m[j][i];
+		}
+		printf("sum of col %d=%d\n",i+1,c);
+	}
+    
+}
+--------------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+	int i,j,r,c;
+	int m[3][3];
+	printf("enter array elements\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			scanf("%d",&m[i][j]);
+		}
+	}
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("%d ",m[i][j]);
+		}
+		printf("\n");
+	}
+for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			if(m[i][j]!=m[j][i])
+                        f=1;
+		}
+	}
+if(f==0)
+printf("Symetric");
+else
+printf("non");
+}
+--------------------------------------------------------------
+left diagonal right diagonal sum.

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="bulb" style="border-radius: 50%; height: 300px; width: 300px; border: 1px; background-color: black;">
+
+    </div>
+    <button onclick="switchBulb()">switch</button>
+    <script>
+        var off = true;
+        function switchBulb()
+        {
+            let bulb = document.getElementById("bulb")
+            if(off) {
+                bulb.style.backgroundColor = "yellow";
+                off = false;
+            }
+            else {
+                bulb.style.backgroundColor = "black";
+                off = true;
+            }
+        }
+    </script>
+</body>
+</html>

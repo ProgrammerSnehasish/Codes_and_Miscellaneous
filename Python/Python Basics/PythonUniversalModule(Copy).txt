@@ -1,0 +1,148 @@
+def firstplace_of_number(number):
+    temporary=number
+    while number>=10:
+        number=number//10
+    return f"The first place of the given number {temporary} is = {number}"#function to find first place of number
+def count_no_of_digits(number):
+    count=0
+    while number!=0:
+        rem=number%10
+        num=number//10
+        count=count+1
+    return count#function to count number of digits.
+def isodd_or_even(number):
+    if number%2==0:
+        return f"The given number {number} is Even."
+    else:
+        return f"The given number {number} is Odd." #function to check Odd or Even
+def greaterofthree(number1,number2,number3):
+    if number1>number2 and number1>number3:
+        return number1
+    elif number2>number1 and number2>number3:
+        return number2
+    elif number1==number2 and number2==number3:
+        return "All are equal."
+    else:
+        return number3#Function to check greater of three numbers.
+def ispalindrome(number):
+    sum=0
+    temp=number
+    while number>0:
+        d=number%10
+        sum=sum*10+d
+        number=number//10
+    if sum==temp:
+        return f"The given Number {temp} is Palindrome number."
+    else:
+        return f"The given Number {temp} is not Palindrome number."#Function to check palindrome number.
+def add(number1,number2):
+    summation=number1+number2
+    return summation #function for Summation
+def sub(number1,number2):
+    subtraction=number1-number2
+    return subtraction #function for Subtraction
+def mult(number1,number2):
+    multiplication=number1*number2
+    return multiplication #functions for Multiplication
+def int_div(number1,number2):
+    integer_division=number1//number2
+    return integer_division #function for Integer Division
+def float_div(number1,number2):
+    float_division = number1/number2
+    return float_division #function for Float Division
+def exp(number1,number2):
+    exponential = number1**number2
+    return exponential #function for Exponential
+def mod_div(number1,number2):
+    modulo_division = number1%number2
+    return modulo_division #function for Modulo Division
+def avg():
+    summation =0
+    arr = []
+    ele_num = int(input("Enter total number of elements you want to add:"))
+    for i in range(0, ele_num):
+        ele = int(input("Enter element: "))
+        arr.append(ele)
+        summation = summation + arr[i]
+    ave = summation/ele_num
+    return ave #Function for Average of number.
+def summation_of_nNaturalnumbers(r):
+    sum=0
+    for i in range(0,r+1):
+        sum=sum+i
+    return f"The result of the summation of '{r}' natural number is: {sum}"#Function to sum n terms of natural number.
+def factorial(number):
+  if number==1 or number==0:
+    return 1
+  elif number<0:
+    return "Invalid"
+  else:
+    return number*factorial(number-1)#Function to print factorial of number
+def print_fibonacci(nterms):
+    n1,n2=0,1
+    count=0
+    if nterms<=0:
+        return "Please enter a positive integer"
+    elif nterms==1:
+        return f"Fibonacci sequence upto {nterms} is: {n1}"
+    else:
+        while count < nterms:
+            print(n1)
+            nth = n1 + n2
+            n1 = n2
+            n2 = nth
+            count += 1 #function to print Fibonacci Series
+def tribonacci_rec(nterms):
+    if nterms==0 or nterms==1 or nterms==2:
+        return 0
+    elif nterms==3:
+        return 1
+    else:
+        return (tribonacci_rec(nterms - 1)+tribonacci_rec(nterms - 2)+tribonacci_rec(nterms - 3)) #driver code for tribonacci
+def print_tribonacci(nterms):
+    for i in range(1,nterms):
+        print(tribonacci_rec(i)," ",end=" ")#function to print Tribonacci Series
+def area_of_circle(radius):
+    area_of_the_circle= 22 / 7 * (radius ** 2)
+    return area_of_the_circle #function to find area_of_Circle
+def circumference_of_circle(radius):
+    circumference_of_the_circle= 2 * (22 / 7) * radius
+    return circumference_of_the_circle #function to find Circumference_of_Circle
+def area_of_triangle(height,base):
+    area_of_the_triangle= 1 / 2 * height * base
+    return area_of_the_triangle #function to find area_of_triangle
+def circumference_of_triangle(side1,side2,side3):
+    circumference_of_the_triangle= side1 + side2 + side3
+    return circumference_of_the_triangle #function to find Circumference_of_Triangle
+#function to check leap year or not.
+def isleapyear(year):
+    if year%4==0 and year%100!=0 or year%400==0:
+        return f"The given year {year} is leap year."
+    else:
+        return f"The given year {year} is not leap year."
+def convert_celcius_to_farenheit(celcius):
+    farenheit=(9*celcius+160)/5
+    return farenheit #function to convert temperature from celcius to faranheit
+def convert_faranheit_to_celcius(farenheit):
+    celcius=(5*(farenheit-32))/9
+    return celcius #function to convert temperature form faranheit to celcius
+def determine_charactertype(character):
+    if ('a' <= character <= 'z')or('A' <= character <= 'Z'):
+        return f"The Given Character {character} is an Alphabet."
+    elif '0' <= character <= '9':
+        return f"The Given Character {character} is a Digit."
+    else:
+        return f"The Given Character {character} is a Special Character."#Funtion to determine character type.
+def isvowel(alphabet):
+    if alphabet=='A' or alphabet=='a' or alphabet=='E' or alphabet=='e' or alphabet=='I' or alphabet=='i' or alphabet=='O' or alphabet=='o' or alphabet=='U' or alphabet=='u':
+        return f"The given alphabet {alphabet} is a Vowel."
+    else:
+        return f"The given character is {alphabet} is a Consonant"#function to determine Vowel or Consonant.
+def remove_vowel(string):
+    vowels=['a', 'e', 'i', 'o', 'u']
+    result=[letter for letter in string if letter.lower() not in vowels]
+    result=''.join(result)
+    return result#function to remove vowel from string.
+def string_reverse(string):
+    reversed_string=string[::-1]
+    return reversed_string#function to reverse string.

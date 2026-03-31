@@ -1,0 +1,1271 @@
+#include<stdio.h>
+int main()
+{
+	printf("ek kahani ha jo sob ko sunani ha.\n");                                    
+	printf("Jalne walo ki to ruh bhi jalani ha\n");
+	printf("ek kahani ha jo sob ko sunani ha.\n");
+	printf("inki bukh bhi to mene-hi metai ha");
+}
+----------------------------------------------
+#include<stdio.h>
+main()
+{
+	int a=2654465748,b=2487484787,c=3878787,e;
+	e=(a*b*c);
+	printf("Product= %d",e);
+}
+------------------------------------------
+//swaping by using 3rd varriable 
+#include<stdio.h>
+int main()
+{
+	int a,b,t;
+	printf("enter the value of a and b");
+	scanf("%d%d",&a,&b);
+	printf("before swaping a=%d b=%d",a,b);
+	t=a;
+	a=b;
+	b=t;
+	printf("\n after swaping a=%d b=%d",a,b);
+}
+----------------------------------------------------
+//swaping without using 3rd varriable 
+#include<stdio.h>
+int main()
+{
+	int a,b;
+	printf("enter the value of a and b");
+	scanf("%d%d",&a,&b);
+	printf("before swaping a=%d b=%d",a,b);
+	a=a+b;
+	b=a-b;
+	a=a-b;
+	printf("\n after swaping a=%d b=%d",a,b);
+}
+--------------------------------------------------------
+//11> wap to convert a temperature from celcius to farenheit.
+#include<stdio.h>
+main()
+{
+	float f=0,c=0;
+	printf("enter temp in celcius");
+	scanf("%f",&c);
+	f=(9.0*c/5)+32;
+	printf("temp in farenheit--->%f",f);
+}
+-----------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+	int p,r,t,si,amt;
+	printf("enter principle");
+	scanf("%d",&p);
+	printf("enter rate of interest");
+	scanf("%d",&r);
+	printf("enter time");
+	scanf("%d",&t);
+	si=(p*r*t)/100;
+	amt=p+si;
+	printf("si------>%d\n",si);
+	printf("amt------>%d",amt);
+}
+-------------------------------------------
+/*accept the salary of aperson .calculate and print the salary and gross salary of the person.
+da=15% of basic
+hra=8% of basic
+ta=7% of basic
+meddical=Rs 5000/-
+pf=5% of basic
+gross =basic+da+hra+ta+medical
+net=gross-pf*/
+#include<stdio.h>
+main()
+{
+	int ba,da,hra,ta,med,pf,gross,net;
+	printf("enter the basic salary of a person");
+	scanf("%d",&ba);
+	da=ba*15/100;
+	hra=ba*8/100;
+	ta=ba*7/100;
+	med=5000;
+	pf=ba*5/100;
+	gross=ba+da+hra+ta+med;
+	net=gross-pf;
+	printf("gross salary =%d\n",gross);
+	printf("net salary =%d",net);	
+}
+---------------------------------------------------------
+https://filmora.wondershare.com/filmorapro-video-editor/?utm_source=pro_influencer_allie&utm_medium=youtube_referral&utm_campaign=AstroBackyard202005
+--------------------------------------------------------------------------
+//accept 2 numbers from user and printf the greater numbers:
+#include<stdio.h>
+int main ()
+{
+	int a,b;
+	printf ("enter the value of a");
+	scanf("%d",&a);
+	printf("enter the value of b");
+	scanf("%d",&b);
+	if (a>b)
+	printf("%d is greater",a);
+	else if (b>a)
+	printf("%d is greater",b);
+	else
+	printf("both are equal");
+}
+----------------------------------------------------------------
+#include<stdio.h>
+main()
+{
+	int p=50000,t=2;
+	float r=9.54,si,amt;
+	si=(p*r*t)/100;
+	amt=p+si;
+	printf("simple interest will be =%f\n",si);
+	printf("amt will be =%d",amt);
+}
+---------------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+	int total,ph,phy,life,comp ;
+	printf("enter your phone number");
+	scanf("%d",&ph);
+    printf("enter your mark sheet total");
+	scanf("%d",&total);
+    printf("enter your physcial science number");
+    scanf("%d",& phy);
+    printf("enter your life science number");
+    scanf("%d",&life);
+    printf("enter your computer science number");
+    scanf("%d",& comp );
+	printf ("you are qualified");
+
+}
+------------------------------------------------
+#include<stdio.h>
+main()
+{
+	int n;
+	printf("enter a number=");
+	scanf("%d",&n);
+	if (n%2==0)
+	printf("even");
+	else
+	printf("odd");
+}
+---------------------------------------------------
+//accept 3 numbers from user and printf the greater numbers:
+#include<stdio.h>
+int main ()
+{
+    int a,b,c;
+    printf("enter three numbers");
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b&&a>c)
+    printf("%d is max",a);
+    else if (b>a&&b>c)
+    printf("%d is max",b);
+    else if (c>a&&c>b)
+    printf("%d is max",c);
+    else
+    printf("equal case");
+}
+-----------------------------------------------------------
+//creating a calculator
+#include<stdio.h>
+main()
+{
+	int ch,a,b,c;
+	printf(" 1-addition\n 2-substraction\n 3-multiplication\n 4division\n enter your option= ");
+	scanf("%d",&ch);
+	switch (ch)
+	{ 
+	case 1 :
+		printf("enter the value of a and b");
+		scanf("%d%d",&a,&b);
+		c=a+b;
+		printf("sum=%d",c);
+		break;
+		case 2 :
+			printf ("enter the value of a and b");
+			scanf("%d%d",&a,&b);
+			c=a-b;
+			printf("sub=%d",c);
+			break;
+			case3:
+				printf("enter the value of a and b");
+				scanf("%d%d",&a,&b);
+				c=a*b;
+				printf("multi=%d",c);
+				break;
+				case 4:
+					printf("enter the value of a and b");
+					scanf("%d%d",&a,&b);
+					c=a/b;
+					printf("div=%d",c);
+					break;
+					default:
+						printf("invalid case");
+						
+	}
+}
+-----------------------------------------------------------------------------------
+#include<stdio.h>
+main()
+{
+	int ch,r,l,b,ar;
+	float pi=3.14;
+	printf("enter the option \n1-area of circle\n2-area of square\n3-area of rectaingle\n");
+	scanf("%d",&ch);
+	switch(ch)
+	{
+		case 1:
+		printf("enter radius");
+		scanf("%d",&r);
+		ar=pi*r*r;
+		printf("area of circle =%d",ar);
+		break;
+		case 2:
+			printf("enter length");
+			scanf("%d",&l);
+			ar=l*l;
+			printf("area of square =%d",ar);
+			break;
+			case 3:
+				printf("enter length and breath");
+				scanf("%d%d",&l,&b);
+				ar =l*b;
+				printf("area of rectangle =%d",ar);
+				break;
+				default:
+					printf("invalid case");
+					
+	}
+}
+-------------------------------------------------------------------------------------
+#include<stdio.h>
+main()
+{
+	float f,c=0;
+	printf("enter temp in fa");
+	scanf("%f",&f);
+	c=5.0/9*(f-32);
+	printf("trmp in cel----->%f",c);
+	
+}
+---------------------------------------------------------------
+/*wap to print the grade acording to the marks ,acording to the percentage the number of free subject will be accepted by the user to make percantage.
+marks                    grade
+c=40                      D
+>40-<=60                  C
+>60-<=80                  B
+>80                       A*/
+#include<stdio.h>
+main()
+{
+	int a,b,c,av;
+	printf("enter the marks of 3 subjects");
+	scanf("%d%d%d", &a,&b,&c);
+	av=(a+b+c)/3;
+	if (av<=40)
+	printf("grade D");
+	else if (av>40 && av<=60)
+	printf("grade C");
+	else if (av>60 && av<=80)
+	printf("grade B");
+	else
+	printf("grade A");
+}
+---------------------------------------------------------------------------------
+//wap to accept a character from user and check it is vowel or not
+#include <stdio.h>
+main()
+{
+	char ch;
+	printf("enter a character");
+	scanf("%c",&ch);
+	if(ch=='a'|| ch=='A'||ch=='e'||ch=='E'||ch=='i'||ch=='I'||ch=='o'||ch=='O'||ch=='u'||ch=='U')
+	printf("vowel");
+	else
+	printf("not vowel");
+}
+------------------------------------------------------------------------------
+#include<stdio.h>
+main()
+{
+	char ch;
+	printf("enter a character");
+	scanf("%c",&ch);
+	if(ch>='A'&& ch<='Z')
+	printf("%c in upper case character ",ch);
+	else if (ch>='a'&& ch<='z')
+	printf("%c is lower case character ",ch);
+	else
+	printf("not a alphabet");
+}
+-----------------------------------------------------
+#include<stdio.h>
+int main()
+{
+	int total,ph,phy,life,comp ;
+	printf("enter your phone number");
+	scanf("%d",&ph);
+    printf("enter your mark sheet total");
+	scanf("%d",&total);
+    printf("enter your physcial science number");
+    scanf("%d",& phy);
+    printf("enter your life science number");
+    scanf("%d",&life);
+    printf("enter your computer science number");
+    scanf("%d",& comp );
+	printf ("you are qualified");
+
+}
+----------------------------------
+#include<stdio.h>
+#include<conio.h>
+ main()
+{
+	char name[20];
+	int total,ph,phy,che,life,comp ;
+	printf ("please enter your name:");
+	gets(name);
+	printf("your name is =%s\n",name);
+	getch();
+	printf("enter your phone number");
+	scanf("%d",&ph);
+    printf("enter your mark sheet total");
+	scanf("%d",&total);
+    printf("enter your physcs number=");
+    scanf("%d",& phy);
+     printf("enter your chemistry number=");
+    scanf("%d",& che);
+    printf("enter your life science number=");
+    scanf("%d",&life);
+    printf("enter your computer science number");
+    scanf("%d",& comp );
+	printf ("you are qualified");
+
+}
+------------------------------------------------------
+#include<stdio.h>
+#include<conio.h>
+ main()
+{
+	char name[20];
+	int ad,per,Ead,total,ph,phy,che,life,comp,Fulltotal;
+	printf ("please enter your name-->:");
+	gets(name);
+	printf ("enter your Father name--->:");
+	gets(name);
+	printf ("enter your Mother name--->:");
+	gets(name);
+	printf ("enter your address--->:");
+		scanf("%d",&ad);
+	    gets(name);
+	printf("enter your email adress---->");
+         gets(name);
+    printf("enter your phone number--->");
+          gets(name);   
+	printf ("enter your subject--->:");
+	    gets(name);
+	printf ("enter your Board name---->:");
+	    gets(name);
+	printf ("enter your school name---->:");
+	    gets(name);
+	printf("enter your mark sheet total=");
+	    scanf("%d",&total);
+	printf("enter your mark percentage of total marks=");
+	scanf("%d",&per);
+	 printf("enter your physcs number=");
+    scanf("%d",& phy);
+    printf("enter your chemistry number=");
+    scanf("%d",& che);
+    printf("enter your computer science/biology number=");
+    scanf("%d",& comp );
+    printf("enter your total marks in science group + total mark sheet number=");
+    scanf("%d",&Fulltotal );
+    if(per>=90)
+	printf("you are qualified");
+	else if (per>=75&& per<=90)
+	printf("you are in the second list");
+	else
+	printf("you are disqualified");
+	
+}
+-----------------------------------------------------
+// traingle formation and all others
+#include<stdio.h>
+int main()
+{int a,b,c;
+printf("enter 3 sides");
+scanf("%d%d%d ",&a,&b,&c);
+if(a+b>c && b+c>a && c+a>b)
+{printf ("\n traingle formation possible");
+if(a==b && b==c&&c==a)
+printf("\nequilatral traingle");
+else if (a==b||b==c||c==a)
+printf("\n iso-sceles traingle");
+else if(a!=b&&b!=c&&c!=a)
+printf("\n scalene traingle");
+}
+else
+{
+	printf ("traingle formation not possible");
+	
+}
+}
+------------------------------------------------------
+/*accept three digits from user between one to nine.display the greatest and smallest three digit number*/
+#include<stdio.h>
+int main()
+{
+	int a,b,c,gn=0,sn=0;
+	printf("enter digits");
+	scanf("%d%d%d",&a,&b,&c);
+	if(a>b && a>c)
+	{
+		if(b>c)
+		{
+			gn=100*a+10*b+c;
+			sn=100*c+10*b+a;
+		}
+		else{
+			gn=100*a+10*c+b;
+			sn=100*b+10*c+a;
+		}
+	}
+	else if (b>a && b>c)
+	{
+		if(a>c)
+		{
+			gn=b*100+a*10+c;
+	        sn=c*100+a*10+b;
+		}
+		else
+		{
+			gn=100*b+10*c+a;
+			sn=a*100+c*10+b;
+		}
+	}
+   else if (c>a &&c>b)
+   {
+   	if(a>b)
+   	{
+   		gn=c*100+a*10+b;
+   		sn=b*100+a*10+c;
+	   }
+	   else
+	   {
+	   	gn=c*100+b*10+a;
+	   	sn=a*100+b*10+c;
+	   }
+   }
+   printf("max number =%d/n minimum number=%d",gn,sn);
+   
+}
+----------------------------------------------------------------------
+/*the electricity board changes fromtheir consumors acording to the units.consume per month amount to be paid as per the given terrif.
+units consumed                                  charges
+---------------                                ----------
+up to 100 units                                   5.50/-
+for next 200 units                                6.50/-
+for next 300 units                                7.50/-
+more than 600 units                               8.50/-*/
+#include<stdio.h>
+int main()
+{
+	float u,amt=0,total=0;
+	printf("enter the unit");
+	scanf("%f",&u);
+	if (u<=100)
+	amt=100*5.50+(u-100)*6.50;
+	else if (u>300 && u<=600)
+	amt=100*5.50+200*6.50+(u-300)*7.50;
+	else if (u>600)
+	amt=100*5.50+200*6.50+300*7.50+(u-600)*8.50;
+	printf("unit consumed=%.2f\n",u);
+	printf("amount to be paid=%.2f",amt);
+	
+}
+-----------------------------------------------------------------------------
+/* alibrary charges a fine for books return late as given below
+first five days---------------------40 paisa per day
+six to ten days---------------------60 paisa per day
+above ten days ---------------------80 paisa per day
+calculate the fine and print it.*/
+#include<stdio.h>
+int main()
+{
+	int d;
+	float f=0;
+	printf ("enter number of days");
+	scanf ("%d",&d);
+	if(d<=5)
+	f=d*0.4;
+	else if(d>5 && d<=10)
+	f=d*0.65;
+	else if (d>10)
+	f=d*0.80;
+	printf("fine will be =%.2f",f);
+}
+--------------------------------------------------------
+/*/wap to accept price from user and print the final price of a digital camera after the following discount price.
+price                         discount
+---------                      ----------
+upto 5000                       5%
+from 5001 to 10000              6%
+from 10001 to 15000             7%
+above   15000                   8%*/
+#include<stdio.h>
+int main ()
+{
+	float p,d=0,fp=0;
+	printf ("enter the value");
+	scanf("%f",&p);
+	if(p<=5000)
+	d=p*5/100;
+	else if (p>5000 && p<=10000)
+	d=p*6/100;
+	else if (p>10000 && p<=15000)
+	d=p*7/100;
+	else 
+	d=p*8/100;
+	fp=p-d;
+	printf("final price after discount =%.2f",fp);
+	
+}
+--------------------------------------------------------
+=============================================================================================================================================
+Loop:       1-for
+------      2-while
+            3-do while
+--------------------------------
+//print the series ------->1,2,3,4,5,6,7,..............,20
+#include<stdio.h>
+int main()
+{
+	int i;
+	for(i=1;i<=20;i++)
+	{
+		printf("%d\n", i);
+	}
+}
+---------------------------------------------------
+//print the series--------->1,3,5,7,9,.......,n
+#include<stdio.h>
+int main()
+{
+	int i,n;
+	printf("enter the range");
+	scanf("%d",&n);
+	for(i=1;i<=n;i=i+2)
+	{
+		printf("%d  ",i);
+	}
+}
+------------------------------------------------------------------
+//print the even numbers from 1 to 100
+#include<stdio.h>
+int main()
+{
+	int i,n;
+	printf("enter the range");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		if(i%2==0)
+		printf("%d\n",i);
+	}
+}
+----------------------------------------------------------
+//print the even ,odd numbers from 1 to n
+#include<stdio.h>
+int main()
+{
+	int i,n;
+	printf("enter the range");
+	scanf("%d",&n);
+	printf("even numbers-\n");
+	for(i=1;i<=n;i++)
+	{
+		if (i%2==0)
+		printf("%d  ",i);
+	}
+	printf("\n odd numbers-\n");
+	for (i=1;i<=n;i++)
+	{
+		if(i%2==1)
+		printf("%d  ",i);
+	}
+}
+-------------------------------------------------------
+//print the n,..............1
+#include<stdio.h>
+int main()
+{
+	int i,n;
+	printf("enter the range");
+	scanf("%d",&n);
+	for(i=n;i>=1;i--)
+	{
+		printf("%d  ",i);
+	}
+}
+-----------------------------------------------------------
+//wap to print the multiple of 5 from a given range
+#include<stdio.h>
+int main()
+{
+	int i,u,l;
+	printf("enter upeer limit andlower limit");
+	scanf("%d%d",&l,&u);
+	if(u>l)
+	{
+		for(i=l;i<=u;i++)
+		{
+			if(i%5==0)
+			printf("%d\n",i);
+		}
+	}
+	else
+	printf("bhul kore6ish re khoka");
+}
+-----------------------------------------------------------
+//wap to print the sum of n term of natural number 
+#include<stdio.h>
+int main()
+{
+	int s=0,i,n;
+	printf("enter a number");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		s=s+i;
+	}
+	printf("sum of natural numbers=%d",s);
+}
+---------------------------------------------------------------
+//wap to print the factor of a number
+#include<stdio.h>
+int main()
+{
+	int i,n;
+	printf("enter a number");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		if(n%1==0)
+		printf("%d\n",i);
+	}
+}
+----------------------------------------------------
+//wap to print the number of factors(count the numbers of factors)
+#include<stdio.h>
+int main()
+{
+	int i,n,c=0;
+	printf("enter a number");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		if(n%1==0)
+		c++;c=c+1;c+=1;
+	}
+	printf("number of factor =%d",c);
+}
+-------------------------------------------------------------
+//check a number perfect or not
+#include<stdio.h>
+int main()
+{
+	int n,s=0,i;
+	printf("enter a number");
+	scanf("%d",&n);
+	for (i=1;i<n;i++)
+	{
+		if(n%1 ==0)
+		s=s+i;
+	}
+	if(s==n)
+	printf("%d is perfect number",n);
+	else
+	printf("%d is not perfect number",n);
+}
+---------------------------------------------------------------
+//check a number perfect or not
+#include<stdio.h>
+int main()
+{
+	int n,s=0,i;
+	printf("enter a number");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		if(n%1==0)
+		s=s+i;
+	}
+	if(s==2*n)
+	printf("%d is perfect number",n);
+	else
+	printf("%d is not perfect number",n);
+}
+---------------------------------------------------------------
+// print the table of a number
+#include<stdio.h>
+int main()
+{
+	int n,i,f=1;
+	printf("enter a numer");
+	scanf("%d",&n);
+	for (i=1;i<=10;i++)
+	{
+		f=n*i;
+		printf("%d*%d=%d\n",n,i,f);
+	}
+}
+-------------------------------------------------------------
+/*  0,  1,  1,   2,3,5,8......n (a+b=c)
+    a   b   c
+        a   b    c*/
+#include<stdio.h>
+int main()
+{
+	int a=0,b=1,c=0,i,n;
+	printf("enter the range");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		printf("%d  ",a);
+		c=a+b;
+		a=b;
+		b=c;
+	}
+}
+------------------------------------------------------
+//s=1*2+2*3+3*4
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int n,i,s=0;
+printf("enter a range");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+	s=s+(i*(i+1));
+}
+printf("sum is%d",s);
+}
+---------------------------------------------------
+// s=1*2+3*4+5*6+7*8.......n
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int n,i,s=0;
+	printf("enter a range");
+	scanf("%d",&n);
+	for(i=1;i<=n;i=i+2)
+	{
+		s=s+(i*(i+1));
+	}
+	printf("sum is %d",s);
+}
+------------------------------------------------------
+// s=1*3+2*4+3*5.......
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int n,i,s=0;
+	printf("enter a range");
+	scanf("%d",&n);
+	for(i=1;i<=n;i=i+2)
+	{
+		s=s+(i*(i+2));
+	}
+	printf("sum is %d",s);
+}
+------------------------------------------------
+//s=1-2+3-4+5-6..............
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int n,i,s=0;
+	printf("enter a range");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		if(i%2==0)
+	s=s-i;
+	else
+	s=s+i;
+	}
+	printf("%d",s);
+}
+---------------------------------------------
+ //5>s=1/1+1/2+1/3+1/4+.....1/n
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int n,i;
+	float s=0;
+	printf("Enter a range");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		s=s+(1.0/i);
+	}
+	printf("%f",s);
+}
+------------------------------------------------
+//s=1/1+1/2+1/3+1/4+.....1/n
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int n,i;
+	float s=0;
+	printf("Enter a range");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		s=s+(1.0/i);
+	}
+	printf("%f",s);
+}
+-------------------------------------------
+//7>s=X/1+X^2/2+X^3/3.......X^n/n.......
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	int n,i,X,k;
+	float s=0;
+	printf("Enter n and X");
+	scanf("%d%d",&n,&X);
+	for (i=1;i<=n;i++)
+	{
+		k= pow (X,i);
+		s=s+(k/i);
+	}
+	printf("%f",s);
+}
+----------------------------------
+//8> s=1-4+9-16+25.........n
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int n,i,s=0;
+	printf("Enter the range");
+	scanf ("%d",&n);
+	for (i=1;i<=n;i++)
+	{
+		if(i%2==0)
+		s=s-(i*i);
+		else 
+	s=s+(i*i);
+	}
+	printf("%d",s);
+}
+----------------------------------------------
+** creating all in one//
+#include<stdio.h>
+int main()
+{
+	int ch,a,b,c;
+	printf("enter the option 1=add 2=sub 3=mul 4=div 5=square 6=quib 7=your future 8=want to know what type of angle is this 9=percentage");
+	scanf("%d",&ch);
+	switch(ch)
+	{
+		case 1:
+			{
+			printf("enter the value of a and b");
+			scanf("%d%d",&a,&b);
+			c=a+b;
+			printf("sum is=%d",c);
+			}
+			break;
+			case 2:
+				{
+					printf("enter the value of a and b");
+				scanf("%d%d",&a,&b);
+				c=a-b;
+				printf("sub is =%d",c);
+				}
+				break;
+				case 3:
+					{
+						printf("enter the value of a and b");
+					scanf("%d%d",&a,&b);
+					c=a*b;
+					printf("multi = %d",c);
+					}
+					break;
+					case 4:
+						{
+							printf("enter the value of a nad b");
+						scanf("%d%d",&a,&b);
+						c=a/b;
+						printf("div =%d",c);
+						}
+						break;
+						case 5:
+							{
+								printf("enter the value of a");
+							scanf("%d",&a);
+							c=a*a;
+							printf("square=%d",c);
+							}
+							break;
+							case 6:
+							{
+								printf("enter the value of a");
+							scanf("%d",&a);
+							c=a*a*a;
+							printf("quib=%d",c);
+							}
+							break;
+							case 7:
+							{
+								printf("enter the value of a");
+							scanf("%d",&a);
+							c=a*0;
+							printf("its your future=%d",c);
+							}
+							break;
+							case 8:printf("enter 3 sides");
+                             scanf("%d%d%d ",&a,&b,&c);
+                             if(a+b>c && b+c>a && c+a>b)
+                             {printf ("\n traingle formation possible");
+                             if(a==b && b==c&&c==a)
+                             printf("\nequilatral traingle");
+                             else if (a==b||b==c||c==a) 
+                             printf("\n iso-sceles traingle");
+                             else if(a!=b&&b!=c&&c!=a)
+                             printf("\n scalene traingle");
+                             }
+                             else
+                             {
+                              printf ("traingle formation not possible");
+	
+                             }
+                             break;
+                             case 9: printf("enter the value of a and b");
+						scanf("%d%d",&a,&b);
+						{
+							printf("enter your choice 1 percent of a by b \n 2 percent of b by a=");
+							scanf("%d",&ch);
+							case 10:
+							c=(a*100)/b;
+							printf("percentage=%d",c);
+							break;
+							case 11:
+							c=(b*100)/a;
+							printf("percentage=%d",c);
+						}
+						break;
+                             
+							
+							
+							
+							
+							default:
+								printf("invalid case");
+	}
+}
+
+-=-----------------------------------------------------------------------------------------------------
+WHILE loop ==============================
+while loop is also called entry control loop
+___________________________________________
+
+//123.......n
+#include<stdio.h>
+int main()
+{
+	int i,n;
+	i=1;
+	printf("Enter n");
+	scanf("%d",&n);
+	while(i<=n)
+	{
+		printf("%d",i);
+		i++;
+		
+	}
+}
+--------------------------------------------------
+//1,3,5,7......n
+#include<stdio.h>
+int main()
+{
+	int i,n;
+	i=1;
+	printf("Enter n");
+	scanf("%d",&n);
+	while(i<=n)
+	{
+		printf("%d  ",i);
+		i=i+2;
+	}
+}
+------------------------------------------------------------
+//sum of n term of natural number
+#include<stdio.h>
+int main()
+{
+	int n,i,s=0;
+	printf("Enter a number");
+	scanf("%d",&n);
+	i=1;
+	while(i<=n)
+	{
+		s=s+i;
+		i++;
+	}
+	printf("sum of n term of natural number=%d",s);
+}
+-----------------------------------------------------------------
+//10,9,.................1
+#include<stdio.h>
+int main()
+{
+	int i,n;
+	printf("Enter n");
+	scanf("%d",&n);
+	i=n;
+	while(i>=1)
+	{
+		printf("%d ",i);
+		i--;
+	}
+}
+---------------------------------------------------------
+//sum of factors
+#include<stdio.h>
+int main()
+{
+	int n,i,s=0;
+	printf("Enter a number");
+	scanf("%d",&n);
+	i=1;
+	while(i<=n)
+	{
+		if(n%i==0)
+		s=s+i;
+		i++;
+	}
+	printf("sum of factors %d",s);
+}
+---------------------------------------------------
+// prime numbers
+#include<stdio.h>
+int main()
+{
+	int n,i,c=0;
+	printf("Enter a number");
+	scanf("%d",&n);
+	i=1;
+	while(i<=n)
+	{
+		if(n%i==0)
+		c=c+i;
+		i++;
+	}
+	if (c==2)
+	printf("prime");
+	else
+	printf("not prime");
+}
+-------------------------------------------------------------
+// wap to check a number perfect or not
+#include<stdio.h>
+int main()
+{
+	int n,i,s=0;
+	printf("Enter a number");
+	scanf("%d",&n);
+	i=1;
+	while (i<n)
+	{
+		if (n%i==0)
+		s=s+i;
+		i++;
+	}
+	if(s==n)
+	printf("perfect");
+	else
+	printf("not perfect ");
+}
+-------------------------------------------------------------
+//perfect square
+#include<stdio.h>
+int main()
+{
+	int n,i,c=0;
+	printf("enter a number");
+	scanf("%d",&n);
+	i=1;
+	while(i<=n)
+	{
+		if(n%i==0)
+		c=c+1;
+		i++;
+	}
+	if(c%2==1)
+	printf("perfect square");
+	else
+	printf("not perfect square");
+}
+------------------------------------------------------------------
+do while  (exit control)
+======================================
+#include<stdio.h>
+int main()
+{
+	int i=10;
+	do
+	{
+		printf("%d   ",i);
+		i--;
+	}while(i>=1);
+}
+---------------------------------------------------
+#include<stdio.h>
+int main()
+{
+	int i=1,n;
+	printf("Enter anumber");
+	scanf("%d",&n);
+	do
+	{
+		printf("%d  ",i);
+		i=i+2;
+	}
+	while(i<=n);
+}
+-------------------------------------------------
+#include<stdio.h>
+int main()
+{
+	int i=1,n,s=0;
+	printf("Enter a number");
+	scanf("%d",&n);
+	do
+	{s=s+i;
+	i++;
+	}while(i<=n);
+	printf("%d",s);
+}
+--------------------------------------------------
+// if the number is perfect number.
+#include<stdio.h>
+int main()
+{
+	int i=1,n,c=0;
+	printf("Enter the number");
+	scanf("%d",&n);
+	do{
+		if(n%i==0)
+		c=c+1;
+		i++;
+	}while(i<=n);
+	if(c%2==1)
+	printf("perfect square");
+	else
+	printf("not a perfect square");
+}
+-----------------------------------------------------
+//sum of digit
+#include<stdio.h>
+int main()
+{
+	int n,d=0,s=0;
+	printf("Enter a number");
+	scanf("%d",&n);
+	while (n>0)
+	{
+		d=n%10;
+		s=s+d;
+		n=n/10;
+	}
+	printf("%d",s);
+}
+-----------------------------------------------
+//reverse
+#include<stdio.h>
+int main()
+{
+	int n,d=0,s=0;
+	printf("enter a number");
+	scanf("%d",&n);
+	while(n>0)
+	{
+		d=n%10;
+		s=s*10+d;
+		n=n/10;
+	}
+	printf("%d",s);
+}
+----------------------------------------------------------
+//accept a user id and password and check it correct or not
+#include<stdio.h>
+int main()
+{
+	int c,d,uid,pw;
+    c=8981632589;
+	d=8981;
+	printf(" Enter your user ID");
+	scanf("%d",&uid);
+	printf("Enter your password");
+	scanf("%d",&pw);
+	if
+	(c==pw && d==uid)
+	printf("welcome to dark web class");
+	else
+	printf("your password is incorrect");
+}
+---------------------------------------------------
+// -- x- x^2/2-x^3/3-x^4/4.......-x^n/n
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int i,x,s=1,k;
+	printf("enter the value of x");
+	scanf("%d",&x);
+	s=x;
+	for(i=2;i<=x;i++)
+	{
+		k=pow(x,i);
+		s=s-(k/i);
+	}
+	printf("%d",s);
+}
+-------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

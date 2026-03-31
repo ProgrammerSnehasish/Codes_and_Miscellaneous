@@ -1,0 +1,245 @@
+#include<stdio.h>
+main()
+{
+	char ch;
+	printf("enter a character");
+	scanf("%c",&ch);
+	if(ch>='A'&& ch<='Z')
+	printf("%c in upper case character ",ch);
+	else if (ch>='a'&& ch<='z')
+	printf("%c is lower case character ",ch);
+	else
+	printf("not a alphabet");
+}
+-----------------------------------------------------
+#include<stdio.h>
+int main()
+{
+	int total,ph,phy,life,comp ;
+	printf("enter your phone number");
+	scanf("%d",&ph);
+    printf("enter your mark sheet total");
+	scanf("%d",&total);
+    printf("enter your physcial science number");
+    scanf("%d",& phy);
+    printf("enter your life science number");
+    scanf("%d",&life);
+    printf("enter your computer science number");
+    scanf("%d",& comp );
+	printf ("you are qualified");
+
+}
+----------------------------------
+#include<stdio.h>
+#include<conio.h>
+ main()
+{
+	char name[20];
+	int total,ph,phy,che,life,comp ;
+	printf ("please enter your name:");
+	gets(name);
+	printf("your name is =%s\n",name);
+	getch();
+	printf("enter your phone number");
+	scanf("%d",&ph);
+    printf("enter your mark sheet total");
+	scanf("%d",&total);
+    printf("enter your physcs number=");
+    scanf("%d",& phy);
+     printf("enter your chemistry number=");
+    scanf("%d",& che);
+    printf("enter your life science number=");
+    scanf("%d",&life);
+    printf("enter your computer science number");
+    scanf("%d",& comp );
+	printf ("you are qualified");
+
+}
+------------------------------------------------------
+#include<stdio.h>
+#include<conio.h>
+ main()
+{
+	char name[20];
+	int ad,per,Ead,total,ph,phy,che,life,comp,Fulltotal;
+	printf ("please enter your name-->:");
+	gets(name);
+	printf ("enter your Father name--->:");
+	gets(name);
+	printf ("enter your Mother name--->:");
+	gets(name);
+	printf ("enter your address--->:");
+		scanf("%d",&ad);
+	    gets(name);
+	printf("enter your email adress---->");
+         gets(name);
+    printf("enter your phone number--->");
+          gets(name);
+	printf ("enter your subject--->:");
+	    gets(name);
+	printf ("enter your Board name---->:");
+	    gets(name);
+	printf ("enter your school name---->:");
+	    gets(name);
+	printf("enter your mark sheet total=");
+	    scanf("%d",&total);
+	printf("enter your mark percentage of total marks=");
+	scanf("%d",&per);
+	 printf("enter your physcs number=");
+    scanf("%d",& phy);
+    printf("enter your chemistry number=");
+    scanf("%d",& che);
+    printf("enter your computer science/biology number=");
+    scanf("%d",& comp );
+    printf("enter your total marks in science group + total mark sheet number=");
+    scanf("%d",&Fulltotal );
+    if(per>=90)
+	printf("you are qualified");
+	else if (per>=75&& per<=90)
+	printf("you are in the second list");
+	else
+	printf("you are disqualified");
+	
+}
+-----------------------------------------------------------------
+//accept a user id and password and check it correct or not
+#include<stdio.h>
+int main()
+{
+	int c,d,uid,pw;
+    c=8981632589;
+	d=8981;
+	printf(" Enter your user ID");
+	scanf("%d",&uid);
+	printf("Enter your password");
+	scanf("%d",&pw);
+	if
+	(c==pw && d==uid)
+	printf("welcome to dark web class");
+	else
+	printf("your password is incorrect");
+}
+----------------------------------------------------------------
+#include<stdio.h>
+ main()
+{
+	int mynameclass,school;
+	printf("my name-----> Snehasish Das\n");
+	printf("class-----> 11\n");
+	printf("school-----> Aryya Vidyamandir (H.S)");
+}
+-----------------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+	int d,pl;
+	printf("please enter the day of durga puja",&d);
+	scanf("%d",&d);
+	if(d<=1)
+	printf("SOSTI -----> tahole amara jacchi barir kacha kachi thakur dekhte",pl);
+	else
+	if(d<=2)
+	printf("SOPTOMI ------> then amara ghurbo New Alipore ar co-related boro thakur dekhte (jodi hoe) ar behalar pujo gulo dekhbo(thakurpukurer age),ar bikel sayan er sathe ghurte bar hobo",&pl);
+	else
+	if(d<=3)
+	printf("OSHTOMI-------> sokale Sayan er sathe ber hobo then baba maa r sathe barir baere gie lunch korbo,r bikale baba maa r sathe berobo ghurte",&pl);
+	else
+	if(d<=4)
+	printf("NOBOMI-------->abar bondhuder sathe berobo upto thaurpukur",&pl);
+	else
+	if(d<=5)
+	printf("DOSHOMI -------> ar kono planning nei para tei thakbo",&pl);
+}
+-----------------------------------------------------------------
+/*
+Lets Go
+A travel angency name Chutir Hawa has recently opend near Joyrampur Post office.
+as the company recently opened thats why they are giving a offer that they are giving 5030577034ff on first 100 person booking.
+I have a desire to go to Darjeeling with you, so I have decided to book two tickets for Darjeeling.
+I went to the Travel company & I was the first ticket booker.
+They gave me the free accomodation with free hotel booking.
+So, finally I was satisfied with all the condition of the business and paid for my two tickets.
+They gave me the tickets and told me the the dayof tour.
+*/
+#include<stdio.h>
+int main()
+{
+int a;	
+printf ("Lets Go\n",&a);
+	printf("A travel angency name Chutir Hawa has recently opend near Joyrampur Post office.\n",&a);
+	printf("as the company recently opened thats why they are giving a offer that they are giving 50% off on first 100 person booking.\n",&a);
+	printf("I have a desire to go to Darjeeling with you, so I have decided to book two tickets for Darjeeling.\n",&a);
+	printf("I went to the Travel company & I was the first ticket booker.\n",&a);
+	printf("They gave me the free accomodation with free hotel booking.\n",&a);
+	printf("So, finally I was satisfied with all the condition of the business and paid for my two tickets.\n",&a);
+	printf("They gave me the tickets and told me the the dayof tour.\n",&a);
+}
+-----------------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+	char n,g,pe;
+	int ad,a,p,pc,ph,eid,no;
+	printf("WELCOME TO HDFC NET BANKING\n",n);
+	printf("Please enter your name Mr/Mrs ----->",n);
+	scanf("%ch",&n);
+	printf("Please enter your gender ----->",g);
+	scanf("%ch",&g);
+	printf("please enter your age ----->",a);
+	scanf("%d",&a);
+	printf("Please enter your first name ----->",n);
+	scanf("%ch",&n);
+	printf("Please enter your middle name ----->",n);
+	scanf("%ch",&n);
+	printf("Please enter your last name ---->",n);
+	scanf("%ch",&n);
+	printf("Please enter your address (with pin code)----->",ad);
+	scanf("%d",&ad);
+	printf("Please enter country you live ----> ",ad);
+	scanf("%ch",&ad);
+	printf("enter the state you live ---->",ad);
+	scanf("%ch",&ad);
+	printf("Please enter the district you live ------>",ad);
+	scanf("%ch",&ad);
+	printf("Please enter the city/village you live ----->",ad);
+	scanf("%ch",&ad);
+	printf("Please enter the bolck/ward/panchyet you live ----->",ad);
+	scanf("%d",&ad);
+	printf("Please give your photo copy",pc);
+	printf("Please enter your andhar card no.----->",no);
+	scanf("%d",&no);
+	printf("please enter your voter card no. ------>",no);
+	scanf("%d",&no);
+	printf("Please enter your pan card no. ------->",no);
+	scanf("%d",&no);
+	printf("Please enter your perpose of the account (personal/bussiness)----->",pe);
+	scanf("%ch",&pe);
+	printf("Please enter your nominee",n);
+	printf("first nominee ---->",n);
+	scanf("%ch",n);
+	printf("second nominee ---->",n);
+	scanf("%ch",n);
+	printf("third nominee ---->",n);
+	scanf("%ch",n);
+	printf("please give your mobile no. ------>",no);
+	scanf("%d",&ph);
+	printf("Please enter your emali-address ----->",eid);
+	scanf("%ch",&eid);
+
+}
+----------------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+int p,u,a,b,c;
+a=9051607464;
+b=30/09/2004;
+printf("Enter your user id",u);
+scanf("%d",&u);
+printf("Enter your password",p);
+scanf("%d",&p);
+if(a==u && b==p)
+printf("welcome to net banking",c);
+else
+printf("ERROR",c);
+}

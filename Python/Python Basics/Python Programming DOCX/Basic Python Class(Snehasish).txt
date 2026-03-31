@@ -1,0 +1,533 @@
+##A-1.1/A-3.4:Python Programme to do Addition, Subtraction, Multiplication, Integer Division, Float Division.
+def add():
+    summation = 0
+    arr = []
+    ele_num = int(input("Enter total number of elements you want to add:"))
+    for i in range(0, ele_num):
+        ele = int(input("Enter element: "))
+        arr.append(ele)
+        summation = summation + arr[i]
+    return summation
+def sub():
+    subtract = 0
+    a = int(input("Enter First element: "))
+    b = int(input("Enter Second element: "))
+    subtract = a-b
+    return subtract
+def mul():
+    multiply = 0
+    a = int(input("Enter Element 1: "))
+    b = int(input("Enter Element 2: "))
+    multiply = a*b
+    return multiply
+def int_div():
+    integer_div = 0
+    a = int(input("Enter Element 1: "))
+    b = int(input("Enter Element 2: "))
+    integer_div = a//b
+    return integer_div
+def float_div():
+    f_d = 0
+    a = float(input("Enter Element 1: "))
+    b = float(input("Enter Element 2: "))
+    f_d = a/b
+    return f_d
+def exp():
+    expo = 0
+    a = float(input("Enter Base element: "))
+    b = int(input("Enter Power element: "))
+    expo = a**b
+    return expo
+def mod_div():
+    m_d = 0
+    a = int(input("Enter First element: "))
+    b = int(input("Enter Second element: "))
+    m_d = a%b
+    return m_d
+def avg():
+    summation =0
+    ave = 0
+    arr = []
+    ele_num = int(input("Enter total number of elements you want to add:"))
+    for i in range(0, ele_num):
+        ele = int(input("Enter element: "))
+        arr.append(ele)
+        summation = summation + arr[i]
+    ave = summation/ele_num
+    return ave
+print("List of Choice:\n1. Addition\n2. Subtraction\n3. Multiplication\n4. Integer Division\n5. Float Division\n6. Exponentiation\n7. Modulo Division\n8. Average of Numbers\n9. Exit Operation")
+cho = int(input("Enter your choice: "))
+match cho:
+    case 1:
+        Addition = add()
+        print("Result of the Summation of the elements is: ", Addition)
+    case 2:
+        Subtraction = sub()
+        print("Result of Subtraction of the elements is:", Subtraction)
+    case 3:
+        Multiplication = mul()
+        print("Result of the Multiplication of the elements is: ", Multiplication)
+    case 4:
+        Integer_Division = int_div()
+        print("Result of the Integer division of the element is: ", Integer_Division)
+    case 5:
+        Float_Division = float_div()
+        print("Result of the Float division of the elements is: ", Float_Division)
+    case 6:
+        Exponentiation = exp()
+        print("Result of the Exponentiation of the elements is: ", Exponentiation)
+    case 7:
+        Modulo_Division = mod_div()
+        print("Result of the Modulo division of the elements is: ", Modulo_Division)
+    case 8:
+        Average_of_Numbers = avg()
+        print("Result of the Average of the elements is: ", Average_of_Numbers)
+    case 9:
+        exit()
+    case default:
+        print("Wrong Choice Entered.")
+-------------------------------------------------------------------------------------------------------------------------------------------
+#A-1.2: Write a Python program for finding the area of a Circle and Rectangle
+def area_cir():
+    a_c = 0
+    r = float(input("Enter the radius of the Circle: "))
+    a_c = 22/7*(r**2)
+    return a_c
+def area_tri():
+    a_t = 0
+    h = float(input("Enter Height of the Triangle: "))
+    b = float(input("Enter Base of the Triangle: "))
+    a_t = 1/2*h*b
+    return a_t
+print("List of Choice:\n1. Area Of Circle\n2. Area Of Triangle")
+print("Enter your choice")
+cho = int(input("Enter your Choice: "))
+match cho:
+    case 1:
+        Area_Circle = area_cir()
+        print("The area given Circle: ", Area_Circle, "Square Unit")
+    case 2:
+        Area_Triangle = area_tri()
+        print("The area given Triangle: ", Area_Triangle, "Square Unit")
+------------------------------------------------------------------------------------------------------------------------------------------
+ #A-1.3: Write a Python Programme to print the first place of any number taken by user.
+num = int(input("Enter any numer you want: "))
+rem = 0
+temp = 0
+while (num >= 10):
+    num = num // 10
+print("The Ones Place/First Place of a Number is: ",num)
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-1.4: Write a Python Programme to convert Celcius to Faranheit and vice versa.
+def Cel_to_Far():
+  C=float(input("Enter temperature in Celcius: "))
+  F=(C * 9/5)+32
+  return F
+def Far_to_Cel():
+  F=float(input("Enter temperature in Faranheit: "))
+  C=((F-32)*5)/9
+  return C
+print("List of choices\n1. Celcius to Faranheit\n2. Faranheit to Celcius.\n3. Exit.\n")
+choice=int(input("Enter your choice: "))
+match choice:
+   case 1:
+    Faranheit = Cel_to_Far()
+    print("The converted temperature in Faranheit: ",Faranheit)
+   case 2:
+    Celcius = Far_to_Cel()
+    print("The converted temperature in Celcius: ",Celcius)
+   case 3:
+    exit()
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-1.5: WAP in Python to calculate the total amount of money in Piggy Bank.
+def Tenrupee():
+  CT=int(input("Enter total Numbers of 10 rupee coins: "))
+  Amount = CT*10
+  return Amount
+def Fiverupee():
+  CF=int(input("Enter total Numbers of 5 rupee coins: "))
+  Amount2 = CF*5
+  return Amount2
+def Tworupee():
+  CTo=int(input("Enter total Numbers of 2 rupee coins: "))
+  Amount3 = CTo*2
+  return Amount3
+def Onerupee():
+  CO=int(input("Enter total Numbers of 1 rupee coins: "))
+  Amount4 = CO
+  return Amount4
+Savings_in_PiggyBank = Tenrupee()+Fiverupee()+Tworupee()+Onerupee()
+print("The total savings in the Piggy Bank is: ",Savings_in_PiggyBank)
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-1.6: CHECK ODD OR EVEN.
+num=int(input("Enter any Number you want to check: "))
+if(num%2==0):
+  print("The given number ")
+  print(num)
+  print("is even.")
+else:
+  print("The given number ")
+  print(num)
+  print("is odd.")
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-1.7: WAP to find largest number among three numbers.
+N1=int(input("Enter the first number to compare: "))
+N2=int(input("Enter the second number to compare: "))
+N3=int(input("Enter the third number to compare: "))
+if(N1>N2 and N1>N3):
+    print("The first element ", N1," is greater than others.")
+elif(N2>N1 and N2>N3):
+  print("The second element ", N2," is greater than others.")
+else:
+  print("The third element ", N3," is greater than others.")
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-1.7: WAP to find largest number among three numbers.
+N1=int(input("Enter the first number to compare: "))
+N2=int(input("Enter the second number to compare: "))
+N3=int(input("Enter the third number to compare: "))
+if(N1>N2 and N1>N3):
+    print("The first element ", N1," is greater than others.")
+elif(N2>N1 and N2>N3):
+  print("The second element ", N2," is greater than others.")
+else:
+  print("The third element ", N3," is greater than others.")
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-1.8: WAP to determine the charater entered by the user.
+ch = input("Please Enter Your Own Character : ")
+if((ch >= 'a' and ch <= 'z') or (ch >= 'A' and ch <= 'Z')):
+    print("The Given Character ", ch, "is an Alphabet")
+elif(ch >= '0' and ch <= '9'):
+    print("The Given Character ", ch, "is a Digit")
+else:
+    print("The Given Character ", ch, "is a Special Character")
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-1.9: WAP to check whether the given alphabet is vowel.
+Character = input("Enter any Alphabet: ")
+if(Character=='A' or Character=='a' or Character=='E' or Character=='e' or Character=='I' or Character=='i' or Character=='O' or Character=='o' or Character=='U' or Character=='u'):
+  print("The given character ",Character," is a Vowel")
+else:
+  print("The given character ",Character," is a Consonant")
+-------------------------------------------------------------------------------------------------------------------------------------------
+#A-2.3: CHECK LEAP YEAR OR NOT.
+year=int(input("Enter any year you want to check: "))
+if(year%4==0 and year%100!=0 or year%400==0):
+  print("The given year is Leap Year.")
+else:
+  print("The given year is not Leap Year.")
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-2.4:Write a Python Code to calculate sum of 'n' natural number.
+r=int(input("Enter the range of natural numbers: "))
+sum=0
+for i in range(0,r+1):
+  sum=sum+i
+print("The result of the summation of 'n' natural number is:")
+print(sum)
+-------------------------------------------------------------------------------------------------------------------------------------------
+#A-2.6:CHECK PALINDROME OR NOT.
+num=int(input("Enter any number you want to check Palindrome or not: "))
+sum=0
+d=0
+temp = num
+while(num>0):
+  d=num%10
+  sum=sum*10+d
+  num=num//10
+if(sum==temp):
+  print("The given Number is Palindrome.")
+else:
+  print("The given Number is not Palindrome.")
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-4.1: WAP to print Tribonacci Series.
+range= int(input("Enter Range: "))
+n1, n2 = 0, 1
+count = 0
+if range <= 0:
+   print("Please enter a positive integer")
+elif range==1:
+   print("Fibonacci sequence upto",range,":")
+else:
+   print("Fibonacci sequence:")
+   while count < range:
+       print(n1)
+       nth=n1+n2+1
+       n1=n2
+       n2=nth
+       count+=1
+-------------------------------------------------------------------------------------------------------------------------------------------
+#A-4.4:Find Factorial of a number using recursion.
+num=int(input("Enter the number you want to get Factorial: "))
+def fact(num):
+  if(num==1 or num==0):
+    return 1
+  elif(num<0):
+    return "Invalid Choice"
+  else:
+    return num*fact(num-1)
+Factorial=fact(num)
+print("The factorial of the given number is: ")
+print(Factorial)
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-4.5:Print Fibbonacci Series
+nterms = int(input("How many terms? "))
+n1, n2 = 0, 1
+count = 0
+if nterms <= 0:
+   print("Please enter a positive integer")
+elif nterms == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+else:
+   print("Fibonacci sequence:")
+   while count < nterms:
+       print(n1)
+       nth = n1 + n2
+       n1 = n2
+       n2 = nth
+       count += 1
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-5.1: Write a Python Programme to add two numbers using Lambda.
+a=int(input("Enter the first number you want to add: "))
+b=int(input("Enter the second number you want to add: "))
+Sum=lambda a,b:a+b
+print("The result of the addition of two numbers is: ",Sum(a,b))
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-5.2: Write a Python Programme to find smaller two numbers using Lambda.
+a=int(input("Enter the first number: "))
+b=int(input("Enter the first number: "))
+smaller=lambda a,b:min(a,b)
+print("The smaller element is: ",smaller(a,b))
+-------------------------------------------------------------------------------------------------------------------------------------------
+#A-5.5: Write a programme that uses split() to split a multiple string using new line.
+Initial_String=str(input("Enter any String: "))
+New_String=Initial_String.split()
+print(New_String)
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-5.6: Write a Python programme to accept a string from user and re-display the same after removing the vowels using function.
+def rem_vowel(string):
+    vowels = ['a','e','i','o','u']
+    result = [letter for letter in string if letter.lower() not in vowels]
+    result = ''.join(result)
+    print(result)
+Initial_String=str(input("Enter any String: "))
+rem_vowel(Initial_String)
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-6.1: Write a Python to reverse a string.
+Initial_String=str(input("Enter any String: "))
+New_String=Initial_String[::-1]
+print("The New String is the following:",New_String)
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-6.2: Write a programme that uses split() to split a multiple string using new line.
+Initial_String=str(input("Enter any String: "))
+New_String=Initial_String.split()
+print(New_String)
+-------------------------------------------------------------------------------------------------------------------------------------------
+#A-6.3: Write a Python programme to accept a string from user and re-display the same after removing the vowels using function.
+def rem_vowel(string):
+    vowels = ['a','e','i','o','u']
+    result = [letter for letter in string if letter.lower() not in vowels]
+    result = ''.join(result)
+    print(result)
+Initial_String=str(input("Enter any String: "))
+rem_vowel(Initial_String)
+------------------------------------------------------------------------------------------------------------------------------------------
+What is Module?
+
+1. Module allows you to use one or more functions in your programme, even in the programme those functions not have been defined.
+2. Module is a file with .py extension, that has definitions of all functions and variables.
+3. Modules are generally two type 1. System define or builtin module - which contains builtin functions and variables. 2. User Define Module - it can be define by the user it self depends on the purpose of user functions and variables.
+------------------------------------------------------------------------------------------------------------------------------------------
+# Module(Built-in).
+import sys
+print(sys.version) # version of your present python system
+from math import pi
+print(pi) # pi value from math function
+a=int(input("Enter any number: "))
+print(pow(a,2)) #pow function.
+------------------------------------------------------------------------------------------------------------------------------------------ 
+#A-7.1: Python programme to print time and calender of a specific month
+import datetime
+current_time = datetime.datetime.now()
+print("The current time of the system is: ",current_time)
+import calendar
+Year=int(input("Enter year: "))
+Month=int(input("Enter month: "))
+print("The calender of month ",Month," is:\n")
+print(calendar.month(Year,Month))
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-7.2: Python programme to print absolute value, square root and cube of the number.
+import math
+num = int(input("Enter any number: "))
+print("The absolute value of your given number ",num," is: ",abs(num))
+print("The squareroot value of your given number ",num," is: ",math.sqrt(num))
+print("The cube of your given number ",num," is:",pow(num,3))
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-7.3(a): Define a factorial function in a user-defined module "MyFact" and find factorial value.(Creating module "MyFact")
+def fact(int num):
+  if(num==1 or num==0):
+    return 1
+  elif(num<0):
+    return "Invalid Choice"
+  else:
+    return num*fact(num-1)
+Factorial=fact(num)
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-7.3(b): Define a factorial function in a user-defined module "MyFact" and find factorial value.
+from google.colab import drive
+drive.mount('/content/drive')
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-7.3(c): Define a factorial function in a user-defined module "MyFact" and find factorial value.
+import sys
+sys.path.insert(0,'/content/drive/My Drive')
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-7.3(d): Define a factorial function in a user-defined module "MyFact" and find factorial value.
+import MyFact
+n=int(input("Enter any number you want to get factorial: "))
+Factorial = MyFact.fact(n)
+print(Factorial)
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-7.4(a): Define a Large function in a user-defined module "Max" and find max value of three numbers.
+def large(int N1,int N2,int N3):
+  if(N1>N2 and N1>N3):
+      print("The first element ", N1," is greater than others.")
+  elif(N2>N1 and N2>N3):
+    print("The second element ", N2," is greater than others.")
+  else:
+    print("The third element ", N3," is greater than others.")
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-7.4(b): Define a Large function in a user-defined module "Max" and find max value of three numbers.
+import MyFact
+
+num1=int(input("Enter first number: "))
+num2=int(input("Enter second number: "))
+num3=int(input("Enter third number: "))
+print(MyFact.large(num1,num2,num3))
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-8.1: Python Programme for interchanging First and Last element.
+r=int(input("Enter Range: "))
+lst = []
+for i in range(0,r+1):3
+  x=int(input("Enter Value: "))
+  lst.insert(i,x)
+  lst[0], lst[-1] = lst[-1], lst[0]
+print(lst)
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-8.2: Python Programme for getting length of array.
+r=int(input("Enter Range: "))
+lst = []
+for i in range(0,r+1):1
+  x=int(input("Enter Value: "))
+  lst.insert(i,x)
+  print(lst)
+length=len(lst)
+print(length)
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-8.3: Python Programme to swap element in list.
+r=int(input("Enter Range: "))
+lst = []
+for i in range(0,r+1):
+  x=int(input("Enter Value: "))
+  lst.insert(i,x)
+  lst[0], lst[-1] = lst[-1], lst[0]
+print(lst)
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-8.4: Python Programme to sort element in list.
+r=int(input("Enter Range: "))
+lst = []
+for i in range(0,r+1):
+  x=int(input("Enter Value: "))
+  lst.insert(i,x)
+  lst.sort()
+print("Sorted List is: 9",lst)
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-8.5: Python Programme to swap element in list.
+r=int(input("Enter Range: "))
+lst = []
+for i in range(0,r+1):
+  x=int(input("Enter Value: "))
+  lst.insert(i,x)
+  lst.reverse()
+print(lst)
+-------------------------------------------------------------------------------------------------------------------------------------------
+#A-10.1: Write a Python Programme that combine the lists into Dictionary.
+String_1=['Name','Age','Salary']
+String_2=['Snehasish',18,2500]
+New_dictionary=dict(zip(String_1,String_2))
+print(New_dictionary)
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-10.2: Write a Python Programme to create a Dictionary of Odd Numbers.
+r=int(input("Enter your range: "))
+even=[]
+odd=[]
+for i in range(1,r):
+    n = int(input('Enter any number: '))
+    if n%2 == 0:
+        even.append(n)
+    else:
+        odd.append(n)
+d = {}
+d['Even']=even
+d['Odd']=odd
+print(d)
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-10.5: Write a Programme to print fibbonaci series using dictionary
+Dict={0:0, 1:1}
+def fibo(n):
+    if n not in Dict:
+        val=fibo(n-1)+fibo(n-2)
+        Dict[n]=val
+    return Dict[n]
+n=int(input("Enter the value of n:"))
+print("Fibonacci(", n,")= ", fibo(n))
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-11.Basics: Declaring Class and Object.
+class ABC:
+  var=10
+  def display(self):
+    print("Hello Class in py")
+obj=ABC()
+print(obj.var)
+obj.display()
+# del.obj
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-11.Basic: Factorial of number using class.
+class FACT:
+  def __init__(self,var1):
+    self.var1=var1;
+    print(var1)
+    p=1
+    for i in range(1,var1+1):
+      p=p*i
+    print("The Factorial of the output: ",p)
+var1=int(input("Enter number you want to get factorial: "))
+obj=FACT(var1)
+------------------------------------------------------------------------------------------------------------------------------------------
+#A.11.Basic: ODD AND EVEN LIST.
+class number:
+  even=[]
+  odd=[]
+  def __init__(self,num):
+    self.num=num
+    if num%2==0:
+      number.even.append(num)
+    else:
+      number.odd.append(num)
+n1=number(12)
+n2=number(23)
+n3=number(34)
+n4=number(45)
+n5=number(56)
+print("Even Number: ",number.even)
+print("Odd Number: ",number.odd)
+------------------------------------------------------------------------------------------------------------------------------------------
+#A-11.2: Using a class named circle calculate area, circumference of the circle.
+class circle:
+  def __init__(self,radius):
+    PI = 3.14
+    self.radius=radius
+    area = PI*(radius**2)
+    print("Area of the circle: ",area," squnit")
+    circumference = 2*PI*radius
+    print("Circumference of the circle: ",circumference," unit")
+obj = circle(int(input("Enter radius of the circle: ")))
+------------------------------------------------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching and Sorting</title>
+</head>
+<body>
+    <input type="text" id="InputLength">Enter length of the array.</input></br>
+    <button onclick="getArray()">Get Array Elements</button></br>
+    <p>The array is: </p>
+    <p id="show">On clicking on the button "Print array",The array will be dispalyed: <button onclick="displayArray()">Print Array</button></p>
+    <p>Sort array:</p>
+    <p id="SortArray">On clicking on the button "Sort", You will be able to sort the array: <button onclick="sortArray()">Sort</button></p>
+    <p>Search Element in the Array:</p>
+    <p id="SearchElement">On clicking on the button "Search Element", You will able to see if it is present in the array: <button onclick="searchElement()">Search Element</button></p>
+    <script>
+        let arr = [];
+        let isArrayfull = false;
+        function getArray(){
+            let len = document.getElementById("InputLength").value;
+            if(len == 0 || len == undefined || len == null){
+                alert ("The length of array should not be zero.");
+            }
+            else{
+                len = parseInt(len);
+                for(let i=1;i<=len;i++){
+                arr[i] = prompt("Enter value "+i);
+            }
+            isArrayfull = true;
+            }
+        }
+        function displayArray(){
+            if(isArrayfull == true){
+                let element = "";
+                let len = document.getElementById("InputLength").value;
+                len = parseInt(len);
+                for(let i=1;i<=len;i++){
+                    element += arr[i] + " ";
+                }
+                document.getElementById("show").innerText = element.trim();
+            }
+            else{
+                alert ("Please get a array at first, then try to print.")
+            }
+        }
+        function searchElement(){
+            let flag = 0;let index = 0;
+            if(isArrayfull == true){
+                let key_value = prompt("Enter the key value you want to search: ");
+                key_value = parseInt(key_value);
+                let len = document.getElementById("InputLength").value;
+                len = parseInt(len);
+                for(let i=1;i<len;i++){
+                    if(arr[i] == key_value){
+                        flag = 1;
+                        index = i;
+                    }
+                }
+                if(flag == 1)
+                    document.getElementById("SearchElement").innerText = "The key element "+key_value+" is found at index: "+index+".";
+                else
+                    document.getElementById("SearchElement").innerText = "The key element "+key_value+" is not found in the array.";
+            }
+            else{
+                alert ("Please get a array first, then try to search element in it.");
+            }
+        }
+        function sortArray(){
+            if(isArrayfull == false){
+                alert ("Please get a array at first to sort.");
+            }
+            else{
+                let len = document.getElementById("InputLength").value;
+                len = parseInt(len);
+                let element = "";
+                for(let i=0;i<=len;i++){
+                    for(let j=0;j<=(len-i-1);j++){
+                        if(arr[j]>arr[j+1]){
+                            var temp = arr[j];
+                            arr[j] = arr[j + 1];
+                            arr[j + 1] = temp;
+                        }
+                    }
+                }
+                for(let i=1;i<=len;i++){
+                        element += arr[i] + " ";
+                }
+                document.getElementById("SortArray").innerText = "The sorted array is: "+element.trim();
+            }
+        }
+    </script>
+    </br><button><a href="Sorting and Searching.html">Refresh</a></button>
+</body>
+</html>

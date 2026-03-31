@@ -1,0 +1,11 @@
+<html>
+<head>
+<title>
+my web page
+</title>
+</head>
+<body>
+<img src="display_image.jpg"
+height ="80%" width="60%" alt="Cannot find image">
+</body>
+</html>

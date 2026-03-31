@@ -1,0 +1,363 @@
+<DOCTYPE.html!>
+<html>
+<h1><body algin="center"><font color="red" size="64"><mid><u><b>MANAS CHAKLADER CLASS 11 VIDEO LECTURES.</body></b></u></mid></font></h1>
+<head>
+<title>Manas Chaklader Physics.in</title>
+</head>
+<body>
+<p><i><b><font color="blue" size="11">This page is specifically made for the students of class 11 on the basis of the video lectures composed by Manas Chaklader,containig some chapters of physics class 11.</font></b></i></p>
+
+<p><i><font color="Brown" size="10">I hope you will enjoy these.</font></i></p>
+
+<p><font color="green">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</font></p>
+
+<p><b><u><i><font color="voilet" size="48">Chapter: MOTION</font></i></u></b></p>
+
+<p><i><u><font color="blue" size="10">Motion video lecture 1</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HETlNA6kVgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Motion video lecture 2 (Moition along straight line.)</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FhXVoXfczSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Motion video lecture 3 (Calculus)</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CNzncXv30Fo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Motion video lecture 4 (Calculus)</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T-8jlTEq8vg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Motion video lecture 5 (Calculus)</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/09BIQ-kxRNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><b><u><i><font color="voilet" size="48">Chapter: VECTOR</font></i></u></b></p>
+
+<p><i><u><font color="blue" size="10">Vector video lecture 1</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xNPGHbaDUrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Vector video lecture 2</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uIBtJtssOZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Vector video lecture 3</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8xFECfl7AcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Vector video lecture 4</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cCkBiI9dAOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Vector video lecture 5</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2AwdNnOWORI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Vector video lecture 6</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XBJH92kXhrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Vector video lecture 7</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/71QlhIy0QW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Vector video lecture 8</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nHMRXlNbgOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Vector video lecture 9</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6rjdOh3PFv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Vector video lecture 10</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4ytwta9k5fI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Vector video lecture 11</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vDUoac7U82I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Vector video lecture 12</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CiWr_rD4e7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><b><u><i><font color="voilet" size="48">Chapter: VERTICAL & PROJECTILE MOTION</font></i></u></b></p>
+
+<p><i><u><font color="blue" size="10">Vertical motion under Gravity</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i2pB_DR0lXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Projectile motion video lecture 1</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-se06ndwbtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Projectile motion video lecture 2</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o_ZuLpy2WE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><b><u><i><font color="voilet" size="48">Chapter: ELASTICITY</font></i></u></b></p>
+
+<p><i><u><font color="blue" size="10">Elasticity video lecture 1</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D2MzKvEUs9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Elasticity video lecture 2</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IxF3w8mrcDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><b><u><i><font color="voilet" size="48">Chapter: NEWTON'S LAWS OF MOTION.</font></i></u></b></p>
+
+<p><i><u><font color="blue" size="10">Newton's Laws of Motions video lecture 1</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UqFBJ0DcraI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Newton's Laws of Motions video lecture 2</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SgZGb_sZHfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Newton's Laws of Motions video lecture 3</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XQyw-N2S2yQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><b><u><i><font color="voilet" size="48">Chapter: FRICTION (Board Level).</font></i></u></b></p>
+
+<p><i><u><font color="blue" size="10">Friction (Board Level)</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nIyuweOIGLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><b><u><i><font color="voilet" size="48">Chapter: WORK POWER ENERGY.</font></i></u></b></p>
+
+<p><i><u><font color="blue" size="10">Work Power Energy video lecture (XI) 1</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tBUwo9UnMZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Work Power Energy video lecture (XI) 2</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9zoJUO-iibY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Work Power Energy video lecture (XI) 2 (Part 2)</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UlEsfQcgZHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><b><u><i><font color="voilet" size="48">Chapter: GRAVITATION.</font></i></u></b></p>
+
+<p><i><u><font color="blue" size="10">Gravitation lecture 1</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tWIPtyZZ-pY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Gravitation lecture 2</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IOWzlEwOwYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Gravitation lecture 3</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fhkRzq9JMOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><b><u><i><font color="voilet" size="48">Chapter: EXPANSION OF SOLID.</font></i></u></b></p>
+
+<p><i><u><font color="blue" size="10">Expansion of Solid</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y8KC8RDg7XE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><b><u><i><font color="voilet" size="48">Chapter: THERMAL CONDUCTION.</font></i></u></b></p>
+
+<p><i><u><font color="blue" size="10">Conduction lecture 1</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wf3qjrvsYSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Conduction lecture 2</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ByxSqwDJlCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><b><u><i><font color="voilet" size="48">Chapter: DIMENSION & MEASUREMENT.</font></i></u></b></p>
+
+<p><i><u><font color="blue" size="10">Dimentions & Measurements</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/g1bG8djPS-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><b><u><i><font color="voilet" size="48">Chapter: RELATIVE VELOCITY.</font></i></u></b></p>
+
+<p><i><u><font color="blue" size="10">Reletive Velocity.</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lVBMXvGmU9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><b><u><i><font color="voilet" size="48">Chapter: THERMODYNAMICS.</font></i></u></b></p>
+
+<p><i><u><font color="blue" size="10">Thermodynamics video lecture 1</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JfgvpnXFkUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Thermodynamics video lecture 2</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qOhPARSK7r8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Thermodynamics video lecture 3</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NeNF3resunk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Thermal Radiation.</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nmPXUJTqR6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><b><u><i><font color="voilet" size="48">Chapter: FLUID.</font></i></u></b></p>
+
+<p><i><u><font color="blue" size="10">Fluid dynamics video lecture 1</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jO8Bxz8ahZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Fluid dynamics video lecture 2</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uY5HrkONfjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Fluid Statics video lecture 1</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0ErLCjCmuXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Fluid Statics video lecture 2</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tCZDN89iMuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><b><u><i><font color="voilet" size="48">Chapter: SURFACE TENSION.</font></i></u></b></p>
+
+<p><i><u><font color="blue" size="10">Surface Tension of Liquid.</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O7tPhMCLva8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><b><u><i><font color="voilet" size="48">Chapter: CIRCULAR MOTION.</font></i></u></b></p>
+
+<p><i><u><font color="blue" size="10">Circular Motion video lecture 1.</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qi6qBJ3dc8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Circular Motion video lecture 2.</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jq_vQozle6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="blue" size="10">Circular Motion video lecture 3.</font></u></i></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pCONfQ3QMLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><i><u><font color="red" size="18">If any problem occurs then click the links given below.</font></u></i></p>
+
+<p>
+
+<p><font size="5">Motion 1 :<a href="https://youtu.be/HETlNA6kVgM">Motion 1</a></font></p>
+
+<p><font size="5">Motion 2 :<a href="https://youtu.be/FhXVoXfczSc">Motion 2</a></font></p>
+
+<p><font size="5">Motion 3(Calculus) :<a href="https://youtu.be/CNzncXv30Fo">Motion 3(Calculus)</a></font></p>
+
+<p><font size="5">Motion 4(Calculus) :<a href="https://youtu.be/T-8jlTEq8vg">Motion 4(Calculus)</a></font></p>
+
+<p><font size="5">Motion 5(Calculus) :<a href="https://youtu.be/09BIQ-kxRNc">Motion 5(Calculus)</a></font></p>
+
+<p><font size="5">Vector 1 :<a href="https://youtu.be/xNPGHbaDUrs">Vector 1</a></font></p>
+
+<p><font size="5">Vector 2 :<a href="https://youtu.be/uIBtJtssOZA">Vector 2</a></font></p>
+
+<p><font size="5">Vector 3 :<a href="https://youtu.be/8xFECfl7AcE">Vector 3</a></font></p>
+
+<p><font size="5">Vector 4 :<a href="https://youtu.be/cCkBiI9dAOk">Vector 4</a></font></p>
+
+<p><font size="5">Vector 5 :<a href="https://youtu.be/2AwdNnOWORI">Vector 5</a></font></p>
+
+<p><font size="5">Vector 6 :<a href="https://youtu.be/XBJH92kXhrM">Vector 6</a></font></p>
+
+<p><font size="5">Vector 7 :<a href="https://youtu.be/71QlhIy0QW8">Vector 7</a></font></p>
+
+<p><font size="5">Vector 8 :<a href="https://youtu.be/nHMRXlNbgOk">Vector 8</a></font></p>
+
+<p><font size="5">Vector 9 :<a href=" https://youtu.be/6rjdOh3PFv4">Vector 9</a></font></p>
+
+<p><font size="5">Vector 10 :<a href="https://youtu.be/4ytwta9k5fI">Vector 10</a></font></p>
+
+<p><font size="5">Vector 11 :<a href="https://youtu.be/vDUoac7U82I">Vector 11</a></font></p>
+
+<p><font size="5">Vector 12 :<a href=" https://youtu.be/CiWr_rD4e7Q">Vector 12</a></font></p>
+
+<p><font size="5">Vertical motion under Gravity :<a href="https://youtu.be/i2pB_DR0lXk">Vertical motion under Gravity</a></font></p>
+
+<p><font size="5">Projectile motion 1 :<a href=" https://youtu.be/-se06ndwbtY">Projectile motion 1</a></font></p>
+
+<p><font size="5">Projectile motion 2 :<a href="https://youtu.be/o_ZuLpy2WE8">Projectile motion 2</a></font></p>
+
+<p><font size="5">Elasticity 1 :<a href="https://youtu.be/D2MzKvEUs9s">Elasticity 1</a></font></p>
+
+<p><font size="5">Elasticity 2 :<a href="https://youtu.be/IxF3w8mrcDc">Elasticity 2</a></font></p>
+
+<p><font size="5">Newton's Law of Motion 1 :<a href="https://youtu.be/UqFBJ0DcraI">Newton's Law of Motion 1</a></font></p>
+
+<p><font size="5">Newton's Law of Motion 2 :<a href="https://youtu.be/SgZGb_sZHfQ">Newton's Law of Motion 2</a></font></p>
+
+<p><font size="5">Newton's Law of Motion 3 :<a href="https://youtu.be/XQyw-N2S2yQ">Newton's Law of Motion 3</a></font></p>
+
+<p><font size="5">Friction (Board Level) :<a href="https://youtu.be/nIyuweOIGLA">Friction (Board Level)</a></font></p>
+
+<p><font size="5">Work Power Energy(XI) 1 :<a href="https://youtu.be/tBUwo9UnMZc">Work Power Energy(XI) 1</a></font></p>
+
+<p><font size="5">Work Power Energy(XI) 2 :<a href="https://youtu.be/9zoJUO-iibY">Work Power Energy(XI) 2</a></font></p>
+
+<p><font size="5">Work Power Energy(XI) 2 (Part 2) :<a href="https://youtu.be/UlEsfQcgZHk">Work Power Energy(XI) 2 (Part 2)</a></font></p>
+
+<p><font size="5">Gravitation 1 :<a href="https://youtu.be/tWIPtyZZ-pY">Gravitation 1</a></font></p>
+
+<p><font size="5">Gravitation 2 :<a href="https://youtu.be/IOWzlEwOwYI">Gravitation 2</a></font></p>
+
+<p><font size="5">Gravitation 3 :<a href="https://youtu.be/fhkRzq9JMOE">Gravitation 3</a></font></p>
+
+<p><font size="5">Expansion of Solid :<a href="https://youtu.be/y8KC8RDg7XE">Expansion of Solid</a></font></p>
+
+<p><font size="5">Conduction 1 :<a href="https://youtu.be/wf3qjrvsYSM">Conduction 1</a></font></p>
+
+<p><font size="5">Conduction 2 :<a href="https://youtu.be/ByxSqwDJlCo">Conduction 2</a></font></p>
+
+<p><font size="5">Dimentions & Measurements :<a href="https://youtu.be/g1bG8djPS-Q">Dimentions & Measurements</a></font></p>
+
+<p><font size="5">Relative Velocity :<a href="https://youtu.be/lVBMXvGmU9k">Relative Velocity</a></font></p>
+
+<p><font size="5">Thermodynamics 1 :<a href="https://youtu.be/JfgvpnXFkUY">Thermodynamics 1</a></font></p>
+
+<p><font size="5">Thermodynamics 2 :<a href="https://youtu.be/qOhPARSK7r8">Thermodynamics 2</a></font></p>
+
+<p><font size="5">Thermodynamics 3 :<a href="https://youtu.be/NeNF3resunk">Thermodynamics 3</a></font></p>
+
+<p><font size="5">Thermal Radiation :<a href="https://youtu.be/nmPXUJTqR6I">Thermal Radiation.</a></font></p>
+
+<p><font size="5">Fluid Dynamics 1 :<a href="https://youtu.be/jO8Bxz8ahZk">Fluid Dynamics 1</a></font></p>
+
+<p><font size="5">Fluid Dynamics 2 :<a href="https://youtu.be/uY5HrkONfjY">Fluid Dynamics 2</a></font></p>
+
+<p><font size="5">Fluid Statics 1 :<a href="https://youtu.be/0ErLCjCmuXg">Fluid Statics 1</a></font></p>
+
+<p><font size="5">Fluid Statics 2 :<a href="https://youtu.be/tCZDN89iMuw">Fluid Statics 2</a></font></p>
+
+<p><font size="5">Surface Tension of Liquid :<a href="https://youtu.be/O7tPhMCLva8">Surface Tension of Liquid</a></font></p>
+
+<p><font size="5">Circular Motion 1 :<a href="https://youtu.be/qi6qBJ3dc8w">Circular Motion 1</a></font></p>
+
+<p><font size="5">Circular Motion 2 :<a href="https://youtu.be/jq_vQozle6A">Circular Motion 2</a></font></p>
+
+<p><font size="5">Circular Motion 3 :<a href="https://youtu.be/pCONfQ3QMLQ">Circular Motion 3</a></font></p>
+</p>
+
+<p>
+
+<p><i><u><font color="red" size="18">PDF Notes given below.</font></u></i></p>
+
+<p><font size="5">Newton's Laws of motion :<a href="file:///C:/Users/Snehasish%20Das/Desktop/Education/Physics%20Manas%20Chakladar.html/file%2011/CamScanner%2008-14-2020%2021.43.01.pdf">Newton's Laws of motion</a></font></p>
+
+<p><font size="5">Problems on Newton's Laws of motion :<a href="file:///C:/Users/Snehasish%20Das/Desktop/Education/Physics%20Manas%20Chakladar.html/file%2011/CamScanner%2008-08-2020%2012.23.12.pdf">Problems on Newton's Laws of motion</a></font></p>
+
+<p><font size="5">Projectile(problem---solution) :<a href="file:///C:/Users/Snehasish%20Das/Desktop/Education/Physics%20Manas%20Chakladar.html/file%2011/CamScanner%2007-25-2020%2012.59.01.pdf">Projectile(problem---solution)</a></font></p>
+
+<p><font size="5">Solution of problems on motion under Gravity :<a href="file:///C:/Users/Snehasish%20Das/Desktop/Education/Physics%20Manas%20Chakladar.html/file%2011/CamScanner%2007-16-2020%2014.00.05.pdf">Solution of problems on motion under Gravity</a></font></p>
+
+<p><font size="5">Friction(Solution) :<a href="file:///C:/Users/Snehasish%20Das/Desktop/Education/Physics%20Manas%20Chakladar.html/file%2011/CamScanner%2008-27-2020%2009.24.20.pdf">Friction(Solution)</a></font></p>
+
+</p>
+
+<marquee direction="left"><font color="green" size="10">Thanks for visiting the page.</font></marquee>
+</body>
+</html>

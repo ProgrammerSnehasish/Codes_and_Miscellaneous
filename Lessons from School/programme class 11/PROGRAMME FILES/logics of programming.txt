@@ -1,0 +1,317 @@
+even and odd.(if-else)
+        if (n%2==0)
+	printf("even");
+	'else';
+	printf("odd");
+------------------------------
+greater than.(if-else)
+        if(a>b)
+	printf("%d is greater",a);
+	else
+        if (b>a)
+	printf("%d is greater",b);
+	else
+	printf("both are equal");
+----------------------------------
+upper case & lower case character.(if-else)
+
+	if(ch>'a'&& ch<='z')
+	printf("lower case charecter");
+	if(ch>='A'&& ch<='Z')
+	printf("upper case character");
+	else
+	printf("not a letter");
+-------------------------------------
+accept three digits from user between one to nine.display the greatest and smallest three digit number.(if-else)
+        if(a>b && a>c)
+	{
+		if(b>c)
+		{
+			gn=100*a+b*10+c;
+			sn=100*b+10*c+a;
+		}
+	}
+	
+	else if(b>a && b>c)
+	{
+		if(a>c)
+		{
+			gn=b*100+a*10+c;
+			sn=c*100+a*10+b;
+		}
+		else
+		{
+			gn=100*b+c*10+a;
+			sn=a*100+c*10+b;
+		}
+	}
+	else if(c>a && c>b)
+	{
+		if(a>b)
+		{
+			gn=c*100+b*10+a;
+			sn=a*100+b*10+c;
+		}
+---------------------------------------------------------------------------------------------------------
+Check a character vowel or not.(if-else)
+        if(ch=='A'||ch=='a'||ch=='E'||ch=='e'||ch=='I'||ch=='i'||ch=='O'||ch=='o'||ch=='U'||ch=='u')
+	printf ("%c vowel",ch);
+	else
+	printf ("%c not vowel",ch);
+----------------------------------------------------------------------------------------------------------
+WAP to check a number buzz or not.(if-else)
+        if (n%7==0||n%10==7)
+	printf ("buzz number");  
+	else
+	printf("not buzz number");
+-----------------------------------------------------------------------------------------------------------
+initialize the day number and display the cooresponding name of day day.(if-else)
+        if(N<=1)
+	printf("The day is ------> Sunday",&d);
+	else
+	if(N<=2)
+	printf("The day is -------> Monday",&d);
+	else
+	if(N<=3)
+	printf("The day is --------> Tuesday",&d);
+	else
+	if(N<=4)
+	printf("The day is --------> Wednesday",&d);
+	else
+	if(N<=5)
+	printf("The day is ---------> Thursday",&d);
+	else
+	if(N<=6)
+	printf("The day is -----------> Friday",&d);
+	else
+	if(N<=7)
+	printf("The day is ---------> Saturday",&d);
+-----------------------------------------------------------------------------------------------------------
+month number and display month name.(if-else)
+        if(n<=1)
+	printf("The month is ------> January",&m);
+	else
+	if(n<=2)
+	printf("The month is -------> February",&m);
+	else
+	if(n<=3)
+	printf("The month is --------> March",&m);
+	else
+	if(n<=4)
+	printf("The month is --------> April",&m);
+	else
+	if(n<=5)
+	printf("The month is ---------> May",&m);
+	else
+	if(n<=6)
+	printf("The month is -----------> June",&m);
+	else
+	if(n<=7)
+	printf("The month is ---------> July",&m);
+	else
+	if(n<=8)
+	printf("The month is ----------> August",&m);
+	else
+	if(n<=9)
+	printf("The month is ----------> September",&m);
+	else
+	if(n<=10)
+	printf("The month is -----------> October",&m);
+	else
+	if(n<=11)
+	printf("The month is ----------> November",&m);
+	else
+	if(n<=12)
+	printf("The month is --------> December",&m);
+	if(n>=13)
+-----------------------------------------------------------------------------------------------------------
+ temperature and choice if choice=1, convert the taemperature from celcius to Ferhenhiet if choice=2 convert from ferhenhiet to celcius.(if-else)
+        if(cho<=1)
+	{
+		printf("enter temperature(In the range of celcius scale)---->",&C);
+		scanf("%d",&C);
+		if(C<=0 && C>=100,F=(9*C/5)+32)
+		printf("Final temperature is(In Ferhenhiet)------>%d",F);
+	}
+	else
+	if(cho<=2)
+	{
+		printf("enter temperature(In the range of Ferhenhiet scale)------->",&F);
+		scanf("%d",&F);
+		if(F<=32 && F>=212,C=(F-32)*5/9)
+		printf("Final temperature is(In Celcius)-------->%d",C);
+	}
+-----------------------------------------------------------------------------------------------------------
+temperature and choice if choice=1, convert the teperature from celcius to Kelvin if choice=2 convert form Kelvin to celcius.(if-else)
+        if(cho<=1)
+	{
+		printf("enter temperature(In the range of celcius scale)---->",&c);
+		scanf("%d",&c);
+		if(c<=0 && c>=100,k=273+c)
+		printf("Final temperature is(In Kelvin)------>%d",k);
+	}
+	else
+	if(cho<=2)
+	{
+		printf("enter temperature(In the range of Kelvin scale)------->",&k);
+		scanf("%d",&c);
+		if(k<=0 && k>=373,c=k-273)
+		printf("Final temperature is(In Celcius)-------->%d",c);
+	}
+-----------------------------------------------------------------------------------------------------------
+store a number and check if the number is negative or positive.(if-else)
+        if(n<=0 && n>=13765,n<=-1 && n>=-13765)
+	printf("The number is negative");
+	else
+	printf("The number is positive");
+-----------------------------------------------------------------------------------------------------------
+store a year and check if the year is lipyear.(if-else)
+        if(y%4==0)
+	printf("The year is lipyear",&c);
+	else
+	printf("The year is not lipyear",&c);
+-----------------------------------------------------------------------------------------------------------
+ store a number and check(if-else)
+      i> Div by 2 and 5 both.
+      ii> Div by 2 but not 5.
+      iii> Div by 5 but not 2.
+      iv> not Div by 2 and 5.
+        if(n%10==0)
+	printf("Divisable by 2 and 5 both.",&c);
+	else
+	if(n%2==0)
+	printf("Divisable by 2 but not 5.",&c);
+	else
+	if(n%5==0)
+	printf("Divisaable by 5 but not 2.",&c);
+	else
+	if (n%2==0,n%5==0)
+	printf("divisable by 10",&c);
+	else
+	printf("not divisable by 2 or 5.",&c);
+-----------------------------------------------------------------------------------------------------------
+store three number and check which one is greater.(if-else)
+        if(a>=b && a>=c)
+	printf("a is greater than b and c",con);
+	else
+	if(b>=c && b>=a)
+	printf("b is greater than a and c",con);
+	else
+	if(c>=a && c>=b)
+	printf("c is greater than a and b",con);
+-----------------------------------------------------------------------------------------------------------
+store the age of a person display whether he is eligible to vote or not.(if-else)
+        if(a>=1 && a<=18)
+	printf("Your age is not eligible for vote",&c);
+	else
+	if(a=18 && a>=19)
+	printf("Your age is eligible for vote",&c);
+-----------------------------------------------------------------------------------------------------------
+store two numbers in two variables and check which is greater.(if-else)
+        if(a>=b)
+	printf("a is greater than b",&con);
+	else
+	printf("b is greater than a",&con);
+-----------------------------------------------------------------------------------------------------------
+store SP and CP of an item calculate profit or loss.(if-else)
+        if(CP>=SP)
+	printf("You have lossed in your business!",&con);
+        else
+	if(SP>=CP)
+	printf("You have profited in your business!",&con);
+-----------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------
+1> 10-------1(while loop)
+i=n;
+while(i>=1)
+{
+printf("%d",i);
+i--;
+-----------------------------------------------------------------------------------------------------------
+1> 10-------1(while-loop)
+i=n;
+while(i>=1)
+{
+printf("%d",i);
+i--;
+}
+-----------------------------------------------------------------------------------------------------------
+2> 1357-------n(while-loop)
+i=1;
+printf("Enter the range",n);
+scanf("%d",&n);
+while(i<=n)
+{
+printf("%d",&i);
+i+2;
+}
+-----------------------------------------------------------------------------------------------------------
+3> sum of n terms of natural numbers.(while-loop)
+int i,n,s=0;
+------------------------------------;
+-------------;
+while(i<=n)
+{
+s=s+i;
+i++;
+}
+-----------------------------------------------------------------------------------------------------------
+4> perfect square.(while-loop)
+int i=1,n,c=0;
+printf("enter the range",n);
+scanf("%d",&n);
+while(i<=n)
+{
+if (n%i==0)
+c=c+i;
+i++;
+}
+if(c%2==1)
+printf("Perfect square");
+else
+printf("Not a Perfect square");
+-----------------------------------------------------------------------------------------------------------
+5> 1,2,3,...........n(while-loop)
+i=1;
+printf("Enter the range",n);
+scanf("%d",&n);
+while(i<=n)
+{
+printf("%d",i);
+i++;
+}
+}
+-----------------------------------------------------------------------------------------------------------
+ 6> sum of factors.(while-loop)
+int n,i,s=0;
+printf("Enter a number",n);
+scanf("%d",&n);
+i=1;
+while(i<=n)
+{
+if(n%i==0)
+s=s+i;
+i++;
+}
+printf("Sum of the factors=%d",s);
+-----------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------
+s=1-2+3-4+5-6+......(for-loop)
+for(i=1;i<=n;i++)
+{
+if(i%2==0)
+s=s-i;
+else
+s=s+i;
+}
+----------------------------------------------------------------------------------------------------------- s=1*3+2*4+3*5+........+9*10(for-loop)
+int i,n,s=0;
+for(i=1;i<=n;i++)
+{
+s=s+(i*(i+2));
+}
+printf("sum of series=%d",s);
+}
+-----------------------------------------------------------------------------------------------------------

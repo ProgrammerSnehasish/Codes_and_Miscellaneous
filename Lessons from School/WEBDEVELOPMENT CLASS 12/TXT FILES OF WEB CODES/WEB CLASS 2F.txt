@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>
+my web page
+</title>
+</head>
+<frameset cols="30%,40%,30%">
+<frame name="top" src="https://meet.google.com/bmc-rdxu-juf"/>
+<frame name="main" src="https://www.google.com/search?q=ipower&rlz=1C1CHBF_enIN926IN927&oq=ioowereh&aqs=chrome.1.69i57j0i13i433j0i13l2j0i10i13j0i13l4j46i13i175i199.2715j0j7&sourceid=chrome&ie=UTF-8"/>
+<frame name="bottom" src="https://math.stackexchange.com/questions/536052/whats-the-integral-of-a-constant/536065#:~:text=The%20integral%20of%20a%20constant%20C%20with%20respect%20to%20x,%3D0%2BA%3DA."/>
+</frameset>
+</html>

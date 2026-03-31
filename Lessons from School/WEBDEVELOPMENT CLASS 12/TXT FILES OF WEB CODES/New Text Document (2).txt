@@ -1,0 +1,51 @@
+<body background="https://i.ytimg.com/vi/a3k4wqwOCwo/maxresdefault.jpg" style="backround-repeat:no-repeat;background-size:100% 100%">
+
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DaSBS1iX6FU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><u><i><b><font color="green" face="STLiti" size="5">Video: <a href="https://en.wikipedia.org/wiki/Republic_Day_(India)"><font color="red">Republic Day</font></a> Celebration(71 st Celebration)</font></b></i></u></p>-Republic day celebration.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mtcsesoBa7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><font color="green" size="5" face="STLiti"><b><u><i>Video: Religious Festival celebration(<a href="https://en.wikipedia.org/wiki/Ganesh_Chaturthi"><font color="red">Ganesh Chaturthi</font></a>)</i></u></b></font></p>-Ganesh Chaturthi
+
+<p align="right"><iframe width="560" height="315" src="https://www.youtube.com/embed/55Gmv20hmrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+<p align="right"><font color="green" size="5" face="STLiti"><b><u><i>Video: Religious Festival celebration(<a href="https://en.wikipedia.org/wiki/Eid_al-Fitr"><font color="red">Eid</font></a> celebration accross India)</i></u></b></font></p>-Eid Celebration.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lT6iMGq_voY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><font color="green" size="5" face="STLiti"><b><u><i>Video: Religious Festival celebration(<a href="https://en.wikipedia.org/wiki/Christmas"><font color="red">Christmas</font></a> celebration)</i></u></b></font></p>-Christmas
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hh-o5g4tLVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><u><i><b><font color="green" face="STLiti" size="5">Video: <a href="https://en.wikipedia.org/wiki/Holi"><font color="red">Holi</font></a> Celebration(Biggest colour festival in the World.)</font></b></i></u></p>-Holi.
+
+<img src="http://www.yokibu.com/communityspeak/wp-content/uploads/2018/03/Hindu_Festivals.jpg" height="" width="" border="2" align="right"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+p
+{
+font-size:16pt;
+}
+</style>
+<body>
+<p><img src="URL of image" height="*" width="#" align="left/center/right"/>text</p>
+</body> 

@@ -1,0 +1,262 @@
+// wap a programme to check anumber perfect or not.(Scope Resolution)
+#include<iostream>
+using namespace std;
+class perfect{
+private: int n,s,i;
+public:
+void acc();
+void cal();
+void display();
+};
+void perfect::acc()
+{
+cout<<"Enter a number";
+cin>>n;
+}
+void perfect::cal()
+{
+s=0;
+for(i=1;i<n;i++)
+{
+if(n%i==0)
+{
+s=s+i;
+}
+}
+}
+void perfect::display()
+{
+if(s==n)
+cout<<"Perfect";
+else
+cout<<"Not Perfect";
+}
+int main()
+{
+perfect obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+-------------------------------------------------------------------------------------------------------------------------
+//wap a programme to check anumber Krishnamurti or not.
+#include<iostream>
+using namespace std;
+class speci{
+private: int n,i,j,s,d,t,f;
+public:
+void acc();
+void cal();
+void display();
+};
+void speci::acc()
+{
+cout<<"Enter a number";
+cin>>n;
+t=n;
+}
+void speci::cal()
+{
+s=0;
+while(n>0)
+{
+d=n%10;
+f=1;
+for(j=1;j<=d;j++)
+{
+f=f*j;
+}
+s=s+f;
+n=n/10;
+}
+}
+void speci::display()
+{
+if(s==t)
+cout<<"Special number";
+else
+cout<<"Not a special one";
+}
+int main()
+{
+speci obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------------------
+//wap a programme to check a number prime. (using consturctor)(defalut construtor)
+#include<iostream>
+using namespace std;
+class prime{
+private: int n,c,i;
+public:
+prime()
+{
+c=0;
+}
+void cal()
+{
+cout<<"enter a number";
+cin>>n;
+for(i=1;i<=n;i++)
+{
+if(n%i==0)
+{
+c=c+1;
+}
+}
+if (c==2)
+cout<<"Prime";
+else
+cout<<"Not prime";
+};
+int main()
+{
+prime obj;
+obj.cal();
+}
+------------------------------------------------------------------------------------------
+// function overloading.
+#include<iostream>
+using namespace std;
+class addition{
+public:
+int sum(int num1,int num2)
+{
+return num1+num2;
+}
+int sum(int num1,int num2, int num3)
+{
+return num1+num2+num3;
+}
+};
+int main()
+{
+addition obj;
+cout<<obj.sum(20,15)<<endl;
+cout<<obj.sum(81,100,10);
+}
+-----------------------------------------------------------------------------------------------
+// function overloading.2(area()--> rectangle,square)
+#include<iostream>
+using namespace std;
+class areaa{
+public:
+void area(int l,int b)
+{
+return l*b;
+}
+void area(int s)
+{
+return s*s;
+}
+};
+int main()
+{
+areaa obj;
+cout<<obj.area(10,5)<<\n;
+cout<<obj.area(25)<<\n;
+}
+---------------------------------------------------------------------------------------------------------
+/*inheritance type.
+class a
+class b*/
+#include<iostream>
+using namespace std;
+class account{
+public:
+float salary=60000;
+};
+class pro:public account{
+public:
+float bonus=5000.50;
+};
+int main()
+{
+pro p1;
+cout<<p1.salary<<endl;
+cout<<p1.bonus;
+}
+---------------------------------------------------------------------------------------------------------
+/*inheritance type.
+class a
+class b
+//sum of two numbers*/
+#include<iostream>
+using namespace std;
+class accept{
+public:
+int a,b,s;
+void acc()
+{
+cout<<"Enter two numbers";
+cin>>a>>b;
+s=0;
+}
+void cal()
+{
+s=a+b;
+}
+};
+class display:public accept{
+public:
+void dis()
+{
+cout<<"Sum of two numbers"<<s;
+}
+};
+int main()
+{
+display obj;
+obj.acc();
+obj.cal();
+obj.dis();
+}
+-----------------------------------------------------------------------------------------------
+/*inheritance.
+prime number:
+//class a acc(),cal()
+//class b dis()*/
+#include<iostream>
+using namespace std;
+class a{
+public:
+int n,i,c;
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+i=1;
+}
+void cal()
+{
+while(i<=n)
+{
+c=0;
+for(i=1;i<=n;i++)
+{
+if(n%i==0)
+c++;
+}
+}
+}
+};
+class b:public a{
+public:
+void dis()
+{
+if(c==2)
+cout<<"prime";
+else
+cout<<"not prime";
+}
+};
+int main()
+{
+b obj;
+obj.acc();
+obj.cal();
+obj.dis();
+}
+---------------------------------------------------------------------------------------------------

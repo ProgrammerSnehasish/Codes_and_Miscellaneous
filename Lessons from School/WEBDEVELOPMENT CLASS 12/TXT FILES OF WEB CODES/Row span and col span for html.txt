@@ -1,0 +1,44 @@
+<style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 6px;
+            }
+        </style>
+<table>
+<tr>
+<th><font color="brown"><b>Sl No.</b></font></th>
+<th><font color="brown"><b>Name of Festivals</b></font></th>
+<th><font color="brown"><b>Image of the Festival</b></font></th>
+<th><font color="brown"><b>Pages of the Festivals</b></font></th>
+</tr>
+<tr>
+<td><font color="red"><b>1.</b></font></td>
+<td><font color="Green" face="STXingkai" size="4"><b>Durga Puja</b></font></td>
+<td><img src="https://images.unsplash.com/photo-1616074385287-67f6fb9e9eb8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZHVyZ2ElMjBwdWphfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" height="110" width="150" border="2"></td>
+<td><a href="Durga Puja.html"><button><font color="Blue" face="Edwardian Script ITC" size="4"><b>Go to the page>></b></font></button></a></td>
+</tr>
+<tr>
+<td><font color="red"><b>2.</b></font></td>
+<td><font color="Green" face="STXingkai" size="4"><b>Eid</b></font></td>
+<td><img src="https://mcmscache.epapr.in/post_images/website_13/post_17512727/thumb.jpg" height="110" width="150" border="2"></td>
+<td><a href="Eid.html"><button><font color="Blue" face="Edwardian Script ITC" size="4"><b>Go to the page>></b></font></button></a></td>
+</tr>
+<tr>
+<td><font color="red"><b>3.</b></font></td>
+<td><font color="Green" face="STXingkai" size="4"><b>Christmas</b></font></td>
+<td><img src="https://cdn.theculturetrip.com/wp-content/uploads/2017/12/christmas-amanda-slater-flickr.jpg" height="110" width="150" border="2"></td>
+<td><a href="Christmas.html"><button><font color="Blue" face="Edwardian Script ITC" size="4"><b>Go to the page>></b></font></button></a></td>
+</tr>
+<tr>
+<td><font color="red"><b>4.</b></font></td>
+<td><font color="Green" face="STXingkai" size="4"><b>Holi</b></font></td>
+<td><img src="https://i.pinimg.com/originals/20/de/f7/20def779217bb918382d8831ef4d0a54.jpg" height="110" width="150" border="2"></td>
+<td><a href="Holi.html"><button><font color="Blue" face="Edwardian Script ITC" size="4"><b>Go to the page>></b></font></button></a></td>
+</tr>
+<tr>
+<td><font color="red"><b>5.</b></font></td>
+<td><font color="Green" face="STXingkai" size="4"><b>Ganesh Chaturthi</b></font></td>
+<td><img src="https://static.theprint.in/wp-content/uploads/2020/08/ganeshc.jpg" height="110" width="150" border="2"></td>
+<td><a href="Ganesh Chaturthi.html"><button><font color="Blue" face="Edwardian Script ITC" size="4"><b>Go to the page>></b></font></button></a></td>
+</tr>

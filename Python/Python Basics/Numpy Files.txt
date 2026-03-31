@@ -1,0 +1,148 @@
+#Applications of Numpy
+import numpy as np
+list=[]
+list2=[]
+no_of_element=int(input("Enter no of elements in the list:"))
+print("Enter data for 1st list:")
+for i in range(0,no_of_element):
+    element=int(input(f"Enter element {i+1}:"))
+    list.insert(i,element)
+print("Enter data for 2nd list:")
+for i in range(0,no_of_element):
+    ele=int(input(f"Enter element {i+1}:"))
+    list2.insert(i,ele)
+Array=np.array(list)
+print(f"The array(of list 1) using numpy is: {Array}")#1-D Numpy Array
+D2Array=np.array([list,list2])
+print(f"The 2D array using Numpy is:\n {D2Array}")#2-D Numpy Array
+print(f"Shape of 2D array: {str(D2Array.shape)}")#Printing Shape of 2D Array
+print(f"Datatype of the 2D Array is: {D2Array.dtype}")#Printing Datatype of 2D array
+#Multiplication of elements with respect to a scalar using Numpy(Previous operation done in line 14)
+scalar_value=int(input("Enter the scalar value with which the list elements are to be multiplied:"))
+print(f"The result of the multiplication of list 1 elements w.r.t scalar value is:{Array*scalar_value}")
+#Addition,Subtraction,Multiplication,Division,Square Root of list/arrays(using Numpy).
+Array1=np.array(list)
+Array2=np.array(list2)
+print(f"Addition of two Arrays is: {np.add(Array1,Array2)}")#Result of Addition
+print(f"Subtraction of two Arrays is: {np.subtract(Array2,Array1)}")#Result of Subtraction
+print(f"Multiplication of two Arrays is: {np.multiply(Array1,Array2)}")#Result of Multipy
+print(f"Division of two Arrays is: {np.divide(Array1,Array2)}")#Result of Divison
+print(f"Square root value of Array1 is: {np.sqrt(Array1)}")#Result of Square Root
+#Dot Product of two 2D arrays.
+D2Array1=np.array([list,list2])
+D2Array2=np.array([list2,list])
+print(f"The dot product of two 2D arrays:\n {np.dot(D2Array1,D2Array2)}")#Result of the dot product of two 2D Arrays
+#Transpose of 2D Array.
+print(f"The Transpose of 2D Array 1:\n {np.transpose(D2Array)}")#Printing Transposed 2D Array.
+print("Creating Array of Zeros:")
+Row=int(input("Enter Size of rows of matrix:"))
+Column=int(input("Enter Size of columns of matrix:"))
+ArrayZeros=np.zeros((Row,Column))
+print(f"The array of zeros of dimension {Row}x{Column} is:\n {ArrayZeros}")#Printing Array of Zeros
+print("Creating Array of Ones")
+Row=int(input("Enter Size of rows of matrix:"))
+Column=int(input("Enter Size of columns of matrix:"))
+ArrayOnes=np.ones((Row,Column))
+print(f"The array of ones of dimension {Row}x{Column} is:\n {ArrayOnes}")#Printing Array of Ones
+print("Creating Identity Matrices of N dimension:")
+Dimension=int(input("Enter Size of matrix:"))
+IdentityArray=np.eye(Dimension)
+print(f"The Identity array of dimension {Dimension} is:\n {IdentityArray}")#Printing Identity Array
+print("Creating Matrice of random Numbers:")
+Row=int(input("Enter Size of rows of matrix:"))
+Column=int(input("Enter Size of columns of matrix:"))
+RandomelementArray=np.random.random((Row,Column))
+print(f"The Array consisting random elements of dimension {Row}x{Column} is:\n {RandomelementArray}")#Printing Random element Array
+print("Arranging elements(Creating Sequence):")
+StartingVal=int(input("Enter Starting Value:"))
+EndingVal=int(input("Enter Ending Value:"))
+Order=int(input("Enter the order of the sequence:"))
+SequencedArray=np.arange(StartingVal,EndingVal,Order)
+print(f"The Sequenced 1D Array is: {SequencedArray}")#Sequenced Array
+#Array Indexing and Slicing.
+NewArray=np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
+print(f"The whole array is:\n{NewArray[ : , : ]}")#Printing All Rows and Columns of the 2D Array
+estimated_row=int(input("Enter the row from where you want to print the whole array (row you want - 1):"))
+print(f"The whole array from row {estimated_row+1}:\n{NewArray[estimated_row: , : ]}")#Printing the whole array from row estimated_row+1
+print("Searching element with row and column indexes:")
+row_val=int(input("Enter Row value:"))
+col_val=int(input("Enter Column value:"))
+print(f"The element present in the indexes({row_val},{col_val})is: {NewArray[row_val,col_val]}")#Printing Value using Row Value and Cloumn Value
+===================================================
+Output:
+"C:\Users\Snehasish Das\PycharmProjects\pythonProject2\venv\Scripts\python.exe" "C:/Users/Snehasish Das/PycharmProjects/pythonProject2/main.py" 
+Enter no of elements in the list:2
+Enter data for 1st list:
+Enter element 1:2
+Enter element 2:3
+Enter data for 2nd list:
+Enter element 1:4
+Enter element 2:5
+The array(of list 1) using numpy is: [2 3]
+The 2D array using Numpy is:
+ [[2 3]
+ [4 5]]
+Shape of 2D array: (2, 2)
+Datatype of the 2D Array is: int32
+Enter the scalar value with which the list elements are to be multiplied:3
+The result of the multiplication of list 1 elements w.r.t scalar value is:[6 9]
+Addition of two Arrays is: [6 8]
+Subtraction of two Arrays is: [2 2]
+Multiplication of two Arrays is: [ 8 15]
+Division of two Arrays is: [0.5 0.6]
+Square root value of Array1 is: [1.41421356 1.73205081]
+The dot product of two 2D arrays:
+ [[14 19]
+ [26 35]]
+The Transpose of 2D Array 1:
+ [[2 4]
+ [3 5]]
+Creating Array of Zeros:
+Enter Size of rows of matrix:3
+Enter Size of columns of matrix:2
+The array of zeros of dimension 3x2 is:
+ [[0. 0.]
+ [0. 0.]
+ [0. 0.]]
+Creating Array of Ones
+Enter Size of rows of matrix:2
+Enter Size of columns of matrix:3
+The array of ones of dimension 2x3 is:
+ [[1. 1. 1.]
+ [1. 1. 1.]]
+Creating Identity Matrices of N dimension:
+Enter Size of matrix:5
+The Identity array of dimension 5 is:
+ [[1. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0.]
+ [0. 0. 1. 0. 0.]
+ [0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 1.]]
+Creating Matrice of random Numbers:
+Enter Size of rows of matrix:4
+Enter Size of columns of matrix:4
+The Array consisting random elements of dimension 4x4 is:
+ [[0.43728049 0.73568937 0.29240783 0.70129471]
+ [0.70381384 0.45617277 0.55196807 0.29816743]
+ [0.25483385 0.8291939  0.51344085 0.64909064]
+ [0.83298185 0.00948518 0.65518595 0.00707809]]
+Arranging elements(Creating Sequence):
+Enter Starting Value:1
+Enter Ending Value:20
+Enter the order of the sequence:5
+The Sequenced 1D Array is: [ 1  6 11 16]
+The whole array is:
+[[ 1  2  3  4]
+ [ 5  6  7  8]
+ [ 9 10 11 12]]
+Enter the row from where you want to print the whole array (row you want - 1):1
+The whole array from row 2:
+[[ 5  6  7  8]
+ [ 9 10 11 12]]
+Searching element with row and column indexes:
+Enter Row value:0
+Enter Column value:3
+The element present in the indexes(0,3)is: 4
+
+Process finished with exit code 0
+------------------------------------------------------------------------------------------------------------------------------------------------------------

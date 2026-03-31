@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>
+my web page
+</title>
+</head>
+<body>
+<pre>---------------------------------
+----------------------------------------------------------------
+<hr></hr>
+-----------</pre>
+<a herf="https://www.google.com/"> Go to home page of google</a><br>
+<a herf="https://www.google.com/">online from fillup</a>
+</body>
+</html>

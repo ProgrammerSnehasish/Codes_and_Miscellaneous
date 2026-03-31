@@ -1,0 +1,1489 @@
+/*
+1 
+12
+123
+1234
+12345
+*/
+#include<iostream>
+using namespace std;
+int main()
+{
+	int j,i,n;
+	cout<<"enter a range";
+	cin>>n;
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=i;j++)
+		{
+			cout<<j;
+		}
+		cout<<"\n";
+	}
+}
+-----------------------------------------------------------
+/* 1 1 1 1 1
+   1 1 1 2 2
+   1 1 3 3 3
+   1 4 4 4 4
+   5 5 5 5 5
+   */
+#include<stdio.h>
+int main()
+{
+	int i,j,k,n;
+	printf("Enter the range");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		for(j=n-1;j>=1;j=j-2)
+		{
+			printf("1");
+		}
+		for(k=1;k<=i;k++)
+		{
+		printf("%d",i);
+		}
+		printf("\n");
+	}
+}
+---------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+                                                                        PATTERN PRINTING
+/* 
+*
+**
+***
+****
+*****
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;	
+}
+void display()
+{
+for (i=1;i<=5;i++)
+{
+for (j=1;j<=i;j++)
+{
+cout<<"*";
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+1
+12
+123
+1234
+12345
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;	
+}
+void display()
+{
+for (i=1;i<=5;i++)
+{
+for (j=1;j<=i;j++)
+{
+cout<<""<<j;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+1
+22
+333
+4444
+55555
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;	
+}
+void display()
+{
+for (i=1;i<=5;i++)
+{
+for (j=1;j<=i;j++)
+{
+cout<<""<<i;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+A
+AB
+ABC
+ABCD
+ABCDE
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: char i,j;
+public:
+void acc()
+{	
+}
+void display()
+{
+for (i='A';i<='E';i++)
+{
+for (j='A';j<=i;j++)
+{
+cout<<""<<j;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+A
+BB
+CCC
+DDDD
+EEEEE
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: char i,j;
+public:
+void acc()
+{	
+}
+void display()
+{
+for (i='A';i<='E';i++)
+{
+for (j='A';j<=i;j++)
+{
+cout<<""<<i;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+  1
+  10
+  101
+  1010
+  10101
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for (i=1;i<=n;i++)
+{
+for (j=1;j<=i;j++)
+{
+cout<<""<<j%2;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+*****
+*****
+*****
+*****
+*****
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;	
+}
+void display()
+{
+for (i=1;i<=n;i++)
+{
+for (j=1;j<=n;j++)
+{
+cout<<"*";
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+11111
+22222
+33333
+44444
+55555
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;	
+}
+void display()
+{
+for (i=1;i<=n;i++)
+{
+for (j=1;j<=n;j++)
+{
+cout<<""<<i;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+12345
+12345
+12345
+12345
+12345
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;	
+}
+void display()
+{
+for (i=1;i<=n;i++)
+{
+for (j=1;j<=n;j++)
+{
+cout<<""<<j;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+AAAAA
+BBBBB
+CCCCC
+DDDDD
+EEEEE
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: char i,j;
+public:
+void acc()
+{
+}
+void display()
+{
+for (i='A';i<='E';i++)
+{
+for (j='A';j<='E';j++)
+{
+cout<<""<<i;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+ABCDE
+ABCDE
+ABCDE
+ABCDE
+ABCDE
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: char i,j;
+public:
+void acc()
+{
+}
+void display()
+{
+for (i='A';i<='E';i++)
+{
+for (j='A';j<='E';j++)
+{
+cout<<""<<j;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+55555
+44444
+33333
+22222
+11111
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for (i=n;i>=1;i--)
+{
+for (j=1;j<=n;j++)
+{
+cout<<""<<i;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+---------------------------------------------------------------------------------------------------------------
+/* 
+54321
+54321
+54321
+54321
+54321
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for (i=1;i<=n;i++)
+{
+for (j=n;j>=1;j--)
+{
+cout<<""<<j;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+EEEEE
+DDDDD
+CCCCC
+BBBBB
+AAAAA
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: char i,j;
+public:
+void acc()
+{
+}
+void display()
+{
+for (i='E';i>='A';i--)
+{
+for (j='A';j<='E';j++)
+{
+cout<<""<<i;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+EDCBA
+EDCBA
+EDCBA
+EDCBA
+EDCBA
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: char i,j;
+public:
+void acc()
+{
+}
+void display()
+{
+for (i='A';i<='E';i++)
+{
+for (j='E';j>='A';j--)
+{
+cout<<""<<j;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+*****
+****
+***
+**
+*
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for (i=1;i<=n;i++)
+{
+for (j=n;j>=i;j--)
+{
+cout<<"*";	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+54321
+5432
+543
+54
+5
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for (i=1;i<=n;i++)
+{
+for (j=n;j>=i;j--)
+{
+cout<<""<<j;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+54321
+4321
+321
+21
+1
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for (i=n;i>=1;i--)
+{
+for (j=i;j>=1;j--)
+{
+cout<<""<<j;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+55555
+4444
+333
+22
+1
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for (i=n;i>=1;i--)
+{
+for (j=1;j<=i;j++)
+{
+cout<<""<<i;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+11111
+2222
+333
+44
+5
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for (i=1;i<=n;i++)
+{
+for (j=n;j>=i;j--)
+{
+cout<<""<<i;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+12345
+1234
+123
+12
+1
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for (i=n;i>=1;i--)
+{
+for (j=1;j<=i;j++)
+{
+cout<<""<<j;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+    *
+   **
+  ***
+ ****
+*****
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j,k;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=n-1;j>=i;j--)
+{
+cout<<" ";
+}
+for(k=1;k<=i;k++)
+{
+cout<<"*";
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+    1
+   12
+  123
+ 1234
+12345
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j,k;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=n-1;j>=i;j--)
+{
+cout<<" ";
+}
+for(k=1;k<=i;k++)
+{
+cout<<""<<k;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+    1
+   22
+  333
+ 4444
+55555
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j,k;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=n-1;j>=i;j--)
+{
+cout<<" ";
+}
+for(k=1;k<=i;k++)
+{
+cout<<""<<i;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+    0
+   11
+  222
+ 3333
+44444
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j,k;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=n-1;j>=i;j--)
+{
+cout<<" ";
+}
+for(k=1;k<=i;k++)
+{
+cout<<""<<j;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+    *
+   ***
+  *****
+ *******
+*********
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j,k;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=n-1;j>=i;j--)
+{
+cout<<" ";
+}
+for(k=1;k<=2*i-1;k++)
+{
+cout<<"*";
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+-------------------------------------------------------------------------------------------------------------
+/* 
+    1
+   123
+  12345
+ 1234567
+123456789
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j,k;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=n-1;j>=i;j--)
+{
+cout<<" ";
+}
+for(k=1;k<=2*i-1;k++)
+{
+cout<<""<<k;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+    1
+   222
+  33333
+ 4444444
+555555555
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j,k;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=n-1;j>=i;j--)
+{
+cout<<" ";
+}
+for(k=1;k<=2*i-1;k++)
+{
+cout<<""<<i;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+    0
+   111
+  22222
+ 3333333
+444444444
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j,k;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=n-1;j>=i;j--)
+{
+cout<<" ";
+}
+for(k=1;k<=2*i-1;k++)
+{
+cout<<""<<j;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+    *
+   ***
+  *****
+ *******
+*********
+*********
+ *******
+  *****
+   ***
+    *
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int row,col,space,n;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(row=1;row<=n;row++)
+{
+for(space=1;space<=n-row;space++)
+cout<<" ";
+for(col=1;col<=(2*row)-1;col++)
+cout<<"*";
+cout<<"\n";
+}
+for(row=n-1;row>=1;row--)
+{
+for(space=1;space<=n-row;space++)
+cout<<" ";
+for(col=1;col<=(2*row)-1;col++)
+cout<<"*";
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+        *
+      ***
+    *****
+  *******
+*********
+  *******
+    *****
+      ***
+        *
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int row,col,space,n;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(row=1;row<=n;row++)
+{
+for(space=1;space<=n-row;space++)
+cout<<"  ";
+for(col=1;col<=(2*row)-1;col++)
+cout<<"*";
+cout<<"\n";
+}
+for(row=n-1;row>=1;row--)
+{
+for(space=1;space<=n-row;space++)
+cout<<"  ";
+for(col=1;col<=(2*row)-1;col++)
+cout<<"*";
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+  1 2 3 4 5
+  0 3 4 5 6
+  0 0 5 6 7
+  0 0 0 7 8
+  0 0 0 0 9
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=0;i<n;i++)
+{
+for(j=1;j<=n;j++)
+{
+if(j<=i)
+{
+cout<<"0 ";
+}
+else
+{
+cout<<" "<<i+j;
+}
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+1 2 3
+4 5 6
+7 8 9
+a b c
+d e f
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int i,j,x;
+public:
+void acc()
+{
+x=1;
+}
+void display()
+{
+for(i=1;i<=5;i++)
+{
+for(j=1;j<=3;j++)
+{
+cout<<" ",x;
+x++;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+   1 0 0 0 0
+   0 2 0 0 0
+   0 0 3 0 0
+   0 0 0 4 0
+   0 0 0 0 5
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,s,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=1;j<=n;j++)
+{
+if(i==j)
+{
+cout<<""<<i;
+}
+else
+{
+cout<<"0";
+}
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+   0 * * * *
+   * 0 * * *
+   * * 0 * *
+   * * * 0 *
+   * * * * 0
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,s,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=1;j<=n;j++)
+{
+if(i==j)
+{
+cout<<"0 ";
+}
+else
+{
+cout<<"* ";
+}
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+* * * * * * * * *
+  * * * * * * *
+    * * * * *
+      * * *
+        *
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int row,col,space,n;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(row=1;row<=n;row++)
+{
+for(space=1;space<=n-row;space++)
+cout<<"  ";
+for(col=1;col<=(2*row)-1;col++)
+cout<<"* ";
+cout<<"\n";
+}
+for(row=n-1;row>=1;row--)
+{
+for(space=1;space<=n-row;space++)
+cout<<"  ";
+for(col=1;col<=(2*row)-1;col++)
+cout<<"* ";
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ * * *
+ * * *
+ * * *
+ * * *
+ * * *
+ * * *
+ * * *
+ * * * * *
+ * * * * *
+ * * * * *
+ * * * * *
+ * * * * *
+ * * * * *
+ * * * * * * *
+ * * * * * * *
+ * * * * * * *
+ * * * * * * *
+ * * * * * * *
+ * * * * * * * * *
+ * * * * * * * * *
+ * * * * * * * * *
+ * * * * * * * * *
+ * * * * * * * * * * *
+ * * * * * * * * * * *
+ * * * * * * * * * * *
+ * * * * * * * * * * * * *
+ * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * *
+
+#include<stdio.h>
+int main()
+{
+	int r,c,s,n;
+	printf("enter your range");
+	scanf("%d",&n);
+	for(r=1;r<=n;r++)
+	{
+	    for(s=1;s<=n-r;s++)
+	    {
+	    	printf(" ");
+	    	for(c=1;c<=(2*r)-1;c++)
+	    	{
+	    		printf("* ");
+			}
+			printf("\n");
+		}
+	}
+	
+}
+----------------------------------------------------------------
+
+
+
+
+

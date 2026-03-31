@@ -1,0 +1,558 @@
+//Procedure to create and mount your js file in browser.
+/*step 1: create a Java Script as the name fileName.js file in desktop.
+step 2: create a html file on desktop name fileName.html file in desktop.
+step 3: Mount the JS file on the html by using <script src="fileName.js"></script>, under the body tag and inside the html tag.*/
+//What is code block:
+{ code }: This whole thing is a block.
+//Data Types[Primitive]: Number,String,Boolean,Undefined,Null,BigInt,Symbol
+//Data Types [Non-Primitive]: Objects(Arrays,Functions)
+=======================================================================
+//To create message pop up(in console and also in js file).
+alert("Message");
+-----------------------------------------------------------------------
+//To print something using js(in console and also in js file).
+console.log("message");//log is used to print.
+-----------------------------------------------------------------------
+//To declare and initialize value of a variable(in console)[WRONG METHOD].
+age = 20;//Value type.
+name = "Snehasish Das";//String type.
+//to print the value.
+age <enter>
+name <enter> 
+----------------------------------------------------------------------
+//To declare and initialize value of a variable(in js file)[WRONG METHOD].
+age = 20;//Value type.
+name = "Snehasish Das";//String type.
+x = null;//Null type data.
+y = undefined;//The in the variable is undefined(by deault value also).
+isdone = false/true//Boolean value.
+//to print the value.
+console.log(age);
+console.log(name);
+console.log(isdone);
+-----------------------------------------------------------------------
+//To concatenate somthing in message.
+age = 20;
+console.log("His age is:" + age);
+console.log("His age is:" , age);
+-----------------------------------------------------------------------
+//Correct way to declare variables:
+//var: Variable, can be re-declared & updated. A global scope variable.
+//let: Variable can't be redeclared but can be updated. A block scope variable.
+//const: Variable cannot be re-declared or updated. A block scope variable.
+//let is more efficient while creating website as it doesn't allow to make duplicate a variable with same name.
+let name = "Snehasish Das"//String Type.
+var/let/const age = 24;//Value Type.
+const pi = 3.14;
+-----------------------------------------------------------------------
+//Code to check datatype(in console).
+typeof variable_name;
+-----------------------------------------------------------------------
+//Process to declare a Object.
+const student = {
+	name : "Snehasish Das",
+	age : 20,
+	cgpa : 7.85,
+	isPass : true,
+};
+//To print the whole object(in console):
+student//enter object name(here student).
+//To print some specific data(key) from the object(in console):
+student.name//enter object.key(here just like student.name).
+student["name"]//enter object["key"](here just like student["name"]).
+-----------------------------------------------------------------------
+//Code in Js for Object(including updates).
+console.log("Hello World, myself Snehasish Das.");
+alert("Do you want to continue?");
+let fullname = "Snehasish Das";//String Type.
+console.log(fullname);
+let age = 20;
+console.log("My age is:" + age);
+let isdecent = true;
+console.log("Is he decent?:"+isdecent);
+const student = {
+	name : "Snehasish Das",
+	age : 20,
+	cgpa : 7.85,
+	isPass : true,
+};
+student["cgpa"] = student["cgpa"] + 0.15;
+console.log(student.cgpa);
+-----------------------------------------------------------------------
+//Create a const object called "product" to store information.
+const product = {
+    title : "Parker Jotter Standard CT Ball Pen(Black)",
+    ratings : 4,
+    dealOfTheDay : true,
+    productPrice : 285,
+    offeredProductPrice : 270,
+    offerPercentage : 5
+};
+console.log(product);
+-----------------------------------------------------------------------
+//Create a const object called "profile" to store information.
+const profile = {
+    user_name : "@nature.snehasish",
+    isfollwed : false,
+    message : undefined,
+    no_of_posts : 69,
+    no_of_followers : 74,
+    no_of_following : 118,
+    fullname : "Snehasish Das",
+    pronounce : "him/his",
+    bio : "Nature Lover"
+};
+console.log(profile);
+console.log(typeof(profile.fullname));//To check type of key in js file.
+-----------------------------------------------------------------------
+//Play with strings.
+"abc" + 123
+> 'abc123'
+"123" + 456
+> '123456'
+-----------------------------------------------------------------------
+/*Operators in Js:
+Arithmatic Operators:
++ : Addition
+- : Subtraction
+* : Multiplication
+/ : Division
+% : Modulus
+** : Exponentiation
+Unary Operators
+x++, ++x : Increment
+x--, --x : Decrement
+Assignment Operators:
+= : assign 
++= : assign add
+-= : assign sub
+*= : assign mul
+%= : assign mod
+**= : assign exponentiation
+Comparision Operators:
+== : Equals to
+!= : Not Equals to
+=== : Equal to & type
+!== : Not equals to & type
+> : greater than
+>= : greater than equals to
+< : less than
+<= : less than equals to
+logical Operators:
+&& : Logical And
+|| : Logical Or
+! : Logical Not
+*/
+//Simple applications of 
+//Arithmatic Operators
+console.log("Let's Perform Arithmatic Oprations.");
+let a = 9;
+let not_a = "9";
+let b = 8;
+console.log("The Addition of ",a," & ",b," is(a+b):",a+b);
+console.log("The Subtraction of ",a," & ",b," is(a-b):",a-b);
+console.log("The Multiplication of ",a," & ",b," is(a*b):",a*b);
+console.log("The Division of ",a," & ",b," is(a/b):",a/b);
+console.log("The Modulus of ",a," & ",b," is(a%b):",a%b);
+console.log("The Exponentiation of ",a," & ",b," is:",a**b);
+//Unary Operator.
+console.log("The Pre-Increment of ",a," is(++a):",++a);
+console.log("The Post-Increment of ",a," is(a++):",a++);
+console.log("The Pre-Decrement of ",b," is(--b):",--b);
+console.log("The Post-Decrement of ",b," is(b--):",b--);
+//Assignment Operators
+console.log("a += 4: ",a += 4);
+console.log("a -= 4: ",a -= 4);
+console.log("a *= 4: ",a *= 4);
+console.log("a %= 4: ",a %= 4);
+console.log("a **= 4: ",a **= 4);
+//Comparision Opeartor.
+console.log("a==b :",a==b);
+console.log("a===not_a :",a===not_a);
+console.log("a!=b :",a!=b);
+console.log("a!==not_a :",a!==not_a);
+console.log("a>b :",a>b);
+console.log("a>=b :",a>=b);
+console.log("a<b :",a<b);
+console.log("a<=b :",a<=b);
+//Logical Opreator.
+let cond1 = a > b;
+let cond2 = a==9;
+console.log("cond1 && cond2 :",cond1 && cond2);
+console.log("cond1 || cond2 :",cond1 || cond2);
+console.log("!cond1 :", !cond1);
+-----------------------------------------------------------------------
+//Conditional Statements
+//If Statements.
+let color;
+if(mode == "dark-mode"){
+	color = "black";
+}
+-----------------------------
+//Conditional Statement(if)
+let age = 20;
+if(age > 18){
+    console.log("You are eligible for voting");
+}
+if(age < 18){
+    console.log("You aren't eligible for voting");
+}
+-------------------------------------------------
+//Conditional Statement(if)
+let mode = "dark";
+let bgcolor;
+if(mode === "dark"){
+    bgcolor = "black";
+}
+if(mode === "light"){
+    bgcolor = "white";
+}
+console.log(bgcolor);
+---------------------------------------------------
+//If-else Statement(if-else)
+let mode = "light";
+let bgcolor;
+if(mode === "dark"){
+    bgcolor = "black";
+}else{
+    bgcolor = "white";
+}
+console.log(bgcolor);
+---------------------------------------------------
+//Conditional Statement(if-else)
+let age = 19;
+if (age >= 18){
+    console.log("Eligible for voting");
+}else{
+    console.log("Not eligible for voting");
+}
+----------------------------------------------------
+//Conditional Statement to check odd or even
+let num = 34;
+if (num%2 == 0){
+    console.log("The given number "+num+" is even");
+}else{
+    console.log("The given number "+num+" is even");
+}
+------------------------------------------------------
+//Else-if Statement
+//Color mode.(else-if)
+let mode = "default"
+let bgcolor;
+if(mode == "dark"){
+    bgcolor = "black";
+}else if(mode == "blue"){
+    bgcolor = "blue";
+}else if(mode == "light"){
+    bgcolor = "white";
+}else if(mode == "pink"){
+    bgcolor = "pink";
+}else{
+    bgcolor = "grey";
+}
+console.log(bgcolor);
+--------------------------------------------------------
+//JS in Html.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="in"/>
+    <button onclick="factorial()">Click</button>
+    <p id="res"></p>
+    <script>
+        {
+        var a=10
+        let b = 20
+        const c = 30
+        }
+        // console.log(a, c)
+        // function factorial(n) {
+        //     fact=1
+        //     for(i=1;i<=n;i++) {
+        //         fact = fact * i;
+        //     }
+        //     // return fact;
+        //     document.getElementById("res").innerText = fact
+        // }
+        // a = factorial(5)
+        // console.log(a)
+        
+        // function factorial() {
+        //     let n = prompt("Enter a number")
+        //     n = parseInt(n)
+        //     console.log(typeof(n))
+        //     fact=1
+        //     for(i=1;i<=n;i++) {
+        //         fact = fact * i;
+        //     }
+        //     // return fact;
+        //     document.getElementById("res").innerText = fact
+        // }
+
+        function factorial() {
+            let n = document.getElementById("in").value;
+            console.log(n)
+            n = parseInt(n)
+            console.log(typeof(n))
+            fact=1
+            for(i=1;i<=n;i++) {
+                fact = fact * i;
+            }
+            // return fact;
+            document.getElementById("res").innerText = fact
+        }
+    </script>
+</body>
+<!-- <script src="My first js page.js"></script> -->
+
+</html>
+-----------------------------------------------------------------------
+//The js of bulb in html.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="bulb" style="border-radius: 50%; height: 300px; width: 300px; border: 1px; background-color: black;">
+
+    </div>
+    <button onclick="switchBulb()">switch</button>
+    <script>
+        var off = true;
+        function switchBulb()
+        {
+            let bulb = document.getElementById("bulb")
+            if(off) {
+                bulb.style.backgroundColor = "yellow";
+                off = false;
+            }
+            else {
+                bulb.style.backgroundColor = "black";
+                off = true;
+            }
+        }
+    </script>
+</body>
+</html>
+-----------------------------------------------------------------------
+//Print random element of array using js in html.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="randomEle()">Click</button>
+    <p id="randomElement"></p>
+    <script>
+        function randomEle(){
+            const arr = ["a","b","c","d","e","f"];
+            let index = parseInt(Math.random()*arr.length)
+            document.getElementById("randomElement").innerText = arr[index];
+        }
+    </script>
+</body>
+</html>
+-----------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching and Sorting</title>
+</head>
+<body>
+    <input type="text" id="InputLength">Enter length of the array.</input></br>
+    <button onclick="getArray()">Get Array Elements</button></br>
+    <p>The array is: </p>
+    <p id="show">On clicking on the button "Print array",The array will be dispalyed: <button onclick="displayArray()">Print Array</button></p>
+    <p>Sort array:</p>
+    <p id="SortArray">On clicking on the button "Sort", You will be able to sort the array: <button onclick="sortArray()">Sort</button></p>
+    <p>Search Element in the Array:</p>
+    <p id="SearchElement">On clicking on the button "Search Element", You will able to see if it is present in the array: <button onclick="searchElement()">Search Element</button></p>
+    <script>
+        let arr = [];
+        let isArrayfull = false;
+        function getArray(){
+            let len = document.getElementById("InputLength").value;
+            len = parseInt(len);
+            if(len == 0){
+                alert ("The length of array should not be zero.");
+            }
+            else{
+                for(let i=1;i<=len;i++){
+                arr[i] = prompt("Enter value "+i);
+            }
+            isArrayfull = true;
+            }
+        }
+        function displayArray(){
+            if(isArrayfull == true){
+                let element = "";
+                let len = document.getElementById("InputLength").value;
+                len = parseInt(len);
+                for(let i=1;i<=len;i++){
+                    element += arr[i] + " ";
+                }
+                document.getElementById("show").innerText = element.trim();
+            }
+            else{
+                alert ("Please get a array at first, then try to print.")
+            }
+        }
+        function searchElement(){
+            let flag = 0;let index = 0;
+            if(isArrayfull == true){
+                let key_value = prompt("Enter the key value you want to search: ");
+                key_value = parseInt(key_value);
+                let len = document.getElementById("InputLength").value;
+                len = parseInt(len);
+                for(let i=1;i<len;i++){
+                    if(arr[i] == key_value){
+                        flag = 1;
+                        index = i;
+                    }
+                }
+                if(flag == 1)
+                    document.getElementById("SearchElement").innerText = "The key element "+key_value+" is found at index: "+index+".";
+                else
+                    document.getElementById("SearchElement").innerText = "The key element "+key_value+" is not found in the array.";
+            }
+            else{
+                alert ("Please get a array first, then try to search element in it.");
+            }
+        }
+        function sortArray(){
+            if(isArrayfull == false){
+                alert ("Please get a array at first to sort.");
+            }
+            else{
+                let len = document.getElementById("InputLength").value;
+                len = parseInt(len);
+                let element = "";
+                for(let i=0;i<len;i++){
+                    for(let j=0;j<(len-i-1);j++){
+                        if(arr[j]>arr[j+1]){
+                            var temp = arr[j];
+                            arr[j] = arr[j + 1];
+                            arr[j + 1] = temp;
+                        }
+                    }
+                }
+                for(let i=1;i<=len;i++){
+                        element += arr[i] + " ";
+                }
+                document.getElementById("SortArray").innerText = "The sorted array is: "+element.trim();
+            }
+        }
+    </script>
+    </br><button><a href="Sorting and Searching.html">Refresh</a></button>
+</body>
+</html>
+-----------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching and Sorting</title>
+</head>
+<body>
+    <input type="text" id="InputLength">Enter length of the array.</input></br>
+    <button onclick="getArray()">Get Array Elements</button></br>
+    <p>The array is: </p>
+    <p id="show">On clicking on the button "Print array",The array will be dispalyed: <button onclick="displayArray()">Print Array</button></p>
+    <p>Sort array:</p>
+    <p id="SortArray">On clicking on the button "Sort", You will be able to sort the array: <button onclick="sortArray()">Sort</button></p>
+    <p>Search Element in the Array:</p>
+    <p id="SearchElement">On clicking on the button "Search Element", You will able to see if it is present in the array: <button onclick="searchElement()">Search Element</button></p>
+    <script>
+        let arr = [];
+        let isArrayfull = false;
+        function getArray(){
+            let len = document.getElementById("InputLength").value;
+            if(len == 0 || len == undefined || len == null){
+                alert ("The length of array should not be zero.");
+            }
+            else{
+                len = parseInt(len);
+                for(let i=1;i<=len;i++){
+                arr[i] = prompt("Enter value "+i);
+            }
+            isArrayfull = true;
+            }
+        }
+        function displayArray(){
+            if(isArrayfull == true){
+                let element = "";
+                let len = document.getElementById("InputLength").value;
+                len = parseInt(len);
+                for(let i=1;i<=len;i++){
+                    element += arr[i] + " ";
+                }
+                document.getElementById("show").innerText = element.trim();
+            }
+            else{
+                alert ("Please get a array at first, then try to print.")
+            }
+        }
+        function searchElement(){
+            let flag = 0;let index = 0;
+            if(isArrayfull == true){
+                let key_value = prompt("Enter the key value you want to search: ");
+                key_value = parseInt(key_value);
+                let len = document.getElementById("InputLength").value;
+                len = parseInt(len);
+                for(let i=1;i<len;i++){
+                    if(arr[i] == key_value){
+                        flag = 1;
+                        index = i;
+                    }
+                }
+                if(flag == 1)
+                    document.getElementById("SearchElement").innerText = "The key element "+key_value+" is found at index: "+index+".";
+                else
+                    document.getElementById("SearchElement").innerText = "The key element "+key_value+" is not found in the array.";
+            }
+            else{
+                alert ("Please get a array first, then try to search element in it.");
+            }
+        }
+        function sortArray(){
+            if(isArrayfull == false){
+                alert ("Please get a array at first to sort.");
+            }
+            else{
+                let len = document.getElementById("InputLength").value;
+                len = parseInt(len);
+                let element = "";
+                for(let i=0;i<=len;i++){
+                    for(let j=0;j<=(len-i-1);j++){
+                        if(arr[j]>arr[j+1]){
+                            var temp = arr[j];
+                            arr[j] = arr[j + 1];
+                            arr[j + 1] = temp;
+                        }
+                    }
+                }
+                for(let i=1;i<=len;i++){
+                        element += arr[i] + " ";
+                }
+                document.getElementById("SortArray").innerText = "The sorted array is: "+element.trim();
+            }
+        }
+    </script>
+    </br><button><a href="Sorting and Searching.html">Refresh</a></button>
+</body>
+</html>
+--------------------------------------------------------------------------------------------------------------------------

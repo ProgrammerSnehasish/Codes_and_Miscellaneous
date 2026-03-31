@@ -1,0 +1,115 @@
+1>What is scope resolution operator?
+
+Ans- The scope resolution operator is used to qualify hidden names so that we can still use them, we can use the unary scope operator if a namespace scope of global scope name is hidden by an explicit declarartion of the same name in a block or class.
+
+
+2>What is the uses of Scope resolution operator?
+
+Ans-
+1> It is used to access hidden variables of member functions of a programme.
+
+2> It defines a member function outside of the class using scope resolution.
+
+3> It is use to access the static variable and static function of a class.
+
+4> The scope resolution operation is used to over write a function in  the inheritane.
+
+3> What is pure expression & impure expression?
+
+Ans- A function is called pure function if it always returns the same argument values and it has no side effect like modifying an argument or outputing something. THe only result of calling a pure function is the return value.
+
+example--> strlen,math.pow,sqrt.
+
+An impure function in C++ that is not pure, if a function does not have any specified condition then it is called an impured function.
+
+example-->
+void main()
+{
+static int x=0;
+x++;
+return x;
+}
+
+4> What is default arguments?
+
+Ans-Default argument is a value provided in a function declaration
+that is automatically organised by the compiler of the function does not provide a value for the argument with a default value.
+
+ example--> Following is simple C++ example to demonstrait the use of default arguments we do not have to write threesome function only one function works by using default values for third and fourth arguments.
+
+#include<iostream.h>
+int sum(int x,int y,int z=0,int w=0)
+{
+return (x+y+z+w);
+}// driver programme to test above function
+{
+cout<<sum(10,15)<<endl;
+cout<<sum(10,15,25)<<endl;
+cout<<sum(10,20,30,50)<<endl;
+}
+
+5> What is overloading constructor?
+
+Ans- More than one constructor in a class with same name as long as each has a different list of argument this concept is known as constructor overloading and it is quite similar to function overloading.
+
+example-->
+
+#include<iostream.h>
+using namespace.std;
+class construct
+{
+public:
+float area;
+construct()
+{
+area=a*a;
+}
+construct(int a,int b)
+{
+area=a*b;
+}
+void display()
+{
+cout<<area<<endl;
+}
+};
+main()
+{
+construct o;
+construct o2(10,20);
+o.display();
+o2.display();
+}
+
+6>What is 'this'pointer?
+
+Ans- Every object in C++ have access to its own address through an important pointer call 'this' pointer. this pointer is an implicit parameter to all member function.
+
+example-->
+int compare(BOX box)
+{
+return this->volume()>box.volume();
+}
+
+7> What is difference between compile time polymorphism and run time polymorphism?
+
+Ans-            Compile time Polymorphism                                 |              Compile time Polymorphism      
+                                                                          |
+  1. the funtion is to be invoked is known as compile time                |  1. The function is to be invoked is known as run time.
+                                                                          |
+  2. It is also known as overloading,early binding & static binding.      |  2. It is also known as overriding,dynamic binding & lead binding.
+                                                                          |
+  3. it is achieved by the function overloading and operator overloading  |  3. It is achieved by virtual functions and pointers
+
+8> What is binding?
+
+Ans- Binding for function means that where ever there is a function call the compiler needs to know which function definition it should be match to this depends upon the signature of each function declaration and the assignments that are taken. Also the compiler needs to know that when this matching  between the function call and choosing the correct definition will happen.
+
+9> Types of inheritance in C++?
+
+Ans-
+i> Single Inheritance
+ii> Multiple Inheritance
+iii> Multilevel Inheritance
+iv> Hybrid Inheritance
+v> Hirarthical Inheritance

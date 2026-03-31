@@ -1,0 +1,1275 @@
+/*Check Types of Number(Using function)*/(02-07-2024)[Beginner Lv]
+import java.util.Scanner;
+class checkNumbertype{
+  public static void ArmstrongNumber(int number){
+    int Sum = 0, remainder = 0;
+    int temporary = number;
+    while(number != 0)
+    {
+      remainder = number % 10;
+      Sum = Sum + (remainder * remainder * remainder);
+      number = number / 10;
+    }
+    if( Sum == temporary)
+     System.out.println("It is a Armstrong Number.");
+    else   
+      System.out.println("It is not a Armstrong Number.");
+  }
+  public static void BuzzNumber(int number){
+    if(number % 7 == 0 || number % 10 == 7)
+      System.out.println("It is a Buzz Number.");
+     else
+      System.out.println("It is not a Buzz Number.");
+  }
+  public static void PrimeNumber(int number){
+    int initializer,counter=0;
+    if(number<=1){
+      System.out.println("The number is not Prime.");
+    }else{
+      for(initializer=2;initializer<number;initializer++){
+        if(number%initializer==0){
+          counter=counter+1;
+        }
+      }
+    }
+    if(counter==0)
+      System.out.println("The given number is Prime.");
+    else
+      System.out.println("The number is not Prime.");
+  }
+  public static void NeonNumber(int number){
+  int add = 0;
+  int temp = number * number;
+  while(temp != 0)
+  {
+    int remain = temp % 10;
+    add = add + remain;
+    temp = temp / 10;
+  }
+  if(number == add)
+    System.out.println("This is Neon Number.");
+  else
+    System.out.println("It is not a Neon Number.");
+  }
+  public static void PalindromeNumber(int number){
+    int add = 0, remain = 0;
+    int temp = number;
+     while(number != 0)
+    {
+      remain = number % 10;
+      add = add * 10 + remain;
+      number = number / 10;
+    }
+    if(add == temp)
+      System.out.println("This is Palindrome Number.");
+    else
+      System.out.println("This is not a Palindrome Number.");
+  }
+  public static void KrishnamurthyNumber(int number){
+    int  summation = 0;
+    int temp = number;
+    while(number > 0)
+    {
+      int remainder = number % 10;
+      int flag = 1;
+      for(int counter = 1; counter <= remainder; counter++){
+        flag = flag * counter;
+        }
+        summation = summation + flag;
+        number = number / 10;
+    }
+    if(summation == temp)
+      System.out.println("The Number is Krishnamurthy Number.");
+    else            
+      System.out.println("The Number is not Krishnamurthy Number.");
+  }
+  public static void PerfectNumber(int number){
+    int initializer, sum=0;
+    int temp = number;
+    for(initializer = 1; initializer < number; initializer++){
+      if(number % initializer == 0){
+        sum = sum + initializer;
+      }
+    }
+    if(sum == temp)
+      System.out.println("This is Perfect Number.");
+    else
+      System.out.println("This is not a Perfect Number.");
+  }
+  public static void NivenNumber(int number){
+    int sum = 0;
+    int temp = number;
+    while(number != 0){
+      int remainder = number % 10;
+      sum = sum + remainder;
+      number = number / 10;
+    }
+    if(temp % sum == 0)
+      System.out.println("It is a Niven Number.");
+    else
+      System.out.println("It is not a Niven Number.");
+  }
+  public static void HappyNumber(int number){
+    int sum = 0;
+    while(sum != 1 && sum != 4){
+      sum = 0;
+      while(number > 0){
+        int remainder = number % 10;
+        sum = sum + (remainder * remainder);
+        number = number / 10;
+      }
+      number = sum;
+    }
+    if(sum == 1)
+      System.out.println("It is a Happy Number.");
+    else 
+      System.out.println("It is not a Happy Number.");
+  }
+  public static void MagicNumber(int number){
+    int sum = 0;
+    while(sum !=1){
+	    sum = 0;
+	    while(number>0){
+		    int remainder = number % 10;
+		    sum = sum + remainder;
+		    number = number / 10;
+	    }
+	    number = sum;
+    }
+	  if (sum == 1) 
+      System.out.println("This is Magic Number.");
+    else 
+      System.out.println("This is not a Magic Number.");
+  }
+  public static void DuckNumber(int number){
+    int sum = 0;
+    while(number > 0){
+      int remainder = number % 10;
+      if(remainder == 0)
+      sum = sum + 1;
+      number = number / 10;
+    }
+    if(sum >= 1)
+      System.out.println("It is a Duck Number.");
+    else 
+      System.out.println("It is not a Duck Number.");
+  }
+  public static void AmicablePairNumber(int number){
+    int sum1 = 0, sum2 = 0;
+    System.out.println("Enter second Number");
+    int number2 = scanner.nextInt();
+    int terminate1 = number;
+    int terminate2 = number2;
+    for(int counter1 = 1; counter1 < number; counter1 ++){
+      if(number % counter1 == 0)
+        sum1 = sum1 + counter1;
+    } 
+    for(int counter2 = 1; counter2 < number2; counter2 ++){
+      if(number2 % counter2 == 0)
+        sum2 = sum2 + counter2;
+    }
+    if(sum1 == terminate2 && sum2 == terminate1)
+      System.out.println("This are Amicable pair Number.");
+    else 
+      System.out.println("This are not Amicable pair Number.");
+  }
+  public static void SunnyNumber(int number){
+    int counter = 0;
+    number = number + 1;
+    int initializer = 1;
+    while(initializer <= number){
+      if(number%initializer == 0)
+      counter = counter + 1;
+      initializer++;
+    }
+    if(counter%2 == 1)
+      System.out.println("It is a Sunny Number.");
+    else 
+      System.out.println("It is not a Sunny Number.");
+  }
+  public static void SmithNumber(int number) {
+    if (isPrime(number)) {
+        System.out.println("It is not a Smith Number");
+        return;
+    }
+
+    int sumOfDigits = sumDigits(number);
+    int sumOfPrimeFactorsDigits = 0;
+    int originalNumber = number;
+
+    for (int i = 2; i <= number; i++) {
+        while (number % i == 0) {
+            sumOfPrimeFactorsDigits += sumDigits(i);
+            number /= i;
+        }
+    }
+
+    if (sumOfDigits == sumOfPrimeFactorsDigits) {
+        System.out.println(originalNumber + " is a Smith Number");
+    } else {
+        System.out.println(originalNumber + " is not a Smith Number");
+    }
+  }
+  public static boolean isPrime(int number) {
+      if (number <= 1) return false;
+      for (int i = 2; i <= Math.sqrt(number); i++) {
+          if (number % i == 0) return false;
+      }
+      return true;
+  }
+  public static int sumDigits(int number) {
+      int sum = 0;
+      while (number != 0) {
+          sum += number % 10;
+          number /= 10;
+      }
+      return sum;
+  }
+  public static void executeChoice(int choice,int number,Scanner scanner){
+    switch(choice){
+      case 1:
+        ArmstrongNumber(number);
+        break;
+        case 2:
+          BuzzNumber(number);
+          break;
+          case 3:
+            PrimeNumber(number);
+            break;
+            case 4:
+              NeonNumber(number);
+              break;
+              case 5:
+                PalindromeNumber(number);
+                break;
+                case 6:
+                  KrishnamurthyNumber(number);
+                  break;
+                  case 7:
+                    PerfectNumber(number);
+                    break;
+                    case 8:
+                      NivenNumber(number);
+                      break;
+                      case 9:
+                        HappyNumber(number);
+                        break;
+                        case 10:
+                          MagicNumber(number);
+                          break;
+                          case 11:
+                            DuckNumber(number);
+                            break;
+                            case 12:
+                              AmicablePairNumber(number);
+                              break;
+                              case 13:
+                                SunnyNumber(number);
+                                break;
+                                case 14:
+                                  SmithNumber(number);
+                                  break;
+                                  default:
+                                    System.out.println("You entered wrong choice, Please re-enter the correct choice of operation.");
+                                    break;
+    }
+    System.out.println("Do you want to contineu?(1:Yes/anykey:No):");
+    int contChoice = scanner.nextInt();
+    if(contChoice==1){
+      System.out.println("Re-enter your choice:");
+      int rechoice = scanner.nextInt();
+      executeChoice(rechoice,number,scanner);
+    }
+  }
+  public static void main(String [] args){
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("________Check Number Type________");
+    System.out.println("Enter any number you want to check it's type:");
+    int number = scanner.nextInt();
+    System.out.println("List of Choice:\n1. Armstrong Number\n2. Buzz Number\n3. Prime Number\n4. Neon Number\n5. Palindrome Number\n6. Krishnamurthy Number or Strong Number or Special Number\n7. Perfect Number\n8. Niven Number\n9. Happy Number\n10. Magic Number\n11. Duck Number\n12. Amicable pair Number\n13. Sunny Number\n14. Smith Number");
+    System.out.println("Enter your choice:");
+    int choice = scanner.nextInt();
+    executeChoice(choice,number,scanner);
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Linear Search.(05-07-2024)[Beginner Lv]
+import java.util.Scanner;
+class LinearSearch {
+    static Scanner scanner = new Scanner(System.in);
+    public static void get_list(int list[], int no_of_elements) {
+        for (int index = 0; index < no_of_elements; index++) {
+            System.out.print("Enter element " + (index + 1) + ": ");
+            list[index] = scanner.nextInt();
+        }
+    }
+    public static void display_list(int[] list,int no_of_elements){
+        System.out.print("[\t");
+        for(int index = 0;index < no_of_elements;index++){
+            System.out.print(list[index]+"\t");
+        }
+        System.err.print("]\n");
+    }
+    public static int linearSearch(int[] list, int no_of_elements, int key_element) {
+        for (int index = 0; index < no_of_elements; index++) {
+            if (list[index] == key_element) {
+                return index; // Return the index of the element if found
+            }
+        }
+        return -1; // Return -1 if the element is not found
+    }
+    public static void main(String[] args) {
+        System.out.println("________Linear Search________");
+        System.out.print("Enter total number of elements: ");
+        int no_of_elements = scanner.nextInt();
+        int[] list = new int[no_of_elements];
+        get_list(list, no_of_elements);
+        System.out.print("The List is:");
+        display_list(list, no_of_elements);
+        System.out.print("Enter key element:");
+        int key_element = scanner.nextInt();
+        int result = linearSearch(list,no_of_elements,key_element);
+        if (result != -1) {
+            System.out.println("Element found at index: " + result);
+        } else {
+            System.out.println("Element not found.");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------
+//Binary Search.(05-07-2024)[Beginner Lv]
+import java.util.Scanner;
+class BinarySearch {
+    static Scanner scanner = new Scanner(System.in);
+    public static void get_list(int list[], int no_of_elements) {
+        System.out.println("Please enter elements in sorted order(descending order):");
+        for (int index = 0; index < no_of_elements; index++) {
+            System.out.print("Enter element " + (index + 1) + ": ");
+            list[index] = scanner.nextInt();
+        }
+    }
+    public static void display_list(int[] list,int no_of_elements){
+        System.out.print("[\t");
+        for(int index = 0;index < no_of_elements;index++){
+            System.out.print(list[index]+"\t");
+        }
+        System.err.print("]\n");
+    }
+    public static int binarySearch(int[] list, int low, int high, int key_element) {
+        while(low<=high){
+            int mid = low + (high - low)/2;
+            if(list[mid]==key_element)
+                return mid;// if element found.
+            if(list[mid]<key_element)
+                low = mid + 1;
+            else
+                high = mid - 1;
+        }
+        return -1; // Return -1 if the element is not found.
+    }
+    public static void main(String[] args) {
+        System.out.println("________Binary Search________");
+        System.out.print("Enter total number of elements: ");
+        int no_of_elements = scanner.nextInt();
+        int[] list = new int[no_of_elements];
+        get_list(list, no_of_elements);
+        System.out.print("The List is:");
+        display_list(list, no_of_elements);
+        System.out.print("Enter key element:");
+        int key_element = scanner.nextInt();
+        int result = binarySearch(list,0,no_of_elements-1,key_element);
+        if (result != -1) {
+            System.out.println("Element found at index: " + result);
+        } else {
+            System.out.println("Element not found.");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------
+//Bubble Sort.(05-07-2024)[Beginner Lv]
+import java.util.Scanner;
+class BubbleSort {
+    static Scanner scanner = new Scanner(System.in);
+    public static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+    public static void get_list(int list[], int no_of_elements) {
+        for (int index = 0; index < no_of_elements; index++) {
+            System.out.print("Enter element " + (index + 1) + ": ");
+            list[index] = scanner.nextInt();
+        }
+    }
+    public static void display_list(int[] list,int no_of_elements){
+        System.out.print("[\t");
+        for(int index = 0;index < no_of_elements;index++){
+            System.out.print(list[index]+"\t");
+        }
+        System.err.print("]\n");
+    }
+    public static void bubbleSort(int[] list, int no_of_elements) {
+        int index,index2;
+	    int flag;
+	    for(index=0;index<no_of_elements-1;index++){
+            flag = 0;
+            for(index2=0;index2<no_of_elements-index-1;index2++){
+                if(list[index2]>list[index2+1])
+                {
+                    swap(list,index2,index2+1);
+                    flag = 1;
+                }
+            }
+            if(flag == 0)
+            break;
+        }
+    }
+    public static void main(String[] args) {
+        System.out.println("________Bubble Sort________");
+        System.out.print("Enter total number of elements: ");
+        int no_of_elements = scanner.nextInt();
+        int[] list = new int[no_of_elements];
+        get_list(list, no_of_elements);
+        System.out.print("The List before sorting is:");
+        display_list(list, no_of_elements);
+        System.out.println("The list after sorting is:");
+        bubbleSort(list, no_of_elements);
+        display_list(list, no_of_elements);
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------
+//NQueen Problem.(04-07-2024)[Moderate Lv]
+import java.util.Scanner;
+class NQueen {
+    static int position[];
+    public static boolean queen(int present_queen, int no_of_queens) {
+        if (present_queen > no_of_queens) {
+            print_chessboard(no_of_queens);
+            return true;
+        } else {
+            for (int i = 1; i <= no_of_queens; i++) {
+                position[present_queen] = i;
+                if (place(present_queen)) {
+                    if (queen(present_queen + 1, no_of_queens)) {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+    public static boolean place(int present_queen) {
+        for (int index = 1; index < present_queen; index++) {
+            if ((position[index] == position[present_queen]) || 
+                (Math.abs(position[index] - position[present_queen]) == Math.abs(index - present_queen))) {
+                return false;
+            }
+        }
+        return true;
+    }
+    public static void print_chessboard(int no_of_queens) {
+        System.out.println("Final Chess Board after placing all queens:\n");
+        for (int row = 1; row <= no_of_queens; row++) {
+            for (int column = 1; column <= no_of_queens; column++) {
+                if (position[row] == column)
+                    System.out.print("Q"+row+"\t");
+                else
+                    System.out.print("_\t");
+            }
+            System.out.print("\n");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("________N Queen Problem________");
+        System.out.println("Enter total number of queens:");
+        int no_of_queens = scanner.nextInt();
+        position = new int[no_of_queens + 1];
+        if (!queen(1, no_of_queens)) {
+            System.out.println("No solution exists.");
+        }
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------
+//Prim's Algorithm.(04-07-2024)[Moderate Lv]
+import java.util.Scanner;
+class PrimAlgorithm {
+    private static final int infinity_value = 999;
+    static int cost[][] = new int[100][100];
+    static int visited[] = new int[100];
+    static int mincost = 0;
+    static Scanner scanner = new Scanner(System.in);
+
+    public static void get_costMatrix(int number_of_vertices) {
+        int row, column;
+        System.out.println("Enter data for cost matrix...");
+        for (row = 1; row <= number_of_vertices; row++) {
+            for (column = 1; column <= number_of_vertices; column++) {
+                System.out.print("Enter the path weight value/cost of [" + row + "][" + column + "]: ");
+                cost[row][column] = scanner.nextInt();
+                if (cost[row][column] == 0 && row != column) {
+                    cost[row][column] = infinity_value; // Set infinity_value for no path (except self-loops)
+                }
+            }
+        }
+    }
+    public static void display_costMatrix(int number_of_vertices) {
+        int row, column;
+        System.out.println("Displaying Cost Matrix (Adjacency Matrix)...");
+        for (row = 1; row <= number_of_vertices; row++) {
+            for (column = 1; column <= number_of_vertices; column++) {
+                System.out.print(cost[row][column] + "\t");
+            }
+            System.out.print("\n");
+        }
+    }
+    public static void primalgo(int number_of_vertices) {
+        int row, column, temp = 0, temp2 = 0, temp3 = 0, temp4 = 0, edge_count = 1, min;
+        visited[1] = 1;
+
+        while (edge_count < number_of_vertices) {
+            min = infinity_value;
+            for (row = 1; row <= number_of_vertices; row++) {
+                if (visited[row] == 1) {
+                    for (column = 1; column <= number_of_vertices; column++) {
+                        if (cost[row][column] < min && visited[column] == 0) {
+                            min = cost[row][column];
+                            temp2 = row;
+                            temp = temp2;
+                            temp4 = column;
+                            temp3 = temp4;
+                        }
+                    }
+                }
+            }
+            if (min == infinity_value) {
+                System.out.println("No Spanning Tree exists.");
+                return;
+            }
+            System.out.println("Edge " + edge_count + ": (" + temp + "-" + temp3 + ") cost: " + min);
+            mincost += min;
+            visited[temp3] = 1;
+            cost[temp][temp3] = cost[temp3][temp] = infinity_value;
+            edge_count++;
+        }
+        System.out.println("Minimum spanning tree exists...");
+        System.out.println("Toatal minimum cost of the Spanning tree is: " + mincost);
+    }
+    public static void main(String[] args) {
+        System.out.println("________Prim's Algorithm________");
+        System.out.print("Enter total number of vertices: ");
+        int number_of_vertices = scanner.nextInt();
+        get_costMatrix(number_of_vertices);
+        display_costMatrix(number_of_vertices);
+        primalgo(number_of_vertices);
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------
+//Fractional Knapsack Problem.(05-07-2024)[Moderate Lv]
+import java.util.Scanner;
+class FractionalKnapsack {
+    static Scanner scanner = new Scanner(System.in);
+    public static void swap(float[] arr, int i, int j) {
+        float temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+    public static void get_list(float list[], int no_of_items) {
+        for (int index = 0; index < no_of_items; index++) {
+            System.out.print("Enter for element " + (index + 1) + ": ");
+            list[index] = scanner.nextFloat();
+        }
+    }
+    public static void displayList(int no_of_items, float[] profit, float[] weight) {
+        System.out.println("Item\tProfit\tWeight\tProfit/Weight Ratio");
+        for (int i = 0; i < no_of_items; i++) {
+            float ratio = profit[i] / weight[i];
+            System.out.println((i + 1) + "\t" + profit[i] + "\t" + weight[i] + "\t" + ratio);
+        }
+    }
+    public static void fractionalKnapsack(int no_of_items, float[] weight, float[] profit, float max_capacity) {
+        float[] x = new float[no_of_items];
+        float[] ratio = new float[no_of_items];
+        for (int i = 0; i < no_of_items; i++) {
+            ratio[i] = profit[i] / weight[i];
+        }
+        // Sorting items by their profit/weight ratio in descending order
+        for (int i = 0; i < no_of_items - 1; i++) {
+            for (int j = 0; j < no_of_items - i - 1; j++) {
+                if (ratio[j] < ratio[j + 1]) {
+                    swap(ratio, j, j + 1);
+                    swap(profit, j, j + 1);
+                    swap(weight, j, j + 1);
+                }
+            }
+        }
+        float total_profit = 0;
+        for (int i = 0; i < no_of_items; i++) {
+            if (weight[i] <= max_capacity) {
+                x[i] = 1.0f;
+                max_capacity -= weight[i];
+                total_profit += profit[i];
+            } else {
+                x[i] = max_capacity / weight[i];
+                total_profit += profit[i] * (max_capacity / weight[i]);
+                break;
+            }
+        }
+        System.out.println("The result of item set (portion choosing):");
+        System.out.println("Item\tItem set");
+        for (int i = 0; i < no_of_items; i++) {
+            System.out.println((i + 1) + "\t" + x[i]);
+        }
+        System.out.println("Maximum profit: " + total_profit);
+    }
+    public static void main(String[] args) {
+        System.out.println("________Fractional Knapsack Problem________");
+        System.out.print("Enter total number of elements: ");
+        int no_of_items = scanner.nextInt();
+        float[] profit = new float[no_of_items];
+        float[] weight = new float[no_of_items];
+        System.out.println("Enter profit:");
+        get_list(profit, no_of_items);
+        System.out.println("Enter weight:");
+        get_list(weight, no_of_items);
+        System.out.println("Showing item list with profit, weight, and profit/weight ratio:");
+        displayList(no_of_items, profit, weight);
+        System.out.print("Enter maximum capacity of the knapsack: ");
+        float max_capacity = scanner.nextFloat();
+        fractionalKnapsack(no_of_items, weight, profit, max_capacity);
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------
+//Print Hello World.
+import java.io.*;
+class message{
+	public static void main(String [] args){
+		System.out.println("Hello World.");
+  }
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------
+import java.io.*;
+import java.util.Scanner;
+class greaterNumber{
+	public static void checkGreaterUsingTernary(int num1,int num2,int num3){
+		int greaterNumber = (num1>num2)?(num1>num3?num1:num3):(num2>num3?num2:num3);
+		System.out.println("Checking greater number using ternary operator...");
+		System.out.println("The greater among "+num1+", "+num2+", & "+num3+" is: "+greaterNumber);
+  }
+	public static void checkGreaterUsingIfElse(int num1,int num2,int num3){
+		System.out.println("Checking greater number using If Else...");
+		if(num1>num2 && num1>num3)
+			System.out.println("The greater among "+num1+", "+num2+", & "+num3+" is: "+num1);
+		else if(num2>num1 && num2>num3)
+			System.out.println("The greater among "+num1+", "+num2+", & "+num3+" is: "+num2);
+		else
+			System.out.println("The greater among "+num1+", "+num2+", & "+num3+" is: "+num3);
+  }
+	public static void main(String [] args){
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter three values for checking which of among them is greater:");
+		System.out.print("Enter value for Number 1:");
+		int num1 = scanner.nextInt();
+		System.out.print("Enter value for Number 2:");
+		int num2 = scanner.nextInt();
+		System.out.print("Enter value for Number 3:");
+		int num3 = scanner.nextInt();
+		checkGreaterUsingTernary(num1,num2,num3);
+		checkGreaterUsingIfElse(num1,num2,num3);
+  }
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------
+import java.io.*;
+import java.util.Scanner;
+class mathematicalOperation{
+	public static int addition(int num1,int num2){
+		int add = num1+num2;
+		return add;
+  }
+	public static int multiplication(int num1,int num2){
+		int mul = num1*num2;
+		return mul;
+  }
+	public static float division(int num1,int num2){
+		float div = (num1>num2)?(num1/num2):(num2/num1);
+		return div;
+  }
+	public static void main(String [] args){
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter two values for mathematical operations:");
+		System.out.print("Enter value for Number 1:");
+		int num1 = scanner.nextInt();
+		System.out.print("Enter value for Number 2:");
+		int num2 = scanner.nextInt();
+		System.out.println("List of of choices:\n Enter 0 for exit.\n Enter 1 for Addition.\n Enter 2 for Multiplication.\n Enter 3 for division.");
+		System.out.print("Enter your choice:");
+		int choice = scanner.nextInt();
+		switch(choice){
+			case 0:
+			     System.exit(0);
+			     break;
+			case 1:
+			     int resultOfAddition = addition(num1,num2);
+			     System.out.println("The result of the summation of "+num1+" & "+num2+" is:"+resultOfAddition);
+			     break;
+			case 2:
+			     int resultOfmultiplication = addition(num1,num2);
+			     System.out.println("The result of the summation of "+num1+" & "+num2+" is:"+resultOfmultiplication);
+			     break;
+			case 3:
+			     float resultOfdivision = addition(num1,num2);
+			     System.out.println("The result of the summation of "+num1+" & "+num2+" is:"+resultOfdivision);
+			     break;
+			default: System.out.println("Invalid Choice.");
+    }
+  }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------
+//Java code to print Fibbonacci Series using recursion and normal.
+import java.io.*;
+import java.util.Scanner;
+class Fibonacci{
+	public static void Fibbonacci(int range){
+		int num1=0,num2=1;
+		System.out.println("The Fibbonacci Series without recursion:");
+		for(int i=0;i<range;i++){
+			System.out.print(num1 + " ");
+			int num3 = num2 + num1;
+			num1 = num2;
+			num2 = num3;
+	}
+	System.out.println("\n");
+ }
+	public static int RecFib(int range){
+		if(range == 0)
+			return 0;
+		else if(range == 1)
+			return 1;
+		else 
+		      return RecFib(range-1)+RecFib(range-2);
+ }
+	public static void main(String [] args){
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter your range:");
+		int range = scanner.nextInt();
+		Fibbonacci(range);
+		System.out.println("The Fibbonacci Series using recursion:");
+		for(int i=0;i<range;i++){
+		System.out.print(RecFib(i)+" ");
+	}
+ }
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+/*Java code to print patterns.
+*
+**
+***
+****
+*****
+
+    *
+   **
+  ***
+ ****
+*****
+
+  *  
+ ***
+***** */
+import java.io.*;
+import java.util.Scanner;
+class Pattern{
+	public static void PatternLeftAngeledTriangle(int length){
+		System.out.println("The pattern of the Left Angled Triangle of length "+length+" is:");
+		for(int i=0;i<length;i++){
+			for(int j=0;j<=i;j++){
+				System.out.print("*");
+		}
+		System.out.println("");
+	}
+ }
+	public static void PatternRightAngeledTriangle(int length){
+		System.out.println("The pattern of the Right Angled Triangle of length "+length+" is:");
+		for(int i=1;i<=length;i++){
+			for(int j=length-1;j>=i;j--){
+				System.out.print(" ");
+		}
+		for(int k=1;k<=i;k++){
+			System.out.print("*");
+		}
+		System.out.println("");
+   }
+ }
+	public static void PatternTriangle(int length){
+		System.out.println("The pattern of the Triangle of length "+length+" is:");
+		for(int i=1;i<=length;i++){
+			for(int j=length-1;j>=i;j--){
+				System.out.print(" ");
+			}
+			for(int k=1;k<=2*i-1;k++){
+				System.out.print("*");
+			}
+		System.out.println("");
+	}
+ }
+	public static void main(String [] args){
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter length of the pattern:");
+		int length = scanner.nextInt();
+		PatternLeftAngeledTriangle(length);
+		PatternRightAngeledTriangle(length);
+		PatternTriangle(length);
+ }
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+//Java code to check maximum and minimum occuring word in a String.
+import java.util.Scanner;
+class MaxCharacter {
+    public static void main(String[] args) {    
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a string: ");
+        String str = scanner.nextLine();
+	int[] freq = new int[str.length()];    
+        char minChar = str.charAt(0), maxChar = str.charAt(0);    
+        int i, j, min, max;            
+        char[] string = str.toCharArray();         
+        for (i = 0; i < string.length; i++) {    
+            freq[i] = 1;    
+            for (j = i + 1; j < string.length; j++) {    
+                if (string[i] == string[j] && string[i] != ' ' && string[i] != '0') {    
+                    freq[i]++;    
+                    string[j] = '0';    
+                }    
+            }    
+        }    
+        min = max = freq[0];    
+        for (i = 0; i < freq.length; i++) {    
+            if (min > freq[i] && freq[i] != '0') {    
+                min = freq[i];    
+                minChar = string[i];    
+            }    
+            if (max < freq[i]) {    
+                max = freq[i];    
+                maxChar = string[i];    
+            }    
+        }    
+        System.out.println("Minimum occurring character: " + minChar);    
+        System.out.println("Maximum occurring character: " + maxChar);
+        scanner.close();    
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+//Java code to find palindromic String.
+import java.util.Scanner;
+class PalindromeChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String originalString = scanner.nextLine();
+        String cleanedString = originalString.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+        String reversedString = new StringBuilder(cleanedString).reverse().toString();
+        if (cleanedString.equals(reversedString)) {
+            System.out.println("The string is a palindrome.");
+        } else {
+            System.out.println("The string is not a palindrome.");
+        }
+        scanner.close();
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+//Java code to find reversed String.
+import java.util.Scanner;
+class ReversedString{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String originalString = scanner.nextLine();
+        String reversedString = new StringBuilder(originalString).reverse().toString();
+        System.out.println("The Reversed String with reverse() is: "+reversedString);
+	String reversed = "";
+        for (int i = originalString.length() - 1; i >= 0; i--) {
+            reversed += originalString.charAt(i);
+        }
+        System.out.println("The Reversed String without reverse() is: " + reversed);
+        scanner.close();
+    }
+}
+-----------------------------------------------------------------------
+// Java code to Maintain a Bank Account
+import java.io.*;
+import java.util.Scanner;
+class BankAccount {
+    private String depositorName;
+    private String accountNumber;
+    private String accountType;
+    private double balance;
+    public BankAccount(String depositorName, String accountNumber, String accountType, double initialBalance) {
+        this.depositorName = depositorName;
+        this.accountNumber = accountNumber;
+        this.accountType = accountType;
+        this.balance = initialBalance;
+   }
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+            System.out.println("Deposited: " + amount);
+        } else {
+            System.out.println("Deposit amount must be positive.");
+        }
+    }
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+            System.out.println("Withdrew: " + amount);
+        } else if (amount > balance) {
+            System.out.println("Insufficient balance.");
+        } else {
+            System.out.println("Withdrawal amount must be positive.");
+        }
+    }
+    public void displayAccountInfo() {
+        System.out.println("Depositor Name: " + depositorName);
+        System.out.println("Balance: Rs" + balance);
+    }
+    public String getDepositorName() {
+        return depositorName;
+    }
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+    public String getAccountType() {
+        return accountType;
+    }
+    public double getBalance() {
+        return balance;
+    }
+    public void setDepositorName(String depositorName) {
+        this.depositorName = depositorName;
+    }
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+    public void setAccountType(String accountType) {
+        this.accountType = accountType;
+    }
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+    public static void main(String [] args) {
+	Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter depositor's name: ");
+        String depositorName = scanner.nextLine();
+        System.out.print("Enter account number: ");
+        String accountNumber = scanner.nextLine();
+        System.out.print("Enter account type (e.g., Savings/Current): ");
+        String accountType = scanner.nextLine();
+        System.out.print("Enter initial balance: ");
+        double initialBalance = scanner.nextDouble();
+        BankAccount account = new BankAccount(depositorName, accountNumber, accountType, initialBalance);
+   	System.out.println("Your Account info is:");
+        account.displayAccountInfo();
+	int choice;
+	do {
+            System.out.println("List Of Choices:\n1. If you want to deposit money press 1.\n2. If you want to withdraw money press 2.\n3.To see balance press 3.\n4. To exit press 0.\n");
+            System.out.print("Enter your choice: ");
+            choice = scanner.nextInt();
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter amount to deposit: ");
+                    double depositAmount = scanner.nextDouble();
+                    account.deposit(depositAmount);
+                    break;
+                case 2:
+                    System.out.print("Enter amount to withdraw: ");
+                    double withdrawAmount = scanner.nextDouble();
+                    account.withdraw(withdrawAmount);
+                    break;
+		case 3:
+		    account.displayAccountInfo();
+		    break;
+                case 0:
+                    System.out.println("Exiting...");
+                    break;
+                default:
+                    System.out.println("Invalid Choice.");
+            }
+        } while (choice != 0);
+        scanner.close();
+    }
+}
+-----------------------------------------------------------------------
+//Java Programme to implement voting.
+import java.util.Random;
+import java.util.Scanner;
+class Ballot {
+    public static void countVotes(int[] ballots) {
+        int[] count = new int[5];
+        int spoiledBallots = 0;
+        for (int ballot : ballots) {
+            if (ballot >= 1 && ballot <= 5) {
+                count[ballot - 1]++;
+            } else {
+                spoiledBallots++;
+            }
+        }
+        System.out.println("Vote counts for each candidate:");
+        for (int i = 0; i < count.length; i++) {
+            System.out.println("Candidate " + (i + 1) + ": " + count[i] + " votes");
+        }
+        System.out.println("Spoiled ballots: " + spoiledBallots);
+    }
+    public static void main(String [] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+        System.out.print("Enter the number of ballots:");
+        int n = scanner.nextInt();
+        int[] ballots = new int[n];
+        System.out.println("Randomly generating ballot numbers...");
+        for (int i = 1; i < n; i++) {
+            ballots[i] = random.nextInt(7) + 1;
+        }
+        countVotes(ballots);
+        scanner.close();
+    }
+}
+-----------------------------------------------------------------------
+// Bus and Car Details
+import java.util.Scanner;
+class Vehicle {
+    protected String regnNumber;
+    protected int speed;
+    protected String color;
+    protected String ownerName;
+    public Vehicle(String regnNumber, int speed, String color, String ownerName) {
+        this.regnNumber = regnNumber;
+        this.speed = speed;
+        this.color = color;
+        this.ownerName = ownerName;
+    }
+    public void showData() {
+        System.out.println("This is a vehicle class");
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter details for Bus:");
+        System.out.print("Registration Number: ");
+        String busRegnNumber = scanner.nextLine();
+        System.out.print("Speed (km/h): ");
+        int busSpeed = scanner.nextInt();
+        scanner.nextLine();
+        System.out.print("Color: ");
+        String busColor = scanner.nextLine();
+        System.out.print("Owner Name: ");
+        String busOwnerName = scanner.nextLine();
+        System.out.print("Route Number: ");
+        int routeNumber = scanner.nextInt();
+        scanner.nextLine();
+        Bus bus = new Bus(busRegnNumber, busSpeed, busColor, busOwnerName, routeNumber);
+        bus.showData();
+        System.out.println();
+        System.out.println("Enter details for Car:");
+        System.out.print("Registration Number: ");
+        String carRegnNumber = scanner.nextLine();
+        System.out.print("Speed (km/h): ");
+        int carSpeed = scanner.nextInt();
+        scanner.nextLine();
+        System.out.print("Color: ");
+        String carColor = scanner.nextLine();
+        System.out.print("Owner Name: ");
+        String carOwnerName = scanner.nextLine();
+        System.out.print("Manufacturer Name: ");
+        String manufacturerName = scanner.nextLine();
+        Car car = new Car(carRegnNumber, carSpeed, carColor, carOwnerName, manufacturerName);
+        car.showData();
+        scanner.close();
+    }
+}
+class Bus extends Vehicle {
+    private int routeNumber;
+    public Bus(String regnNumber, int speed, String color, String ownerName, int routeNumber) {
+        super(regnNumber, speed, color, ownerName);
+        this.routeNumber = routeNumber;
+    }
+    public void showData() {
+        super.showData();
+        System.out.println("Bus Details:");
+        System.out.println("Registration Number: " + regnNumber);
+        System.out.println("Speed: " + speed + " km/h");
+        System.out.println("Color: " + color);
+        System.out.println("Owner Name: " + ownerName);
+        System.out.println("Route Number: " + routeNumber);
+    }
+}
+class Car extends Vehicle {
+    private String manufacturerName;
+    public Car(String regnNumber, int speed, String color, String ownerName, String manufacturerName) {
+        super(regnNumber, speed, color, ownerName);
+        this.manufacturerName = manufacturerName;
+    }
+    public void showData() {
+        super.showData();
+        System.out.println("Car Details:");
+        System.out.println("Registration Number: " + regnNumber);
+        System.out.println("Speed: " + speed + " km/h");
+        System.out.println("Color: " + color);
+        System.out.println("Owner Name: " + ownerName);
+        System.out.println("Manufacturer Name: " + manufacturerName);
+    }
+}
+-----------------------------------------------------------------------
+//Light weight and heavy weight vehicle details.
+import java.util.ArrayList;
+import java.util.Scanner;
+class Vehicle {
+    private static int counter = 100001;
+    private int vehicleNumber;
+    protected String companyName;
+    protected double price;
+    public Vehicle(String companyName, double price) {
+        this.vehicleNumber = counter++;
+        this.companyName = companyName;
+        this.price = price;
+    }
+    public void showData() {
+        System.out.println("Vehicle Number: " + vehicleNumber);
+        System.out.println("Company Name: " + companyName);
+        System.out.println("Price: Rs" + price);
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Vehicle> vehicles = new ArrayList<>();
+        System.out.print("Enter the number of vehicles: ");
+        int n = scanner.nextInt();
+        scanner.nextLine();
+        for (int i = 0; i < n; i++) {
+            System.out.println("\nEnter details for vehicle " + (i + 1));
+            System.out.print("Is this a Light Motor Vehicle (L) or Heavy Motor Vehicle (H)? ");
+            char type = scanner.next().charAt(0);
+            scanner.nextLine();
+            System.out.print("Enter Company Name: ");
+            String companyName = scanner.nextLine();
+            System.out.print("Enter Price: ");
+            double price = scanner.nextDouble();
+            if (type == 'L' || type == 'l') {
+                System.out.print("Enter Mileage (km/l): ");
+                double mileage = scanner.nextDouble();
+                vehicles.add(new LightMotorVehicle(companyName, price, mileage));
+            } else if (type == 'H' || type == 'h') {
+                System.out.print("Enter Capacity (tons): ");
+                double capacityInTons = scanner.nextDouble();
+                vehicles.add(new HeavyMotorVehicle(companyName, price, capacityInTons));
+            } else {
+                System.out.println("Invalid vehicle type. Please enter 'L' for Light Motor Vehicle or 'H' for Heavy Motor Vehicle.");
+                i--;
+            }
+        }
+        System.out.println("\nVehicle Information:");
+        for (Vehicle vehicle : vehicles) {
+            vehicle.showData();
+            System.out.println();
+        }
+        scanner.close();
+    }
+}
+class LightMotorVehicle extends Vehicle {
+    private double mileage;
+    public LightMotorVehicle(String companyName, double price, double mileage) {
+        super(companyName, price);
+        this.mileage = mileage;
+    }
+    public void showData() {
+        super.showData();
+        System.out.println("Mileage: " + mileage + " km/l");
+    }
+}
+class HeavyMotorVehicle extends Vehicle {
+    private double capacityInTons;
+    public HeavyMotorVehicle(String companyName, double price, double capacityInTons) {
+        super(companyName, price);
+        this.capacityInTons = capacityInTons;
+    }
+    public void showData() {
+        super.showData();
+        System.out.println("Capacity: " + capacityInTons + " tons");
+    }
+}
+-----------------------------------------------------------------------
+//Employee Details
+import java.util.Scanner;
+class Employee {
+    private int id;
+    private String name;
+    private String department;
+    private double salary;
+    public Employee() {
+        this.id = 0;
+        this.name = "";
+        this.department = "";
+        this.salary = 0.0;
+    }
+    public Employee(int id, String name, String department, double salary) {
+        this.id = id;
+        this.name = name;
+        this.department = department;
+        this.salary = salary;
+    }
+    public double getSalary() {
+        return salary;
+    }
+    public void display() {
+        System.out.println("Employee ID: " + id);
+        System.out.println("Name: " + name);
+        System.out.println("Department: " + department);
+        System.out.println("Salary: $" + salary);
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of managers: ");
+        int n = scanner.nextInt();
+        Manager[] managers = new Manager[n];
+        Manager maxSalaryManager = null;
+        for (int i = 0; i < n; i++) {
+            System.out.println("\nEnter details for Manager " + (i + 1) + ":");
+            System.out.print("Enter ID: ");
+            int id = scanner.nextInt();
+            scanner.nextLine();
+            System.out.print("Enter Name: ");
+            String name = scanner.nextLine();
+            System.out.print("Enter Department: ");
+            String department = scanner.nextLine();
+            System.out.print("Enter Salary: ");
+            double salary = scanner.nextDouble();
+            System.out.print("Enter Bonus: ");
+            double bonus = scanner.nextDouble();
+            managers[i] = new Manager(id, name, department, salary, bonus);
+            if (maxSalaryManager == null || managers[i].getTotalSalary() > maxSalaryManager.getTotalSalary()) {
+                maxSalaryManager = managers[i];
+            }
+        }
+        System.out.println("\nManager with the Maximum Total Salary:");
+        if (maxSalaryManager != null) {
+            maxSalaryManager.display();
+        }
+        scanner.close();
+    }
+}
+class Manager extends Employee {
+    private double bonus;
+    public Manager() {
+        super();
+        this.bonus = 0.0;
+    }
+    public Manager(int id, String name, String department, double salary, double bonus) {
+        super(id, name, department, salary);
+        this.bonus = bonus;
+    }
+    public double getTotalSalary() {
+        return getSalary() + bonus;
+    }
+    public void display() {
+        super.display();
+        System.out.println("Bonus: Rs" + bonus);
+        System.out.println("Total Salary (Salary + Bonus): Rs" + getTotalSalary());
+    }
+}
+-----------------------------------------------------------------------

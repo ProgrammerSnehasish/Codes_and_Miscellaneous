@@ -1,0 +1,220 @@
+//Stack using array in c:                                                                                                                                      
+#include<stdio.h>
+int stack[100],i,j,choice=0,n,top=-1;
+void push();
+void pop();
+void show();
+void oodeven();
+void count();
+int main()
+{
+printf("Enter the number of elements in stack\n");
+scanf("%d",&n);
+printf("Stack using array\n-------------------------------------------------\n");
+do
+{
+printf("Enter your option\n 1.push\n 2.pop\n 3.show\n 4.odd even\n");
+scanf("%d",&choice);
+switch(choice)
+{
+case 1:
+push();
+break;
+case 2:
+pop();
+break;
+case 3:
+show ();
+break;
+case 4:
+oddeven()
+break;
+case 5:
+count()
+break;
+default:
+printf("Press enter to exit");
+}
+}
+while(choice!=6);
+}
+
+void push()
+{
+int val;
+if(top==n-1)
+printf("over flow\n");
+else
+{
+printf("Enter the value\n");
+scanf("%d",&val);
+top++;
+stack[top]=val;
+}
+}
+
+void pop()
+{
+if(top==-1)
+printf("Under flow\n");
+else
+{
+printf("Element removed %d\n"stack[top]);
+top--;
+}
+}
+
+void show()
+{
+printf ("Stack elements---------------->\n");
+if(top==-1)
+printf("Stack is empty");
+else
+{
+for(i=top;i>=0;i--)
+{
+printf("%d\n",stack[i]);
+}
+}
+} 
+                                                                                                                                                           void oddeven()
+{
+if(top==-1)
+printf("Stack is empty\n");
+else
+{
+printf("even elements:\n");
+for(i=top;i>=0;i--)
+{
+if(stack[i]%2==0)
+printf("%d ",stack[i]);
+}
+printf("Odd elements:\n");
+for(i=top;i>=0;i--)
+{
+if(stack[i]%2==1)
+printf("%d ",stack[i]);
+}
+}
+}
+
+void count()
+{
+if(top==-1)
+printf("No element is available");
+else
+printf("%d elements are present in the stack",top+1);
+}    
+
+
+
+(((((ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR)))   
+
+
+
+
+#include<stdio.h>
+int stack[100],i,j,choice=0,n,top=-1;
+void push();
+void pop();
+void show();
+void oddeven();
+void toop();
+ main()
+{
+	printf("enter the number of element in the stack\n");
+	scanf("%d",&n);
+	printf("stack using array\n------------------\n");
+	do
+	{
+		printf("enter your option\n1.push\n2.pop\n3.show\n4.oddeven\n5.top\n6.exit");
+		scanf("%d",&choice);
+		switch(choice)
+		{
+			case 1:
+				push();
+				break;
+				case 2:
+					pop();
+					break;
+					case 3:
+						show();
+						break;
+						case 4:
+							oddeven();
+							break;
+							case 5:
+								toop();
+						default:
+							printf("press enter to exit\n");
+							
+		}
+	}while(choice!=6);
+	
+}
+
+void push()
+{
+	int val;
+	if(top==n-1)
+	printf("over flow\n");
+	else
+	{
+		printf("enter the value\n");
+		scanf("%d",&val);
+		top++;
+		stack[top]=val;
+	}
+}
+void pop()
+{
+	if(top==-1)
+	printf("underflow\n");
+	else
+	{
+		printf("element removed %d",stack[top]);
+		top--;
+	}
+}
+void show()
+{   printf("Stack elements--->\n");
+	if(top==-1)
+	printf("stack is empty\n");
+	else
+	{
+	
+	for(i=top;i>=0;i--)
+	{
+		printf("%d\n",stack[i]);
+	}
+    }
+	
+}
+void oddeven()
+{
+	if(top==-1)
+	printf("stack is empty\n");
+	else
+	{
+		printf("even elements:\n");
+		for(i=top;i>=0;i--)
+		{
+			if(stack[i]%2==0)
+			printf("%d ",stack[i]);
+		}
+		printf("odd elements:\n");
+		for(i=top;i>=0;i--)
+		{
+			if(stack[i]%2==1)
+			printf("%d ",stack[i]);
+		}
+	}
+	
+}
+void toop()
+{
+	if(top==-1)
+	printf("no element is available\n");
+	else
+	printf("%d elements present in stack",top+1);
+}  

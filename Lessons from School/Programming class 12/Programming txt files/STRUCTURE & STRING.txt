@@ -1,0 +1,213 @@
+//wap to store student information(1st method)(Stucture).
+#include<stdio.h>
+struct student{
+char name[50];
+int roll;
+float marks;
+}s;
+main()
+{
+printf("Enter information\n");
+printf("Enter name");
+fgets(s.name,sizeof(s.name),stdin);
+printf("Enter roll number\n");
+scanf("%d",&s.roll);
+printf("Enter marks");
+scanf("%f",s.marks);
+printf("Display the details of student\n name:");
+printf("%s",s.name);
+printf("roll number=%d",s.roll);
+printf("marks %1f",s.marks);
+}
+--------------------------------------------------------------
+//wap to store student information(2nd method)(Stucture).
+#include<stdio.h>
+struct student{
+char name[50];
+int roll;
+float marks;
+}s;
+main()
+{
+printf("Enter information\n");
+printf("Enter name");
+gets(s.name);
+printf("Enter roll number\n");
+scanf("%d",&s.roll);
+printf("Enter marks");
+scanf("%f",s.marks);
+printf("Display the details of student\n name:");
+printf("%s",s.name);
+printf("roll number=%d",s.roll);
+printf("marks %1f",s.marks);
+}
+--------------------------------------------------------------
+//wap a programme to add distance by using structure programme(Stucture).
+#include<stdio.h>
+struct distance{
+int feet;
+float inch;
+}d1,d2,r;
+int main()
+{
+printf("enter first 1st distance\n");
+printf("Enter feet");
+scanf("%d",&d1.feet);
+printf("enter inch");
+scanf("%d",&d1.inch);
+
+printf("Enter feet);
+scanf("%d",&d1.feet);
+printf("enter inch");
+scanf("%d",&d2.inch);
+
+result.feet=d1.feet+d2.feet;
+result.inch=d1.inch+d2.inch;
+while(result.inch>=12.0)
+{
+result.inch=result.inch-12.0;
+++result.feet;
+}
+printf("Sum of the distance=%d feet %1f inch",result.feet,result.inch);
+}
+--------------------------------------------------------------
+// Store the information of 10 students and display them by using structure(Stucture).
+#include<stdio.h>
+struct student{
+	char firstname[50];
+	int roll;
+	float marks;
+}s[10];
+
+int main()
+{
+	int i;
+	printf("enter information of students");
+	for(i=0;i<5;i++)
+	{
+		s[i].roll=i+1;
+		printf("for roll number%d\n",s[i].roll);
+		printf("first name");
+		scanf("%s",s[i].firstname);
+		printf("enter marks");
+		scanf("%f",&s[i].marks);
+	}
+	for(i=0;i<5;i++)
+	{
+	printf("roll number%d",i+1);
+	printf("first name:");
+	puts(s[i].firstname);
+	printf("marks%.1f",s[i].marks);
+	}
+	
+}
+----------------------------------------------------------------
+//Accept a sting from user and print it.
+[8:28 AM, 4/21/2021] Atanu Sir Computer: #include<stdio.h>
+int main()
+{
+	char ch[100]="amar akhon rohit ke kub pitate icha korche";
+	printf("%s",ch);
+}
+------------------------
+#include<stdio.h>
+int main()
+{
+	char array[100];
+	printf("enter a string\n");
+	scanf("%s",&array);
+	printf("%s",array);
+}
+//output:
+enter a string
+ami roshogolla khabo
+ami
+------------------------------------------
+#include<stdio.h>
+int main()
+{
+	char array[100];
+	printf("enter a string\n");
+	gets(array);
+	printf("%s",array);
+}
+-------------------------------------------
+#include<stdio.h>
+int main()
+{
+	char s[100];
+	int c=0;
+	gets(s);
+	while(s[c]!='\0')
+	{
+		printf("%c",s[c]);
+		c++;
+	}
+}
+-----------------------------------------------
+#include<stdio.h>
+void print1(char*);
+int main()
+{
+	char s[100];
+	gets(s);
+	print1(s);
+	
+}…
+[8:42 AM, 4/21/2021] Atanu Sir Computer: //concatenate---------->ami aj schhol          jabo na ki korar ache kore nao
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char a[]="choto krishna";
+	char b[]="bashi chere pen hate tolo";
+	strcat(a,b);
+	printf("%s",a);
+	int x=strlen(a);
+	printf("\nnumber of character in string=%d",x);
+}
+[8:50 AM, 4/21/2021] Atanu Sir Computer: //count the number of vowels in a string in c
+#include<stdio.h>
+int main()
+{
+	int c=0,count=0,con=0;
+	char s[1000];
+	printf("enter a string");
+	gets(s);
+	while(s[c]!='\0')
+	{
+		if(s[c]=='a'||s[c]=='e'||s[c]=='i'||s[c]=='o'||s[c]=='u'||s[c]=='E'||s[c]=='I'||s[c]=='A'||s[c]=='O'||s[c]=='U')
+		count++;
+		else
+		con++;
+		c++;
+	}
+	printf("number of vowels=%d",count);
+	printf("number of consonents=%d",con);
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------
+// Palindrome checking by string.
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+char string1[20];
+int i,length;
+int flag=0;
+printf("Enter a string");
+scanf("%s",string1);
+length=strlen(string1);
+for(i=0;i<length;i++)
+{
+if(string1[i]!=string1[length-i-1])
+{
+flag=1;
+break;
+}
+}
+if(flag==1)
+printf("%s is not a palindrome",string1);
+else
+printf("%s is a PALINDROME",string1);
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------

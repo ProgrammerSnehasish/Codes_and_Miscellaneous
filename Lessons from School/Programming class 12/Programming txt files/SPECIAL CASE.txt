@@ -1,0 +1,113 @@
+/*WAP in C which uses a function to check
+wheather a number passed to the function is
+prime number or not the function prints the number
+if prime. Now use the function in the main function to find
+all the prime number between any two numbers x & y entered by
+the user.*/
+#include<stdio.h>
+int main()
+{
+int x,y,i,t;
+printf("Enter x & y");
+scanf("%d%d",&x,&y);
+for(i=x;i<=y;i++)
+{
+t=i;
+prime(t);
+}
+void prime(int x)
+{
+int c=0,i;
+for(i=1;i<=x;i++)
+{
+if(x%i==0)
+c=c+1;
+}
+if(c==2)
+printf("%d are Prie numbers",x);
+}
+------------------------------------------------------------------------
+/* WAP to accept a variable from user and store it's address in 
+a variable and also print the values by using pointer variable.*/
+#include<stdio.h>
+int main()
+{
+int a;
+int*x;
+printf("Enter a");
+scanf("%d",&a);
+x=&a;
+printf("Address of a=%x",x);
+printf("Value of a=%d",*x);
+}
+------------------------------------------------------------------------
+// Swaping no by using call by reference:-
+#include<stdio.h>
+void swap(*x,*y)
+int main()
+{
+{
+int a,b;
+printf("Enter a,b");
+scanf("%d%d",&a,&b);
+swap(&a,&b)
+}
+void swap(int*x,int*y)
+{
+int t;
+t=*x;
+*x=*y;
+*y=t;
+printf("After swaping a=%d,b=%d",*x,*y);
+}
+}
+-----------------------------------------------------------------------
+/*WAP a programme to check a number twisted prime. Two user define function
+one is prime and another is twisted prime. They will send positive or negative
+signal to main function & the function will print them.*/
+#include<stdio.h>
+int prime(int x)
+int twpri(int n)
+int main()
+{
+int a;
+a=13;
+int x=prime(a);
+int y=twpri(a);
+if(x==1 && y==1)
+printf("Twisted prime");
+else
+printf("not twisted prime");
+}
+int prime(int x)
+{
+int c=0,i;
+for(i=1;i<=n;i++)
+{
+if(x%i==0)
+c=c+1;
+}
+if(c==2)
+return 1;
+else
+return 2;
+}
+int twpri(int n)
+{
+int d,s=0,i,c=0;
+{
+d=n%10;
+s=s*10+d;
+n=n/10;
+}
+for(i=1;i<=s;i++)
+{
+if(s%i==0)
+c++;
+}
+if(c==2)
+return 1;
+else
+return 0;
+}
+-----------------------------------------------------------------------

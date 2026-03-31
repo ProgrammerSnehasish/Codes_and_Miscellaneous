@@ -1,0 +1,17 @@
+<html>
+<head><title>Tourism of West Bengal-Sundarbans</title></head>
+<style>
+body {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/23/Sundarban_Tiger.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+<body>
+<p align="Left"><font color="yellow" size="24" face="algerian"><b>Sundarbans</b></font><p>
+<font color="yellow" size="5" face="STXingkai"><b><p>The Sundarbans a UNESCO World Heritage Site is located at the South eastern tip of the 24 Paraganas district about 110 km from Kolkata. It got its name from one of the mangrove plants known as Sundari (Heritiera Minor). Sundarbans are a part of the worlds largest delta, formed by the mighty rivers Ganga, Brahmaputra and Meghna. Situated on the lower end of Gangetic West Bengal, the Sundarbans is criss-crossed by hundreds of creeks and tributaries. It is one of the most attractive and alluring places remaining on earth, a truly undiscovered paradise. The Sundarbans is the largest single block of tidal, halophytic mangrove forests in the world. The name can be literally translated as beautiful jungle. The name may have been derived from the Sundari trees that are found in the Sundarbans. . It spans a vast area covering 4264 sq. km in India alone. It is the largest Tiger Reserve and National Park.</p>
+<p>Apart from being a unique largest mangrove eco-system of the world, the Sundarbans has the worlds largest deltaic mangrove forests and is also home to one of Indias most iconic wildlife species - the Royal Bengal Tiger. It is also the worlds largest estuarine forest criss-crossed by hundreds of creeks and tributaries, intersected by a network of tidal waterways, small islands of salt-tolerant mangrove forests and mudflats. The interconnected network of waterways makes almost every nook and corner of the forest accessible by boats or rafts making it one of the most attractive and alluring places on earth and an undiscovered paradise. The Sundarbans also serves as a crucial protective barrier for the inhabitants in and around Kolkata against the floods that result from the cyclones which are a regular occurrence. Sundarbans have also been enlisted amongst the finalists in the New 7 Wonders of Nature.</p></b></font>
+<p align="right"><button><a href="Tourism of West Bengal.html"><font color="blue" size="6" face="STXingkai">Home page</font></a></button></p>
+</body>
+</html>

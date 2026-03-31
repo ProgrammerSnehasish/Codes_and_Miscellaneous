@@ -1,0 +1,99 @@
+<DOCTYPE.html!>
+
+<html>
+
+<head>
+
+<title>Christmas</title>
+
+</head>
+
+<body>
+
+<p ALIGN="CENTER"><font face="ALGERIAN" size="7" color="red"><b><u><i>Christmas</i></u></b></font>
+
+<p align="center"><img src="https://familytraveller.com/usa/wp-content/uploads/sites/2/2018/12/disneyland-christmas-featured.jpg" length="100" Width="250" border="2"></img></p>
+
+<p><font face="STXingkai" size="5" color="red"><b><u><i>About Christmas</i></b></u></font></p>
+
+<p><b><font color="black" size="3" face="Stliti"><font face="Harrington" size="3" color="red"><b><i>Christmas</i></b></font> is an annual festival commemorating the birth of <font face="Harrington" size="3" color="blue"><b><i>Jesus Christ</i></b></font>, observed primarily on 
+ <font face="Harrington" size="3" color="green"><b><i>December 25</i></b></font> as a <font face="Harrington" size="3" color="green"><b><i>religious and cultural</i></b></font> celebration by billions of people around the world.
+ A feast central to the <a href="https://en.wikipedia.org/wiki/Liturgical_year"><font face="Harrington" size="3" color="blue"><b><i>Christian liturgical</i></b></font></a> year, it is preceded by the season of <a href="https://en.wikipedia.org/wiki/Advent"><font face="Harrington" size="3" color="blue"><b><i>Advent</i></b></font></a> or the 
+ <a href="https://en.wikipedia.org/wiki/Nativity_scene"><font face="Harrington" size="3" color="blue"><b><i>Nativity</i></b></font></a> Fast and initiates the season of <a href="https://en.wikipedia.org/wiki/Twelve_Days_of_Christmas"><font face="Harrington" size="3" color="blue"><b><i>Christmastide</i></b></font></a>, which historically in the West lasts 
+ <font face="Harrington" size="3" color="green"><b><i>twelve days</i></b></font> and culminates on <a href="https://en.wikipedia.org/wiki/Twelfth_Night_(holiday)"><font face="Harrington" size="3" color="blue"><b><i>Twelfth Night</i></b></font></a>.
+ <font face="Harrington" size="3" color="Indigo"><b><i>Christmas Day</i></b></font> is a public holiday in many of the world's nations, is celebrated <font face="Harrington" size="3" color="green"><b><i>religiously</i></b></font>
+ by a majority of <a href="https://en.wikipedia.org/wiki/Christians"><font face="Harrington" size="3" color="blue"><b><i>Christians</i></b></font></a>, as well as <font face="Harrington" size="3" color="green"><b><i>culturally</i></b></font> by many 
+ <a href="https://en.wikipedia.org/wiki/Irreligion"><font face="Harrington" size="3" color="blue"><b><i>non-Christians</b></font></a>, and forms an integral part of the holiday season organized around it.</i></b></font></font></b></p>
+
+ <style type="text/css">
+p
+{
+font-size:16pt;
+}
+</style>
+<body>
+<p><b><font color="black" size="3" face="Stliti"><img src="https://ourladyofthevalleyluray.org/wp-content/uploads/2016/12/Nativity-495x400.jpg" height="150" width="150" align="left"/>  The traditional Christmas narrative, the <a href="https://en.wikipedia.org/wiki/Nativity_of_Jesus"><font face="Harrington" size="3" color="blue"><b><i>Nativity of Jesus</i></b></font></a>, delineated in the New Testament says that 
+<font face="Harrington" size="3" color="voilet"><b><i>Jesus was born in <a href="https://en.wikipedia.org/wiki/Bethlehem"><font face="Harrington" size="3" color="blue">Bethlehem</font></a>, in accordance with Bethlehem <a href="https://www.jstor.org/stable/3157389?seq=1#metadata_info_tab_contents"><font face="Harrington" size="3" color="blue">messianic prophecies</font></i></b></font></a>.<b><font color="black" size="3" face="Stliti"> When <a href="https://en.wikipedia.org/wiki/Mary,_mother_of_Jesus"><font face="Harrington" size="3" color="blue"><b><i>Joseph and Mary</i></b></font></a>
+ arrived in the city, the inn had no room and so they were offered a <font face="Harrington" size="3" color="green"><b><i>stable</i></b></font> where the <a href="https://en.wikipedia.org/wiki/Christ_(title)"><font face="Harrington" size="3" color="blue"><b><i>Christ</i></b></font></a> Child was soon born, 
+ with angels proclaiming this news to shepherds who then spread the word.</b></font> 
+ </p>
+
+</body>
+
+ <style type="text/css">
+p
+{
+font-size:16pt;
+}
+</style>
+<body>
+<p><b><font color="black" size="3" face="Stliti"><img src="https://m.media-amazon.com/images/I/41rKcNU-4UL.jpg" height="150" width="100" align="right"/>Although the month and date of <font face="Harrington" size="3" color="green"><b><i>Jesus's</i></b></font> birth are unknown, the church in the 
+<font face="Harrington" size="3" color="brown"><b><i>early fourth century</i></b></font> fixed the date as <font face="Harrington" size="3" color="red"><b><i>December 25</i></b></font>. This corresponds to the date of the 
+<a href="https://en.wikipedia.org/wiki/Winter_solstice"><font face="Harrington" size="3" color="blue"><b><i>winter solstice</i></b></font></a> on the <a href="https://en.wikipedia.org/wiki/Roman_calendar"><font face="Harrington" size="3" color="blue"><b><i>Roman calendar</i></b></font></a>.
+Most <a href="https://en.wikipedia.org/wiki/Christians"><font face="Harrington" size="3" color="blue"><b><i>Christians</i></b></font></a> celebrate on <font face="Harrington" size="3" color="red"><b><i>December 25</i></b></font> in the 
+<font face="Harrington" size="3" color="green"><b><i>Gregorian calendar</i></b></font>, which has been adopted almost <font face="Harrington" size="3" color="green"><b><i>universally</i></b></font> in the 
+<a href="https://en.wikipedia.org/wiki/Civil_calendar"><font face="Harrington" size="3" color="blue"><b><i>civil calendars</i></b></font></a> used in countries throughout the <font face="Harrington" size="3" color="green"><b><i>world</i></b></font>.
+However, part of the <font face="Harrington" size="3" color=""><b><i>Eastern Christian Churches</i></b></font> celebrate Christmas on <font face="Harrington" size="3" color="red"><b><i>December 25 
+</i></b></font> of the older <a href="https://en.wikipedia.org/wiki/Julian_calendar"><font face="Harrington" size="3" color="blue"><b><i>Julian calendar</i></b></font></a>, which currently corresponds to <font face="Harrington" size="3" color="red"><b><i>January 7</i></b></font> 
+in the <font face="Harrington" size="3" color="green"><b><i>Gregorian calendar</i></b></font>. For <font face="Harrington" size="3" color="green"><b><i>Christians</i></b></font>, believing that God came into the world in the 
+form of man to atone for the <a href="https://en.wikipedia.org/wiki/Seven_deadly_sins#:~:text=According%20to%20the%20standard%20list,to%20the%20seven%20heavenly%20virtues."><font face="Harrington" size="3" color="blue"><b><i>sins of humanity</i></b></font></a>, rather than knowing <font face="Harrington" size="3" color="green"><b><i>Jesus's</i></b></font> exact birth date,
+ is considered to be the primary purpose in celebrating <font face="Harrington" size="3" color="red"><b><i>Christmas</i></b></font>.</font></b>
+</p>
+</body>
+ <font face="STXingkai" size="5" color="red"><b><u><i>Celebration</i></b></u></font><br>
+ <style type="text/css">
+p
+{
+font-size:16pt;
+}
+</style>
+<body>
+<p><b><font color="black" size="3" face="Stliti"><img src="https://img.traveltriangle.com/blog/wp-content/uploads/2016/12/acj-1111-christmas-in-europe.jpg" height="150" width="150" align="left"/>The celebratory customs associated in various countries with <font face="Harrington" size="3" color="red"><b><i>Christmas</i></b></font> have a mix of 
+<font face="Harrington" size="3" color="green"><b><i>pre-Christian, Christian, and secular themes and origins.</i></b></font>
+  Popular modern customs of the holiday include <font face="Harrington" size="3" color="violet"><b><i>gift giving</i></b></font>; <a href="https://en.wikipedia.org/wiki/Advent_calendar"><font face="Harrington" size="3" color="blue"><b><i>completing an Advent calendar</i></b></font></a> or <a href="https://www.mercyhome.org/blog/sunday-mass/advent-wreath/"><font face="Harrington" size="3" color="blue"><b><i>Advent wreath</i></b></font></a>; 
+  <font face="Harrington" size="3" color="green"><b><i>Christmas music and caroling</i></b></font>; <font face="Harrington" size="3" color="green"><b><i>viewing a Nativity play</i></b></font>; an exchange of Christmas cards; <font face="Harrington" size="3" color="green"><b><i>church services</i></b></font>; <font face="Harrington" size="3" color="ornage"><b><i>a special meal</i></b></font>; and
+  the display of various<font face="Harrington" size="3" color="green"><b><i>Christmas decorations</i></b></font> , including <a href="https://en.wikipedia.org/wiki/Christmas_tree"><font face="Harrington" size="3" color="blue"><b><i>Christmas trees</i></b></font></a>, <font face="Harrington" size="3" color="green"><b><i>Christmas lights</i></b></font>,
+  <font face="Harrington" size="3" color="green"><b><i>nativity scenes</i></b></font>, <font face="Harrington" size="3" color="green"><b><i>garlands</i></b></font>, <font face="Harrington" size="3" color="green"><b><i>wreaths</i></b></font>, <font face="Harrington" size="3" color="green"><b><i>mistletoe</i></b></font>, 
+  and <font face="Harrington" size="3" color="green"><b><i>holly</i></b></font>. In addition, several closely related and often interchangeable figures, known as <a href="https://en.wikipedia.org/wiki/Santa_Claus"><font face="Harrington" size="3" color="blue"><b><i>Santa Claus</i></b></font></a>,
+  <font face="Harrington" size="3" color="violet"><b><i>Father Christmas</i></b></font>, <a href="https://en.wikipedia.org/wiki/Saint_Nicholas"><font face="Harrington" size="3" color="blue"><b><i>Saint Nicholas</i></b></font></a>, and <a href="https://en.wikipedia.org/wiki/Christkind"><font face="Harrington" size="3" color="blue"><b><i>Christkind</i></b></font></a>, are associated with 
+  <font face="Harrington" size="3" color="green"><b><i>bringing gifts to children</i></b></font> during the <font face="Harrington" size="3" color="green"><b><i>Christmas season</i></b></font> and have their own body of traditions and lore. Because gift-giving and many other aspects of the Christmas festival involve
+  heightened <font face="Harrington" size="3" color="brown"><b><i>economic</i></b></font> activity, the holiday has become a significant event and a key sales period for retailers and businesses. The economic impact of Christmas has grown steadily over the past few centuries in many regions of the world.</font></b>
+  
+</p>
+
+</body>
+<br>
+<p><b><font color="black" size="3" face="Stliti"><font face="STXingkai" size="5" color="red"><b><u><i>Conclusion</i></b></u></font></p>
+<p>This is not only celebrated in <font face="Harrington" size="3" color="green"><b><i>India</i></b></font>, but also it's celebrated in western country like <font face="Harrington" size="3" color="green"><b><i>England</i></b></font>, <font face="Harrington" size="3" color="green"><b><i>france</i></b></font>,
+ <font face="Harrington" size="3" color="green"><b><i>Germany</i></b></font>, <font face="Harrington" size="3" color="green"><b><i>Russia</i></b></font>, <font face="Harrington" size="3" color="green"><b><i>USA</i></b></font>, and all over the world. We can see a beautiful Christmas celebration in 
+<a href="https://en.wikipedia.org/wiki/Disneyland"><font face="Harrington" size="3" color="blue"><b><i>Disney land</i></b></font></a>, situated in <font face="Harrington" size="3" color="green"><b><i>California</i></b></font>. </font></b></p>
+
+</body>
+ 
+<p align="center"><button><font face="Vladimir Script" color="blue" size="4">Page-3</font></button></p>
+
+<p align="right"><a href="Festival of India.html"><button><font color="blue" face="STLiti" size="4"><b>Home page</b></font></button></a><a href="Eid.html"><button><font color="blue" face="STLiti" size="4"><b>Go to Previous Page(2)</b></font></button></a><a href="Holi.html"><button><font color="blue" face="STLiti" size="4"><b>Go to Next page(4)>></b></font></button></a></p>
+
+</body>
+
+</html>

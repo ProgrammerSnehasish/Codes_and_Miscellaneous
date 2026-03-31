@@ -1,0 +1,341 @@
+create table students(name char(35),class int,age int,dbo int(10),board char(10),school char(45),rate int(10));
+-- applicable to show datatable format:
+desc students;
+-- data insert in a table:
+insert into students(name,class,age,dbo,board,school,rate)values('Rikk Bera',12,18,15-12-2004,'WBCHSE','Behala Aryya Vidyamandir(H.S)',09);
+insert into students(name,class,age,dbo,board,school,rate)values('Ripan Charkraborty',12,18,NULL,'WBCHSE','Behala Aryya Vidyamandir(H.S)',04);
+insert into students(name,class,age,dbo,board,school,rate)values('Rohit Bose',12,18,NULL,'WBCHSE','Behala Aryya Vidyamandir(H.S)',05);
+insert into students(name,class,age,dbo,board,school,rate)values('Sayanavo Bhattcharjee',12,18,NULL,'WBCHSE','Behala Aryya Vidyamandir(H.S)',03);
+insert into students(name,class,age,dbo,board,school,rate)values('Sourja Bhattcharjee',12,18,NULL,'WBCHSE','Behala Aryya Vidyamandir(H.S)',10);
+insert into students(name,class,age,dbo,board,school,rate)values('Snehasish Das',12,18,30-09-2004,'WBCHSE','Behala Aryya Vidyamandir(H.S)',10);
+-- applicable only for showing/printing the whole table by * operator:
+select*from students;
+-- print by single condition(1):
+-- print name,class,age,dbo,board,school from students where rate is less than 10:
+select name,class,age,dbo,board,school from students where rate<10;
+-- Print by a single name or other:
+select name,class,age,dbo,board,school,rate from students where name='Rohit Bose';
+-- Print by dual conditions(2):
+-- print name,class,age,dbo,board,school from students where age is graterthan euals to 18 & rate is equals to 10:
+select name,class,age,dbo,board,school from students where age>=18 and rate=10;
+-- Update query:
+-- Update query-> change the board with 'CBSE':
+update students set board='CBSE' where name='Sourja Bhattcharjee';
+select*from students;
+-- delete a data:
+-- delete students whose rate is less than 05:
+delete from students where rate<05;
+select*from students;
+-- Substring(for letter in first)(case-1):
+select*from students where name like 'r%';
+-- Substring(for letter in middle)(case-2):
+select*from students where name like '%o%';
+-- Substring(for letter in last)(case-3):
+select*from students where name like '%e';
+-- Order by(ascending by default)(1):
+select*from students order by rate;
+-- order by(descending by order)(2):
+select*from students order by rate desc;
+-- change size of a field:
+-- change size of name field:
+alter table students modify name char(45);
+-- insert a new field
+-- insert a new field gender:
+alter table students add(gender char(10));
+select*from students;
+-- rename a column:
+-- rename age field with under in group:
+alter table students rename column age to under;
+select*from students;
+-- delete field:
+alter table students drop column dbo;
+select*from students;
+-- insert new data in new column and print:
+insert into students(name,class,under,board,school,rate,gender)value('Rikk Bera',12,18,'WBCHSE','Behala Aryya Vidyamandir(H.S)',09,'male');
+insert into students(name,class,under,board,school,rate,gender)value('Rohit Bose',12,18,'WBCHSE','Behala Aryya Vidyamandir(H.S)',05,'male');
+insert into students(name,class,under,board,school,rate,gender)value('Sourja Bhattcharjee',12,18,'WBCHSE','Behala Aryya Vidyamandir(H.S)',10,'male');
+insert into students(name,class,under,board,school,rate,gender)value('Snehasish Das',12,18,'CBSE','National Gems High School',10,'male');
+select*from students;
+--------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------
+---------------------------------
+// C program for implementation of Bubble sort
+#include <stdio.h>
+ 
+void swap(int *xp, int *yp)
+{
+    int temp = *xp;
+    *xp = *yp;
+    *yp = temp;
+}
+ 
+// A function to implement bubble sort
+void bubbleSort(int arr[], int n)
+{
+   int i, j;
+   for (i = 0; i < n-1; i++)     
+ 
+       // Last i elements are already in place  
+       for (j = 0; j < n-i-1; j++)
+           if (arr[j] > arr[j+1])
+              swap(&arr[j], &arr[j+1]);
+}
+ 
+/* Function to print an array */
+void printArray(int arr[], int size)
+{
+    int i;
+    for (i=0; i < size; i++)
+        printf("%d ", arr[i]);
+    printf("\n");
+}
+ 
+// Driver program to test above functions
+int main()
+{
+    int arr[] = {64, 34, 25, 12, 22, 11, 90};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    bubbleSort(arr, n);
+    printf("Sorted array: \n");
+    printArray(arr, n);
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Creating Table "Employee".
+create table Employee(Empt_ID int,Emp_name char(25),salary int);
+-- To show table format.
+desc Employee;
+-- Inserting value in table "Employee".
+insert into Employee(Empt_ID,Emp_name,salary)value(100,'Akash',50000);
+insert into Employee(Empt_ID,Emp_name,salary)value(101,'Sukanta',100000);
+insert into Employee(Empt_ID,Emp_name,salary)value(102,'Bikash',48000);
+insert into Employee(Empt_ID,Emp_name,salary)value(103,'Arnab',30000);
+insert into Employee(Empt_ID,Emp_name,salary)value(104,'Sujata',60000);
+-- To show the entire table "Employee".
+select*from Employee;
+-- Creating Table "Department".
+create table Department(Dept_No int,Dept_name char(23),Empt_ID int);
+-- To show table format.
+desc Department;
+-- Inserting value in table "Department".
+insert into Department(Dept_No,Dept_name,Empt_ID)value(2,'Research',100);
+insert into Department(Dept_No,Dept_name,Empt_ID)value(1,'Management',101);
+insert into Department(Dept_No,Dept_name,Empt_ID)value(3,'Research',102);
+insert into Department(Dept_No,Dept_name,Empt_ID)value(4,'Research',103);
+insert into Department(Dept_No,Dept_name,Empt_ID)value(5,'Management',104);
+-- To show the entire table "Department".
+select*from Department;
+-- Now joining two tables (Employee & Department) using union function.
+select Empt_ID,Emp_name,salary from Employee
+union
+select Dept_No,Dept_name,Empt_ID from Department;
+-- NOW SHOWING THE EMPLOYEE WHO WORKS IN RESEARCH DEPARTMENT.
+select Employee.Emp_name,Department.Dept_name from Employee, Department where Employee.Empt_ID=Department.Empt_ID and Department.Dept_name='Research';
+-- NOW SHOWING THE LIST OF EMPLOYEE WITH DESCENDING ORDER OF THEIR SALARY.
+select Empt_ID,Emp_name,salary from Employee order by salary desc;
+-- NOW SHOWING THE NAMES OF EMPLOYEE WHO HAVE A SUBSTRING IN THEIR NAMES AS 'kas'.
+select Employee.Empt_ID,Employee.Emp_name,Employee.salary,Department.Dept_No,Department.Dept_name from Employee, Department where Employee.Empt_ID=Department.Empt_ID AND Emp_name like '%kas%';
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- CREATING TABLE CUSTOMER:
+CREATE TABLE Customer(Cust_ID int,Cust_name char(7),Acct_No char(10),Balance int);
+-- Showing Table Format(Customer):
+DESC Customer;
+-- Inserting Data in table Customer:
+INSERT into Customer(Cust_ID,Cust_name,Acct_No,Balance)value(100,'Akash','AC001',50000);
+INSERT into Customer(Cust_ID,Cust_name,Acct_No,Balance)value(110,'Bikas','AC002',55000);
+INSERT into Customer(Cust_ID,Cust_name,Acct_No,Balance)value(120,'Amrit','AC003',60000);
+INSERT into Customer(Cust_ID,Cust_name,Acct_No,Balance)value(130,'Sujata','AC004',65000);
+INSERT into Customer(Cust_ID,Cust_name,Acct_No,Balance)value(140,'Vikram','AC005',70000);
+INSERT into Customer(Cust_ID,Cust_name,Acct_No,Balance)value(150,'Aditi','AC006',75000);
+-- SHOWING THE TABLE CUSTOMER:
+SELECT*FROM Customer;
+-- CREATING TABLE BANK:
+CREATE TABLE Bank(Acct_No char(10),Acct_type char(30),Branch char(35));
+-- Showing Table Format(Bank):
+DESC Bank;
+-- Inserting Data in table Bank:
+INSERT into Bank(Acct_No,Acct_type,Branch)value('AC001','Savings','Kolkata');
+INSERT into Bank(Acct_No,Acct_type,Branch)value('AC002','Business','Delhi');
+INSERT into Bank(Acct_No,Acct_type,Branch)value('AC003','Savings','Mumbai');
+INSERT into Bank(Acct_No,Acct_type,Branch)value('AC004','Savings','Kolkata');
+INSERT into Bank(Acct_No,Acct_type,Branch)value('AC005','Business','Mumbai');
+INSERT into Bank(Acct_No,Acct_type,Branch)value('AC006','Business','Delhi');
+-- SHOWING THE TABLE BANK:
+SELECT*FROM Bank;
+-- Now Showing the Name & Balance and others whose account is in either in Kolkata Or Delhi and Account Type is Saving:
+SELECT Customer.Cust_name,Customer.Balance FROM Customer,Bank WHERE Customer.Acct_No=Bank.Acct_No AND Branch='Kolkata'OR'Delhi' AND Acct_type='Savings';
+-- Now showing the Account No and Branch of Customer Whose Second Last letter is 'A':
+SELECT Customer.Acct_No,Bank.Branch FROM Customer,Bank WHERE Customer.Acct_No=Bank.Acct_No AND Cust_name like '%a_';
+-- Now increasing the balacnce by 500 of Customer whose account is in 'Mumbai' and Showing the whole Updated Table:
+UPDATE Customer,Bank SET Balance=Balance+500 WHERE Customer.Acct_No=Bank.Acct_No AND Branch='Mumbai';
+SELECT*FROM Customer;
+-- Showing The Data of Customer whose account no is between 'AC002' & 'AC004':
+SELECT Cust_ID,Cust_name,Balance FROM Customer WHERE Acct_No BETWEEN 'AC002'AND'AC004';
+---------------------------------------------------------------------------------------------------- Creating table of flight.
+create table flight(Fl_No int,start char(20),end char(20),flights int,stops int);
+-- showing the table format:
+desc flight;
+-- inserting values to table flight:
+insert into flight(Fl_No,start,end,flights,stops)value(100,'Mumbai','Kolkata',5,1);
+insert into flight(Fl_No,start,end,flights,stops)value(101,'Delhi','Mumbai',4,2);
+insert into flight(Fl_No,start,end,flights,stops)value(102,'Mumbai','Kolkata',6,0);
+insert into flight(Fl_No,start,end,flights,stops)value(103,'Mumbai','Hydrabad',7,0);
+insert into flight(Fl_No,start,end,flights,stops)value(104,'Delhi','Mumbai',3,1);
+insert into flight(Fl_No,start,end,flights,stops)value(105,'Kolkata','Bangalore',6,0);
+insert into flight(Fl_No,start,end,flights,stops)value(106,'Kokata','Delhi',7,NULL);
+insert into flight(Fl_No,start,end,flights,stops)value(107,'Kolkata','Bangalore',6,1);
+insert into flight(Fl_No,start,end,flights,stops)value(108,'Kolkata','UP',5,NULL);
+insert into flight(Fl_No,start,end,flights,stops)value(109,'Kolkata','Bangalore',6,0);
+-- showing the whole table:
+select*from flight;
+-- Creating table of fare.
+create table fare(Fl_No int,Name char(20),fare int,Tax int);
+-- showing tale format:
+desc fare;
+-- inserting values to table fare:
+insert into fare(Fl_No,Name,fare,Tax)value(100,'Indigo',45000,2500);
+insert into fare(Fl_No,Name,fare,Tax)value(101,'Jet Airways',55000,3500);
+insert into fare(Fl_No,Name,fare,Tax)value(102,'Jet Airways',35000,2000);
+insert into fare(Fl_No,Name,fare,Tax)value(103,'Kingfisher',23000,1500);
+insert into fare(Fl_No,Name,fare,Tax)value(104,'Air India',25000,1200);
+insert into fare(Fl_No,Name,fare,Tax)value(105,'Indigo',35000,3000);
+insert into fare(Fl_No,Name,fare,Tax)value(106,'Kingfisher',30000,2500);
+insert into fare(Fl_No,Name,fare,Tax)value(107,'Jet Airways',45000,2000);
+insert into fare(Fl_No,Name,fare,Tax)value(108,'Jet Airways',10000,2500);
+insert into fare(Fl_No,Name,fare,Tax)value(109,'Kingfisher',34000,3000);
+-- showing the whole table:
+select*from fare;
+-- Display the flight number and fare to paid for flights from Delhi to Mumbai:
+select flight.Fl_No,fare.fare from flight,fare where flight.Fl_No=fare.Fl_No and start='Delhi' and end='Mumbai';
+-- Display the minimum fare 'Jet Airways' offering:
+select fare from fare where Name='Jet Airways' order by fare asc;
+select min(fare) from fare where Name='Jet Airways';-- this one is the correct code for minimum values.
+-- Dispaly the number and name of all nonstop flights from Kolkata to Bangalore:
+select flight.Fl_No,fare.Name from flight,fare where flight.Fl_No=fare.Fl_No and start='Kolkata' and end='Bangalore' and stops=0;
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Creating table.
+create table accountancy (Name char(25), Salary int(10));
+-- Inserting Value in the table
+insert into accountancy(Name,Salary)values('Himesh',10000);
+insert into accountancy(Name,Salary)values('Suresh',15000);
+insert into accountancy(Name,Salary)values('Karan',20000);
+insert into accountancy(Name,Salary)values('Ratan',30000);
+insert into accountancy(Name,Salary)values('Rikk',40000);
+insert into accountancy(Name,Salary)values('Ram',45000);
+insert into accountancy(Name,Salary)values('Ramesh',50000);
+insert into accountancy(Name,Salary)values('Shyamal',60000);
+insert into accountancy(Name,Salary)values('Sayan',65000);
+insert into accountancy(Name,Salary)values('Aritra',70000);
+insert into accountancy(Name,Salary)values('Arman',75000);
+insert into accountancy(Name,Salary)values('Ayan',80000);
+-- showing the full table format.
+select*from accountancy;
+-- inserting new column "Income Tax" & "Comission"(Update-1).
+Alter table accountancy add (IncomeTaxpercentage int(10),Comission int(10),AmountPayble int(10));
+-- showing full table after updating(1);
+select*from accountancy;
+-- Updating new table(2).
+update accountancy set IncomeTaxpercentage=0 where Salary<=15000;
+update accountancy set IncomeTaxpercentage=2 where Salary>15000 and Salary<=30000;
+update accountancy set IncomeTaxpercentage=4 where Salary>30000 and Salary<=45000;
+update accountancy set IncomeTaxpercentage=6 where Salary>45000 and Salary<=60000;
+update accountancy set IncomeTaxpercentage=8 where Salary>60000 and Salary<=75000;
+Update accountancy set IncomeTaxpercentage=10 where Salary>75000;
+-- update (3)- Setting Comission;
+update accountancy set Comission=0 where Salary<=15000;
+update accountancy set Comission=Salary*(2/100) where Salary>15000 and Salary<=30000;
+update accountancy set Comission=Salary*(4/100) where Salary>30000 and Salary<=45000;
+update accountancy set Comission=Salary*(6/100) where Salary>45000 and Salary<=60000;
+update accountancy set Comission=Salary*(8/100) where Salary>60000 and Salary<=75000;
+update accountancy set Comission=Salary*(10/100) where Salary>75000;
+-- update (4)- Setting Net amount payable;
+update accountancy set AmountPayble=Salary where Salary<=15000;
+update accountancy set AmountPayble=Salary-Comission where Salary>15000;
+-- Showing full Table after Updating.
+select*from accountancy
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+create table studentplacement(StudentsName varchar(70),Stream varchar(5),Company varchar(100));
+insert into studentplacement(StudentsName,Stream,Company)values('Aayushi Ghosh','ECE','Capgemini');
+insert into studentplacement(StudentsName,Stream,Company)values('Abdul Quddus Ansari','IT','Presistent');
+insert into studentplacement(StudentsName,Stream,Company)values('Abhik Bakshi','IT','Capgemini');
+insert into studentplacement(StudentsName,Stream,Company)values('Abhimanyu Kumar','ME','Wipro,TCS');
+insert into studentplacement(StudentsName,Stream,Company)values('Abhinav Akash','ME','Capgemini');
+insert into studentplacement(StudentsName,Stream,Company)values('Abhirup Hazra','EE','Capgemini,TCS,Wipro');
+insert into studentplacement(StudentsName,Stream,Company)values('Abhishek Bhattacharjee','AEIE','Xenonstack');
+insert into studentplacement(StudentsName,Stream,Company)values('Abhishek Kumar','CSE','Accenture,Wipro');
+insert into studentplacement(StudentsName,Stream,Company)values('Abhishek Kumar','ECE','Ernst&Young');
+insert into studentplacement(StudentsName,Stream,Company)values('Abhishikta Sengupta','CE','Cognizant');
+insert into studentplacement(StudentsName,Stream,Company)values('Aditi Mishra','EE','Wipro,Accenture');
+insert into studentplacement(StudentsName,Stream,Company)values('Aditya Banerjee','CSE','Capgemini');
+insert into studentplacement(StudentsName,Stream,Company)values('Aditya Basak','CSE','Xenonstack,Accenture');
+insert into studentplacement(StudentsName,Stream,Company)values('Aditya Jha','IT','Sopra Steria');
+insert into studentplacement(StudentsName,Stream,Company)values('Aditya Kumar','EE','Pinnacle,Jhonson Controls');
+insert into studentplacement(StudentsName,Stream,Company)values('Aditya Mukherjee','EE','Cognizant');
+insert into studentplacement(StudentsName,Stream,Company)values('Aditya Roy','ME','Pinnacle');
+insert into studentplacement(StudentsName,Stream,Company)values('Agamani Acharyya','ECE','TCS');
+insert into studentplacement(StudentsName,Stream,Company)values('Ahitagni Roy','ECE','Capgemini,TCS');
+insert into studentplacement(StudentsName,Stream,Company)values('Aishee Barman','CE','Pinnacle');
+insert into studentplacement(StudentsName,Stream,Company)values('Aishik Banerjee','AEIE','Xenonstack');
+insert into studentplacement(StudentsName,Stream,Company)values('Akash Kundu','ECE','Sterlite Technologies');
+insert into studentplacement(StudentsName,Stream,Company)values('Akash Maity','EE','Cognizant');
+insert into studentplacement(StudentsName,Stream,Company)values('Akash Panda','CSE','Cognizant');
+insert into studentplacement(StudentsName,Stream,Company)values('Akash Paul','MCA','Sterlite Technologies');
+insert into studentplacement(StudentsName,Stream,Company)values('Akash Singha','CSE','Cognizant');
+insert into studentplacement(StudentsName,Stream,Company)values('Akash Tiwari','CSE','Capgemini');
+insert into studentplacement(StudentsName,Stream,Company)values('Akshay Kumar','ECE','Cognizant');
+insert into studentplacement(StudentsName,Stream,Company)values('Aman Sinha','AEIE','Xenonstack');
+insert into studentplacement(StudentsName,Stream,Company)values('Amit Kumar Thakur','ME','Cognizant');
+insert into studentplacement(StudentsName,Stream,Company)values('Amrita Mitra','AEIE','TCS');
+insert into studentplacement(StudentsName,Stream,Company)values('Amrita Sarkar','CSE','Xenonstack');
+insert into studentplacement(StudentsName,Stream,Company)values('Anamitra Bag','ME','Wipro');
+insert into studentplacement(StudentsName,Stream,Company)values('Anaya Das','ECE','Capgemini');
+insert into studentplacement(StudentsName,Stream,Company)values('Aneek Hait','CSE','Cognizant');
+insert into studentplacement(StudentsName,Stream,Company)values('Aniket Kumar Singh','IT','Capgemini');
+insert into studentplacement(StudentsName,Stream,Company)values('Anirban Patra','ECE','Xenonstack,TCS,Wipro');
+insert into studentplacement(StudentsName,Stream,Company)values('Anirban Samanta','ECE','TCS,Wipro');
+insert into studentplacement(StudentsName,Stream,Company)values('Anish Banerjee','ECE','Accenture');
+insert into studentplacement(StudentsName,Stream,Company)values('Anish Kundu','EE','Capgemini');
+insert into studentplacement(StudentsName,Stream,Company)values('Anjali Suchit Singh','CSE','Wipro');
+insert into studentplacement(StudentsName,Stream,Company)values('Ankit Mallick','IT','Xenonstack');
+insert into studentplacement(StudentsName,Stream,Company)values('Ankita Giri','EE','Capgemini');
+insert into studentplacement(StudentsName,Stream,Company)values('Ankur Parasar','CSE','Capgemini');
+insert into studentplacement(StudentsName,Stream,Company)values('Anshika Kumari','IT','Xenonstack');
+insert into studentplacement(StudentsName,Stream,Company)values('Anshuman Pati','IT','Wipro');
+insert into studentplacement(StudentsName,Stream,Company)values('Antara Roy','ECE','Cognizant');
+insert into studentplacement(StudentsName,Stream,Company)values('Anurag Srivastava','CSE','Ernst&Young');
+insert into studentplacement(StudentsName,Stream,Company)values('Anushka Singh','ECE','Ernst&Young');
+insert into studentplacement(StudentsName,Stream,Company)values('Anusmita Ray','IT','Accenture');
+insert into studentplacement(StudentsName,Stream,Company)values('Aratrika Chatterjee','ECE','Capgemini');
+insert into studentplacement(StudentsName,Stream,Company)values('Arbaz UR Rahaman','IT','Virtusa');
+insert into studentplacement(StudentsName,Stream,Company)values('Archan Chatterjee','ECE','Capgemini');
+insert into studentplacement(StudentsName,Stream,Company)values('Arijeet Banerjee','CE','Utkarsha India');
+insert into studentplacement(StudentsName,Stream,Company)values('Aritra Pandey','CSE','Sterlite Technologies');
+insert into studentplacement(StudentsName,Stream,Company)values('Arkaprabha Roy','EE','Ernst&Young,Presistent');
+insert into studentplacement(StudentsName,Stream,Company)values('Arnab Bhattacharyya','ECE','Wipro');
+insert into studentplacement(StudentsName,Stream,Company)values('Arnab Ghanty','CSE','Ernst&Young');
+insert into studentplacement(StudentsName,Stream,Company)values('Arnab Kundu','ECE','Xenonstack,Cognizant,Presistent');
+insert into studentplacement(StudentsName,Stream,Company)values('Arpan Saha','ECE','Xenonstack,Cognizant,HCL Technology,Zensar');
+insert into studentplacement(StudentsName,Stream,Company)values('Arpan Samanta','MCA','Xenonstack,TCS');
+insert into studentplacement(StudentsName,Stream,Company)values('Arunima Ghosh','EE','Cognizant');
+insert into studentplacement(StudentsName,Stream,Company)values('Ashis Kumar Singh','CSE','Capgemini');
+insert into studentplacement(StudentsName,Stream,Company)values('Ashmita Bhattacharjee','AEIE','Cognizant');
+insert into studentplacement(StudentsName,Stream,Company)values('Ashutosh Kumar Singh','ECE','Capgemini,TCS');
+insert into studentplacement(StudentsName,Stream,Company)values('Asif Ikbal','CSE','Accenture');
+insert into studentplacement(StudentsName,Stream,Company)values('Atrick Das','CSE','TCS');
+insert into studentplacement(StudentsName,Stream,Company)values('Avik Chowdhury','ECE','Virtusa,HCL Technology');
+insert into studentplacement(StudentsName,Stream,Company)values('Avirup Chakraborty','IT','Presistent');
+insert into studentplacement(StudentsName,Stream,Company)values('Awan Khurshid','AEIE','Accenture');
+insert into studentplacement(StudentsName,Stream,Company)values('Ayan Bhattacharyya','AEIE','Capgemini');
+insert into studentplacement(StudentsName,Stream,Company)values('Ayush Kumar','IT','Sopra Steria');
+-- showing whole table.
+select*from studentplacement;
+-- No of CSE Student.
+SELECT Stream, COUNT(Stream)
+FROM studentplacement
+GROUP BY Stream
+HAVING COUNT(Stream) > 1;
+-- Showing students of CSE.
+select StudentsName,Company,Stream from studentplacement where Stream='CSE';

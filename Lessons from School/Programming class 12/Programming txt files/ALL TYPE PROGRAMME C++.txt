@@ -1,0 +1,6751 @@
+                                                           BASIC LAYOUT FOR C++ PROGRAMMING
+//
+#include<iostream>
+using namespace std;
+class oper{
+private: int ;
+public:
+void acc()
+{
+}
+void cal()
+{
+}
+void display()
+{
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                            BASIC INFO TYPE PROGRAMME C++
+// Sum of two number by using class and object acc(),cal(),display().
+#include<iostream>
+using namespace std;
+class sum{
+private: int a,b,c;
+public:
+void acc()
+{
+cout<<"ENTER TWO NUMBERS";
+cin>>a>>b;
+}
+void cal()
+{
+c=0;
+c=a+b;
+}
+void display()
+{
+cout<<"Sum="<<c;
+}
+};
+int main()
+{
+sum obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+-------------------------------------------------------------------------
+// Product of two number by using class and object acc(),cal(),display().
+#include<iostream>
+using namespace std;
+class product{
+private: int a,b,c;
+public:
+void acc()
+{
+cout<<"ENTER TWO NUMBERS";
+cin>>a>>b;
+}
+void cal()
+{
+c=0;
+c=a*b;
+}
+void display()
+{
+cout<<"Product="<<c;
+}
+};
+int main()
+{
+product obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------
+// Multiply of three number by using class and object acc(),cal(),display().
+#include<iostream>
+using namespace std;
+class mul{
+private: int a,b,c,d;
+public:
+void acc()
+{
+cout<<"ENTER Three NUMBERS";
+cin>>a>>b>>c;
+}
+void cal()
+{
+d=0;
+d=a*b*c;
+}
+void display()
+{
+cout<<"Multiplication="<<d;
+}
+};
+int main()
+{
+mul obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------
+// Division of two number by using class and object acc(),cal(),display().
+#include<iostream>
+using namespace std;
+class div{
+private: int a,b,c;
+public:
+void acc()
+{
+cout<<"ENTER TWO NUMBERS";
+cin>>a>>b;
+}
+void cal()
+{
+c=0;
+c=a/b;
+}
+void display()
+{
+cout<<"Division="<<c;
+}
+};
+int main()
+{
+div obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------
+// Subtraction of two number by using class and object acc(),cal(),display().
+#include<iostream>
+using namespace std;
+class sub{
+private: int a,b,c;
+public:
+void acc()
+{
+cout<<"ENTER TWO NUMBERS";
+cin>>a>>b;
+}
+void cal()
+{
+c=0;
+c=a-b;
+}
+void display()
+{
+cout<<"Subtraction="<<c;
+}
+};
+int main()
+{
+sub obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------
+// SWAPING of two number by using class and object acc(),cal(),display().(Using third variable)
+#include<iostream>
+using namespace std;
+class swa{
+private: int a,b,c,T,F,G,H;
+public:
+void acc()
+{
+cout<<"ENTER TWO NUMBERS";
+cin>>a>>b;
+T=a;
+F=b;
+}
+void cal()
+{
+c=a;
+a=b;
+b=c;
+G=a;
+H=b;
+}
+void display()
+{
+cout<<"before swaping a&b respectively--->"<<T<<F;
+cout<<"\n";
+cout<<"after swaping a&b respectively--->"<<G<<H;
+}
+};
+int main()
+{
+swa obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+----------------------------------------------------------------------------------------------
+// SWAPING of two number by using class and object acc(),cal(),display().[not using third variable]
+#include<iostream>
+using namespace std;
+class swa{
+private: int a,b,T,F,G,H;
+public:
+void acc()
+{
+cout<<"ENTER TWO NUMBERS";
+cin>>a>>b;
+T=a;
+F=b;
+}
+void cal()
+{
+a=a+b;
+b=a-b;
+a=a-b;
+G=a;
+H=b;
+}
+void display()
+{
+cout<<"before swaping a&b respectively--->"<<T<<F;
+cout<<"\n";
+cout<<"after swaping a&b respectively--->"<<G<<H;
+}
+};
+int main()
+{
+swa obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+// Reverse order.
+#include<iostream>
+using namespace std;
+class rev{
+private: int n,d,s;
+public:
+void acc()
+{
+cout<<"ENTER ANY NUMBER YOU WANT";
+cin>>n;
+}
+void cal()
+{
+s=0;
+while(n>0)
+{
+d=n%10;
+s=s*10+d;
+n=n/10;
+}	
+}
+void display()
+{
+cout<<"REVERSE NUMBER IS = "<<s;	
+}		
+};
+int main()
+{
+rev obj;
+obj.acc();
+obj.cal(); 
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+// Sum of the digits of a number.
+#include<iostream>
+using namespace std;
+class sum{
+private: int n,d,s;
+public:
+void acc()
+{
+cout<<"ENTER ANY NUMBER YOU WANT";
+cin>>n;
+}
+void cal()
+{
+s=0;
+while(n>0)
+{
+d=n%10;
+s=s+d;
+n=n/10;
+}	
+}
+void display()        
+{
+cout<<"SUM OF THE DIGITS OF THE NUMBER IS = "<<s;	
+}		
+};
+int main()
+{
+sum obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+//wap to print the factor of a number
+#include<iostream>
+using namespace std;
+class fact{
+private: int n,i,c;
+public:
+void acc()
+{
+cout<<"Enter any number";
+cin>>n;
+}	
+void cal()
+{
+for(i=1;i<=n;i++)
+{
+if(n%1==0)
+c++;c=c+1;c+=1;
+}	
+}
+void display()
+{
+cout<<"NUMBER OF THE FACTOR IS ="<<c;
+}
+};
+int main()
+{
+fact obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------
+// sum of factors.
+#include<iostream>
+using namespace std;
+class sum{
+private: int n,d,s,i;
+public:
+void acc()
+{
+cout<<"ENTER ANY NUMBER";
+cin>>n;
+s=0;
+i=1;
+}
+void cal()
+{
+while(i<=n)
+{
+if(n%i==0)
+s=s+i;
+i++;
+}	
+}
+void display()
+{
+cout<<"sum of the factors is = "<<s;	
+}		
+};
+int main()
+{
+sum obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+//accept 2 numbers from user and printf the greater numbers:
+#include<iostream>
+using namespace std;
+class deter{
+private: int a,b;
+public:
+void acc()
+{
+cout<<" ENTER a & b";
+cin>>a>>b;
+}
+void cal()
+{
+}
+void display()
+{
+if(a>b)
+cout<<"a IS GREATER THAN b";
+else
+cout<<"b IS GREATER THAN a";
+}		
+};
+int main()
+{
+deter obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+//accept 3 numbers from user and printf the greater numbers:
+#include<iostream>
+using namespace std;
+class deter{
+private: int a,b,c;
+public:
+void acc()
+{
+cout<<" ENTER a,b & c------>";
+cin>>a>>b>>c;
+}
+void cal()
+{
+}
+void display()
+{
+if(a>b && a>c)
+cout<<"A IS GREATER";
+else
+if(b>a && b>c)
+cout<<"B IS GREATER";
+else
+if(c>a && c>b)
+cout<<"C is greater";
+}		
+};
+int main()
+{
+deter obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+/*accept three digits from user between one to nine.display the greatest and smallest three digit number*/
+#include<iostream>
+using namespace std;
+class oper{
+private: int a,b,c,gn,sn;
+public:
+void acc()
+{
+cout<<"enter digits";
+cin>>a>>b>>c;
+gn=0;
+sn=0;
+}
+void cal()
+{
+if(a>b && a>c)
+{
+if(b>c)
+{
+gn=100*a+10*b+c;
+sn=100*c+10*b+a;
+}
+else
+{
+gn=100*a+10*c+b;
+sn=100*b+10*c+a;
+}
+}
+else if (b>a && b>c)
+{
+if(a>c)
+{
+gn=b*100+a*10+c;
+sn=c*100+a*10+b;
+}
+else
+{
+gn=100*b+10*c+a;
+sn=a*100+c*10+b;
+}
+}
+else if (c>a &&c>b)
+{
+if(a>b)
+{
+gn=c*100+a*10+b;
+sn=b*100+a*10+c;
+}
+else
+{
+gn=c*100+b*10+a;
+sn=a*100+b*10+c;
+}
+}
+}
+void display()
+{
+cout<<"max number"<<gn;
+cout<<"\n"; 
+cout<<"minimum number"<<sn;
+}		
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+//determine a number even or odd.
+#include<iostream>
+using namespace std;
+class deter{
+private: int n;
+public:
+void acc()
+{
+cout<<" ENTER n------>";
+cin>>n;
+}
+void cal()
+{
+}
+void display()
+{
+if(n%2==0)
+cout<<"EVEN";
+else
+cout<<"ODD";
+}		
+};
+int main()
+{
+deter obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------------
+//HCF & LCM.
+#include<iostream>
+using namespace std;
+class oper{
+private: int a,b,x,y,temp,H,l ;
+public:
+void acc()
+{
+	cout<<"\nEnter Two num..\n";
+	cin>>x>>y;
+	a=x;
+	b=y;
+}
+void cal()
+{
+	while(b!=0)
+	{
+		temp=b;
+		b=a%b;
+		a=temp;
+	}
+	H=a;
+	l=(x*y)/H;
+}
+void display()
+{
+	cout<<"	HCF="<<H;
+	cout<<"\n";
+	cout<<"LCM="<<l;
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                        SOME FUNDAMENTALS
+//Compute quotient and remainder
+#include <iostream>
+using namespace std;
+
+int main()
+{    
+    int divisor, dividend, quotient, remainder;
+
+    cout << "Enter dividend: ";
+    cin >> dividend;
+
+    cout << "Enter divisor: ";
+    cin >> divisor;
+
+    quotient = dividend / divisor;
+    remainder = dividend % divisor;
+
+    cout << "Quotient = " << quotient << endl;
+    cout << "Remainder = " << remainder;
+
+    return 0;
+}
+---------------------------------------------------------
+//pell series
+#include<iostream>
+using namespace std;
+class oper{
+private: int a,b,c,i,n,s;
+public:
+void acc()
+{
+cout<<"Enter the range";
+cin>>n;
+a=1;
+b=2;
+c=0;
+s=0;
+}
+void cal()
+{
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+cout<<" series = "<<a;
+s=a+2*b;
+a=b;
+b=c;
+}
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------
+//Find Size of a Variable
+#include <iostream>
+using namespace std;
+
+int main() 
+{    
+    cout << "Size of char: " << sizeof(char) << " byte" << endl;
+    cout << "Size of int: " << sizeof(int) << " bytes" << endl;
+    cout << "Size of float: " << sizeof(float) << " bytes" << endl;
+    cout << "Size of double: " << sizeof(double) << " bytes" << endl;
+
+    return 0;
+}
+--------------------------------------------------------------------------
+//Find GCD using while loop
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n1, n2;
+
+    cout << "Enter two numbers: ";
+    cin >> n1 >> n2;
+    
+    while(n1 != n2)
+    {
+        if(n1 > n2)
+            n1 -= n2;
+        else
+            n2 -= n1;
+    }
+
+    cout << "HCF = " << n1;
+    return 0;
+}
+--------------------------------------------------------------------------
+//Calculate Sum of Natural numbers using Recursion
+#include<iostream>
+using namespace std;
+
+int add(int n);
+
+int main() {
+    int n;
+
+    cout << "Enter a positive integer: ";
+    cin >> n;
+
+    cout << "Sum =  " << add(n);
+
+    return 0;
+}
+
+int add(int n) {
+    if(n != 0)
+        return n + add(n - 1);
+    return 0;
+}
+---------------------------------------------------------------------------
+//VV IMP. Convert Octal Number to Decimal
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int octalToDecimal(int octalNumber);
+
+int main()
+{
+   int octalNumber;
+   cout << "Enter an octal number: ";
+   cin >> octalNumber;
+   cout << octalNumber << " in octal = " << octalToDecimal(octalNumber) << " in decimal";
+   
+   return 0;
+}
+
+// Function to convert octal number to decimal
+int octalToDecimal(int octalNumber)
+{
+    int decimalNumber = 0, i = 0, rem;
+    while (octalNumber != 0)
+    {
+        rem = octalNumber % 10;
+        octalNumber /= 10;
+        decimalNumber += rem * pow(8, i);
+        ++i;
+    }
+    return decimalNumber;
+}
+-------------------------------------------------------------------------------------
+// VV.IMP.Convert Decimal Number to Octal
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int decimalToOctal(int decimalNumber);
+
+int main()
+{
+   int decimalNumber;
+   cout << "Enter a decimal number: ";
+   cin >> decimalNumber;
+   cout << decimalNumber << " in decimal = " << decimalToOctal(decimalNumber) << " in octal";
+   
+   return 0;
+}
+
+// Function to convert decimal number to octal
+int decimalToOctal(int decimalNumber)
+{
+    int rem, i = 1, octalNumber = 0;
+    while (decimalNumber != 0)
+    {
+        rem = decimalNumber % 8;
+        decimalNumber /= 8;
+        octalNumber += rem * i;
+        i *= 10;
+    }
+    return octalNumber;
+}
+-------------------------------------------------------------------------------------------
+//VV.IMP.Program to Convert Binary to Octal
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int convertBinarytoOctal(long long);
+int main()
+{
+    long long binaryNumber;
+
+    cout << "Enter a binary number: ";
+    cin >> binaryNumber;
+
+    cout << binaryNumber << " in binary = " << convertBinarytoOctal(binaryNumber) << " in octal ";
+
+    return 0;
+}
+
+int convertBinarytoOctal(long long binaryNumber)
+{
+    int octalNumber = 0, decimalNumber = 0, i = 0;
+
+    while(binaryNumber != 0)
+    {
+        decimalNumber += (binaryNumber%10) * pow(2,i);
+        ++i;
+        binaryNumber/=10;
+    }
+
+    i = 1;
+
+    while (decimalNumber != 0)
+    {
+        octalNumber += (decimalNumber % 8) * i;
+        decimalNumber /= 8;
+        i *= 10;
+    }
+
+    return octalNumber;
+}
+------------------------------------------------------------------------------------------------------------
+//VV.IMP.Program to Convert Octal to Binary
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+long long convertOctalToBinary(int);
+int main()
+{
+    int octalNumber;
+
+    cout << "Enter an octal number: ";
+    cin >> octalNumber;
+
+    cout << octalNumber << " in octal = " << convertOctalToBinary(octalNumber) << "in binary";
+
+    return 0;
+}
+
+long long convertOctalToBinary(int octalNumber)
+{
+    int decimalNumber = 0, i = 0;
+    long long binaryNumber = 0;
+
+    while(octalNumber != 0)
+    {
+        decimalNumber += (octalNumber%10) * pow(8,i);
+        ++i;
+        octalNumber/=10;
+    }
+
+    i = 1;
+
+    while (decimalNumber != 0)
+    {
+        binaryNumber += (decimalNumber % 2) * i;
+        decimalNumber /= 2;
+        i *= 10;
+    }
+
+    return binaryNumber;
+}
+--------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                     Applicable type programmes.
+
+//Wap to store a time in hours,minutes and seconds,and convert it into seconds only
+#include<iostream>
+using namespace std;
+class time{
+private: int h,m,s,sec;
+public:
+void acc()
+{
+cout<<"ENTER HOURS,MINUTES & SECONDS";
+cin>>h>>m>>s;
+sec=0;
+}
+void cal()
+{
+sec=h*3600+m*60+s;	
+}
+void display()
+{
+cout<<"TIME IN SECOND = "<<sec;	
+}		
+};
+int main()
+{
+time obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+//Wap to convert a distance from km,m,cm to cm only.
+#include<iostream>
+using namespace std;
+class time{
+private: int km,m,cm,c;
+public:
+void acc()
+{
+cout<<"ENTER KILOMETERS,MITERS & CM";
+cin>>km>>m>>cm;
+c=0;
+}
+void cal()
+{
+c=km*1000+m*100+cm;	
+}
+void display()
+{
+cout<<"DISTANCE IN CM = "<<c;	
+}		
+};
+int main()
+{
+time obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+//wap to convert a time year ,month,days to days only
+#include<iostream>
+using namespace std;
+class time{
+private: int y,m,d,day;
+public:
+void acc()
+{
+cout<<"ENTER YEAR,MONTH & DAY";
+cin>>y>>m>>d;
+day=0;
+}
+void cal()
+{
+day=y*365+m*30+d;	
+}
+void display()
+{
+cout<<"TIME IN DAY = "<<day;	
+}		
+};
+int main()
+{
+time obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+//Wap to store the principle,rate,time.calculate the si and amount.
+#include<iostream>
+using namespace std;
+class taka{
+private: int p,r,t,si,amt;
+public:
+void acc()
+{
+cout<<"ENTER principle,rate,time ";
+cin>>p>>r>>t;
+si=0;
+amt=0;
+}
+void cal()
+{
+si=p*r*t/100;
+amt=si+p;	
+}
+void display()
+{
+cout<<"Simple interest is = "<<si;
+cout<<"\n";
+cout<<"Total amount is = "<<amt;
+}		
+};
+int main()
+{
+taka obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+//wap to convert a temperature from celcius to farenheit.
+#include<iostream>
+using namespace std;
+class teemp{
+private: float f,c;
+public:
+void acc()
+{
+cout<<"Temperature should be entered ";
+cin>>c;
+f=0;
+c=0;
+}
+void cal()
+{
+f=(9.0*c/5)+32;
+}
+void display()
+{
+cout<<"TEMPERATURE IN FERENHEIT = "<<f;
+}		
+};
+int main()
+{
+teemp obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+//wap to convert farenheit to celcius
+#include<iostream>
+using namespace std;
+class teemp{
+private: float f,c;
+public:
+void acc()
+{
+cout<<"Temperature should be in fer ";
+cin>>f;
+f=0;
+c=0;
+}
+void cal()
+{
+c=(f-32)/9*5.0;
+}
+void display()
+{
+cout<<"TEMPERATURE IN FERENHEIT ="<<c;
+}		
+};
+int main()
+{
+teemp obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+----------------------------------------------------------------------------------------------
+//wap to convert farenheit to celcius
+#include<iostream>
+using namespace std;
+class teemp{
+private: float f,c;
+public:
+void acc()
+{
+cout<<"Temperature should be in fer ";
+cin>>f;
+f=0;
+c=0;
+}
+void cal()
+{
+c=(f-32.0)*5.0/9.0;
+}
+void display()
+{
+cout<<"TEMPERATURE IN FERENHEIT ="<<c;
+}		
+};
+int main()
+{
+teemp obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------------------
+/*17> wap to store two numbers and calcuat the five basic operations*/ 
+#include<iostream>
+using namespace std;
+class oper{
+private: int sum,mul,sub,div,cho,a,b,c,n;
+public:
+void acc()
+{
+cout<<"enter your choice\n 1-addition\n 2-substraction\n 3-multiplication\n 4-division----------->";
+cin>>n;
+sum=0;
+mul=0;
+sub=0;
+div=0;
+}
+void cal()
+{
+switch(n)
+{
+case 1:
+cout<<"enter two numbers";
+cin>>a>>b;
+c=sum=a+b;
+break;
+case 2:
+cout<<"enter two numbers";
+cin>>a>>b;
+c=sub=a-b;
+break;
+case 3:
+cout<<"enter two numbers";
+cin>>a>>b;
+c=mul=a*b;
+break;
+case 4:
+cout<<"enter two numbers";
+cin>>a>>b;
+c=div=a/b;
+}
+}
+void display()
+{
+cout<<"RESULT OF THE OPERATION = "<<c;
+}		
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------------------------------
+// calculate area.
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,r,l,b,ar;
+public:
+void acc()
+{
+cout<<"enter the option\n 1-area of circle\n 2-area of square\n 3-area of rectaingle------------------>";
+cin>>n;
+}
+void cal()
+{
+switch(n)
+{
+case 1:
+cout<<"enter radius";
+cin>>r;
+ar=22/7*r*r;
+break;
+case 2:
+cout<<"enter length";
+cin>>l;
+ar=l*l;
+break;
+case 3:
+cout<<"enter length and breath";
+cin>>l>>b;
+ar=l*b;
+break;
+}
+}
+void display()
+{
+cout<<"RESULT OF THE Calculation = "<<ar;
+}		
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------------------------------
+/*1> wap to calculate the library fine as per the following criteria
+first 5 days        rs2/day
+next 5 days         rs3/day
+above 10 days       rs4/day*/
+#include<iostream>
+using namespace std;
+class taka{
+private: int d;
+         float f;
+public:
+void acc()
+{
+cout<<"enter number of days";
+cin>>d;
+f=0;
+}
+void cal()
+{
+if(d<=5)
+f=d*0.4;
+else 
+if(d>5 && d<=10)
+f=d*0.65;
+else 
+if (d>10)
+f=d*0.80;
+}
+void display()
+{
+cout<<"The fine will be"<<f;
+}		
+};
+int main()
+{
+taka obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+----------------------------------------------------------------------------------------------
+/*2. wap to store the unit asumed and calculate electric bill.
+first 100 unit                rs 4/ unit
+next 200 unit                 rs 5/ unit (excess 100 unit)
+above 300 unit                rs 6/ unit(excess 300 unit)*/
+#include<iostream>
+using namespace std;
+class taka{
+private: float u,amt,total;
+public:
+void acc()
+{
+cout<<"enter the unit";
+cin>>u;
+amt=0;
+total=0;
+}
+void cal()
+{
+if(u<=100)
+amt=u*4;
+else if(u>100 && u<=200)
+amt=100*4+(u-100)*5;
+else if(u>=300)
+amt=100*4+200*5+(u-300)*6;
+}
+void display()
+{
+cout<<"The amount of the bill will be"<<amt;
+cout<<"\n";
+cout<<"unit consumed ="<<u;
+}		
+};
+int main()
+{
+taka obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------------------------------
+/*3> wap to calculate the telephone bill according to the following critaria
+first 200 unit         free calls
+next100 unit            2/ unit
+next 200 unit           3/ unit
+above 500 unit          4/ unit*/
+#include<iostream>
+using namespace std;
+class taka{
+private: float u,amt,total;
+public:
+void acc()
+{
+cout<<"enter the unit";
+cin>>u;
+amt=0;
+total=0;
+}
+void cal()
+{
+if(u<=200)
+amt=u*0;
+else if(u>200 && u<=300)
+amt=(u-200)*2;
+else if(u>300 && u<=500)
+amt=200*0+100*2+(u-300)*3;
+else if(u>500)
+amt=200*0+100*2+200*3+(u-500)*4;
+}
+void display()
+{
+cout<<"The amount of the bill will be"<<amt;
+cout<<"\n";
+cout<<"unit consumed ="<<u;
+}		
+};
+int main()
+{
+taka obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------
+/*4> wap to store a yearly income of a person .calculate the income tax as per the folling criter tax.
+upto rs 250000                         nil
+above rs 250000,<=500000               10% excess 250000
+above rs 500000,<=1000000              20% excess 500000
+above rs 1000000                       30% excess 1000000*/
+#include<iostream>
+using namespace std;
+class taka{
+private: float u,amt,total;
+public:
+void acc()
+{
+cout<<"enter the salary";
+cin>>u;
+amt=0;
+total=0;
+}
+void cal()
+{
+if (u<=250000)
+amt =u*0;
+else if (u>250000 && u<=500000)
+amt =(u*10)/100;
+else if(u>500000 && u<=1000000)
+amt =(u*20)/100;
+else if (u>1000000)
+amt =(u*30)/100;
+}
+void display()
+{
+cout<<"The amount of the salary will be"<<amt;
+cout<<"\n";
+cout<<"unit consumed ="<<u;
+}		
+};
+int main()
+{
+taka obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------
+/*34> wap to store the basic salary of a employe.calculate his net pay and gross pay according to the given condition
+basic =15000
+da=40%of basic
+hra=25%of basic
+gross=basic+hra+da
+pf=8.33 of basic
+net=gross-pf*/
+#include<iostream>
+using namespace std;
+class taka{
+private: int ba,da,hra,pf,gross,net;
+public:
+void acc()
+{
+cout<<"BASIC SALARY";
+cin>>ba;
+}
+void cal()
+{
+da=ba*40/100;
+hra=ba*25/100;
+pf=ba*8.33;
+gross=ba+da+hra;
+net=gross-pf;
+}
+void display()
+{
+cout<<"gross salary"<<gross;
+cout<<"\n";
+cout<<"net salary"<<net;
+}		
+};
+int main()
+{
+taka obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+-------------------------------------------------------------------------------------
+/*wap to print the grade acording to the marks ,acording to the percentage the number of free subject will be accepted by the user to make percantage.
+marks                    grade
+c=40                      D
+>40-<=60                  C
+>60-<=80                  B
+>80                       A*/
+#include<iostream>
+using namespace std;
+class oper{
+private: int a,b,c,av;
+public:
+void acc()
+{
+cout<<"enter the marks of 3 subjects";
+cin>>a>>b>>c;
+}
+void cal()
+{
+av=(a+b+c)/3;
+}
+void display()
+{
+if (av<=40)
+cout<<"Grade D";
+if (av>40 && av<=60)
+cout<<"Grade C";
+if (av>60 && av<=80)
+cout<<"Grade B";
+if (av>80)
+cout<<"Grade A";
+}		
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------------
+/*wap to accept price from user and print the final price of a digital camera after the following discount price.
+price                         discount
+---------                      ----------
+upto 5000                       5%
+from 5001 to 10000              6%
+from 10001 to 15000             7%
+above   15000                   8%*/
+#include<iostream>
+using namespace std;
+class oper{
+private: float p,d,fp;
+public:
+void acc()
+{
+cout<<"enter the value";
+cin>>p;
+d=0;
+fp=0;
+}
+void cal()
+{
+if(p<=5000)
+d=p*5/100;
+else if (p>5000 && p<=10000)
+d=p*6/100;
+else if (p>10000 && p<=15000)
+d=p*7/100;
+else 
+d=p*8/100;
+fp=p-d;
+}
+void display()
+{
+cout<<"final price after discount = "<<fp;
+}		
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------------
+/* WAP to store a number and check
+i> Div by 2 and 5 both.
+ii> Div by 2 but not 5.
+iii> Div by 5 but not 2.
+iv> not Div by 2 and 5.*/
+#include<iostream>
+using namespace std;
+class oper{
+private: int n;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+}
+void cal()
+{
+}
+void display()
+{
+if(n%10==0)
+cout<<"Divisable by 2 and 5 both.";
+else
+if(n%2==0)
+cout<<"Divisable by 2 but not 5.";
+else
+if(n%5==0)
+cout<<"Divisaable by 5 but not 2.";
+else
+if(n%2==0,n%5==0)
+cout<<"divisable by 10";
+else
+cout<<"not divisable by 2 or 5.";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------------
+// which one is greater.
+#include<iostream>
+using namespace std;
+class oper{
+private: int a,b,c;
+public:
+void acc()
+{
+cout<<"ENTER THREE NUMBERS";
+cin>>a>>b>>c;
+}
+void cal()
+{
+}
+void display()
+{
+if(a>=b && a>=c)
+cout<<"a is greater than b and c";
+else
+if(b>=c && b>=a)
+cout<<"b is greater than a and c";
+else
+if(c>=a && c>=b)
+cout<<"c is greater than a and b";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------------
+//wap to accept a character from user and check it is vowel or not.
+#include<iostream>
+using namespace std;
+class oper{
+private: char ch;
+public:
+void acc()
+{
+cout<<"ENTER ANY CHARACTER";
+cin>>ch;
+}
+void cal()
+{
+}
+void display()
+{
+if(ch=='A'||ch=='a'||ch=='E'||ch=='e'||ch=='I'||ch=='i'||ch=='O'||ch=='o'||ch=='U'||ch=='u')
+cout<<"Yahoo it is a Vowel";
+else
+cout<<"Consonant";
+}		
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------------------
+//wap to accept a character from user and check it is Upper case or lower case.
+#include<iostream>
+using namespace std;
+class oper{
+private: char ch;
+public:
+void acc()
+{
+cout<<"ENTER ANY CHARACTER";
+cin>>ch;
+}
+void cal()
+{
+}
+void display()
+{
+if(ch>='A' && ch<='Z')
+cout<<"Upper case character";
+else
+cout<<"Lower case character";
+}		
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------
+// WAP to store a number and check if the number is negative or positive.
+#include<iostream>
+using namespace std;
+class oper{
+private: int n;
+public:
+void acc()
+{
+cout<<"please enter a number ------>";
+cin>>n;
+}
+void cal()
+{
+}
+void display()
+{
+if(n>0)
+cout<<"Positive";
+else
+if(n<0)
+cout<<"Negative";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------
+// WAP to accept from user and print the maximum and minimum digits.(without using array)
+#include<iostream>
+using namespace std;
+class oper{
+private: int i,d,max,min,n;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+max=0;
+min=0;
+}
+void cal()
+{
+for(i=n;i>0;i/=10)
+{
+d=i%10;
+if(max==0)
+max=d;
+if(min==0)
+min=d;
+if(d>max)
+max=d;
+if(d<min)
+min=d;
+}
+}
+void display()
+{
+cout<<"Maximum number is = "<<max;
+cout<<"Minimum number is = "<<min;
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------
+// accept a number from user and print the each digit in desending order without using array.
+#include<iostream>
+#include<math.h>
+using namespace std;
+class oper{
+private: int i,j,n,s,c,d;
+public:
+void acc()
+{
+cout<<"enter a number";
+cin>>n;
+s=0;
+c=0;
+}
+void cal()
+{
+for(i=9;i>=0;i--)
+{
+j=n;
+while(j>0)
+{
+d=j%10;
+if(d==i)
+s=s+d*pow(10,c++);
+j=j/10;
+}
+}
+}
+void display()
+{
+cout<<"new number is = "<<s;
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------------
+// Eligibility for vote.
+#include<iostream>
+using namespace std;
+class oper{
+private: int a,b,c;
+public:
+void acc()
+{
+cout<<"Please enter your age ------>";
+cin>>a;
+}
+void cal()
+{
+}
+void display()
+{
+if(a>=1 && a<=18)
+cout<<"Your age is not eligible for vote";
+else
+if(a=18 && a>=19)
+cout<<"Your age is eligible for vote";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------
+// WAP to store two numbers in two variables and check which is greater.
+#include<iostream>
+using namespace std;
+class oper{
+private: int a,b,c;
+public:
+void acc()
+{
+cout<<"Enter two numbers";
+cin>>a>>b;
+}
+void cal()
+{
+}
+void display()
+{
+if(a>=b)
+cout<<"a is greater than b";
+else
+cout<<"b is greater than a";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------
+// WAP to store two numbers in two variables and check which is smaller.
+#include<iostream>
+using namespace std;
+class oper{
+private: int a,b,c;
+public:
+void acc()
+{
+cout<<"Enter two numbers";
+cin>>a>>b;
+}
+void cal()
+{
+}
+void display()
+{
+if(a<=b)
+cout<<"a is smaller than b";
+else
+cout<<"b is smaller than a";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------------------
+// WAP to store SP and CP of an item calculate profit or loss.
+#include<iostream>
+using namespace std;
+class oper{
+private: int SP,CP;
+public:
+void acc()
+{
+cout<<"Enter Selling price and Cost price";
+cin>>SP>>CP;
+}
+void cal()
+{
+}
+void display()
+{
+if(CP>=SP)
+cout<<"You have lossed in your business!";
+else
+if(SP>=CP)
+cout<<"You have profited in your business!";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------
+// WAP to store age and gender and check whether he or she is eligible for marriage or not.
+#include<iostream>
+using namespace std;
+class oper{
+private: int ag;
+         char ch;
+public:
+void acc()
+{
+cout<<"enter a gender";
+cin>>ch;
+cout<<"enter age";
+cin>>ag;
+}
+void cal()
+{
+}
+void display()
+{
+ if((ch=='M'|| ch=='m') && ag>=21)
+ cout<<"YOU ARE ELIGIBLE FOR MARRING A BEAUTIFUL GIRL";
+ else
+ cout<<"you are not eligible for marriage";
+ if((ch=='F'|| ch=='f') && ag>=18)
+ cout<<"YOU ARE ELIGIBLE FOR MARRING A HANDSOME BOY";
+ else
+ cout<<"you are not eligible for marriage";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------
+//traingle formation and all others.
+#include<iostream>
+using namespace std;
+class oper{
+private: int a,b,c;
+public:
+void acc()
+{
+cout<<"Enter the three sides of triangle";
+cin>>a>>b>>c;
+}
+void cal()
+{
+}
+void display()
+{
+if(a+b>c && a+c>b && b+c>a)
+{
+cout<<"TRANGLE FORMATION POSSBLE\n";
+if(a==b&&b==c&&c==a)
+cout<<"IT IS A EQUILATERAL TRIANGLE\n";
+else
+if(a==b||b==c||c==a)
+cout<<"THIS IS A ISO-SCELES TRIANGLE\n";
+else
+if(a!=b&&b!=c&&c!=a)
+cout<<"IT IS A SCALENE TRANGLE\n";
+}
+else
+cout<<"TRIANGLE FORMATION IS NOT POSSIBLE";
+}		
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+----------------------------------------------------------------------------------------------
+// WAP to initialize the day number and display the cooresponding name of day day.
+#include<iostream>
+using namespace std;
+class oper{
+private: int N;
+public:
+void acc()
+{
+cout<<"Enter number of day";
+cin>>N;
+}
+void cal()
+{
+}
+void display()
+{
+if(N<=1)
+cout<<"Sunday";
+else
+if(N<=2)
+cout<<"Monday";
+else
+if(N<=3)
+cout<<"Tuesday";
+else
+if(N<=4)
+cout<<"Wednesday";
+else
+if(N<=5)
+cout<<"Thursday";
+else
+if(N<=6)
+cout<<"Friday";
+else
+if(N<=7)
+cout<<"Saturday";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+// WAP to initialize the month number and display the cooresponding name of month.
+#include<iostream>
+using namespace std;
+class oper{
+private: int n;
+public:
+void acc()
+{
+cout<<"Enter number of month";
+cin>>n;
+}
+void cal()
+{
+}
+void display()
+{
+if(n<=1)
+cout<<"January";
+else
+if(n<=2)
+cout<<"February";
+else
+if(n<=3)
+cout<<"March";
+else
+if(n<=4)
+cout<<"April";
+else
+if(n<=5)
+cout<<"May";
+else
+if(n<=6)
+cout<<"June";
+else
+if(n<=7)
+cout<<"July";
+else
+if(n<=8)
+cout<<"AUgust";
+else
+if(n<=9)
+cout<<"September";
+else
+if(n<=10)
+cout<<"October";
+else
+if(n<=11)
+cout<<"November";
+else
+if(n<=12)
+cout<<"December";
+if(n>=13)
+cout<<"ERROR";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+-------------------------------------------------------------------------------------------------------------
+// WAP to store temperature and choice if choice=1, convert the taemperature from celcius to Ferhenhiet if choice=2 convert from ferhenhiet to celcius.
+#include<iostream>
+using namespace std;
+class oper{
+private: int cho,C,F,k;
+public:
+void acc()
+{
+cout<<"Enter choice";
+cin>>cho;
+}
+void cal()
+{
+if(cho<=1)
+{
+cout<<"enter temperature(In the range of celcius scale)---->";
+cin>>C;
+if(C<=0 && C>=100)
+F=(9*C/5)+32;
+}
+else
+if(cho<=2)
+{
+cout<<"enter temperature(In the range of Ferhenhiet scale)------->";
+cin>>F;
+if(F<=32 && F>=212)
+C=(F-32)*5/9;
+}
+}
+void display()
+{
+if(cho<=1)
+cout<<"TEMPERATURE in Ferhenheit------->"<<F;
+else
+if(cho<=2)
+cout<<"TEMPERATURE in Celcius------->"<<C;
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+-------------------------------------------------------------------------------------------------------------
+// WAP to store temperature and choice if choice=1, convert the teperature from celcius to Kelvin if choice=2 convert form Kelvin to celcius.
+#include<iostream>
+using namespace std;
+class oper{
+private: int cho,C,F,k;
+public:
+void acc()
+{
+cout<<"Enter choice";
+cin>>cho;
+}
+void cal()
+{
+if(cho<=1)
+{
+cout<<"enter temperature(In the range of celcius scale)---->";
+cin>>C;
+if(C<=0 && C>=100)
+k=273+C;
+cout<<"TEMPERATURE in Kelvin------->"<<k;
+}
+else
+if(cho<=2)
+{
+cout<<"enter temperature(In the range of Kelvin scale)------->";
+cin>>k;
+if(k<=0 && k>=373)
+C=k-273;
+cout<<"TEMPERATURE in Celcius------->"<<C;
+}
+}
+void display()
+{
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+-------------------------------------------------------------------------------------------------------------
+//check a year lipyear or not.
+#include<iostream>
+using namespace std;
+class oper{
+private: int y;
+public:
+void acc()
+{
+cout<<"please enter a year------->";
+cin>>y;
+}
+void cal()
+{
+}
+void display()
+{
+if(y%4==0)
+cout<<"Lipyear";
+else
+cout<<"Ordinary";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+-------------------------------------------------------------------------------------------------------------
+                                                                    Print the series's sum or other as directed.
+--------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------
+//WAP to cal calculate (1)+(1+2)+(1+2+3)+.....+n
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,i,s=0,j,k=0;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void cal()
+{
+for(i=1;i<=n;i++)
+{
+k=0;
+for(j=1;j<=i;j++)
+{
+k=k+j;
+}
+s=s+k;
+}
+}
+void display()
+{
+cout<<s;
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+// Check a number odd or even if even then printf square of the number else printf the cube of the number (process 2).
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,x,c;
+public:
+void acc()
+{
+cout<<"Enetr range";
+cin>>n;
+}
+void cal()
+{
+}
+void display()
+{
+if (n%2==0)
+{
+c=n*n;
+cout<<"The even range"<<c;
+}
+else
+{
+x=n*n*n;
+cout<<"The odd range"<<x;
+}
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+
+--------------------------------------------------------------------------------------------
+/*Fibbonaci series*/
+#include<iostream>
+using namespace std;
+class oper{
+private: int a,b,c,i,n;
+public:
+void acc()
+{
+cout<<"Enter a range";
+cin>>n;
+a=0;
+b=1;
+c=0;
+}
+void cal()
+{
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+cout<<"\t"<<a;
+c=a+b;
+a=b;
+b=c;
+}
+}		
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+/*wap to print table of the number*/
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,i,f;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+f=1;
+}
+void cal()
+{
+}
+void display()
+{
+for (i=1;i<=10;i++)
+{
+f=n*i;
+cout<<"\n"<<f;
+}
+}		
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+/*wap to print the multiple of 5 from a given range*/
+#include<iostream>
+using namespace std;
+class oper{
+private: int i,u,l;
+public:
+void acc()
+{
+cout<<"Enter upper limit and lower limit";
+cin>>u>>l;
+}
+void cal()
+{
+}
+void display()
+{
+if(u>l)
+{
+for(i=l;i<=u;i++)
+{
+if(i%5==0)
+cout<<"\t"<<i;
+}
+}
+else
+cout<<"bhul kore6ish re khoka";
+}		
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+/*print the n,..............1*/
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,i;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void cal()
+{
+}
+void display()
+{
+for(i=n;i>=1;i--)
+cout<<"\t"<<i;
+}		
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+////print the even ,odd numbers from 1 to n
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,i;
+public:
+void acc()
+{
+cout<<"ENTER YOUR RANGE";
+cin>>n;
+}
+void cal()
+{
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+if(i%2==0)
+{
+cout<<"\t"<<i;
+}
+}
+cout<<"\t";
+cout<<" ARE EVEN NUMBERS ";
+cout<<"\n";
+for(i=1;i<=n;i++)
+{
+if(i%2!=0)
+{
+cout<<"\t"<<i;
+}
+}
+cout<<"\t";
+cout<<"ODD NUMBERS ARE";
+}		
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+////print the even numbers from 1 to 100
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,i;
+public:
+void acc()
+{
+cout<<"ENTER YOUR RANGE";
+cin>>n;
+}
+void cal()
+{
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+if(i%2==0)
+cout<<"\t"<<i;
+}
+}		
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+//print the series--------->1,3,5,7,9,.......,n.
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,i;
+public:
+void acc()
+{
+cout<<"ENTER YOUR RANGE";
+cin>>n;
+}
+void cal()
+{
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+if(i%2!=0)
+cout<<"\t"<<i;
+}
+}		
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------
+//print the series ------->1,2,3,4,5,6,7,..............,20
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,i;
+public:
+void acc()
+{
+cout<<"ENTER YOUR RANGE";
+cin>>n;
+}
+void cal()
+{
+}
+void display()
+{
+for(i=1;i<=n;i++)
+cout<<"\t"<<i;
+}		
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+// Sum of n terms of natural number.(while-loop)
+#include<iostream>
+using namespace std;
+class sum{
+private: int n,d,s,i;
+public:
+void acc()
+{
+cout<<"ENTER RANGE";
+cin>>n;
+s=0;
+i=1;
+}
+void cal()
+{
+s=0;
+while(i<=n)
+{
+s=s+i;
+i++;
+}	
+}
+void display()
+{
+cout<<"SUM OF THE DIGITS OF THE NUMBER IS = "<<s;	
+}		
+};
+int main()
+{
+sum obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------------
+//sum of n term of natural number.
+#include<iostream>
+using namespace std;
+class ser{
+private: int n,s,i;  
+public:
+void acc()
+{
+cout<<"ENTER YOUR RANGE";
+cin>>n;
+s=0;
+}	
+void cal()
+{
+for(i=1;i<=n;i++)
+s=s+i;
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------
+// s=1-2+3-4+5-6+......
+#include<iostream>
+using namespace std;
+class ser{
+private: int n,i,s;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+s=0;
+}	
+void cal()
+{
+for (i=1;i<=n;i++)
+{
+if(i%2!=0)
+s=s+i;
+else
+s=s-i;
+}	
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------------
+//Wap a Programme of the series 1+11+111+1111+.....+n,taking user input  as limit.
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,sum=0,j=1;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void cal()
+{
+for(int i=1;i<=n;i++)
+{
+sum=sum+j;
+j=(j*10)+1;
+}
+}
+void display()
+{
+cout<<sum;
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------------
+// s=1*3+2*4+3*5+........+9*10
+#include<iostream>
+using namespace std;
+class ser{
+private: int n,i,s;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+s=0;
+}	
+void cal()
+{
+for (i=1;i<=n;i++)
+{
+s=s+(i*(i+2));
+}	
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+-----------------------------------------------------------------------------------------------------
+// s=1*2+3*4+5*6+........+9*10
+#include<iostream>
+using namespace std;
+class ser{
+private: int n,i,s;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+s=0;
+}	
+void cal()
+{
+for (i=1;i<=n;i++)
+{
+if(i%2!=0)
+{
+s=s+(i*(i+1));
+}
+}	
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------
+//// s=2+5+10+17......
+#include<iostream>
+using namespace std;
+class ser{
+private: int n,i,s;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+s=0;
+}	
+void cal()
+{
+for (i=1;i<=n;i++)
+{
+s=s+((i*i)+1);
+}	
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------------
+//// s=0+3+8+15+24......
+#include<iostream>
+using namespace std;
+class ser{
+private: int n,i,s;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+s=0;
+}	
+void cal()
+{
+for (i=1;i<=n;i++)
+{
+s=s+((i*i)-1);
+}	
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------
+//s=1+8+9+64+25+216 
+#include<iostream>
+using namespace std;
+class ser{
+private: int n,i;
+         float s;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+s=0;
+}	
+void cal()
+{
+for (i=1;i<=n;i++)
+{
+if(i%2!=0)
+s=s+(i*i);
+else
+s=s+(i*i*i);
+}	
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------
+//s=1-4+9-16+25
+#include<iostream>
+using namespace std;
+class ser{
+private: int n,i;
+         float s;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+s=0;
+}	
+void cal()
+{
+for (i=1;i<=n;i++)
+{
+if(i%2!=0)
+s=s+(i*i);
+else
+s=s-(i*i);
+}	
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------
+//1.wap to print the sum of odd numbers from 1 to 50.
+#include<iostream>
+using namespace std;
+class ser{
+private: int n,i;
+         float s;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+s=0;
+}	
+void cal()
+{
+for(i=1;i<=n;i++)
+{
+if(i%2!=0)
+s=s+i;
+}
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------
+//s=1!+2!+3!+4!+...n!
+#include<iostream>
+using namespace std;
+class ser{
+private: int n,i,f,j,s=0;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+s=0;
+}	
+void cal()
+{
+for(i=1;i<=n;i++)
+{
+f=1;
+for(j=1;j<=i;j++)
+{
+f=f*j;
+}
+s=s+f;
+}
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------
+//S=s=a+a^2+a^3+...a^n
+#include<iostream>
+#include<math.h>
+using namespace std;
+class ser{
+private: int n,i,k,a;
+         float s;
+public:
+void acc()
+{
+cout<<"Enter your range & any number.";
+cin>>n>>a;
+s=0;
+k=0;
+}	
+void cal()
+{
+for(i=1;i<=n;i++)
+{
+k=pow(a,i);
+s=s+(k);
+}
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------
+//s=1*1+2*2+3*3+......+9*9+n*n.
+#include<iostream>
+using namespace std;
+class ser{
+private: int n,i,s;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+s=0;
+}	
+void cal()
+{
+for (i=1;i<=n;i++)
+{
+s=s+(i*i);
+}	
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------------
+//s=1*2+2*3+3*4+........+9*10
+#include<iostream>
+using namespace std;
+class ser{
+private: int n,i,s;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+s=0;
+}	
+void cal()
+{
+for (i=1;i<=n;i++)
+{
+s=s+(i*(i+1));
+}	
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+-----------------------------------------------------------------------------------------------------
+//s=1*3+2*4+3*5+....+9*11
+#include<iostream>
+using namespace std;
+class ser{
+private: int n,i,s;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+s=0;
+}	
+void cal()
+{
+for (i=1;i<=n;i++)
+{
+s=s+(i*(i+2));
+}	
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------------------
+//S=a+(a*2)+(a*3)+...+(a*10)
+#include<iostream>
+#include<math.h>
+using namespace std;
+class ser{
+private: int n,i,k,a;
+         float s;
+public:
+void acc()
+{
+cout<<"Enter your range & any number.";
+cin>>n>>a;
+s=0;
+k=0;
+}	
+void cal()
+{
+for(i=1;i<=n;i++)
+{
+s=s+(a*i);
+}
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------------------
+//S=a+a^2+a^3+....+a^n
+#include<iostream>
+#include<math.h>
+using namespace std;
+class ser{
+private: int n,i,k,a;
+         float s;
+public:
+void acc()
+{
+cout<<"Enter your range & any number.";
+cin>>n>>a;
+s=0;
+k=0;
+}	
+void cal()
+{
+for(i=1;i<=n;i++)
+{
+k=pow(a,i);
+s=s+k;
+}
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------------------
+//1+1/2+1/3+1/4+1/.....1/N
+#include<iostream>
+using namespace std;
+class ser{
+private: int n,i;
+         float s;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+s=0;
+}	
+void cal()
+{
+for (i=1;i<=n;i++)
+{
+s=s+(1.0/i);
+}	
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------------------
+//S=1/2+2/3+3/4+4/5....9/10
+#include<iostream>
+using namespace std;
+class ser{
+private: int n,i;
+         float s;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+s=0;
+}	
+void cal()
+{
+for (i=1;i<=n;i++)
+{
+s=s+(i/(i+1.0));
+}	
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+-----------------------------------------------------------------------------------------------------------
+//s=1/2-2/3+3/4-4/5+5/6
+#include<iostream>
+using namespace std;
+class ser{
+private: int n,i;
+         float s;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+s=0;
+}	
+void cal()
+{
+for (i=1;i<=n;i++)
+{
+if(i%2!=0)
+s=s+(i/(i+1.0));
+else
+s=s-(i/(i+1.0));
+}	
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------------------------------
+// WAP to Print 1+2/2!+3/3+.....+n/n!
+#include<iostream>
+using namespace std;
+class sum{
+private: int num,count,n;
+         float sum,fact;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+num=1;
+}
+void cal()
+{
+while(num<=n)
+{
+fact=1;
+for(count=1;count<=num;count++)
+{
+fact=fact*count;
+}
+sum=sum+(num/fact);
+num++;
+}
+}
+void display()
+{
+cout<<"Sum of the series= "<<sum;
+}
+};
+int main()
+{
+sum obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------------------------
+//s=X/1+X^2/2+X^3/3.......X^n/n.......
+#include<iostream>
+#include<math.h>
+using namespace std;
+class ser{
+private: int n,i,k,X;
+         float s;
+public:
+void acc()
+{
+cout<<"Enter your range & any number.";
+cin>>n>>X;
+s=0;
+}	
+void cal()
+{
+for(i=1;i<=n;i++)
+{
+k= pow (X,i);
+s=s+(k/i);
+}
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+// s=x-x^2/2-x^3/3-x^4/4.......-x^n/n
+#include<iostream>
+#include<math.h>
+using namespace std;
+class ser{
+private: int n,i,k,X;
+         float s;
+public:
+void acc()
+{
+cout<<"Enter your range & any number.";
+cin>>n>>X;
+s=0;
+}	
+void cal()
+{
+for(i=1;i<=n;i++)
+{
+k= pow (X,i);
+s=s-(k/i);
+}
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+//S=a+a^2/2+a^3/3+a^4/4+...+a^10/10
+#include<iostream>
+#include<math.h>
+using namespace std;
+class ser{
+private: int n,i,k,a;
+         float s;
+public:
+void acc()
+{
+cout<<"Enter your range & any number.";
+cin>>n>>a;
+s=0;
+k=0;
+}	
+void cal()
+{
+for(i=1;i<=n;i++)
+{
+k=pow(a,i);
+s=s+(k/i);
+}
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------------------------------
+//1.S=a^2+a^2/2+a^2+...+a^2/10
+#include<iostream>
+#include<math.h>
+using namespace std;
+class ser{
+private: int n,i,k,a;
+         float s;
+public:
+void acc()
+{
+cout<<"Enter your range & any number.";
+cin>>n>>a;
+s=0;
+k=0;
+}	
+void cal()
+{
+for(i=1;i<=n;i++)
+{
+k=pow(a,2);
+s=s+(k/i);
+}
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------------------------------
+//s=x/2+x/5+x/8+x/11+....+x/20
+#include<iostream>
+using namespace std;
+class ser{
+private: int n,x,i;
+         float s;
+public:
+void acc()
+{
+cout<<"Enter your range & any number";
+cin>>n>>x;
+s=0;
+}	
+void cal()
+{
+for(i=1;i<=n;i++)
+s=s+(x/((i*i)+1.0));
+}
+void display()
+{
+cout<<"sum of the series ="<<s;
+}
+};
+int main()
+{
+ser obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+-------------------------------------------------------------------------------------------------------------------
+// Quadratic equations
+#include<iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+float a, b, c;
+float root1, root2, imaginary;
+float discriminant;
+cout<<"Enter values of a, b, c of quadratic equation (aX^2 + bX + c): ";
+cin>>a>>b>>c;
+discriminant = (b * b) - (4 * a * c);		
+if(discriminant > 0)
+{
+root1 = (-b + sqrt(discriminant)) / (2*a);
+root2 = (-b - sqrt(discriminant)) / (2*a);
+printf("Two distinct and real roots exists: %.2f and %.2f", root1, root2);
+}
+else if(discriminant == 0)
+{
+root1 = root2 = -b / (2 * a);
+printf("Two equal and real roots exists: %.2f and %.2f", root1, root2);
+}
+else if(discriminant < 0)
+{
+root1 = root2 = -b / (2 * a);
+imaginary = sqrt(-discriminant) / (2 * a);
+printf("Two distinct complex roots exists: %.2f + i%.2f and %.2f - i%.2f",root1, imaginary, root2, imaginary);
+}
+}
+-------------------------------------------------------------------------------------------------------------------
+                                                                            NUMBER CHECKING
+// Duck number.120 203
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,d,s=0;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+}
+void cal()
+{
+while(n>0)
+{
+d=n%10;
+if(d==0)
+s=s+1;
+n=n/10;
+}
+}
+void display()
+{
+if(s>=1)
+cout<<"It is a duck number";
+else
+cout<<"Error";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------------------
+// WAP to check weather the numbr is Krishnamurti number/ Special number/ Strong number.
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,i,j,s=0,d,t,f;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+t=n;
+}
+void cal()
+{
+while(n>0)
+{
+d=n%10;
+f=1;
+for(j=1;j<=d;j++)
+{
+f=f*j;
+}
+s=s+f;
+n=n/10;
+}
+}
+void display()
+{
+if (s==t)
+cout<<"It is a Krishnamurti number";
+else
+cout<<"Wrong enter";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------------------
+// Perfect number
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,s,i;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+s=0;
+}
+void cal()
+{
+for (i=1;i<n;i++)
+{
+if(n%1==0)
+s=s+i;
+}
+}
+void display()
+{
+if (s==n)
+cout<<"Perfect number";
+else
+cout<<"Error";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------------
+// Perfect number
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,s,i;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+i=1;
+}
+void cal()
+{
+while (i<n)
+{
+if (n%i==0)
+s=s+i;
+i++;
+}
+}
+void display()
+{
+if (s==n)
+cout<<"Perfect number";
+else
+cout<<"Error";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------------------
+////Kapriker No.
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,t,temp,f,l,c;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+c=1;
+t=n*n;
+temp=n;
+}
+void cal()
+{
+while(n>0)
+{
+n=n/10;
+c=c*10;
+}
+f=t/c;
+l=t%c;
+}
+void display()
+{
+if ((f+l)==temp)
+cout<<"It is a Kapriker number";
+else
+cout<<"Error";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------------
+//// WAP to check a number is an armstrong number or not.(153,371,370)
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,d,s,t;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+t=n;
+d=0;
+s=0;
+}
+void cal()
+{
+while(n>0)
+{
+d=n%10;
+s=s+(d*d*d);
+n=n/10;
+}
+}
+void display()
+{
+if (s==t)
+cout<<"Armstrong number";
+else
+cout<<"Error";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+-----------------------------------------------------------------------------------------------------
+// WAP to check a number buzz or not.
+#include<iostream>
+using namespace std;
+class oper{
+private: int n;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+}
+void cal()
+{
+}
+void display()
+{
+if (n%7==0||n%10==7)
+cout<<"Buzz number";
+else
+cout<<"Error";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------------------
+//WAP to check a number palindrome or not.
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,d,s,t;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+s=0;
+t=n;
+}
+void cal()
+{
+while(n>0)
+{
+d=n%10;
+s=s*10+d;
+n=n/10;
+}
+}
+void display()
+{
+if (s==t)
+cout<<"It is Palindrome number";
+else
+cout<<"Error";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+----------------------------------------------------------------------------------------
+//// WAP to store a number and check the number if niven or not.
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,d,s,t;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+s=0;
+t=n;
+}
+void cal()
+{
+while(n>0)
+{
+d=n%10;
+s=s+d;
+n=n/10;
+}
+}
+void display()
+{
+if (t%s==0)
+cout<<"It is Niven number";
+else
+cout<<"Error";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+----------------------------------------------------------------------------------------------
+//// WAP to store a number and check the number if the number happy or not.
+#include<iostream>
+using namespace std;
+class oper{
+private: int num,temp,sum;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>num;
+sum=0;
+}
+void cal()
+{
+while (sum!=1 && sum!=4)
+{
+sum=0;
+while(num>0)
+{
+temp=num%10;
+sum=sum+(temp*temp);
+num=num/10;
+}
+num=sum;
+}
+}
+void display()
+{
+if (sum==1)
+cout<<"It is Happy number";
+else
+cout<<"Error";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------
+//// WAP to check a number magic or not.
+#include<iostream>
+using namespace std;
+class oper{
+private: int num,temp,sum;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>num;
+sum=0;
+}
+void cal()
+{
+while(sum!=1)
+{
+ sum=0;
+while(num>0)
+{
+temp=num%10;
+sum=sum+temp;
+num=num/10;
+}
+num=sum;
+}
+}
+void display()
+{
+if (sum==1)
+cout<<"It is Magic number";
+else
+cout<<"Error";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------------------
+//// WAP to check a number Sunny or not.
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,i,c;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+c=0;
+n=n+1;
+i=1;
+}
+void cal()
+{
+while(i<=n)
+{
+if(n%i==0)
+c=c+1;
+i++;
+}
+}
+void display()
+{
+if (c%2==1)
+cout<<"It is Sunny number";
+else
+cout<<"Error";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+----------------------------------------------------------------------------------------------
+//// WAP to check a number prime or not.
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,i,c;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+c=0;
+i=1;
+}
+void cal()
+{
+while(i<=n)
+{
+if(n%i==0)
+c=c+i;
+i++;
+}
+}
+void display()
+{
+if (c==2)
+cout<<"It is Prime number";
+else
+cout<<"Error";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+-------------------------------------------------------------------------------------
+//// WAP to check a number perfect square.
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,i,c;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+c=0;
+i=1;
+}
+void cal()
+{
+while(i<=n)
+{
+if(n%i==0)
+c=c+1;
+i++;
+}
+}
+void display()
+{
+if (c%2==1)
+cout<<"It is Perfect square number";
+else
+cout<<"Error";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+----------------------------------------------------------------------------------------
+//// decimal to binary
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+class oper{
+private: int a[10],n,i;
+public:
+void acc()
+{
+system ("cls");
+cout<<"Enter a number";
+cin>>n;
+}
+void cal()
+{
+}
+void display()
+{
+for(i=0;n>0;i++)    
+{    
+a[i]=n%2;    
+n=n/2;    
+}    
+printf("\nBinary of Given Number is=");    
+for(i=i-1;i>=0;i--)    
+{    
+printf("%d",a[i]);    
+}    
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+------------------------------------------------------------------------------------------------
+//Check a number three digit & print middle term.
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,d,p;
+public:
+void acc()
+{
+cout<<"enter a no";
+cin>>n;		
+}
+void display()
+{
+if(n>=100 && n<=999)
+printf("It is a 3 digit number");
+{
+if(n>=100 && n<=999)
+{
+d=n/10;
+p=d%10;
+}
+cout<<"Middle term is "<<d;
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.display();
+}
+--------------------------------------------------------------------------------------------------------
+// wap a programme to check anumber perfect or not.(Scope Resolution)
+#include<iostream>
+using namespace std;
+class perfect{
+private: int n,s,i;
+public:
+void acc();
+void cal();
+void display();
+};
+void perfect::acc()
+{
+cout<<"Enter a number";
+cin>>n;
+}
+void perfect::cal()
+{
+s=0;
+for(i=1;i<n;i++)
+{
+if(n%i==0)
+{
+s=s+i;
+}
+}
+}
+void perfect::display()
+{
+if(s==n)
+cout<<"Perfect";
+else
+cout<<"Not Perfect";
+}
+int main()
+{
+perfect obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+-------------------------------------------------------------------------------------------------------------------------
+//wap a programme to check anumber Krishnamurti or not.(Scope resolution)
+#include<iostream>
+using namespace std;
+class speci{
+private: int n,i,j,s,d,t,f;
+public:
+void acc();
+void cal();
+void display();
+};
+void speci::acc()
+{
+cout<<"Enter a number";
+cin>>n;
+t=n;
+}
+void speci::cal()
+{
+s=0;
+while(n>0)
+{
+d=n%10;
+f=1;
+for(j=1;j<=d;j++)
+{
+f=f*j;
+}
+s=s+f;
+n=n/10;
+}
+}
+void speci::display()
+{
+if(s==t)
+cout<<"Special number";
+else
+cout<<"Not a special one";
+}
+int main()
+{
+speci obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------------------
+//wap a programme to check a number prime. (using consturctor)(defalut construtor)
+#include<iostream>
+using namespace std;
+class prime{
+private: int n,c,i;
+public:
+prime()
+{
+c=0;
+}
+void cal()
+{
+cout<<"enter a number";
+cin>>n;
+for(i=1;i<=n;i++)
+{
+if(n%i==0)
+{
+c=c+1;
+}
+}
+if (c==2)
+cout<<"Prime";
+else
+cout<<"Not prime";
+};
+int main()
+{
+prime obj;
+obj.cal();
+}
+----------------------------------------------------------------------------------------------------------------
+/*inheritance.
+prime number:
+//class a acc(),cal()
+//class b dis()*/
+#include<iostream>
+using namespace std;
+class a{
+public:
+int n,i,c;
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+i=1;
+}
+void cal()
+{
+while(i<=n)
+{
+c=0;
+for(i=1;i<=n;i++)
+{
+if(n%i==0)
+c++;
+}
+}
+}
+};
+class b:public a{
+public:
+void dis()
+{
+if(c==2)
+cout<<"prime";
+else
+cout<<"not prime";
+}
+};
+int main()
+{
+b obj;
+obj.acc();
+obj.cal();
+obj.dis();
+}
+----------------------------------------------------------------------------------------------------------------
+                                                                        PATTERN PRINTING
+/* 
+*
+**
+***
+****
+*****
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;	
+}
+void display()
+{
+for (i=1;i<=5;i++)
+{
+for (j=1;j<=i;j++)
+{
+cout<<"*";
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+1
+12
+123
+1234
+12345
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;	
+}
+void display()
+{
+for (i=1;i<=5;i++)
+{
+for (j=1;j<=i;j++)
+{
+cout<<""<<j;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+1
+22
+333
+4444
+55555
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;	
+}
+void display()
+{
+for (i=1;i<=5;i++)
+{
+for (j=1;j<=i;j++)
+{
+cout<<""<<i;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+A
+AB
+ABC
+ABCD
+ABCDE
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: char i,j;
+public:
+void acc()
+{	
+}
+void display()
+{
+for (i='A';i<='E';i++)
+{
+for (j='A';j<=i;j++)
+{
+cout<<""<<j;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+A
+BB
+CCC
+DDDD
+EEEEE
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: char i,j;
+public:
+void acc()
+{	
+}
+void display()
+{
+for (i='A';i<='E';i++)
+{
+for (j='A';j<=i;j++)
+{
+cout<<""<<i;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+  1
+  10
+  101
+  1010
+  10101
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for (i=1;i<=n;i++)
+{
+for (j=1;j<=i;j++)
+{
+cout<<""<<j%2;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+*****
+*****
+*****
+*****
+*****
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;	
+}
+void display()
+{
+for (i=1;i<=n;i++)
+{
+for (j=1;j<=n;j++)
+{
+cout<<"*";
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+11111
+22222
+33333
+44444
+55555
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;	
+}
+void display()
+{
+for (i=1;i<=n;i++)
+{
+for (j=1;j<=n;j++)
+{
+cout<<""<<i;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+12345
+12345
+12345
+12345
+12345
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;	
+}
+void display()
+{
+for (i=1;i<=n;i++)
+{
+for (j=1;j<=n;j++)
+{
+cout<<""<<j;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+AAAAA
+BBBBB
+CCCCC
+DDDDD
+EEEEE
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: char i,j;
+public:
+void acc()
+{
+}
+void display()
+{
+for (i='A';i<='E';i++)
+{
+for (j='A';j<='E';j++)
+{
+cout<<""<<i;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+ABCDE
+ABCDE
+ABCDE
+ABCDE
+ABCDE
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: char i,j;
+public:
+void acc()
+{
+}
+void display()
+{
+for (i='A';i<='E';i++)
+{
+for (j='A';j<='E';j++)
+{
+cout<<""<<j;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+55555
+44444
+33333
+22222
+11111
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for (i=n;i>=1;i--)
+{
+for (j=1;j<=n;j++)
+{
+cout<<""<<i;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+---------------------------------------------------------------------------------------------------------------
+/* 
+54321
+54321
+54321
+54321
+54321
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for (i=1;i<=n;i++)
+{
+for (j=n;j>=1;j--)
+{
+cout<<""<<j;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/*
+11111
+11122
+11333
+14444
+55555
+*/
+#include<iostream>
+using namespace std;
+class oper{
+private: int i,j,k,n;
+public:
+void acc()
+{
+cout<<"enter a range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=n-1;j>=i;j--)
+{
+printf("1 ");
+}
+for(k=1;k<=i;k++)
+{
+printf("%d ",i);
+}
+printf("\n");
+}
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+EEEEE
+DDDDD
+CCCCC
+BBBBB
+AAAAA
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: char i,j;
+public:
+void acc()
+{
+}
+void display()
+{
+for (i='E';i>='A';i--)
+{
+for (j='A';j<='E';j++)
+{
+cout<<""<<i;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+EDCBA
+EDCBA
+EDCBA
+EDCBA
+EDCBA
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: char i,j;
+public:
+void acc()
+{
+}
+void display()
+{
+for (i='A';i<='E';i++)
+{
+for (j='E';j>='A';j--)
+{
+cout<<""<<j;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+*****
+****
+***
+**
+*
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for (i=1;i<=n;i++)
+{
+for (j=n;j>=i;j--)
+{
+cout<<"*";	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+54321
+5432
+543
+54
+5
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for (i=1;i<=n;i++)
+{
+for (j=n;j>=i;j--)
+{
+cout<<""<<j;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+54321
+4321
+321
+21
+1
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for (i=n;i>=1;i--)
+{
+for (j=i;j>=1;j--)
+{
+cout<<""<<j;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+55555
+4444
+333
+22
+1
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for (i=n;i>=1;i--)
+{
+for (j=1;j<=i;j++)
+{
+cout<<""<<i;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+11111
+2222
+333
+44
+5
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for (i=1;i<=n;i++)
+{
+for (j=n;j>=i;j--)
+{
+cout<<""<<i;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+12345
+1234
+123
+12
+1
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for (i=n;i>=1;i--)
+{
+for (j=1;j<=i;j++)
+{
+cout<<""<<j;	
+} 
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+    *
+   **
+  ***
+ ****
+*****
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j,k;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=n-1;j>=i;j--)
+{
+cout<<" ";
+}
+for(k=1;k<=i;k++)
+{
+cout<<"*";
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+    1
+   12
+  123
+ 1234
+12345
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j,k;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=n-1;j>=i;j--)
+{
+cout<<" ";
+}
+for(k=1;k<=i;k++)
+{
+cout<<""<<k;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+    1
+   22
+  333
+ 4444
+55555
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j,k;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=n-1;j>=i;j--)
+{
+cout<<" ";
+}
+for(k=1;k<=i;k++)
+{
+cout<<""<<i;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+    0
+   11
+  222
+ 3333
+44444
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j,k;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=n-1;j>=i;j--)
+{
+cout<<" ";
+}
+for(k=1;k<=i;k++)
+{
+cout<<""<<j;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+    *
+   ***
+  *****
+ *******
+*********
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j,k;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=n-1;j>=i;j--)
+{
+cout<<" ";
+}
+for(k=1;k<=2*i-1;k++)
+{
+cout<<"*";
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+-------------------------------------------------------------------------------------------------------------
+/* 
+    1
+   123
+  12345
+ 1234567
+123456789
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j,k;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=n-1;j>=i;j--)
+{
+cout<<" ";
+}
+for(k=1;k<=2*i-1;k++)
+{
+cout<<""<<k;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+    1
+   222
+  33333
+ 4444444
+555555555
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j,k;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=n-1;j>=i;j--)
+{
+cout<<" ";
+}
+for(k=1;k<=2*i-1;k++)
+{
+cout<<""<<i;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+    0
+   111
+  22222
+ 3333333
+444444444
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j,k;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=n-1;j>=i;j--)
+{
+cout<<" ";
+}
+for(k=1;k<=2*i-1;k++)
+{
+cout<<""<<j;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+    *
+   ***
+  *****
+ *******
+*********
+*********
+ *******
+  *****
+   ***
+    *
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int row,col,space,n;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(row=1;row<=n;row++)
+{
+for(space=1;space<=n-row;space++)
+cout<<" ";
+for(col=1;col<=(2*row)-1;col++)
+cout<<"*";
+cout<<"\n";
+}
+for(row=n-1;row>=1;row--)
+{
+for(space=1;space<=n-row;space++)
+cout<<" ";
+for(col=1;col<=(2*row)-1;col++)
+cout<<"*";
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+        *
+      ***
+    *****
+  *******
+*********
+  *******
+    *****
+      ***
+        *
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int row,col,space,n;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(row=1;row<=n;row++)
+{
+for(space=1;space<=n-row;space++)
+cout<<"  ";
+for(col=1;col<=(2*row)-1;col++)
+cout<<"*";
+cout<<"\n";
+}
+for(row=n-1;row>=1;row--)
+{
+for(space=1;space<=n-row;space++)
+cout<<"  ";
+for(col=1;col<=(2*row)-1;col++)
+cout<<"*";
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+  1 2 3 4 5
+  0 3 4 5 6
+  0 0 5 6 7
+  0 0 0 7 8
+  0 0 0 0 9
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=0;i<n;i++)
+{
+for(j=1;j<=n;j++)
+{
+if(j<=i)
+{
+cout<<"0 ";
+}
+else
+{
+cout<<" "<<i+j;
+}
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+1 2 3
+4 5 6
+7 8 9
+a b c
+d e f
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int i,j,x;
+public:
+void acc()
+{
+x=1;
+}
+void display()
+{
+for(i=1;i<=5;i++)
+{
+for(j=1;j<=3;j++)
+{
+cout<<" ",x;
+x++;
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+   1 0 0 0 0
+   0 2 0 0 0
+   0 0 3 0 0
+   0 0 0 4 0
+   0 0 0 0 5
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,s,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=1;j<=n;j++)
+{
+if(i==j)
+{
+cout<<""<<i;
+}
+else
+{
+cout<<"0";
+}
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+   0 * * * *
+   * 0 * * *
+   * * 0 * *
+   * * * 0 *
+   * * * * 0
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int n,i,s,j;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(i=1;i<=n;i++)
+{
+for(j=1;j<=n;j++)
+{
+if(i==j)
+{
+cout<<"0 ";
+}
+else
+{
+cout<<"* ";
+}
+}
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+/* 
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+* * * * * * * * *
+  * * * * * * *
+    * * * * *
+      * * *
+        *
+*/
+#include<iostream>
+using namespace std;
+class pattern{
+private: int row,col,space,n;
+public:
+void acc()
+{
+cout<<"Enter your range";
+cin>>n;
+}
+void display()
+{
+for(row=1;row<=n;row++)
+{
+for(space=1;space<=n-row;space++)
+cout<<"  ";
+for(col=1;col<=(2*row)-1;col++)
+cout<<"* ";
+cout<<"\n";
+}
+for(row=n-1;row>=1;row--)
+{
+for(space=1;space<=n-row;space++)
+cout<<"  ";
+for(col=1;col<=(2*row)-1;col++)
+cout<<"* ";
+cout<<"\n";
+}
+}
+};
+int main()
+{
+pattern obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------------
+// love pattern.
+#include <stdio.h>
+
+int main()
+{
+    int i, j, n;
+
+    printf("Enter value of n : ");
+    scanf("%d", &n);
+
+    for(i=n/2; i<=n; i+=2)
+    {
+        for(j=1; j<n-i; j+=2)
+        {
+            printf(" ");
+        }
+
+        for(j=1; j<=i; j++)
+        {
+            printf("*");
+        }
+
+        for(j=1; j<=n-i; j++)
+        {
+            printf(" ");
+        }
+
+        for(j=1; j<=i; j++)
+        {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+    for(i=n; i>=1; i--)
+    {
+        for(j=i; j<n; j++)
+        {
+            printf(" ");
+        }
+
+        for(j=1; j<=(i*2)-1; j++)
+        {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+-----------------------------------------------------------------------------
+                                                                         SPECIAL TYPES
+// function overloading.
+#include<iostream>
+using namespace std;
+class addition{
+public:
+int sum(int num1,int num2)
+{
+return num1+num2;
+}
+int sum(int num1,int num2, int num3)
+{
+return num1+num2+num3;
+}
+};
+int main()
+{
+addition obj;
+cout<<obj.sum(20,15)<<endl;
+cout<<obj.sum(81,100,10);
+}
+-----------------------------------------------------------------------------------------------
+// function overloading.2(area()--> rectangle,square)
+#include<iostream>
+using namespace std;
+class areaa{
+public:
+void area(int l,int b)
+{
+return l*b;
+}
+void area(int s)
+{
+return s*s;
+}
+};
+int main()
+{
+areaa obj;
+cout<<obj.area(10,5)<<\n;
+cout<<obj.area(25)<<\n;
+}
+---------------------------------------------------------------------------------------------------------
+/*inheritance type.
+class a
+class b*/
+#include<iostream>
+using namespace std;
+class account{
+public:
+float salary=60000;
+};
+class pro:public account{
+public:
+float bonus=5000.50;
+};
+int main()
+{
+pro p1;
+cout<<p1.salary<<endl;
+cout<<p1.bonus;
+}
+---------------------------------------------------------------------------------------------------------
+/*inheritance type.
+class a
+class b
+//sum of two numbers*/
+#include<iostream>
+using namespace std;
+class accept{
+public:
+int a,b,s;
+void acc()
+{
+cout<<"Enter two numbers";
+cin>>a>>b;
+s=0;
+}
+void cal()
+{
+s=a+b;
+}
+};
+class display:public accept{
+public:
+void dis()
+{
+cout<<"Sum of two numbers"<<s;
+}
+};
+int main()
+{
+display obj;
+obj.acc();
+obj.cal();
+obj.dis();
+}
+-----------------------------------------------------------------------------------------------
+/*inheritance.
+prime number:
+//class a acc(),cal()
+//class b dis()*/
+#include<iostream>
+using namespace std;
+class a{
+public:
+int n,i,c;
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+i=1;
+}
+void cal()
+{
+while(i<=n)
+{
+c=0;
+for(i=1;i<=n;i++)
+{
+if(n%i==0)
+c++;
+}
+}
+}
+};
+class b:public a{
+public:
+void dis()
+{
+if(c==2)
+cout<<"prime";
+else
+cout<<"not prime";
+}
+};
+int main()
+{
+b obj;
+obj.acc();
+obj.cal();
+obj.dis();
+}
+---------------------------------------------------------------------------------------------------
+                                                                         ARRAY PROGRAMMING
+//WAP to get average of some data
+#include<iostream>
+using namespace std;
+class oper{
+private: int ar[100],i,n,avg,s,j;
+public:
+void acc()
+{
+cout<<"Enter number of elements";
+cin>>n;
+s=0;
+}
+void cal()
+{
+for(i=0;i<n;i++)
+{
+cout<<"Enter element-"<<i+1;
+cin>>ar[i];
+}
+for(j=0;j<n;j++)
+{
+s=s+ar[j];
+}
+avg=s/n;
+}
+void display()
+{
+cout<<"average of datas"<<avg;
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------------------------
+////WAP to accept n numbers in arrya and print odd and even elements saparately.
+#include<iostream>
+using namespace std;
+class oper{
+private: int ar[100],n,i;
+public:
+void acc()
+{
+cout<<"Enter number of array elements";
+cin>>n;
+}
+void cal()
+{
+for(i=0;i<n;i++)
+{
+cout<<"Array Elements";
+cin>>ar[i];
+}
+}
+void display()
+{
+cout<<"Even elements are";
+cout<<"\n";
+for(i=0;i<n;i++)
+{
+if(ar[i]%2==0)
+cout<<"\t"<<ar[i];
+}
+cout<<"\n";
+cout<<"Odd Elements are";
+cout<<"\n";
+for(i=0;i<n;i++)
+{
+if(ar[i]%2!=0)
+cout<<"\t"<<ar[i];
+}
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------------------
+///Accept two arrays from users and stroe them in another array.
+#include<iostream>
+using namespace std;
+class oper{
+private: int a[100],b[100],c[100],i,index=0,n1,n2,n;
+public:
+void acc()
+{
+cout<<"Enter number of first array elements";
+cin>>n1;
+for(i=0;i<n1;i++)
+{
+cout<<"Element no"<<i+1;
+cin>>a[i];
+}
+cout<<"Enter numbers of second array elements";
+cin>>n2;
+for(i=0;i<n2;i++)
+{
+cout<<"Element no"<<i+1;
+cin>>b[i];
+}
+}
+void cal()
+{
+for(i=0;i<n1;i++)
+{
+c[index++]=a[i];
+}
+for(i=0;i<n2;i++)
+{
+c[index++]=b[i];
+}
+}
+void display()
+{
+cout<<"Array elements in new array";
+for(i=0;i<n1+n2;i++)
+{
+cout<<c[i];
+}
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------------
+//WAP to print the prime number from array.
+#include<iostream>
+using namespace std;
+class oper{
+private: int a[100],i,n,x,c,j;
+public:
+void acc()
+{
+cout<<"number of array elements";
+cin>>n;
+for(i=0;i<n;i++)
+{
+printf("Enter array elements");
+scanf("%d",&a[i]);
+}
+}
+void display()
+{
+for(i=0;i<n;i++)
+{
+x=a[i];
+c=0;
+for(j=1;j<=x;j++)
+{
+if(x%j==0)
+{
+c=c+1;
+}
+}
+if(c==2)
+cout<<"Prime numbers"<<a[i];
+}
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.display();
+}
+------------------------------------------------------------------------------------------
+//maximum number
+#include<iostream>
+using namespace std;
+class oper{
+private: int ar[100],i,n,max;
+public:
+void acc()
+{
+cout<<"Enter numbers of elements";
+cin>>n;
+for(i=0;i<n;i++)
+{
+cout<<"Enter element-"<<i+1;
+cin>>ar[i];
+}
+}
+void display()
+{
+for(i=0;i<n;i++)
+{
+max=ar[0];
+if(ar[i]>max)
+printf("%d is maximum",ar[i]);
+{
+if(max>ar[i])
+printf("%d is maximum",max);
+}
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.display();
+}
+---------------------------------------------------------------------------
+//minimum number
+#include<iostream>
+using namespace std;
+class oper{
+private: int ar[100],i,n,min;
+public:
+void acc()
+{
+cout<<"Enter numbers of elements";
+cin>>n;
+for(i=0;i<n;i++)
+{
+cout<<"Enter element-"<<i+1;
+cin>>ar[i];
+}
+}
+void display()
+{
+for(i=0;i<n;i++)
+{
+min=ar[0];
+if(ar[i]<min)
+cout<<"is minimum"<<ar[i];
+{
+if(min<ar[i])
+cout<<"is minimum"<<min;
+}
+}
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.display();
+}
+-------------------------------------------------------------------------------------------
+//decimal to binary.
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,ar[100],index=1,d,i;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+}
+void cal()
+{
+while(n>0)
+{
+d=n%2;
+ar[index++]=d;
+n=n/2;
+}
+}
+void display()
+{
+cout<<"Number in Binary";
+cout<<"\n";
+for(i=index;i>=0;i--)
+{
+cout<<ar[i];
+}
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------------------------------------
+//binary to decimal.
+#include<iostream>
+#include<math.h>
+using namespace std;
+class oper{
+private: int n,ar[100],index=1,d,i,s;
+public:
+void acc()
+{
+cout<<"Enter binary digits";
+cin>>n;
+s=0;
+i=0;
+}
+void cal()
+{
+while(n>0)
+{
+d=n%10;
+s=s+pow(d,i);
+n=n/10;
+}
+}
+void display()
+{
+cout<<"Number in decimal="<<s;
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+-------------------------------------------------------------------------------------------------------------------
+//hizibizi
+#include<iostream>
+using namespace std;
+class oper{
+private: int a[100],b[100],c[100],ar[100],n,i,x,y,index;
+public:
+void acc()
+{
+cout<<"enter no of array elements";
+cin>>n;
+x=0;
+y=0;
+index=0;
+}
+void display()
+{
+for(i=0;i<n;i++)
+{
+if(a[i]%2==0)
+b[x++]=a[i];
+}
+for(i=0;i<n;i++)
+{
+if(a[i]%2!=0)
+c[y++]=a[i];
+}
+for(i=0;i<x;i++)
+{
+ar[index++]=b[i];
+}
+for(i=0;i<y;i++)
+{
+ar[index++]=c[i];
+}
+for(i=0;i<x+y;i++)
+{
+cout<<ar[i];
+}
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.display();
+}
+---------------------------------------------------------------------------------------------------
+//Fascinating Number.
+#include<iostream>
+using namespace std;
+class oper{
+private: int n,p1,p2,p3,ar[100],c,d,x,i,j,fl;
+public:
+void acc()
+{
+cout<<"Enter a number";
+cin>>n;
+p1=n*1;
+p2=n*2;
+p3=n*3;
+c=0;
+x=0;
+fl=0;
+}
+void display()
+{
+while(p1>0)
+{
+d=n%10;
+ar[x++]=d;
+p1=p1/10;
+c++;
+}
+while(p2>0)
+{
+d=n%10;
+ar[x++]=d;
+p2=p2/10;
+c++;
+}while(p3>0)
+{
+d=n%10;
+ar[x++]=d;
+p3=p3/10;
+c++;
+}
+for(i=0;i<9;i++)
+{
+for(j=i+1;j<9;j++)
+{
+if(ar[i]==ar[j])
+{
+fl=1;
+break;
+}
+}
+}
+if(fl==0 && c==9)
+cout<<"Fascinating Number";
+else
+cout<<"Not a Fascinating Number";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.display();
+}
+----------------------------------------------------------------------------------------------------
+// WAP to accept two arrays and swap them.
+#include<iostream>
+using namespace std;
+class oper{
+private: int i,a[100],b[100],c[100];
+public:
+void display()
+{
+for(i=0;i<5;i++)
+{
+scanf("%d",&a[i]);
+}
+for(i=0;i<5;i++)
+{
+scanf("%d",&b[i]);
+}
+for(i=0;i<5;i++)
+{
+c[i]=a[i];
+a[i]=b[i];
+b[i]=c[i];
+}
+for(i=0;i<5;i++)
+{
+printf("%d",a[i]);
+}
+for(i=0;i<5;i++)
+{
+cout<<b[i];
+}
+}
+};
+int main()
+{
+oper obj;
+obj.display();
+}
+------------------------------------------------------------------------------------------------------
+// Print factorials of numbers.
+#include<iostream>
+using namespace std;
+class oper{
+private: int ar[100],n,i,f,j,t;
+public:
+void acc()
+{
+cout<<"Enter number of arrya elements";
+cin>>n;
+for(i=0;i<=n;i++)
+{
+cout<<"Array element ---->"<<i+1;
+cin>>ar[i];
+}
+}
+void cal()
+{
+for(i=0;i<=n;i++)
+{
+t=ar[i];
+f=1;
+for(j=1;j<=t;j++)
+{
+f=f*j;
+}
+}
+void display()
+{
+cout<<"Factorials are"<<f;
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------------------------
+//WAP to store first 5 armstrong number in array.
+#include<iostream>
+using namespace std;
+class oper{
+private: int ar[10],i;
+int n=1,ch=0;
+public:
+void display()
+{
+while(ch<5)
+{
+int d=0,s=0,t=n;
+while(t>0)
+{
+d=t%10;
+s=s+(d*d*d);
+t=t/10;
+}
+if(s==n)
+{
+ar[ch++]=n;
+}
+n++;
+}
+for(int i=0;i<ch;i++)
+{
+cout<<""<<a[i];
+}
+}
+};
+int main()
+{
+oper obj;
+obj.display();
+}
+--------------------------------------------------------------------------------------
+//Wap to store 10 element in arrya and find out maximum and minimum numbers for array along with their positions.
+#include<iostream>
+using namespace std;
+class oper{
+private: int i,ar[10];
+public:
+void acc()
+{
+cout<<"Enter array elements";
+cin>>;
+for(i=0;i<10;i++)
+{
+cin>>ar[i];
+}
+}
+void cal()
+{
+max=ar[0];
+min=ar[0];
+for(i=0;i<10;i++)
+{
+if(ar[i]>max)
+{
+max=ar[i];
+mp=i;
+}
+if(ar[i]<min)
+{
+min=ar[i];
+lp=i;
+}
+}
+void display()
+{
+cout<<"maximum & position"<<max<<mp+1;
+cout<<"minimum & position"<<min<<lp+1);
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+---------------------------------------------------------------------------------
+// WAP to accept some elements in array and also accept a number from user and check it is present in array or not by using linear search method.
+#include<iostream>
+using namespace std;
+class oper{
+private: int ar[100],i,n,f,p,ele;
+public:
+void acc()
+{
+cout<<"Enter no of array elements";
+cin>>n;
+f=0;
+}
+void cal()
+{
+for(i=0;i<n;i++)
+{
+printf("Element %d=",i+1);
+scanf("%d",&ar[i]);
+}
+printf("Enter a number to be searched\n");
+scanf("%d",&ele);
+for(i=0;i<n;i++)
+{
+if(ar[i]==ele)
+{
+f=1;
+p=i;
+break;
+}
+}
+}
+void display()
+{
+if(f==1)
+cout<<"Element found at positon ="<<p+1;
+else
+cout<<"Element not found";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+-----------------------------------------------------------------
+//binary search.
+#include<iostream>
+using namespace std;
+class oper{
+private: int m[100],k=0,p=0,ns,lb=0,i,n;
+public:
+void acc()
+{
+cout<<"Enter no of elements";
+cin>>n;
+int ub=n-1;
+k=0;
+p=0;
+lb=0;
+for(i=0;i<n;i++)
+{
+cin>>m[i];
+}
+cout<<"enter a number to search";
+cout<<"\n";
+cin>>ns;
+}
+void cal()
+{
+while(lb<=ub)
+{
+p=(lb+ub)/2;
+if(m[p]<ns)
+lb=p+1;
+if(m[p]>ns)
+ub=p-1;
+if(m[p]==ns)
+{
+k=1;
+break;
+}
+}
+}
+void display()
+{
+if(k==1)
+cout<<"Element found";
+else
+cout<<"Not found";
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+-----------------------------------------------------------------
+//selection sort technique.
+#include<iostream>
+using namespace std;
+class oper{
+private: int m[10],i,j,t,min;
+public:
+void acc()
+{
+for(i=0;i<10;i++)
+{
+cin>>m[i];
+}
+}
+void cal()
+{
+for(i=0;i<9;i++)
+{
+min=i;
+for(j=i+1;j<10;j++)
+{
+if(m[j]<m[min])
+min=j;
+}
+t=m[i];
+m[i]=m[min];
+m[min]=t;
+}
+}
+void display()
+{
+cout<<"The sorted array";
+cout<<"\n";
+for(i=0;i<10;i++)
+cout<<m[i];
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+-----------------------------------------------------------------
+//WAP to accept 2 no from user binary format and find their sum in binary form.
+#include<iostream>
+#include<math.h>
+using namespace std;
+class oper{
+private: int a,b,ar[100],index,d,i,j,k,d2,d3,c,s,p;
+public:
+void acc()
+{
+cout<<"Enter two numbers";
+cin>>a>>b;
+index=0;
+i=0;
+j=0;
+}
+void cal()
+{
+while(a>0)
+{
+d=a%10;
+s=s+d pow(2,i);
+a=a/10;
+i++;
+}
+while(b>0)
+{
+d2=b%10;
+p=p+d2 pow(2,j);
+b=b/10;
+j++;
+}
+c=s+p;
+}
+void display()
+{
+while(c>0)
+{
+d3=c%2;
+ar[index++]=d3;
+c=c/2;
+}
+cout<<"Sum in binary";
+for(k=index;k>0;k--)
+{
+cout<<""<<ar[k];
+}
+}
+};
+int main()
+{
+oper obj;
+obj.acc();
+obj.cal();
+obj.display();
+}
+--------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                           PROGRAMME FUNCTION
+#include<iostream>
+using namespace std;
+int sum(int,int);
+int main()
+{
+	int a,b;
+	cout<<"Enter two numbers";
+	cin>>a>>b;
+	int x = sum(a,b);
+	cout<<x;
+}
+int sum(int x,int y)
+{
+	int c;
+	c=x+y;
+	return c;
+}
+-------------------------------------------
+#include<iostream>
+using namespace std;
+void sum(void);
+int main()
+{
+	sum();
+}
+void sum()
+{
+	int a,b,c;
+	cout<<"Enter two number";
+	cin>>a>>b;
+	c=a+b;
+	cout<<"sum= "<<c;
+}
+---------------------------------------
+#include<iostream>
+using namespace std;
+void sum(void);
+void oddeven(void);
+int a,b,s;
+int main()
+{
+	sum();
+	oddeven();
+}
+void sum()
+{
+	s=0;
+	cout<<"Enter the numbers";
+	cin>>a>>b;
+	s=a+b;
+}
+void oddeven()
+{
+	if(s%2==0)
+	cout<<"even";
+	else
+	cout<<"odd";
+}
+------------------------------------------------
+#include<iostream>
+using namespace std;
+int cal(int);
+int i,c,f;
+int main()
+{
+	int y;
+	cout<<"Enter a number";
+	cin>>y;
+	int x= cal(y);
+	if(x==1)
+	cout<<"prime";
+	else
+	cout<<"not prime";
+}
+int cal(int n)
+{
+	c=0;f=0;
+	for(i=1;i<=n;i++)
+	{
+		if(n%i==0)
+		c=c+1;
+	}
+	if(c==2)
+	f=1;
+	return f;
+}
+--------------------------------------------------------
+#include<iostream>
+using namespace std;
+int cal(int);
+int x,i,s,n;
+int main()
+{
+	int n;
+	cout<<"Enter a number";
+    cin>>n;
+	int x = cal(int n);
+	cout<<"sum of factors = %d",x;
+}
+int cal(int y)
+{
+	int s=0;
+	for(i=1;i<=n;i++)
+	{
+		if(n%i==0)
+		s=s+i;
+		return s;
+	}
+}
+---------------------------------------------------
+#include<iostream>
+using namespace std;
+int cal(int);
+int d,s,f,t;
+int main()
+{
+	int y;
+	cout<<"Enter a number";
+	cin>>y;
+	int x= cal(y);
+	if (x==1)
+	cout<<"palindrome";
+	else
+	cout<<"not  palindrome";
+}
+int cal(int n)
+{
+	t=n,f=0,s=0;
+	while(n>0)
+	{
+		d=n%10;
+		s=s*10+d;
+		n=n/10;
+	}
+	if(s==t)
+	f=1;
+	return f;
+}
+-------------------------------------------------
+

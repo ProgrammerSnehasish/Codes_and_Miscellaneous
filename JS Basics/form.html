@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic form</title>
+</head>
+<body>
+    
+    <h1>PLEASE FILL UP THE BELOW FORM TO REGISTER</h1>
+    <p><u>Enter the name field:</u></br>
+        <form>
+    <label><font color="red">*</font>Enter your first name:<input type="text" id="fname" onchange="check()" onkeyup="check(this)"/></label></br>
+    <label>Enter your middle name(if any):<input type="text" id="mname" required /></label></br>
+    <label><font color="red">*</font>Enter your last name:<input type="text" id="lname" /></label></br></p>
+    <p><u>Enter the email field:</u></br>
+    <label><font color="red">*</font>Enter your email address:<input  type="text" id="email" /></label></br></p>
+    <p><u>Enter the password field:</u></br>
+    <label><font color="red">*</font>Enter your password:<input type="text" id="password" /></label></br>
+    <label><font color="red">*</font>Reenter your password:<input type="text" id="vpassword" /></label></p>
+    <p>The <font color="red">*</font> are the must required fields to be filledup.</p>
+    <button onclick=""><font color="blue">Submit</font></button>
+    <input type="reset" value="reset"/>
+    <button><a href="form.html">Refresh</a></button>
+    </form>
+    <script>
+        function check(ele) {
+            console.log(ele.value)
+            ele.value=ele.value.toUpperCase()
+        }
+    </script>
+</body>
+</html>

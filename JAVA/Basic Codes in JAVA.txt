@@ -1,0 +1,1606 @@
+// Basic Structure.
+import java.util.scanner;//for reading inputs.
+class Main{
+   public static void main(String [] args){
+      // HERE WE HAVE TO WRITE THE PROGRAMME
+
+   }
+}
+-----------------------------------------------
+// First Code.
+class Main{
+   public static void main(String[] args){
+     System.out.println("Hello World");
+   }
+}
+---------------------------------------------------------------
+// Reading input.
+//Method-1.
+import java.util.Scanner;
+class Main{
+  public static void main(String[] args){
+     Scanner scanner = new Scanner(System.in);
+     System.out.print("Age: ");
+     byte age = scanner.nextByte();
+     System.out.println("You are " + age);
+  }
+}
+===================================================
+// Method-2.
+import java.util.Scanner;
+class Main{
+  public static void main(String[] args){
+     Scanner scanner = new Scanner(System.in);
+     System.out.print("Name: ");
+     String name = scanner.next();
+     System.out.println("You are " + name);
+  }
+}
+====================================================
+// Method-3 (Reading Tokens)
+import java.util.Scanner;
+class Main{
+  public static void main(String[] args){
+     Scanner scanner = new Scanner(System.in);
+     System.out.print("Name: ");
+     String name = scanner.nextLine();
+     System.out.println("You are " + name);
+  }
+}
+====================================================
+
+-----------------------------------------------
+// Variable type.
+                                           |
+class Main{                                |class Main{
+   public static void main(String[] args){ |   public static void main(String[] arg){
+     int age = 30;                         |     int myAge = 30;
+     System.out.println("age");            |     int herAge = myAge;
+   }                                       |     System.out.println("herAge");
+}                                          |   }
+                                           |}
+----------------------------------------------------------------------------------------
+// Primitive type.
+class Main{
+   public static void main(String[] args){
+     byte rollNo = 1;
+     short myAge = 30;
+     int viewsCount = 123_456_789;
+     long viewsCount = 3_123_456_789L;
+     float price = 10.99F;
+     double price = 10.99;
+     char letter ='A';
+     boolean isEligible = True;
+   }
+}
+-----------------------------------------------------------------------------------------
+// Reference type.
+import java.util.Date;
+class Main{
+   public static void main(String[] args){
+     byte age = 30;
+     Date now = new Date();
+     System.out.println(now);
+     now.getTime();// to show sample
+   }
+}
+-------------------------------------------------------------------------------------------
+// Strings.
+// exp 1.
+class Main{
+   public static void main(String[] args){
+     String message = "Hello World";
+     System.out.println(message);
+   }
+}
+============================================================================================================================================================
+// exp 2.
+class Main{
+   public static void main(String[] args){
+     String message = "Hello World" + "!!"; // Join message.
+     System.out.println(message);
+   }
+}
+============================================================================================================================================================
+// exp 3.(Returns Boolean Value)
+class Main{
+   public static void main(String[] args){
+     String message = "Hello World" + "!!";
+     System.out.println(message.endsWith("!!"));// checking by endsWith Statement.
+     System.out.println(message.startsWith("!!"));// checking by startsWith Statement.
+   }
+}
+============================================================================================================================================================
+// exp 4.(Checking String length)
+class Main{
+   public static void main(String[] args){
+     String message = "Hello World" + "!!";
+     System.out.println(message.length());// Checking by length Statement.
+   }
+}
+============================================================================================================================================================
+// exp 5. (Get index of message)
+class Main{
+   public static void main(String[] args){
+     String message = "Hello World" + "!!";
+     System.out.println(message.indexOf("l"));// Getting by indexOf Statement.
+   }
+}
+============================================================================================================================================================
+// exp 6.(Replacing Character)
+class Main{
+   public static void main(String[] args){
+     String message = "Hello World" + "!!";
+     System.out.println(message.replace("!","*"));// replacing character by replace Statement.
+   }
+}
+============================================================================================================================================================
+// exp 7.(Upper Case & Lower Case)
+class Main{
+   public static void main(String[] args){
+     String message = "Hello World" + "!!";
+     System.out.println(message.toLowerCase());// Repalcing message to Lower Case using "toLowerCase" Statement.
+     System.out.println(message.toUpperCase());//  Statement.// Repalcing message to Lower Case using "toUpperCase" Statement.
+   }
+}
+============================================================================================================================================================
+// exp 8.(Trimming extra spaces)
+class Main{
+   public static void main(String[] args){
+     String message = "  Hello World" + "!!   ";
+     System.out.println(message.trim());//Trimming extra spaces by trim Statement.
+     System.out.println(message);
+   }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Escape Sequence.
+// Sample-1
+class Main{
+   public static void main(String[] args){
+     String message = "Hello \"Snehasish\"";
+     System.out.println(message);
+   }
+}
+============================================================================================================================================================
+// Sample-2
+class Main{
+   public static void main(String[] args){
+     String message = "c:\\Windows\\...";
+     System.out.println(message);
+   }
+}
+============================================================================================================================================================
+// Sample-3(New line)
+class Main{
+   public static void main(String[] args){
+     String message = "c:\nWindows\\...";
+     System.out.println(message);
+   }
+}
+============================================================================================================================================================
+// Sample-4(Add Tab)
+class Main{
+   public static void main(String[] args){
+     String message = "c:\tWindows\\...";
+     System.out.println(message);
+   }
+}
+============================================================================================================================================================
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Arrays.
+// Ordinary Array.
+import java.util.Arrays;
+class Main{
+   public static void main(String[] args){
+     int[] numbers = new int[5];
+     number[0] = 1;
+     number[1] = 2;
+     System.out.println(Arryas.toString(numbers));
+   }
+}
+============================================================================================================================================================
+// lenght of an ordinary arrya.
+import java.util.Arrays;
+class Main{
+   public static void main(String[] args){
+     int[] numbers = { 2, 3, 4, 5, 6 };
+     System.out.println(numbers.length);
+   }
+}
+============================================================================================================================================================
+// Sorting of an Array.
+import java.util.Arrays;
+class Main{
+   public static void main(String[] args){
+     int[] numbers = { 2, 3, 4, 5, 6 };
+     Arrays.sort(numbers);
+     System.out.println(Arryas.toString(numbers));
+   }
+}
+============================================================================================================================================================
+// Multi Dimensional Arrya.
+import java.util.Arrays;
+class Main{
+   public static void main(String[] args){
+     int[][] numbers = new int[2][3];
+     numbers[0][0] = 1;
+     System.out.println(Arrays.deepToString(numbers));
+   }
+}
+============================================================================================================================================================
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Constants
+class Main{
+   public static void main(String[] args){
+     final float PI = 3.14F; //To declare a constant we have to use "final" statement.
+   }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------
+// Arithmatic expressions.(+,-,*,/,%)
+// Sample-1 (integer type result)
+class Main{
+   public static void main(String[] args){
+     int result = 10 + 3;
+     System.out.println(result);
+   }
+}
+================================================
+// Sample-1 (Float type result)
+class Main{
+   public static void main(String[] args){
+      double result = (double)10 + (double)3;
+     System.out.println(result);
+   }
+}
+================================================
+// Sample-3 (increament & decreament function {1})
+class Main{
+   public static void main(String[] args){
+    int x = 1;
+    x++;//(here it is a postfix function but we can also use it as prefix just like "++x")
+    System.out.println(x);  
+   }
+}
+====================================================
+// Sample-3 (increament & decreament function {2})
+class Main{
+   public static void main(String[] args){
+    int x = 1;
+    int y = x++;
+    System.out.println(x);
+    System.out.println(y);  
+   }
+}
+
+Output: X=2 and y=1
+**But in case of prefix function
+Output: x=2 and y=2
+===================================================
+// Sample-4 (augmented assignment operators {+=,-=,*=,/=})
+class Main{
+   public static void main(String[] args){
+     int x = 1;
+     x += 2;
+     System.out.println(x);
+   }
+}
+===================================================
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Casting-1 (Type implicit)
+class Main{
+   public static void main(String[] args){
+     // Implicit type casting
+     // byte>short>integer>long>float>double
+     double x = 1.1;
+     double y = x + 2;
+     System.out.println(y);
+   }
+}
+===================================================
+//Casting-2 (Type explicit)
+class Main{
+   public static void main(String[] args){
+     double x = 1.1;
+     int y = (int)x + 2;// explicit casting is done by declaring x as integer (int).
+     System.out.println(y);
+   }
+}
+======================================================
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Mathematical operation using math class
+// Method-1
+class Main{
+   public static void main(String[] args){
+     int result = Math.round(1.1F);
+     System.out.println(result);
+   }
+}
+======================================================
+//Method-2
+class Main{
+  public static void main(String[] args){
+    int result = (int)Math.ceil(1.1F);
+    System.out.println(result);
+  }
+}
+======================================================
+// Method-3
+class Main{
+  public static void main(String[] args){
+    int result = (int)Math.floor(1.1F);
+    System.out.println(result);
+  }
+}
+=======================================================
+// Method-4 (MAX & MIN)
+                                               |
+class Main{                                    |class Main{
+  public static void main(String[] args){      |  public static void main(String[] args){
+    int result = Math.max(1, 2);               |    int result = Math.min(1, 2);
+    System.out.println(result);                |    System.out.println(result);
+  }                                            |  }
+}                                              |}
+=========================================================
+// Method-5 (Random type)                  
+                                           |
+class Main{                                |class Main{
+  public static void main(String[] args){  |  public static void main(String[] args){
+    double result = Math.random();         |    double result = Math.random() * 100;
+    System.out.println(result);            |    System.out.println(result);
+  }                                        |  }
+}                                          |}
+==========================================================
+// Method-6 (round figure random type)
+class Main{
+  public static void main(String[] args){
+    double result = (int)Math.round(Math.random() * 100);
+    System.out.println(result);
+  }
+}
+=============================================================
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Formatting Numbers
+// Method-1 (Currency)
+.
+import java.text.NumberFormat;
+class Main{
+  public static void main(String[] args){
+     NumberFormat currency = NumberFormat.getCurrencyInstance();
+     String result = currency.format(1234567.891);
+     System.out.println(result);
+  }
+}
+====================================================================
+// Method-2 (Percentage)
+import java.text.NumberFormat;
+class Main{
+  public static void main(String[] args){
+     NumberFormat percent = NumberFormat.getPercentInstance();
+     String result = percent.format(0.1);
+     System.out.println(result);
+  }
+}
+=====================================================================
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Mortgage Calculator
+import java.text.NumberFormat;
+import java.util.Scanner;
+
+class Main{
+  public static void main(String[] args){
+     final byte MONTHS_IN_YEAR = 12;// Constant.
+     final byte PERCENT = 100;// Constant.
+ 
+     Scanner scanner = new Scanner(System.in);
+     System.out.print("Principal: ");
+     int principal = scanner.nextInt();
+
+     System.out.print("Annual Interest Rate: ");
+     float annualInterest = scanner.nextFloat();
+     float monthlyInterest = annualInterest / PERCENT /MONTH_IN_YEAR;
+
+     System.out.print("Periods (Years): ");
+     byte years = scanner.nextByte();
+     int numberOfPayments = year * MONTHS_IN_YEAR;
+     
+     double mortgage = principal * (monthlyInterest * Math.pow(1+monthlyInterest , noOfPayments)) / (Math.pow(1 + monthlyInterest, numberOfPayment) - 1);
+   
+     String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
+     System.out.println("Mortgage: " + mortgageFormatted);  
+     
+  }
+}
+============================================================================================================================================================
+//Control Flow
+//Comparision operator
+//sample - 1(equality operator)
+class Main{
+  public static void main(String[] args){
+     int x=1;
+     int y=1;
+      System.out.println(x == y);
+  }
+}
+---------------------------------------------------
+//Sample - 2(not equals)
+class Main{
+  public static void main(String[] args){
+     int x=1;
+     int y=1;
+      System.out.println(x != y);
+  }
+}
+----------------------------------------------------
+//Sample - 3(greater than or less than)
+class Main{
+  public static void main(String[] args){
+    int x=1;
+    int y=1;
+     System.out.println(x > y);
+  }
+}
+-----------------------------------------------------
+//Sample - 4(greater than equals to or less than equals to)
+class Main{
+  public static void main(String[] args){
+     int x=1;
+     int y=2;
+      System.out.println(x <= y);
+  }
+} 
+---------------------------------------------------------
+==================================================================
+// Logical Operators
+// Sample - 1(Logiacal &)
+class Main{
+  public  static void main(String[] args){
+     int temperature = 22;
+     boolean isWarm = temperature > 20 && temperature < 30;
+      System.out.println(isWarm);
+  }
+}
+-------------------------------------------------------------------
+// Sample - 2(Logiacal or ||)
+class Main{
+  public  static void main(String[] args){
+     boolean hasHighIncome = true;
+     boolean hasGoodCredit = true;
+     boolean isEligible = hasHighIncome || hasGoodcredit;
+      System.out.println(isEligible);
+  }
+}
+--------------------------------------------------------------------
+// Sample - 3(Logiacal not !)
+.________
+class Main{
+  public  static void main(String[] args){
+     boolean hasHighIncome = true;
+     boolean hasGoodCredit = true;
+     boolean hasCriminalRecord = false;
+     boolean isEligible = (hasHighIncome || hasGoodcredit) && !hasCriminalRecord;
+      System.out.println(isEligible);
+  }
+}
+============================================================================================================================================================
+// If Statements
+// Sample - 1
+class Main{
+  public static void main(String[] args){
+     int temp = 32;
+     if (temp > 30){
+         System.out.println("It's a hot day");
+         Sysetm.out.println("Drink plenty of Water");
+     }   
+     else if (temp > 20 && temp <= 30)
+         System.out.println("It's a nice day");
+     else
+         System.out.println("Cold day");
+  }
+}
+----------------------------------------------------------------
+// Simply If Statement
+class Main{
+  public static void main(String[] args){
+     int income = 120_000;
+     boolean hasHighIncome = (income > 100_000);
+      System.out.println(hasHighIncome);
+  }
+}
+============================================================================================================================================================
+// Switch Statement
+class Main{
+  public static void main(String[] args){
+/* then accept the role*/
+    switch (role){
+        case "admin":
+          System.out.println("You're an Admin");
+          break;
+        
+        case "moderator":
+            System.out.println("You're a moderator");
+            break;
+
+        defalult:
+             System.out.println("You're a guest");
+             break;
+    }
+  }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                  ALL TYPES PROGRAMMING IN JAVA
+// Summation of Two Numbers.
+import java.util.Scanner;
+class Summation{
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the First Number: ");
+        int firstNumber = scanner.nextInt();
+        System.out.println("Enter the Second Number: ");
+        int secondNumber = scanner.nextInt();
+        int Sum = firstNumber + secondNumber;
+        System.out.println("The Summation of the Two Number is =" + Sum);
+    }
+}
+--------------------------------------------------------------------------------------------------
+// Multiplication of Two Numbers.
+import java.util.Scanner;
+class Multiplication{
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the First Number: ");
+        int firstNumber = scanner.nextInt();
+        System.out.println("Enter the Second Number: ");
+        int secondNumber = scanner.nextInt();
+        int Multiply = firstNumber * secondNumber;
+        System.out.println("The Summation of the Two Number is =" + Multiply);
+    }
+}
+---------------------------------------------------------------------------------------------------
+// Division of Two Numbers.
+import java.util.Scanner;
+class Division{
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the First Number: ");
+        int firstNumber = scanner.nextInt();
+        System.out.println("Enter the Second Number: ");
+        int secondNumber = scanner.nextInt();
+        float Division = firstNumber / secondNumber;
+        System.out.println("The Summation of the Two Number is =" + Division);
+    }
+}
+----------------------------------------------------------------------------------------------------
+// Subtraction of Two Numbers.
+import java.util.Scanner;
+class Subtraction{
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the First Number: ");
+        int firstNumber = scanner.nextInt();
+        System.out.println("Enter the Second Number: ");
+        int secondNumber = scanner.nextInt();
+        int Subtraction = firstNumber - secondNumber;
+        System.out.println("The Summation of the Two Number is =" + Subtraction);
+    }
+}
+------------------------------------------------------------------------------------------------------
+// Swapping of two Numbers.
+import java.util.Scanner;
+class Swapping{
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter first Number");
+        int firstNumber = scanner.nextInt();
+        System.out.println("Enter second Number");
+        int secondNumber = scanner.nextInt();
+        int T = firstNumber;
+        int F = secondNumber;
+        int swapper = firstNumber;
+        firstNumber = secondNumber;
+        secondNumber = swapper;
+        int G = firstNumber;
+        int H = secondNumber;
+        System.out.println("First Number before swapping:" + T);
+        System.out.println("Second Number before swapping:" + F);
+        System.out.println("First Number after swapping:" + G);
+        System.out.println("Second Number after swapping:" + H);
+    }
+}
+----------------------------------------------------------------------------------------------------------
+// Swapping of two Numbers withuot using third variable.
+import java.util.Scanner;
+class Swapping{
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter first Number");
+        int firstNumber = scanner.nextInt();
+        System.out.println("Enter second Number");
+        int secondNumber = scanner.nextInt();
+        int T = firstNumber;
+        int F = secondNumber;
+        firstNumber = firstNumber + secondNumber;
+        secondNumber = firstNumber - secondNumber;
+        firstNumber = firstNumber - secondNumber;
+        int G = firstNumber;
+        int H = secondNumber;
+        System.out.println("First Number before swapping:" + T);
+        System.out.println("Second Number before swapping:" + F);
+        System.out.println("First Number after swapping:" + G);
+        System.out.println("Second Number after swapping:" + H);
+    }
+}
+----------------------------------------------------------------------------------------------------------
+// Reverse Order of the Number.
+import java.util.Scanner;
+class ReverseNumber{
+    public static void main(String [] args){
+        int reverse = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter any number");
+        int number = scanner.nextInt();
+        while(number != 0)
+        {
+            int remainder = number % 10;
+            reverse = reverse * 10 + remainder;
+            number = number / 10;
+        }
+        System.out.println("Reverse Number is =" + reverse);
+    }
+}
+-------------------------------------------------------------------------------------------------------
+// Sum of Digits of a Number.
+import java.util.Scanner;
+class SumOfDigits{
+    public static void main(String [] args){
+        int add = 0, remainder =0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter any Number");
+        int number = scanner.nextInt();
+        while(number != 0)
+        {
+            remainder = number % 10;
+            add = add + remainder;
+            number = number / 10;
+        }
+        System.out.println("The Sum of the digits of the give number is =" + add);
+    }
+}
+---------------------------------------------------------------------------------------------------------
+// Greater than or Less Than.
+import java.util.Scanner;
+import javax.lang.model.util.ElementScanner14;
+class GreaterThan{
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the First Number:");
+        int firstNumber = scanner.nextInt();
+        System.out.println("Enter the Second Number");
+        int secondNumber = scanner.nextInt();
+        if(firstNumber > secondNumber)
+        {
+            System.out.println("The FirstNumber is Greater than Second Number");
+        }
+        else
+        if(secondNumber > firstNumber)
+        {
+            System.out.println("The Second Number is greater than First Number");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------
+// Which one is Greater among three numbers.
+import java.util.Scanner;
+
+import javax.lang.model.util.ElementScanner14;
+class Greater{
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the First Number");
+        int firstNumber = scanner.nextInt();
+        System.out.println("Enter the Second Number");
+        int secondNumber = scanner.nextInt();
+        System.out.println("Enter the Third Number");
+        int thirdNumber = scanner.nextInt();
+        if(firstNumber > secondNumber && firstNumber > thirdNumber)
+        System.out.println("The First Number is Greater than the others");
+        else
+        if(secondNumber > firstNumber && secondNumber > thirdNumber)
+        System.out.println("The Second Number is Greater than the others");
+        else
+        if(thirdNumber > firstNumber && thirdNumber > secondNumber)
+        System.out.println("The Third Number is Greater than the others");
+    }
+}
+--------------------------------------------------------------------------------------------------------
+// Determine a number even or odd.
+import java.util.Scanner;
+import javax.lang.model.util.ElementScanner14;
+class OddEven{
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a Number of your choice");
+        int number = scanner.nextInt();
+        if(number % 2 == 0)
+        System.out.println("The given Number is an Even Number");
+        else
+        System.out.println("The given number is a Odd Number");
+    }
+}
+--------------------------------------------------------------------------------------------------------
+// Turn Hours,Minutes,Seconds into Second.
+import java.util.Scanner;
+import javax.lang.model.util.ElementScanner14;
+class Time{
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter time in Hour");
+        int Hours = scanner.nextInt();
+        System.out.println("Enter time in Minutes");
+        int Minutes = scanner.nextInt();
+        System.out.println("Enter time in Second");
+        int Seconds = scanner.nextInt();
+        int Sec = Hours * 3600 + Minutes * 60 + Seconds;
+        System.out.println("The in Second is\t" + Sec + " Seconds");
+    }
+}
+--------------------------------------------------------------------------------------------------------
+// Wap to convert a distance from km,m,cm to cm only.
+import java.util.Scanner;
+class Distance{
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter distance in Kilometer");
+        int Kilometer = scanner.nextInt();
+        System.out.println("Enter distance in Meter");
+        int Meter = scanner.nextInt();
+        System.out.println("Enter distance in Centimeter");
+        int Centimeter = scanner.nextInt();
+        int cm = Kilometer * 1000 + Meter * 100 + Centimeter;
+        System.out.println("The distance in Centimeter is\t" + cm + " centimeter");
+    }
+}
+--------------------------------------------------------------------------------------------------------
+// wap to convert a time year ,month,days to days only.
+import java.util.Scanner;
+class Time{
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the time in years");
+        int Year = scanner.nextInt();
+        System.out.println("Enter the time in months");
+        int Month = scanner.nextInt();
+        System.out.println("Enter the time in days");
+        int Day = scanner.nextInt();
+        int day = Year * 365 + Month * 30 + Day;
+        System.out.println("The time in Day is\t" + day + " day");
+    }
+}
+--------------------------------------------------------------------------------------------------------
+// Wap to store the principle,rate,time.calculate the si and amount..
+import java.util.Scanner;
+class Xava{
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Give the principle");
+        int Principle = scanner.nextInt();
+        System.out.println("Enter the time of saving");
+        int Time = scanner.nextInt();
+        System.out.println("Enter rate of interest");
+        int Rate = scanner.nextInt();
+        int simpleInterest = (Principle * Time * Rate) / 100;
+        int netAmount = simpleInterest + Principle;
+        System.out.println("Your amount of Interest is" + simpleInterest);
+        System.out.println("The total amount of your savings is" + netAmount);
+    }
+}
+--------------------------------------------------------------------------------------------------------
+/* Convert temperature */
+import java.util.Scanner;
+class Temperature{
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("List of choices::\n1. Convert temperature from Celcius to Faranheit\n2. Convert temperature form Franheit to Celcius\n3. Convert temperature from Celcius to Kelvin\n4. Convert temperature from Kelvin to Celcius");
+        System.out.println("Enter your choice:");
+        int choice = scanner.nextInt();
+        if(choice > 4 || choice <= 0)
+        System.out.println("Invalid data entered");
+        else
+        switch(choice){
+            case 1:
+            System.out.println("Enter temperature in Celcius");
+            double Cel = scanner.nextDouble();
+            double Far = ((9.0 * Cel) / 5)+32;
+            System.out.println("Temperature in Faranheit is "+ Far + "F");
+            break;
+                 case 2:
+                 System.out.println("Enter temperature in Faranheit");
+                 double Faranheit = scanner.nextDouble();
+                 double Celcius = ((Faranheit - 32) / 9 * 5.0);
+                 System.out.println("Temperature in Celcius is " + Celcius + "C");
+                 break;
+                      case 3:
+                      System.out.println("Enter temperature in Celcius");
+                      double degreeC = scanner.nextDouble();
+                      double Kel = degreeC + 273.15;
+                      System.out.println("Temperature in Kelvin is " + Kel +"K");
+                      break;
+                           case 4:
+                           System.out.println("Enter temperature in Kelvin");
+                           double Kelvin = scanner.nextDouble();
+                           double Celci = Kelvin - 273.15;
+                           System.out.println("Temperature in Celcius is" + Celci +"C");
+                           break;
+        }
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/* WAP to store a number and check if the number is negative or positive.*/
+import java.util.Scanner;
+class PositiveNegative{
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int number = scanner.nextInt();
+        if(number > 0)
+        System.out.println("The number is positive");
+        else
+        System.out.println("The number is negative");
+    }
+}
+-------------------------------------------------------------------------------
+/* WAP to accept from user and print the maximum and minimum digits.(without using array)*/
+import java.util.Scanner;
+class Maxmin{
+    public static void main(String [] args){
+        int maximum = 0, minimum = 0; 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter any number");
+        int number = scanner.nextInt();
+        for(int counter = number; counter > 0; counter /=10)
+        {
+            int remainder = counter % 10;
+            if(maximum == 0)
+            maximum = remainder;
+            if(minimum == 0)
+            minimum = remainder;
+            if(remainder > maximum)
+            maximum = remainder;
+            if(remainder < minimum)
+            minimum = remainder;
+        }
+        System.out.println("The Maximum digit is " + maximum);
+        System.out.println("The Minimum digit is " + minimum);
+    }
+}
+---------------------------------------------------------------------------------------------------
+/* All Number in One.*/
+import java.util.Scanner;
+import javax.lang.model.util.ElementScanner14;
+class AllNumeroinOne{
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("List of Choice:\n1. Armstrong Number\n2. Buzz Number\n3. Prime Number\n4. Neon Number\n5. Palindrome Number\n6. Krishnamurti NUmber or Strong Number or Special Number\n7. Perfect Number\n8. Niven Number\n9. Happy Number\n10. Magic Number\n11. Duck Number\n12. Amicable pair Number\n13. Sunny Number\n14. Smith Number");
+        System.out.println("Enter your choice");
+        int choice = scanner.nextInt();
+        if(choice <= 0 || choice > 14) 
+        System.out.println("Invild Case or Choice entered");
+        else
+        switch(choice){
+            case 1:
+            int Sum =0, remainder = 0;
+            System.out.println("Enter any Number you want");
+            int number = scanner.nextInt();
+            int temporary = number;
+            while(number != 0)
+            {
+                remainder = number % 10;
+                Sum = Sum + (remainder * remainder * remainder);
+                number = number / 10;
+            }
+            if( Sum == temporary)
+            System.out.println("It is a Armstrong Number");
+            else   
+            System.out.println("It is not a Armstrong Number");
+            break;
+                 case 2:
+                 System.out.println("Enter a Number of your choice");
+                 int Number = scanner.nextInt();
+                 if(Number % 7 == 0 || Number % 10 == 7)
+                 System.out.println("It is a Buzz Number");
+                 else
+                 System.out.println("It is not a Buzz Number");
+                 break;
+                      case 3:
+                      int initializer, Counter = 0;
+                      System.out.println("Enter any Number of your choice");
+                      int Numero = scanner.nextInt();
+                      initializer = 1;
+                      while(initializer <= Numero)
+                      {
+                        if(Numero % initializer == 0)
+                        Counter = Counter + initializer;
+                        initializer++;
+                      }
+                      if(Counter == 2)
+                      System.out.println("It is not a Prime Number");
+                      else
+                      System.out.println("It is a Prime Number");
+                      break;
+                           case 4:
+                           int add = 0;
+                           System.out.println("Enter a number of your choice");
+                           int numero = scanner.nextInt();
+                           int temp = numero * numero;
+                           while(temp != 0)
+                           {
+                             int remain = temp % 10;
+                             add = add + remain;
+                             temp = temp / 10;
+                           }
+                           if(numero == add)
+                           System.out.println("This is Neon Number");
+                           else
+                           System.out.println("It is not a Neon Number");
+                           break;
+                                case 5:
+                                int Add = 0, Remain = 0;
+                                System.out.println("Enter a Number of your choice");
+                                int num = scanner.nextInt();
+                                int Temp = num;
+                                while(num != 0)
+                                {
+                                    Remain = num % 10;
+                                    Add = Add * 10 + Remain;
+                                    num = num / 10;
+                                }
+                                if(Add == Temp)
+                                System.out.println("This is Palindrome Number");
+                                else
+                                System.out.println("This is not a Palindrome Number");
+                                break;
+                                     case 6:
+                                     int  summation = 0;
+                                     System.out.println("Enter any Number");
+                                     int Numb = scanner.nextInt();
+                                     int temporal = Numb;
+                                     while(Numb > 0)
+                                     {
+                                        int Remainder = Numb % 10;
+                                        int flag = 1;
+                                        for(int counter =1; counter <= Remainder; counter++)
+                                        {
+                                            flag = flag * counter;
+                                        }
+                                        summation = summation + flag;
+                                        Numb = Numb / 10;
+                                     }
+                                     if(summation == temporal)
+                                     System.out.println("The Number is Krishnamurti Number");
+                                     else            
+                                     System.out.println("It is Not the same");
+                                     break;
+                                          case 7:
+                                          int innate, summa=0;
+                                          System.out.println("Enter a Number you want");
+                                          int Numbr = scanner.nextInt();
+                                          int temper = Numbr;
+                                          for(innate = 1; innate < Numbr; innate++)
+                                          {
+                                            if(Numbr % innate == 0)
+                                            {
+                                               summa = summa + innate;
+                                            }
+                                          }
+                                          if(summa == temper)
+                                          System.out.println("This is Perfect Number");
+                                          else
+                                          System.out.println("This is not a Perfect NUmber");
+                                          break;
+                                               case 8:
+                                               int saum = 0;
+                                               System.out.println("Enter any Number");
+                                               int Tuslej = scanner.nextInt();
+                                               int ibntus = Tuslej;
+                                               while(Tuslej != 0)
+                                               {
+                                                  int seem = Tuslej % 10;
+                                                  saum = saum + seem;
+                                                  Tuslej = Tuslej / 10;
+                                               }
+                                               if(ibntus % saum == 0)
+                                               System.out.println("It is a Niven Number");
+                                               else
+                                               System.out.println("It is not a Niven Number");
+                                               break;
+                                                    case 9:
+                                                    int Suim = 0;
+                                                    System.out.println("Enter any Number");
+                                                    int Uimhir = scanner.nextInt();
+                                                    while(Suim != 1 && Suim != 4)
+                                                    {
+                                                      Suim = 0;
+                                                       while(Uimhir > 0)
+                                                       {
+                                                         int sealadach = Uimhir % 10;
+                                                         Suim = Suim + (sealadach * sealadach);
+                                                         Uimhir = Uimhir / 10;
+                                                       }
+                                                       Uimhir = Suim;
+                                                    }
+                                                    if(Suim == 1)
+                                                    System.out.println("It is a Happy Number");
+                                                    else 
+                                                    System.out.println("It is not a Happy Number");
+                                                    break;
+                                                case 10:
+                                                int Som = 0;
+                                                System.out.println("Enter any number");
+                                                int Nummer = scanner.nextInt();
+                                                while(Som !=1)
+	                                             {
+	                                               Som = 0;
+	                                               while(Nummer>0)
+	                                                {
+		                                                int Tijdelijk = Nummer % 10;
+		                                                Som = Som + Tijdelijk;
+		                                                Nummer = Nummer / 10;
+	                                                }
+	                                                Nummer = Som;
+                                                }
+	                                              if (Som == 1) 
+                                                System.out.println("This is Magic Number");
+                                                else 
+                                                System.out.println("This is not a Magic Number");
+                                                break;
+                                          case 11:
+                                          int toplam = 0;
+                                          System.out.println("Enter any number");
+                                          int Sayi = scanner.nextInt();
+                                          while(Sayi > 0)
+                                          {
+                                            int kalan = Sayi % 10;
+                                            if(kalan == 0)
+                                            toplam = toplam + 1;
+                                            Sayi = Sayi / 10;
+                                          }
+                                          if(toplam >= 1)
+                                          System.out.println("It is a Duck Number");
+                                          else 
+                                          System.out.println("It is not a Duck Number");
+                                          break;
+                                  case 12:
+                                  int sum1 = 0, sum2 = 0;
+                                  System.out.println("Enter first Number");
+                                  int chislo1 = scanner.nextInt();
+                                  System.out.println("Enter second Number");
+                                  int chislo2 = scanner.nextInt();
+                                  int terminate1 = chislo1;
+                                  int terminate2 = chislo2;
+                                  for(int counter1 = 1; counter1 < chislo1; counter1 ++)
+                                  {
+                                    if(chislo1 % counter1 == 0)
+                                    sum1 = sum1 + counter1;
+                                  } 
+                                  for(int counter2 = 1; counter2 < chislo2; counter2 ++)
+                                  {
+                                    if(chislo2 % counter2 == 0)
+                                    sum2 = sum2 + counter2;
+                                  }
+                                  if(sum1 == terminate2 && sum2 == terminate1)
+                                  System.out.println("This are Amicable pair Number");
+                                  else 
+                                  System.out.println("This are not Amicable pair Number");
+                                  break;
+                          case 13:
+                          int counterblast = 0;
+                          System.out.println("Enter any Number");
+                          int Nomor = scanner.nextInt();
+                          Nomor = Nomor + 1;
+                          int initi = 1;
+                          while(initi <= Nomor)
+                          {
+                             if(Nomor%initi == 0)
+                             counterblast = counterblast + 1;
+                             initi++;
+                          }
+                          if(counterblast%2 == 1)
+                          System.out.println("It is a Sunny Number");
+                          else 
+                          System.out.println("It is not a Sunny Number");
+                          break;
+                    case 14:
+                    int s = 0, s1 = 0;
+                    System.out.println("Enter any Number");
+                    int Numbro = scanner.nextInt();
+                    int tempo = Numbro;
+                    for(int initil = 2; initil <= Numbro; initil++)
+                    {
+                      while(Numbro%initil == 0)
+                      {
+                        s =s + initil;
+                        Numbro = Numbro / initil;
+                      }
+                      while(tempo >= 0)
+                      {
+                        int d = tempo % 10;
+                        s1 = s1 + d;
+                        tempo = tempo / 10;
+                      }
+                    }
+                    if(s==s1)
+                    System.out.println("It is a Smith Number");
+                    else 
+                    System.out.println("It is not a Smith Number");
+                    break;
+        }
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+//All pattern in one
+import java.util.Scanner;
+import java.util.ElementScanner14;
+class Pattern{
+  public static void main(String [] args){
+    int range,row,column,counter,extra;
+    char rowalpha,columnalpha;
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("List of Choices:\n1. Simple right angled triangle pattern using '*'\n2.Simple left angled triangle pattern using '*'\n3.Simple square pattern using '*'\n4. Inverted right angled Triangle pattern using '*'\n5. Right angled triangle using number according to 'column'\n6. Right angled triangle using number according to 'row'\n7.Triangle pattern by alphabets according to 'columns'\n8. Triangle pattern by alphabets according to 'row'\n9. Printing right angled triangle with boolean values\n10. Square pattern using number according 'column'\n11. Square pattern using number according 'row'\n12. Square pattern using alphabets according 'column'\n13. Square pattern using alphabets according 'row'\n");
+    System.out.print("Enter your choice --->");
+    int choice = scanner.nextInt();
+    if(choice <= 0)
+    System.out.println("Invalid data Entered");
+    else 
+    switch(choice){
+      case 1:
+      System.out.print("Enter your range of row --->");
+      range = scanner.nextInt();
+      for(row=1;row<=range;row++)
+      {
+        for(column=1;column<=row;column++)
+        {
+          System.out.print("* ");
+        }
+        System.out.println();
+      }
+      break;
+      case 2:
+      System.out.print("Enter the range of rows --->");
+      range = scanner.nextInt();
+      for(row=1;row<=range;row++)
+      {
+        for(column=range-1;column>=row;column--)
+        {
+          System.out.print(" ");
+        }
+        for(counter=1;counter<=row;counter++)
+        {
+          System.out.print("*");
+        }
+        System.out.println();
+      }
+      break;
+      case 3:
+      System.out.print("Enter range of rows --->");
+      range = scanner.nextInt();
+      for(row = 1; row <= range; row++)
+      {
+        for(column = 1; column <= range; column++)
+        {
+          System.out.print("* ");
+        }
+        System.out.println();
+      }
+      break;
+      case 4:
+      System.out.print("Enter the range of the rows --->");
+      range = scanner.nextInt();
+      for(row = 1; row <= range; row++)
+      {
+        for(column = range; column >= row; column--)
+        {
+          System.out.print("*");
+        }
+        System.out.println();
+      }
+      break;
+      case 5:
+      System.out.print("Enter your range of row --->");
+      range = scanner.nextInt();
+      for(row=1;row<=range;row++)
+      {
+        for(column=1;column<=row;column++)
+        {
+          System.out.print(column);
+        }
+        System.out.println();
+      }
+      break;
+      case 6:
+      System.out.print("Enter your range of row --->");
+      range = scanner.nextInt();
+      for(row=1;row<=range;row++)
+      {
+        for(column=1;column<=row;column++)
+        {
+          System.out.print(row);
+        }
+        System.out.println();
+      }
+      case 7:
+      System.out.print("Showing Triangle pattern by alphabets according to columns.......\n");
+      for(rowalpha='A';rowalpha<='E';rowalpha++)
+      {
+        for(columnalpha='A';columnalpha<=rowalpha;columnalpha++)
+        {
+          System.out.print(columnalpha);
+        }
+        System.out.println();
+      }
+      break;
+      case 8:
+      System.out.print("Showing Triangle pattern by alphabets according to columns.......\n");
+      for(rowalpha='A';rowalpha<='E';rowalpha++)
+      {
+        for(columnalpha='A';columnalpha<=rowalpha;columnalpha++)
+        {
+          System.out.print(rowalpha);
+        }
+        System.out.println();
+      }
+      break;
+      case 9:
+      System.out.print("Enter your range of row --->");
+      range = scanner.nextInt();
+      for(row=1;row<=range;row++)
+      {
+        for(column=1;column<=row;column++)
+        {
+          System.out.print(column%2);
+        }
+        System.out.println();
+      }
+      break;
+      case 10:
+      System.out.print("Enter range of rows --->");
+      range = scanner.nextInt();
+      for(row = 1; row <= range; row++)
+      {
+        for(column = 1; column <= range; column++)
+        {
+          System.out.print(column);
+        }
+        System.out.println();
+      }
+      break;
+      case 11:
+      System.out.print("Enter range of rows --->");
+      range = scanner.nextInt();
+      for(row = 1; row <= range; row++)
+      {
+        for(column = 1; column <= range; column++)
+        {
+          System.out.print(row);
+        }
+        System.out.println();
+      }
+      break;
+      case 12:
+      System.out.print("Printing Square pattern using alphabets according to 'column'........\n");
+      for(rowalpha = 'A'; rowalpha <= 'E'; rowalpha++)
+      {
+        for(columnalpha = 'A'; columnalpha <= 'E'; columnalpha++)
+        {
+          System.out.print(columnalpha);
+        }
+        System.out.println();
+      }
+      break;
+      case 13:
+      System.out.print("Printing Square pattern using alphabets according to 'row'........\n");
+      for(rowalpha = 'A'; rowalpha <= 'E'; rowalpha++)
+      {
+        for(columnalpha = 'A'; columnalpha <= 'E'; columnalpha++)
+        {
+          System.out.print(rowalpha);
+        }
+        System.out.println();
+      }
+      break;
+    }
+  }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                       Codes using function.
+/*Check Types of Number(Using function)*/
+import java.util.Scanner;
+class checkNumbertype{
+  public static void ArmstrongNumber(int number){
+    int Sum = 0, remainder = 0;
+    int temporary = number;
+    while(number != 0)
+    {
+      remainder = number % 10;
+      Sum = Sum + (remainder * remainder * remainder);
+      number = number / 10;
+    }
+    if( Sum == temporary)
+     System.out.println("It is a Armstrong Number.");
+    else   
+      System.out.println("It is not a Armstrong Number.");
+  }
+  public static void BuzzNumber(int number){
+    if(number % 7 == 0 || number % 10 == 7)
+      System.out.println("It is a Buzz Number.");
+     else
+      System.out.println("It is not a Buzz Number.");
+  }
+  public static void PrimeNumber(int number){
+    int initializer,counter=0;
+    if(number<=1){
+      System.out.println("The number is not Prime.");
+    }else{
+      for(initializer=2;initializer<number;initializer++){
+        if(number%initializer==0){
+          counter=counter+1;
+        }
+      }
+    }
+    if(counter==0)
+      System.out.println("The given number is Prime.");
+    else
+      System.out.println("The number is not Prime.");
+  }
+  public static void NeonNumber(int number){
+  int add = 0;
+  int temp = number * number;
+  while(temp != 0)
+  {
+    int remain = temp % 10;
+    add = add + remain;
+    temp = temp / 10;
+  }
+  if(number == add)
+    System.out.println("This is Neon Number.");
+  else
+    System.out.println("It is not a Neon Number.");
+  }
+  public static void PalindromeNumber(int number){
+    int add = 0, remain = 0;
+    int temp = number;
+     while(number != 0)
+    {
+      remain = number % 10;
+      add = add * 10 + remain;
+      number = number / 10;
+    }
+    if(add == temp)
+      System.out.println("This is Palindrome Number.");
+    else
+      System.out.println("This is not a Palindrome Number.");
+  }
+  public static void KrishnamurthyNumber(int number){
+    int  summation = 0;
+    int temp = number;
+    while(number > 0)
+    {
+      int remainder = number % 10;
+      int flag = 1;
+      for(int counter = 1; counter <= remainder; counter++){
+        flag = flag * counter;
+        }
+        summation = summation + flag;
+        number = number / 10;
+    }
+    if(summation == temp)
+      System.out.println("The Number is Krishnamurthy Number.");
+    else            
+      System.out.println("The Number is not Krishnamurthy Number.");
+  }
+  public static void PerfectNumber(int number){
+    int initializer, sum=0;
+    int temp = number;
+    for(initializer = 1; initializer < number; initializer++){
+      if(number % initializer == 0){
+        sum = sum + initializer;
+      }
+    }
+    if(sum == temp)
+      System.out.println("This is Perfect Number.");
+    else
+      System.out.println("This is not a Perfect Number.");
+  }
+  public static void NivenNumber(int number){
+    int sum = 0;
+    int temp = number;
+    while(number != 0){
+      int remainder = number % 10;
+      sum = sum + remainder;
+      number = number / 10;
+    }
+    if(temp % sum == 0)
+      System.out.println("It is a Niven Number.");
+    else
+      System.out.println("It is not a Niven Number.");
+  }
+  public static void HappyNumber(int number){
+    int sum = 0;
+    while(sum != 1 && sum != 4){
+      sum = 0;
+      while(number > 0){
+        int remainder = number % 10;
+        sum = sum + (remainder * remainder);
+        number = number / 10;
+      }
+      number = sum;
+    }
+    if(sum == 1)
+      System.out.println("It is a Happy Number.");
+    else 
+      System.out.println("It is not a Happy Number.");
+  }
+  public static void MagicNumber(int number){
+    int sum = 0;
+    while(sum !=1){
+	    sum = 0;
+	    while(number>0){
+		    int remainder = number % 10;
+		    sum = sum + remainder;
+		    number = number / 10;
+	    }
+	    number = sum;
+    }
+	  if (sum == 1) 
+      System.out.println("This is Magic Number.");
+    else 
+      System.out.println("This is not a Magic Number.");
+  }
+  public static void DuckNumber(int number){
+    int sum = 0;
+    while(number > 0){
+      int remainder = number % 10;
+      if(remainder == 0)
+      sum = sum + 1;
+      number = number / 10;
+    }
+    if(sum >= 1)
+      System.out.println("It is a Duck Number.");
+    else 
+      System.out.println("It is not a Duck Number.");
+  }
+  public static void AmicablePairNumber(int number){
+    int sum1 = 0, sum2 = 0;
+    System.out.println("Enter second Number");
+    int number2 = scanner.nextInt();
+    int terminate1 = number;
+    int terminate2 = number2;
+    for(int counter1 = 1; counter1 < number; counter1 ++){
+      if(number % counter1 == 0)
+        sum1 = sum1 + counter1;
+    } 
+    for(int counter2 = 1; counter2 < number2; counter2 ++){
+      if(number2 % counter2 == 0)
+        sum2 = sum2 + counter2;
+    }
+    if(sum1 == terminate2 && sum2 == terminate1)
+      System.out.println("This are Amicable pair Number.");
+    else 
+      System.out.println("This are not Amicable pair Number.");
+  }
+  public static void SunnyNumber(int number){
+    int counter = 0;
+    number = number + 1;
+    int initializer = 1;
+    while(initializer <= number){
+      if(number%initializer == 0)
+      counter = counter + 1;
+      initializer++;
+    }
+    if(counter%2 == 1)
+      System.out.println("It is a Sunny Number.");
+    else 
+      System.out.println("It is not a Sunny Number.");
+  }
+  public static void SmithNumber(int number) {
+    if (isPrime(number)) {
+        System.out.println("It is not a Smith Number");
+        return;
+    }
+
+    int sumOfDigits = sumDigits(number);
+    int sumOfPrimeFactorsDigits = 0;
+    int originalNumber = number;
+
+    for (int i = 2; i <= number; i++) {
+        while (number % i == 0) {
+            sumOfPrimeFactorsDigits += sumDigits(i);
+            number /= i;
+        }
+    }
+
+    if (sumOfDigits == sumOfPrimeFactorsDigits) {
+        System.out.println(originalNumber + " is a Smith Number");
+    } else {
+        System.out.println(originalNumber + " is not a Smith Number");
+    }
+  }
+  public static boolean isPrime(int number) {
+      if (number <= 1) return false;
+      for (int i = 2; i <= Math.sqrt(number); i++) {
+          if (number % i == 0) return false;
+      }
+      return true;
+  }
+  public static int sumDigits(int number) {
+      int sum = 0;
+      while (number != 0) {
+          sum += number % 10;
+          number /= 10;
+      }
+      return sum;
+  }
+  public static void executeChoice(int choice,int number,Scanner scanner){
+    switch(choice){
+      case 1:
+        ArmstrongNumber(number);
+        break;
+        case 2:
+          BuzzNumber(number);
+          break;
+          case 3:
+            PrimeNumber(number);
+            break;
+            case 4:
+              NeonNumber(number);
+              break;
+              case 5:
+                PalindromeNumber(number);
+                break;
+                case 6:
+                  KrishnamurthyNumber(number);
+                  break;
+                  case 7:
+                    PerfectNumber(number);
+                    break;
+                    case 8:
+                      NivenNumber(number);
+                      break;
+                      case 9:
+                        HappyNumber(number);
+                        break;
+                        case 10:
+                          MagicNumber(number);
+                          break;
+                          case 11:
+                            DuckNumber(number);
+                            break;
+                            case 12:
+                              AmicablePairNumber(number);
+                              break;
+                              case 13:
+                                SunnyNumber(number);
+                                break;
+                                case 14:
+                                  SmithNumber(number);
+                                  break;
+                                  default:
+                                    System.out.println("You entered wrong choice, Please re-enter the correct choice of operation.");
+                                    break;
+    }
+    System.out.println("Do you want to contineu?(1:Yes/anykey:No):");
+    int contChoice = scanner.nextInt();
+    if(contChoice==1){
+      System.out.println("Enter your choice:");
+      int rechoice = scanner.nextInt();
+      executeChoice(rechoice,number,scanner);
+    }
+  }
+  public static void main(String [] args){
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter any number you want to check it's type:");
+    int number = scanner.nextInt();
+    System.out.println("List of Choice:\n1. Armstrong Number\n2. Buzz Number\n3. Prime Number\n4. Neon Number\n5. Palindrome Number\n6. Krishnamurthy Number or Strong Number or Special Number\n7. Perfect Number\n8. Niven Number\n9. Happy Number\n10. Magic Number\n11. Duck Number\n12. Amicable pair Number\n13. Sunny Number\n14. Smith Number");
+    System.out.println("Enter your choice:");
+    int choice = scanner.nextInt();
+    executeChoice(choice,number,scanner);
+    }
+}

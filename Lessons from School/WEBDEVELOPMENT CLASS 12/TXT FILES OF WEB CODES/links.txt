@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Some cool links</title>
+</head>
+
+<body>
+
+<h2>Exciting links</h2>
+
+<p>Here are some great places to visit online:</p>
+
+<a href="https://www.explainingcomputers.com/">ExplaingComputers.com</a>
+
+<p>Return to the <a= href"experiment.html">homepage</a>.</p>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>
+My first web page
+</title>
+</head>
+<body>
+<font color="red"face="arial"size=5><i><u><b>I am a student of</b>computer science</u></i></font>
+<marquee direction="right">Snehasish</marquee>
+<marquee direction="left">Snehasish</marquee>
+<marquee direction="up">Snehasish</marquee>
+<marquee direction="down">Snehasish</marquee>
+<h1>Heading</h1>
+<h2>Heading</h2>
+<h3>Heading</h3>
+<h4>Heading</h4>
+<h5>Heading</h5>
+<h6>Heading</h6>
+</body>
+</html>

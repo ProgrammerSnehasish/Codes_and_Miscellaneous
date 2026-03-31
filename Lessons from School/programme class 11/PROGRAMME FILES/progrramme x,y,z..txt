@@ -1,0 +1,90 @@
+//sunny number
+#include<stdio.h>
+int main()
+{
+	int n,i,c=0;
+	printf("enter a number");
+	scanf("%d",&n);
+	n=n+1;
+	i=1;
+	while(i<=n)
+	{
+		if(n%i==0)
+		c=c+1;
+		i++;
+	}
+	if(c%2==1)
+	printf("sunny number");
+	else
+	printf("not sunny number");
+}
+--------------------------------------------------
+//Prime Factorization
+#include<stdio.h>
+int main()
+{
+int i,n;
+printf("Enter a number");
+scanf("%d",&n);
+for(i=2;i<=n;i++)
+{
+while(n%i==0)
+{
+printf("%d\t",i);
+n=n/i;
+}
+}
+}
+-----------------------------------------------------
+#include<stdio.h>
+int main()
+{
+int n,s=0,d,s1=0,temp,i;
+printf("Enter a number");
+scanf("%d",&n);
+temp=n;
+for(i=2;i<=n;i++)
+{
+while(n%i==0)
+{
+s=s+i;
+n=n/i;
+}
+while(temp>=0)
+{
+d=temp%10;
+s1=s1+d;
+temp=temp/10;
+}
+}
+if(s==s1)
+printf("It is a Smith Number");
+else
+printf("ERROR");
+}
+---------------------------------------------------------------
+//Amicable Pair Number
+#include<stdio.h>
+int main()
+{
+int a,b,x,y,i,s1=0,s2=0;
+printf("Enter two numbers");
+scanf("%d",&a,&b);
+a=x;
+b=y;
+for(i=1;i<a;i++)
+{
+if(a%i==0)
+s1=s1+i;
+}
+for(i=1;i<b;i++)
+{
+if(b%i==0)
+s2=s2+i;
+}
+if(s1==y && s2==x)
+printf("It is a Amicable Pair Number");
+else
+printf("Error");
+}
+--------------------------------------------------------------

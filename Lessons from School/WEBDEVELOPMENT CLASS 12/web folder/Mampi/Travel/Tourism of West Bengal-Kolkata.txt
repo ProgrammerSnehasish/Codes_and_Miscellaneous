@@ -1,0 +1,96 @@
+<html>
+<head><title>Tourism of West Bengal-Kolkata</title></head>
+<style>
+body {
+  background-image: url('https://www.orfonline.org/wp-content/uploads/2021/04/Reimagining-Kolkata-1280x720.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+<body>
+<p align="Left"><font color="Yellow" size="24" face="Algerian"><b><u>Kolkata</u></b></font><p>
+<font color="yellow" size="5" face="STXingkai"><b><p>Kolkata is equal parts chaos and charming! From its busy corners to its ever-evolving markets, the City of Joy has plenty on offer to tourists who are ready to explore. Whether you are a literature student or a person who likes to dive deep into different cultures, there is something for everyone.</p>
+
+<p>If you are planning to visit the city anytime soon, here is a list of all the best places to visit in Kolkata. While some are iconic, there are some places that are hidden from the touristy crowd of the city and still demand a visit.</p>
+
+
+<u>Tourist Places in Kolkata:</u><br>
+<style type="text/css">
+  table    { border:ridge 5px red; background-color:blue; color:#FFF; }
+  table td { border:inset 1px #000; }
+</style>
+<table>
+<tr>
+<td><font color="yellow" size="5" face="STXingkai">1.Victoria Memorial</font></td>
+<td><font color="yellow" size="5" face="STXingkai">2.Howrah Bridge</font></td>
+<tr>
+<tr>
+<td><font color="yellow" size="5" face="STXingkai">3.Park Street</font></td>
+<td><font color="yellow" size="5" face="STXingkai">4.New Market</font></td>
+</tr>
+<tr>
+<td><font color="yellow" size="5" face="STXingkai">5.Dakshineswar Kali Temple</font></td>
+<td><font color="yellow" size="5" face="STXingkai">6.Kumortuli</font></td>
+</tr>
+<tr>
+<td><font color="yellow" size="5" face="STXingkai">7.Babu Ghat</font></td>
+<td><font color="yellow" size="5" face="STXingkai">8.College Street</font></td>
+</tr>
+<tr>
+<td><font color="yellow" size="5" face="STXingkai">9.South Park Cemetery</font></td>
+<td><font color="yellow" size="5" face="STXingkai">10.Old Chinatown</font></td>
+</tr>
+<tr>
+<td><font color="yellow" size="5" face="STXingkai">11.Indian Museum</font></td>
+<td><font color="yellow" size="5" face="STXingkai">12.M.P. Birla Planetarium</font></td>
+</tr>
+<tr>
+<td><font color="yellow" size="5" face="STXingkai">13.Alipore Zoo</font></td>
+<td><font color="yellow" size="5" face="STXingkai">14.Town Hall</font></td>
+</tr>
+<tr>
+<td><font color="yellow" size="5" face="STXingkai">15.Eden Gardens</font></td>
+<td><font color="yellow" size="5" face="STXingkai">16.Jawaharlal Nehru Road</font></td>
+</tr>
+<tr>
+<td><font color="yellow" size="5" face="STXingkai">17.Jorasanko Thakur Bari</font></td>
+<td><font color="yellow" size="5" face="STXingkai">18.Marble Palace Mansion</font></td>
+</tr>
+<tr>
+<td><font color="yellow" size="5" face="STXingkai">19.Princep Ghat</font></td>
+<td><font color="yellow" size="5" face="STXingkai">20.Birla Mandir</font></td>
+</tr>
+<tr>
+<td><font color="yellow" size="5" face="STXingkai">21.Science City</font></td>
+<td><font color="yellow" size="5" face="STXingkai">22.Fort William</font></td>
+</tr>
+<tr>
+<td><font color="yellow" size="5" face="STXingkai">23.Kalighat Kali Temple</font></td>
+<td><font color="yellow" size="5" face="STXingkai">24.St. Paul’s Cathedral</font></td>
+</tr>
+<tr>
+<td><font color="yellow" size="5" face="STXingkai">25.Belur Math</font></td>
+<td><font color="yellow" size="5" face="STXingkai">26.Mother House</font></td>
+</tr>
+<tr>
+<td><font color="yellow" size="5" face="STXingkai">27.Rabindra Sarovar</font></td>
+<td><font color="yellow" size="5" face="STXingkai">28.New Town Eco Park</font></td>
+</tr>
+<tr>
+<td><font color="yellow" size="5" face="STXingkai">29.Nicco Park</font></td>
+<td><font color="yellow" size="5" face="STXingkai">30.Nakhoda Masjid</font></td>
+</tr>
+<tr>
+<td><font color="yellow" size="5" face="STXingkai">31.Birla Technological Museum</font></td>
+<td><font color="yellow" size="5" face="STXingkai">32.Pareshnath Jain Temple</font></td>
+</tr>
+<tr>
+<td><font color="yellow" size="5" face="STXingkai">33.Millennium Park</font></td>
+<td><font color="yellow" size="5" face="STXingkai">34.ISKCON Temple</font></td>
+</tr>
+</table>
+</font>
+<p align="right"><button><a href="Tourism of West Bengal.html"><font color="blue" size="6" face="STXingkai">Home page</font></a></button></p>
+</body>
+</html>

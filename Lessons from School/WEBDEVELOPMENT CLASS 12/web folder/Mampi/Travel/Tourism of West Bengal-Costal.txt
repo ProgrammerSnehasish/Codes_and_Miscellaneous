@@ -1,0 +1,42 @@
+<html>
+<head><title>Tourism of West Bengal-Costal</title></head>
+<style>
+body {
+  background-image: url('https://images.thrillophilia.com/image/upload/s--zU2hyvr2--/c_fill,g_center,h_642,q_auto,w_1280/f_auto,fl_strip_profile/v1/images/photos/000/111/227/original/1584452383_shutterstock_659752654.jpg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+<body>
+<p align="Left"><font color="yellow" size="24" face="Algerian"><b>Digha</b></font><p>
+<font color="yellow" size="5" face="STXingkai"><b>Digha is a seaside resort town in the state of West Bengal, India. It lies in Purba Medinipur district and at the northern end of the Bay of Bengal. It has a low gradient with a shallow sand beach. It is a popular sea resort in West Bengal.</b></font>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p align="right"><button><a href="Tourism of West Bengal.html"><font color="blue" size="6" face="STXingkai">Home page</font></a></button></p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+#include<iostream>
+int main()
+{
+	int a[3][3],b[3][3],c[3][3],i,j,x,y;
+	printf("Enter Frist array a");
+	for(i=0; i<3; i++)
+	{
+		for(j=0; j<3; j++)
+		{
+			printf("Enter value");
+			scanf("%d",&a[i][j]);
+		}
+	}
+	printf("Enter second array b");
+	for(i=0; i<3; i++)
+	{
+		for(j=0; j<3; j++)
+		{
+			printf("Enter values");
+			scanf("%d",&b[i][j]);
+		}
+	}
+	for(i=0;i<3;i++)
+	{
+		for(j=0; j<=3; j++)
+		{
+			c[i][j]=a[i][j]+b[i][j];
+		}
+	}
+	
+	printf("Sum of two matrices\n");
+	for(x=0; x<3; x++)
+	{
+		for(y=0; y<3; y++)
+		{
+			printf("%d ",c[x][y]);
+		}
+		printf("\n");
+	}
+}

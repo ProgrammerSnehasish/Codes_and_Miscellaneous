@@ -1,0 +1,67 @@
+#include<stdio.h>
+int sum(int,int);
+int main()
+{
+int a,b;
+printf("Enter two numbers");
+scanf("%d%d",&a,&b);
+int x=sum(a,b);printf("%d",x);
+}
+int sum(int x,int y)
+{
+int c;
+c=x+y;
+return c;
+}
+---------------------------------
+#include<stdio.h>
+int cal(int);
+int i,c,f;
+int main()
+{
+int y;
+printf("Enter a number");
+scanf("%d",&y);
+int x=cal(y);
+if(x==1)
+printf("error");
+else
+printf("prime");
+}
+int cal(int n)
+{
+c=0,f=0;
+for(i=1;i<=n;i++)
+{
+    if(n%1==0)
+    c=c+1;
+}
+if(c==2)
+f=1;
+return f;
+}
+--------------------------------------
+#include<stdio.h>
+void sum();
+void oddeven();
+int a,b,s;
+int main()
+{
+sum();
+oddeven;
+}
+void sum()
+{
+s=0;
+printf("enter two numbers");
+scanf("%d%d",&a,&b);
+s=a+b;
+}
+void oddeven()
+{
+if(s%2==0)
+printf("even");
+else
+printf("odd");
+}
+------------------------------------

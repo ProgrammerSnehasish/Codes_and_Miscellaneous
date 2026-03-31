@@ -1,0 +1,132 @@
+<html>
+<head><title>Book Catalouge</title></head>
+<style>
+body {
+  background-image: url('https://wallpaperaccess.com/full/253322.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+<body>
+<p align="center"><font color="Yellow" size="16" face="Rog fonts"><u>Catalouge of Books</u></font></p>
+<hr></hr>
+<p align="center">
+<style>
+            table, th, td {
+                border: 1px solid black;
+                padding: 6px;
+            }
+        </style>
+<table>
+<tr>
+<th><font color="Yellow" size="5" face="STXingkai">Serial No.</font></th>
+<th><font color="Aqua" size="5" face="STXingkai">Name of the Book</font></th>
+<th><font color="Yellow" size="5" face="STXingkai">Image of the Book</font></th>
+<th><font color="deeppink" size="5" face="STXingkai">Name of the Author</font></th>
+<th><font color="greenyellow" size="5" face="STXingkai">ISBN Number</font></th>
+<th><font color="lime" size="5" face="STXingkai">Price of the Book(Rs)</font></th>
+<th><font color="Yellow" size="5" face="STXingkai">Cart</font></th>
+</tr>
+<tr>
+<td><font color="Yellow" size="5" face="STXingkai">1.</font></td>
+<td><font color="Aqua" size="5" face="STXingkai">Elements of Physics(vol.2)</font></td>
+<td><p align="center"><img src="https://rukminim1.flixcart.com/image/832/832/book/5/9/3/elements-of-physics-original-imaeaebphgyeksnp.jpeg?q=70" height="100" width="90"></p></td>
+<td><font color="deeppink" size="5" face="STXingkai">Rowland Henry Augustus</font></td>
+<td><font color="greenyellow" size="5" face="STXingkai">ISBN-13: 9781146220408<br>
+ISBN-10: 1146220405</font></td>
+<td><font color="lime" size="5" face="STXingkai">2,485</font></td>
+<td><button><font color="blue" size="5" face="STXingkai"><a href="https://www.flipkart.com/elements-of-physics/p/itmdy32syeemdqne?pid=9781144140593&lid=LSTBOK9781144140593S3H6DH&marketplace=FLIPKART&q=elements+of+physics&store=bks&srno=s_1_12&otracker=search&otracker1=search&fm=Search&iid=76763e99-74e1-454a-b612-7f884fe12c48.9781144140593.SEARCH&ppt=hp&ppn=homepage&ssid=3j73y83ehs0000001644775267875&qH=8e81d639ed1ef6a8">Buy now</a></font></button></td>
+</tr>
+<tr>
+<td><font color="Yellow" size="5" face="STXingkai">2.</font></td>
+<td><font color="Aqua" size="5" face="STXingkai">Objective Physics (Vol 2) For Engineering Entrances 2022</font></td>
+<td><p align="center"><img src="https://rukminim1.flixcart.com/image/832/832/knj7wcw0/book/v/p/b/objective-physics-vol-2-for-engineering-entrances-2022-original-imag26yqcbmaaksg.jpeg?q=70" height="100" width="90"></p></td>
+<td><font color="deeppink" size="5" face="STXingkai">DC Pandey</font></td>
+<td><font color="greenyellow" size="5" face="STXingkai">ISBN-13: 9789325299092<br>
+ISBN-10: 9325299097</font></td>
+<td><font color="lime" size="5" face="STXingkai">529</font></td>
+<td><button><font color="blue" size="5" face="STXingkai"><a href="https://www.flipkart.com/objective-physics-2-engineering-entrances-2022/p/itm46a9dc56bfe97?pid=9789325299092&lid=LSTBOK97893252990928YYLTN&marketplace=FLIPKART&q=arihant+objective+physics&store=bks&srno=s_1_12&otracker=search&otracker1=search&fm=Search&iid=ac0e06ed-e9ca-4df7-b487-59f8c338be06.9789325299092.SEARCH&ppt=sp&ppn=sp&ssid=0v5b03kqw00000001644775782442&qH=6a71a5aa40f0278c">Buy Now</a></font></button></td>
+</tr>
+<tr>
+<td><font color="Yellow" size="5" face="STXingkai">3.</font></td>
+<td><font color="Aqua" size="5" face="STXingkai">Rudiments Of Computer Science Class-12</font></td>
+<td><p align="center"><img src="https://rukminim1.flixcart.com/image/832/832/krjjde80/regionalbooks/n/e/0/rudiments-of-computer-science-class-12-3rd-edition-original-imag5bajwky4jwzz.jpeg?q=70" height="100" width="90"></p></td>
+<td> <font color="deeppink" size="5" face="STXingkai">J Bhattacharya</font></td>
+<td><font color="greenyellow" size="5" face="STXingkai"><p align="center">-</p></font></td>
+<td><font color="lime" size="5" face="STXingkai">650</font></td>
+<td><button><font color="blue" size="5" face="STXingkai"><a href="https://www.flipkart.com/rudiments-computer-science-class-12-3rd/p/itmda953e839114b?pid=RBKG5BAKVZPPG36K&lid=LSTRBKG5BAKVZPPG36KFD60VZ&marketplace=FLIPKART&q=rudiments+of+computer+science&store=bks&srno=s_1_2&otracker=AS_QueryStore_OrganicAutoSuggest_2_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_10_na_na_na&fm=search-autosuggest&iid=7027a9cc-3308-4e0b-8dbf-b2f58f4fdd47.RBKG5BAKVZPPG36K.SEARCH&ppt=sp&ppn=sp&ssid=9mws6cmdz40000001644776317263&qH=6a4ad771665d9b3f">Buy Now</a></font></button></td>
+</tr>
+<tr>
+<td><font color="Yellow" size="5" face="STXingkai">4.</font></td>
+<td><font color="Aqua" size="5" face="STXingkai">The Beauty of Chemistry: Art, Wonder, and Science</font></td>
+<td><p align="center"><img src="https://images.isbndb.com/covers/44/17/9780262044417.jpg" height="100" width="90"></p></td>
+<td><font color="deeppink" size="5" face="STXingkai">Ball, Philip</font></td>
+<td><font color="greenyellow" size="5" face="STXingkai">ISBN-13: 9780262044417<br>
+ISBN-10: 0262044412</font></td>
+<td><font color="lime" size="5" face="STXingkai">2556</font></td>
+<td><button><font color="blue" size="5" face="STXingkai"><a href="https://www.amazon.com/dp/0262044412/ref=olp-opf-redir?aod=1&tag=wwwcampusboocom587-20&condition=new">Buy Now</a></font></button></td>
+</tr>
+<tr>
+<td><font color="Yellow" size="5" face="STXingkai">5.</font></td>
+<td><font color="Aqua" size="5" face="STXingkai">Computer Vision and Image Processing: Fundamentals and Applications</font></td>
+<td><p align="center"><img src="https://m.media-amazon.com/images/I/41SBup5o7+L._SL160_.jpg" height="100" width="90"></p></td>
+<td><font color="deeppink" size="5" face="STXingkai">Bhuyan, Manas Kamal</font></td>
+<td><font color="greenyellow" size="5" face="STXingkai">ISBN-13: 9780815370840<br>
+ISBN-10: 0815370849</font></td>
+<td><font color="lime" size="5" face="STXingkai">10172</font></td>
+<td><button><font color="blue" size="5" face="STXingkai"><a href="https://www.amazon.com/dp/0815370849/ref=olp-opf-redir?aod=1&tag=wwwcampusboocom587-20&condition=new">Buy Now</a></font></button></td>
+</tr>
+<tr>
+<td><font color="Yellow" size="5" face="STXingkai">6.</font></td>
+<td><font color="Aqua" size="5" face="STXingkai">Colloquial Bengali</font></td>
+<td><p align="center"><img src="https://m.media-amazon.com/images/I/510sTSes6uL._SL160_.jpg" height="100" width="90"></p></td>
+<td><font color="deeppink" size="5" face="STXingkai">Nasrin, Mithun B. - Van Der Wurff, W.A.M</font></td>
+<td><font color="greenyellow" size="5" face="STXingkai">ISBN-13: 9781138950078<br>
+ISBN-10: 1138950076</font></td>
+<td><font color="lime" size="5" face="STXingkai">4219</font></td>
+<td><button><font color="blue" size="5" face="STXingkai"><a href="https://www.amazon.com/dp/1138950076/ref=olp-opf-redir?aod=1&tag=wwwcampusboocom587-20&condition=new">Buy Now</a></font></button></td>
+</tr>
+<tr>
+<td><font color="Yellow" size="5" face="STXingkai">7.</font></td>
+<td><font color="Aqua" size="5" face="STXingkai">English Grammar in Use</font></td>
+<td><p align="center"><img src="https://images.isbndb.com/covers/76/51/9781108457651.jpg" height="100" width="90"></p></td>
+<td><font color="deeppink" size="5" face="STXingkai">Murphy, Raymond</font></td>
+<td><font color="greenyellow" size="5" face="STXingkai">ISBN-13: 9781108457651<br>
+ISBN-10: 1108457657</font></td>
+<td><font color="lime" size="5" face="STXingkai">1959</font></td>
+<td><button><font color="blue" size="5" face="STXingkai"><a href="https://www.amazon.com/dp/1108457657/ref=olp-opf-redir?aod=1&tag=wwwcampusboocom587-20&condition=new">Buy Now</a></font></button></td>
+</tr>
+<tr>
+<td><font color="Yellow" size="5" face="STXingkai">8.</font></td>
+<td><font color="Aqua" size="5" face="STXingkai">All the Math You Missed (But Need to Know for Graduate School)</font></td>
+<td><p align="center"><img src="https://images.isbndb.com/covers/91/95/9781009009195.jpg" height="100" width="90"></p></td>
+<td><font color="deeppink" size="5" face="STXingkai">Garrity, Thomas A</font></td>
+<td><font color="greenyellow" size="5" face="STXingkai">ISBN-13: 9781009009195<br>
+ISBN-10: 1009009192</font></td>
+<td><font color="lime" size="5" face="STXingkai">2486</font></td>
+<td><button><font color="blue" size="5" face="STXingkai"><a href="https://www.amazon.com/dp/1009009192/ref=olp-opf-redir?aod=1&tag=wwwcampusboocom587-20&condition=new">Buy Now</a></font></button></td>
+</tr>
+<tr>
+<td><font color="Yellow" size="5" face="STXingkai">9.</font></td>
+<td><font color="Aqua" size="5" face="STXingkai">Marketplace Best Practices: Transforming Commerce in the Platform Economy</font></td>
+<td><p align="center"><img src="https://m.media-amazon.com/images/I/41v+Z2eAcDL._SL160_.jpg" height="100" width="90"></p></td>
+<td><font color="deeppink" size="5" face="STXingkai">McFadyen, Tom</font></td>
+<td><font color="greenyellow" size="5" face="STXingkai">ISBN-13: 9798597910260</td>
+<td><font color="lime" size="5" face="STXingkai">2300</font></td>
+<td><button><font color="blue" size="5" face="STXingkai"><a href="">Buy Now</a></font></button><br><mark>OUT OF STOCK</mark></font></td>
+</tr>
+<tr>
+<td><font color="Yellow" size="5" face="STXingkai">10.</font></td>
+<td><font color="Aqua" size="5" face="STXingkai">Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist</font></td>
+<td><p align="center"><img src="https://m.media-amazon.com/images/I/51O2MPGym9L._SL160_.jpg" height="100" width="90"></p></td>
+<td><font color="deeppink" size="5" face="STXingkai">Raworth, Kate</font></td>
+<td><font color="greenyellow" size="5" face="STXingkai">ISBN-13: 9781603587969<br>
+ISBN-10: 1603587969</font></td>
+<td><font color="lime" size="5" face="STXingkai">904</td>
+<td><button><font color="blue" size="5" face="STXingkai"><a href="https://www.amazon.com/dp/1603587969/ref=olp-opf-redir?aod=1&tag=wwwcampusboocom587-20&condition=new">Buy Now</a></font></button></td>
+</tr>
+</table>
+</p>
+</body>
+</html>

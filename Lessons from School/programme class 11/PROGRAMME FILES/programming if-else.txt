@@ -1,0 +1,418 @@
+// even and odd
+#include<stdio.h>
+main()
+{
+	int n;
+	printf("enter a number");
+	scanf("%d",&n);
+	if (n%2==0)
+	printf("even");
+	'else';
+	printf("odd");
+}
+--------------------------------------------------------------------------------------------------------
+// greater than
+#include<stdio.h>
+int main()
+{	
+	int a,b;
+	printf("enter the value of a");
+	scanf("%d",&a);
+	printf("enter the value of b");
+	scanf("%d",&b);
+	if(a>b)
+	printf("%d is greater",a);
+	else
+        if (b>a)
+	printf("%d is greater",b);
+	else
+	printf("both are equal");
+}
+--------------------------------------------------------------------------------------------------------
+// upper case & lower case character.
+#include<stdio.h>
+int main()
+{
+	char ch;
+	printf("enter a character");
+	scanf("%c",&ch);
+	if(ch>'a'&& ch<='z')
+	printf("lower case charecter");
+	if(ch>='A'&& ch<='Z')
+	printf("upper case character");
+	else
+	printf("not a letter");
+}
+---------------------------------------------------------------------------------------------------------
+//accept three digits from user between one to nine.display the greatest and smallest three digit number.
+#include<stdio.h>
+int main()
+{
+	int a,b,c,gn=0,sn=0;
+	printf("enter digits");
+	scanf("%d%d%d",&a,&b,&c);
+	if(a>b && a>c)
+	{
+		if(b>c)
+		{
+			gn=100*a+b*10+c;
+			sn=100*b+10*c+a;
+		}
+	}
+	
+	else if(b>a && b>c)
+	{
+		if(a>c)
+		{
+			gn=b*100+a*10+c;
+			sn=c*100+a*10+b;
+		}
+		else
+		{
+			gn=100*b+c*10+a;
+			sn=a*100+c*10+b;
+		}
+	}
+	else if(c>a && c>b)
+	{
+		if(a>b)
+		{
+			gn=c*100+b*10+a;
+			sn=a*100+b*10+c;
+		}
+		}
+		printf("max number=%d\nminimum number=%d",gn,sn);	
+}
+-----------------------------------------------------------------------------------------------------------
+// Check a character vowel or not.
+#include<stdio.h>
+int main()
+{
+	char ch;
+	printf ("enter a letter");
+	scanf ("%c",&ch);
+	if(ch=='A'||ch=='a'||ch=='E'||ch=='e'||ch=='I'||ch=='i'||ch=='O'||ch=='o'||ch=='U'||ch=='u')
+	printf ("%c vowel",ch);
+	else
+	printf ("%c not vowel",ch);
+}
+-----------------------------------------------------------------------------------------------------------
+// Check a number odd or even if even then printf square of the number else printf the cube of the number (process 1).
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf ("enter a number");
+	scanf ("%d",&n);
+	if (n%2==0)
+	printf ("even --------> square of the number =%d",n*n);
+	else
+	printf("odd ----------> cube of the number =%d",n*n*n);
+}
+-----------------------------------------------------------------------------------------------------------
+// Check a number odd or even if even then printf square of the number else printf the cube of the number (process 2).
+#include<stdio.h>
+int main()
+{
+	int n,x;
+	printf ("enter a number");
+	scanf ("%d",&n);
+	if (n%2==0)
+	{
+	x=n*n;
+	printf ("even --------> square of the number =%d",n*n);
+    }
+	else
+	{
+	x=n*n*n;
+	printf("odd ----------> cube of the number =%d",n*n*n);
+    }
+}
+-----------------------------------------------------------------------------------------------------------
+// WAP to check a number buzz or not.
+#include<stdio.h>
+int main()
+{
+	int n,x;
+	printf ("enter a number");
+	scanf ("%d",&n);
+	if (n%7==0||n%10==7)
+	printf ("buzz number");  
+	else
+	printf("not buzz number");
+}
+-----------------------------------------------------------------------------------------------------------
+// WAP to initialize the day number and display the cooresponding name of day day.
+#include<stdio.h>
+int main()
+{
+int n;
+printf("Enter number of the day");
+scanf("%d",&n);
+if(n==1)
+printf("Sunday");
+if(n==2)
+printf("Monday");
+if(n==3)
+printf("tuesday");
+if(n==4)
+printf("Wednesday");
+if(n==5)
+printf("Thursday");
+if(n==6)
+printf("Friday");
+if(n==7)
+printf("Saturday");
+else
+if(n>7)
+printf("Invalid input");
+}
+-------------------------------------------------------------------------------------------------------------
+/ WAP to store month number and display month name.
+#include<stdio.h>
+int main()
+{
+int n,m;
+	printf("number of the Month");
+	scanf("%d",&n);
+	if(n<=1)
+	printf("The month is ------> January",&m);
+	else
+	if(n<=2)
+	printf("The month is -------> February",&m);
+	else
+	if(n<=3)
+	printf("The month is --------> March",&m);
+	else
+	if(n<=4)
+	printf("The month is --------> April",&m);
+	else
+	if(n<=5)
+	printf("The month is ---------> May",&m);
+	else
+	if(n<=6)
+	printf("The month is -----------> June",&m);
+	else
+	if(n<=7)
+	printf("The month is ---------> July",&m);
+	else
+	if(n<=8)
+	printf("The month is ----------> August",&m);
+	else
+	if(n<=9)
+	printf("The month is ----------> September",&m);
+	else
+	if(n<=10)
+	printf("The month is -----------> October",&m);
+	else
+	if(n<=11)
+	printf("The month is ----------> November",&m);
+	else
+	if(n<=12)
+	printf("The month is --------> December",&m);
+	if(n>=13)
+	printf("ERROR");
+}
+-------------------------------------------------------------------------------------------------------------------------
+// WAP to store temperature and choice if choice=1, convert the taemperature from celcius to Ferhenhiet if choice=2 convert from ferhenhiet to celcius.
+#include<stdio.h>
+int main()
+{
+	int cho,C,F;
+	printf("Enter your choice ------>",&cho);
+	scanf("%d",&cho);
+	if(cho<=1)
+	{
+		printf("enter temperature(In the range of celcius scale)---->",&C);
+		scanf("%d",&C);
+		if(C<=0 && C>=100,F=(9*C/5)+32)
+		printf("Final temperature is(In Ferhenhiet)------>%d",F);
+	}
+	else
+	if(cho<=2)
+	{
+		printf("enter temperature(In the range of Ferhenhiet scale)------->",&F);
+		scanf("%d",&F);
+		if(F<=32 && F>=212,C=(F-32)*5/9)
+		printf("Final temperature is(In Celcius)-------->%d",C);
+	}
+}
+-------------------------------------------------------------------------------------------------------------------------
+store temperature and choice if choice=1, convert the teperature from celcius to Kelvin if choice=2 convert form Kelvin to celcius.
+#include <stdio.h>
+[;int main()
+{
+int cho,c,k;
+printf("Enter choice");
+scanf("%d",&cho);
+if(cho==1)
+{
+printf("enter temp in celcius");
+scanf("%d",&c);
+k=c+273;
+printf("temp in kelvin=%d",k);
+}
+else
+if(cho==2)
+{
+printf("enter temp in Kelvin");
+scanf("%d",&k);
+c=k-273;
+printf("temp in celcius=%d degree",c);
+}
+else
+printf("Invalid Input");
+}
+-------------------------------------------------------------------------------------------------------------------------
+// WAP to store a number and check if the number is negative or positive.
+#include<stdio.h>
+int main()
+{
+	int n,c;
+	printf("please enter a number ------>",&n);
+	scanf("%d",&n);
+	if(n<=0 && n>=13765,n<=-1 && n>=-13765)
+	printf("The number is negative");
+	else
+	printf("The number is positive");
+	
+}
+-------------------------------------------------------------------------------------------------------------------------
+// WAP to store a year and check if the year is lipyear.
+#include<stdio.h>
+int main()
+{
+	int y,c;
+	printf("please enter a year------->",&y);
+	scanf("%d",&y);
+	if(y%4==0)
+	printf("The year is lipyear",&c);
+	else
+	printf("The year is not lipyear",&c);
+}
+-------------------------------------------------------------------------------------------------------------------------
+/* WAP to store a number and check
+      i> Div by 2 and 5 both.
+      ii> Div by 2 but not 5.
+      iii> Div by 5 but not 2.
+      iv> not Div by 2 and 5.*/
+#include<stdio.h>
+int main()
+{
+	int n,c;
+	printf("please enter a number ------->",&n);
+	scanf("%d",&n);
+	if(n%10==0)
+	printf("Divisable by 2 and 5 both.",&c);
+	else
+	if(n%2==0)
+	printf("Divisable by 2 but not 5.",&c);
+	else
+	if(n%5==0)
+	printf("Divisaable by 5 but not 2.",&c);
+	else
+	if (n%2==0,n%5==0)
+	printf("divisable by 10",&c);
+	else
+	printf("not divisable by 2 or 5.",&c);
+}
+-------------------------------------------------------------------------------------------------------------------------
+// WAP to store three number and check which one is greater.
+#include<stdio.h>
+int main()
+{
+	int a,b,c,con;
+	printf("Please enter the first number(a) ------>",&a);
+	scanf("%d",&a);
+	printf("Please enter the second number(b) ------>",&b);
+	scanf("%d",&b);
+	printf("Please enter the third number(c) ------->",&c);
+	scanf("%d",&c);
+	if(a>=b && a>=c)
+	printf("a is greater than b and c",con);
+	else
+	if(b>=c && b>=a)
+	printf("b is greater than a and c",con);
+	else
+	if(c>=a && c>=b)
+	printf("c is greater than a and b",con);
+}
+-------------------------------------------------------------------------------------------------------------------------
+// WAP to store the age of a person display whether he is eligible to vote or not.
+#include<stdio.h>
+int main()
+{
+	int a,c;
+	printf("Please enter your age ------>");
+	scanf("%d",&a);
+	if(a>=1 && a<=18)
+	printf("Your age is not eligible for vote",&c);
+	else
+	if(a=18 && a>=19)
+	printf("Your age is eligible for vote",&c);
+}
+-------------------------------------------------------------------------------------------------------------------------
+// WAP to store two numbers in two variables and check which is greater.
+#include<stdio.h>
+int main()
+{
+	int a,b,con;
+	printf("Please enter the First number(a) ------->",&a);
+	scanf("%d",&a);
+	printf("Please enter the Second number(b) -------->",&b);
+	scanf("%d",&b);
+	if(a>=b)
+	printf("a is greater than b",&con);
+	else
+	printf("b is greater than a",&con);
+}
+-------------------------------------------------------------------------------------------------------------------------
+// WAP to store SP and CP of an item calculate profit or loss.
+#include<stdio.h>
+int main()
+{
+	int SP,CP,p,con;
+	printf("Please enter Selling Price ------->",&SP);
+	scanf("%d",&SP);
+	printf("Please enter Cost Price -------->",&CP);
+	scanf("%d",&CP);
+	if(CP>=SP)
+	printf("You have lossed in your business!",&con);
+    else
+	if(SP>=CP)
+	printf("You have profited in your business!",&con);
+}
+-----------------------------------------------------------------------------------------------------------
+//Kapriker No.
+#include<stdio.h>
+int main()
+{
+int n,t,temp,f,l,c=1;
+printf("Enter a number");
+scanf("%d",&n);
+t=n*n;
+temp=n;
+while(n>0)
+{
+n=n/10;
+c=c*10;
+}
+f=t/c;
+l=t%c;
+if(f+l)==temp)
+printf("It is a Kapriker Number");
+else
+printf("NOT A KAPRIKER NUMBER AT ALL");
+}
+======================================================================================================= 
+#include<stdio.h>
+int main()
+{
+int number;
+printf("Enter any Character");
+scanf("%d",&number);
+if(number>0 || number<0)
+printf("The given character is a digit");
+else
+printf("The given character is not a digit");	
+}

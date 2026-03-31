@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>
+MY first form
+</title>
+</head>
+<body align="center" bgcolor="pink">
+<font size=10><b>Enter your data carefully:</font></b><br>
+<form>
+First name:<input type="text" name="firstname"/><br>
+Last  name:<input type="text" name="lastname"/><br>
+User id:<input type="text" name="userid"/><br>
+Password:<input type="password" name="password"/><br>
+Enter your details:<br>
+<textarea rows="5" cols="50" name="description">
+enter about you
+</textarea><br>
+<b>Subject taken:</b><br>
+<input type="checkbox" name="Maths" value="on">Maths
+<input type="checkbox" name="Physics" value="on">Physics
+<input type="checkbox" name="Chemistry" value="on">Chemistry
+<input type="checkbox" name="Bio" value="on">Biology
+<input type="checkbox" name="Computer" value="on">Computer
+<br>
+Select Your Gender:<br>
+<input type="radio" name="gender" value="Male">Male
+<input type="radio" name="gender" value="Female">Female
+<br>
+Select your country:<br>
+<select name="dropdown">
+<option value="India" selected>India</option>
+<option value="Srilanka">Srilanka</option>
+<option value="Bangladesh">Bangladesh</option>
+<option value="Nepal">Nepal</option>
+<option value="Wi">Wi</option><br>
+
+<br><input type="file" name="fileupladbox" accept="image/*"/>
+</form>
+</body>
+</html>

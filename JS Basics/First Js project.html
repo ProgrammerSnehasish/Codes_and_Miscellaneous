@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="in"/>
+    <button onclick="factorial()">Click</button>
+    <p id="res"></p>
+    <script>
+        {
+        var a=10
+        let b = 20
+        const c = 30
+        }
+        // console.log(a, c)
+        // function factorial(n) {
+        //     fact=1
+        //     for(i=1;i<=n;i++) {
+        //         fact = fact * i;
+        //     }
+        //     // return fact;
+        //     document.getElementById("res").innerText = fact
+        // }
+        // a = factorial(5)
+        // console.log(a)
+        
+        // function factorial() {
+        //     let n = prompt("Enter a number")
+        //     n = parseInt(n)
+        //     console.log(typeof(n))
+        //     fact=1
+        //     for(i=1;i<=n;i++) {
+        //         fact = fact * i;
+        //     }
+        //     // return fact;
+        //     document.getElementById("res").innerText = fact
+        // }
+
+        function factorial() {
+            let n = document.getElementById("in").value;
+            console.log(n)
+            n = parseInt(n)
+            console.log(typeof(n))
+            fact=1
+            for(i=1;i<=n;i++) {
+                fact = fact * i;
+            }
+            // return fact;
+            document.getElementById("res").innerText = fact
+        }
+    </script>
+</body>
+<!-- <script src="My first js page.js"></script> -->
+
+</html>

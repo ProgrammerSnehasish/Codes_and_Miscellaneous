@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>
+Holi
+</title>
+</head>
+<body bgcolor="yellow">
+<p ALIGN="CENTER"><font face="ALGERIAN" size="8" color="Green"><b><u><i>Holi</i></u></b></font></p>
+<p ALIGN="CENTER"><img src="https://www.shoutlo.com/uploads/articles/header-img-live-life-in-colour-at-these-holi-parties-in-ludhiana.jpg" length="100" Width="300" class="center" border="2"></img></p>
+<p><font face="STXingkai" size="6" color="red"><b><u><i>About Holi</i></b></u></font></p>    
+<p><font color="black" size="4" face="STLiti"><b><font face="Algerian" size="3" color="brown"><b><i>Holi</i></b></font> is a popular ancient Indian festival, also known as the <font face="ALGERIAN" size="3" color="green"><b><i>"Festival of Love"</i></b></font>, the <font face="ALGERIAN" size="3" color="green"><b><i>"Festival of Colours"</i></b></font> and the <font face="ALGERIAN" size="3" color="brown"><b><i></i></b></font>"Festival of Spring". The festival celebrates the eternal and divine love of Radha Krishna.  It also signifies the triumph of good over the evil, as it celebrates the victory of <font face="ALGERIAN" size="3" color="indigo"><b><i>Vishnu as Narasimha Narayana over Hiranyakashipu</i></b></font>. It originated and is predominantly celebrated in <font face="ALGERIAN" size="3" color="blue"><b><i>India and Nepal</i></b></font> but has also spread to other regions of <font face="ALGERIAN" size="3" color="blue"><b><i>Asia</i></b></font> and parts of the Western world through the diaspora from the Indian subcontinent.</b></font>
+</p>
+<style type="text/css">
+p
+{
+font-size:16pt;
+}
+</style>
+<body>
+<p><font color="black" size="4" face="STLiti"><b><img src="https://www.revv.co.in/blogs/wp-content/uploads/2021/03/The-Park-Hotel-in-Kolkata.jpg" height="120" width="250" align="right"/> <font face="ALGERIAN" size="3" color="red"><b><i>Holi</i></b></font> celebrates the arrival of spring, the <font face="ALGERIAN" size="3" color="green"><b><i>end of winter</i></b></font>, the <font face="ALGERIAN" size="3" color="brown"><b><i>blossoming of love</i></b></font> and for many, it is a festive day to meet others, <font face="ALGERIAN" size="3" color="brown"><b><i>play and laugh</i></b></font>, <font face="ALGERIAN" size="3" color="brown"><b><i>forget and forgive</i></b></font>, and <font face="ALGERIAN" size="3" color="brown"><b><i>repair broken relationships</i></b></font>. The festival also celebrates the beginning of a good spring harvest season. It lasts for a night and a day, starting on the evening of the Purnima (Full Moon Day) falling in the Hindu calendar month of <font face="ALGERIAN" size="3" color="blue"><b><i>Phalguna</i></b></font>, which falls around the middle of March in the <font face="ALGERIAN" size="3" color="indigo"><b><i>Gregorian calendar</i></b></font>. The first evening is known as Holika Dahan (burning of Demon Holika) or Chhoti Holi and the following day as <font face="ALGERIAN" size="3" color="green"><b><i>Holi, Rangwali Holi, Dol Purnima, Dhuleti, Dhulandi, Ukuli, Manjal Kuli, Yaosang, Shigmo or Phagwah, Jajiri</i></b></font>.</b></font></p>
+</body>
+<style type="text/css">
+p
+{
+font-size:16pt;
+}
+</style>
+<body>
+<p><font color="black" size="4" face="STLiti"><b><img src="https://i.pinimg.com/originals/84/6c/a7/846ca7eaa4c5702ec6709f07a3152c72.jpg" height="120" width="220" align="left"/>Holi is an ancient <font face="ALGERIAN" size="3" color="red"><b><i>Indian religious festival</i></b></font>
+ that has also become popular outside of India. In addition to India and Nepal, the festival is celebrated by Indian subcontinent diaspora in countries such as <font face="ALGERIAN" size="3" color="green"><b><i>Suriname, Guyana, Trinidad and Tobago, Jamaica, South Africa, Mauritius, Fiji, Malaysia,Singapore, the United Kingdom, the United States, the Netherlands, Canada, Australia, and New Zealand</i></b></font>
+.In recent years, the festival has spread to parts of <font face="ALGERIAN" size="3" color="green"><b><i>Europe and North America</i></b></font>
+ as a spring celebration of love, frolic, and colours.
+<font face="ALGERIAN" size="3" color="red"><b><i>Holi</i></b></font>  celebrations start on the night before Holi with a Holika Dahan where people gather, perform <font face="ALGERIAN" size="3" color="blue"><b><i>religious rituals</i></b></font>
+ in front of the <font face="ALGERIAN" size="3" color="blue"><b><i>bonfire</i></b></font>
+, and pray that their internal evil be destroyed. </b></font>
+</p>
+</body>
+<p align="center"><button><font face="Vladimir Script" color="blue" size="4">Page-4</font></button></p>
+<p align="right"><a href="Festival of India.html"><button><font color="blue" face="STLiti" size="4"><b>Home page</b><a href="Christmas.html"><button><font color="blue" face="STLiti" size="4"><b>Go to Pervious page(3)</b></font></button></a><a href="Ganesh Chaturthi.html"><button><font color="blue" face="STLiti" size="4"><b>Go to Next page(5)>></b></font></button></a></p>
+</body>
+</html>
