@@ -7,13 +7,6 @@ This repository is a comprehensive collection of my personal and academic progra
 
 ---
 
-## 📁 Folder Structure
-
-📦 all-my-codes/ ├── python/ │ ├── automation/ │ ├── data_structures/ ├── java/ │ ├── oops_concepts/ │ ├── projects/ ├── c/ ├── cpp/ ├── web/ │ ├── html-css/ │ ├── javascript/ ├── shell/ ├── cybersecurity/ ├── dbms/
-
-
----
-
 ## 🚀 What’s Included?
 
 - **Python**: Scripts for data structures, automation, mini projects, and scripting.
